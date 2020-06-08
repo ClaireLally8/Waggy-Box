@@ -3,13 +3,15 @@ body {
     background-size:cover;
 }
 .lightnav {
-    background-color:#A97756;
+    background-color:#CCE1D0;
     box-shadow:none;
     text-shadow: none;
 }
-.nav-item > a{
-    color:#c0bb95;
+.nav-link{
+    color:#9c8f9d!important;
+    font-size:1.2rem;
+    letter-spacing:1;
 }
-.nav-item > a:hover{
-    color:#bfb587;
+.nav-link:hover{
+    color:#dfcce1!important;
 }
