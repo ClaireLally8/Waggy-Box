@@ -4,8 +4,8 @@
 #dfcce1
 #9c8f9d
 #e1dacc
-
 */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@300;400;500;700&display=swap');
 .lightnav {
     background-color:#CCE1D0;
     box-shadow:none;
@@ -13,8 +13,10 @@
 }
 .nav-link{
     color:#9c8f9d!important;
-    font-size:1.2rem;
+    font-size:1rem;
     letter-spacing:1;
+    font-family:"Rubik"!important;
+    font-weight:300;
 }
 .nav-link:hover{
     color:#dfcce1!important;
@@ -27,12 +29,23 @@
     margin-top:6rem;
     padding-bottom:2rem;
     color:#9c8f9d;
+    font-family:"Rubik";
 }
 .landing-sub {
     padding-bottom:6rem;
     color:#9c8f9d;
+    font-family:"Karla";
 }
-.about-text {
-    padding-left:5rem;
-    padding-right:5rem;
+.about-us {
+    padding:8rem;
+}
+.section-head {
+    font-family:"Rubik";
+    color:#9c8f9d;
+}
+.section-text {
+    font-family:"Karla";
+}
+.how-it-works {
+    padding:0rem 8rem 8rem 8rem;
 }
