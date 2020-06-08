@@ -22,5 +22,11 @@
 .landingsection {
     background: url('/media/siteimgs/landing.jpg') no-repeat center center;
     background-size:cover;
-    padding-bottom:20rem;
+}
+.landing-main {
+    margin-top:6rem;
+    padding-bottom:2rem;
+}
+.landing-sub {
+    padding-bottom:6rem;
 }
