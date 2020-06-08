@@ -5,16 +5,15 @@
 <!--Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light lightnav">
   <a class="navbar-brand" href="{% url 'index' %}">
-  <img src="media/logo.png" height="70" class="pr-4" alt="Waggy Box logo">
+    <img src="media/logo.png" height="70" class="pr-4" alt="Waggy Box logo">
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-    aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
     <ul class="navbar-nav ml-auto">
       {% if request.user.is_authenticated %}
-       <li class="nav-item text-center px-5">
+      <li class="nav-item text-center px-5">
         <a class="nav-link" href="#">Dashboard</a>
       </li>
       <li class="nav-item text-center px-5">
@@ -33,16 +32,16 @@
 </nav>
 <!--/.Navbar -->
 <section class="landingsection">
-<div class="container landing">
-<div class="row">
-<div class="col-lg-8 col-md-6 col-sm-12">
-</div>
-<div class="col-lg-4 col-md-6 col-sm-12">
-<h2 class="text-center landing-main">Waggy Box</h2>
-<p class="text-center landing-sub">Your pets favourite toys, treats and goodies, picked for you, by us. <br>Tested by our expert 4-legged testers and shipped to your front door, every month.</p>
-</div>
-</div>
-</div>
-
+  <div class="container landing">
+    <div class="row">
+      <div class="col-lg-8 col-md-6 col-sm-12">
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <h2 class="text-center landing-main">Waggy Box</h2>
+        <p class="text-center landing-sub">Your pets favourite toys, treats and goodies, picked for you, by us. <br>Tested by our expert 4-legged testers and shipped to your front door, every month.</p>
+      </div>
+    </div>
+  </div>
 </section>
+
 {% endblock %}
