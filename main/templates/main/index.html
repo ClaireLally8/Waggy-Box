@@ -13,12 +13,21 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item text-center px-5">
-        <a href= "{% url 'account_login' %}">Login</a>
+      {% if request.user.is_authenticated %}
+       <li class="nav-item">
+        <a class="nav-link" href="#">Dashboard</a>
       </li>
-      <li class="nav-item text-center px-5">
-        <a href= "{% url 'account_signup' %}">Sign Up</a>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
       </li>
+      {% else %}
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'account_signup' %}">Get Started</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+      </li>
+      {% endif %}
     </ul>
   </div>
 </nav>
