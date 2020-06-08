@@ -52,7 +52,6 @@
 .how-icons {
     color:#dfcce1;
     font-size:3rem;
-    text-align:left!important;
 }
 .how-title, .testimonial-intro, .about-title, .top-how {
     padding-bottom:4rem;
@@ -74,4 +73,7 @@
     color:#dfcce1;
     padding:1.5rem 0rem 1.5rem 0rem
 }
-
+.icon-part{
+    padding-top:2rem;
+    padding-bottom:3rem;
+}
