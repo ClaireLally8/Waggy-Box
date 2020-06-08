@@ -1,7 +1,11 @@
-body {
-    background: url('/media/siteimgs/landing.jpg') no-repeat center center;
-    background-size:cover;
-}
+/* COLOUR SCHEME
+#CCE1D0
+#8f9d95
+#dfcce1
+#9c8f9d
+#e1dacc
+
+*/
 .lightnav {
     background-color:#CCE1D0;
     box-shadow:none;
@@ -14,4 +18,9 @@ body {
 }
 .nav-link:hover{
     color:#dfcce1!important;
+}
+.landingsection {
+    background: url('/media/siteimgs/landing.jpg') no-repeat center center;
+    background-size:cover;
+    padding-bottom:20rem;
 }
