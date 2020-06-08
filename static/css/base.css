@@ -37,7 +37,7 @@
     font-family:"Karla";
 }
 .about-us, .testimonials {
-    padding:8rem;
+    padding:8rem 3rem 8rem 3rem;
 }
 .section-head {
     font-family:"Rubik";
@@ -47,8 +47,31 @@
     font-family:"Karla";
 }
 .how-it-works {
-    padding:0rem 8rem 0rem 8rem;
+    padding:0rem 3rem 0rem 3rem;
+}
+.how-icons {
+    color:#dfcce1;
+    font-size:3rem;
+    text-align:left!important;
 }
 .how-title, .testimonial-intro, .about-title, .top-how {
     padding-bottom:4rem;
 }
+.name {
+    font-family:"Karla";
+    color:#9c8f9d;
+}
+.job {
+    font-family:"Rubik";
+    color:#9c8f9d;
+    font-weight:300;
+}
+.quote {
+    font-family:"Rubik";
+    color:#8f9d95;
+}
+.star-icon {
+    color:#dfcce1;
+    padding:1.5rem 0rem 1.5rem 0rem
+}
+
