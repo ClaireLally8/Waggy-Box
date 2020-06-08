@@ -24,6 +24,7 @@
 .landingsection {
     background: url('/media/siteimgs/landing.jpg') no-repeat center center;
     background-size:cover;
+    padding-bottom:8rem;
 }
 .landing-main {
     margin-top:6rem;
