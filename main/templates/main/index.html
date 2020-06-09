@@ -3,7 +3,7 @@
 
 {% block content %}
 <!--Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light lightnav">
+<nav class="navbar navbar-expand-lg navbar-light light-noshadow">
   <a class="navbar-brand" href="{% url 'index' %}">
     <img src="media/logo.png" height="70" class="pr-4" alt="Waggy Box logo">
   </a>
@@ -31,7 +31,7 @@
   </div>
 </nav>
 <!--/.Navbar -->
-
+<div class="main-container">
 <section class="landingsection">
   <div class="container landing">
     <div class="row">
@@ -142,4 +142,67 @@
   </div>
 </section>
 
+<!-- Footer -->
+<footer class="page-footer font-small light-noshadow pt-4">
+  <div class="container-fluid text-center text-md-left">
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <h5 class="text-uppercase footer-head">WaggyBox</h5>
+        <p class="footer-text">All items within the Waggy Box have been tested to ensure longetivity and safety for dogs. We strive to ensure a positive experience for all dogs involved in the creation of the Wagyg Box. </p>
+      </div>
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase footer-head">Navigation</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="footer-link">About Us</a>
+          </li>
+          <li>
+            <a href="#!" class="footer-link">Contact Us</a>
+          </li>
+          <li>
+            <a href="#!" class="footer-link">Register</a>
+          </li>
+          <li>
+            <a href="#!" class="footer-link">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase footer-head">Contact Us</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <h6 class="footer-text">Waggy Box, 
+          </li>
+          <li>
+            <h6 class="footer-text">123 Street </h6>
+          </li>
+          <li>
+           <h6 class="footer-text">Dublin</h6>
+          </li>
+          <li>
+            <h6 class="footer-text">123456789</h6>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>
 {% endblock %}
