@@ -58,7 +58,7 @@
       <div class="col-md-4 mb-4">
         <div class="testimonial">
           <div class="mx-auto">
-            <img src="media/tdog1.png" class="rounded-circle z-depth-2 img-fluid">
+            <img src="{{ MEDIA_URL }}tdog1.png" class="rounded-circle z-depth-2 img-fluid">
           </div>
           <h4 class="mt-4 name">Baxter</h4>
           <h6 class="my-3 job">Tennis ball thief</h6>
@@ -76,7 +76,7 @@
       <div class="col-md-4 mb-4">
         <div class="testimonial">
           <div class="mx-auto">
-            <img src="media/tdog2.png" class="rounded-circle z-depth-2 img-fluid">
+            <img src="{{ MEDIA_URL }}tdog2.png" class="rounded-circle z-depth-2 img-fluid">
           </div>
           <h4 class="name mt-4">Boo</h4>
           <h6 class="job my-3">Master Sock Destroyer</h6>
@@ -94,7 +94,7 @@
       <div class="col-md-4 mb-4">
         <div class="testimonial">
           <div class="mx-auto">
-            <img src="media/tdog3.png" class="rounded-circle z-depth-2 img-fluid">
+            <img src="{{ MEDIA_URL }}tdog3.png" class="rounded-circle z-depth-2 img-fluid">
           </div>
           <h4 class="name mt-4">Daisy</h4>
           <h6 class="job my-3">Prettiest Princess</h6>
@@ -112,15 +112,12 @@
     </div>
   </div>
 </section>
-
+</div>
 <!-- Footer -->
 <footer class="page-footer font-small light-noshadow pt-4">
   <div class="container-fluid text-center text-md-left">
     <div class="row">
-      <div class="col-md-6 mt-md-0 mt-3">
-        <h5 class="text-uppercase footer-head">WaggyBox</h5>
-        <p class="footer-text">All items within the Waggy Box have been tested to ensure longetivity and safety for dogs. We strive to ensure a positive experience for all dogs involved in the creation of the Wagyg Box. </p>
-      </div>
+      <div class="col-md-6 mt-md-0 mt-3"></div>
       <hr class="clearfix w-100 d-md-none pb-3">
       <div class="col-md-3 mb-md-0 mb-3">
         <h5 class="text-uppercase footer-head">Navigation</h5>
@@ -157,23 +154,8 @@
             <h6 class="footer-text">123456789</h6>
           </li>
         </ul>
-
       </div>
-      <!-- Grid column -->
-
     </div>
-    <!-- Grid row -->
-
   </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
-
 </footer>
-<!-- Footer -->
-</div>
 {% endblock %}
