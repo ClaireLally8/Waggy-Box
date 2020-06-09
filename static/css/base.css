@@ -36,7 +36,7 @@ footer {
     color:#dfcce1!important;
 }
 .landingsection {
-    background: url('/media/landing.jpg') no-repeat center center;
+    background: url("../images/landing.jpg") no-repeat center center;
     background-size:cover;
     padding-bottom:8rem;
 }
