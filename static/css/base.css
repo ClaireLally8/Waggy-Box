@@ -107,3 +107,21 @@ footer {
     color:#8f9d95;
     text-decoration: underline;
 }
+.dash-text{
+    position: absolute;
+   opacity: 85%;
+  color:#dfcce1;
+  background-color:#8f9d95;
+  font-family:"Rubik";
+  font-weight:200;
+  top: 70%;
+  font-size: 1.3em;
+  padding-left: 0.34em;
+  padding-right: 0.34em;
+  padding-bottom: 0.2em;
+}
+.dash-text:hover{
+    color:#8f9d95;
+  background-color:#dfcce1;
+  opacity: 1;
+}
