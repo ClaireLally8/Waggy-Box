@@ -119,6 +119,7 @@ footer {
   padding-left: 0.34em;
   padding-right: 0.34em;
   padding-bottom: 0.2em;
+  border-radius: 0px 7px 7px 0px;
 }
 .dash-text:hover{
     color:#8f9d95;
