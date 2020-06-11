@@ -43,7 +43,7 @@ footer {
 .about-img {
     background: url("../images/about.png") no-repeat center center;
     background-size: cover;
-    padding-bottom:55rem;
+    padding-bottom:20rem;
 }
 .landing-main {
     margin-top:6rem;
@@ -139,4 +139,26 @@ footer {
 }
 .darkcolor {
     color:#8f9d95;
+}
+.dog-name {
+    font-family:"Rubik";
+    font-weight:200;
+    color:#8f9d95;
+    font-size:1.4rem;
+}
+.dog-image {
+    padding-top:5rem;
+}
+.dog-text{
+        padding-top:3rem;
+}
+.dog-about {
+    font-family:"Karla";
+    font-size:1rem;
+}
+.dogs {
+    padding-top:10rem;
+}
+.Caesar, .Star, .Cass {
+    padding-bottom:7rem;
 }
