@@ -40,6 +40,11 @@ footer {
     background-size:cover;
     padding-bottom:8rem;
 }
+.about-img {
+    background: url("../images/about.png") no-repeat center center;
+    background-size: cover;
+    padding-bottom:55rem;
+}
 .landing-main {
     margin-top:6rem;
     padding-bottom:2rem;
@@ -125,4 +130,13 @@ footer {
     color:#8f9d95;
   background-color:#dfcce1;
   opacity: 1;
+}
+.about-main {
+    padding-top:2rem;
+    padding-bottom:2rem;
+    color:#9c8f9d;
+    font-family:"Rubik";
+}
+.darkcolor {
+    color:#8f9d95;
 }
