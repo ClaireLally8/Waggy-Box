@@ -2,5 +2,57 @@
 {% load static %}
 
 {% block content %}
-<h2>Shop</h2>
+<!-- Footer -->
+<div class="main-container">
+<section class="about-page">
+<div class="about-img">
+<h1 class="text-center about-main">About Waggy Box Co. </h1>
+<h4 class="text-center section-head darkcolor">Made my dog people, for dogs (and their people)</h4>
+</div>
+</section>
+</div>
+<footer class="page-footer font-small light-noshadow pt-4">
+  <div class="container-fluid text-center text-md-left">
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3"></div>
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase footer-head">Navigation</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="footer-link">About Us</a>
+          </li>
+          <li>
+            <a href="#!" class="footer-link">Contact Us</a>
+          </li>
+          <li>
+            <a href="{% url 'account_signup' %}" class="footer-link">Register</a>
+          </li>
+          <li>
+            <a href="#!" class="footer-link">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase footer-head">Contact Us</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <h6 class="footer-text">Waggy Box, 
+          </li>
+          <li>
+            <h6 class="footer-text">123 Street </h6>
+          </li>
+          <li>
+           <h6 class="footer-text">Dublin</h6>
+          </li>
+          <li>
+            <h6 class="footer-text">123456789</h6>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 {% endblock %}
