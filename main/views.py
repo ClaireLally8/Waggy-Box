@@ -28,6 +28,14 @@ def contact(request):
         email = request.POST['email']
         message = request.POST['message']
 
+        # send an email 
+        send_mail(
+            "New Message from" + name , #subject
+            message, #message itself
+            email, #from email address
+            ['clairelally08@gmail.com'], #to email address
+        )
+
         return render(request, 'main/contact.html', {"name" : name})
 
     return render(request, 'main/contact.html')
