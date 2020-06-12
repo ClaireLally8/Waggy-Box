@@ -12,6 +12,9 @@ def index(request):
 def about(request):
     return render(request, 'main/about.html')
 
+def contact(request):
+    return render(request, 'main/contact.html')
+
 def dashboard(request):
     return render(request, 'main/dashboard.html')
 
