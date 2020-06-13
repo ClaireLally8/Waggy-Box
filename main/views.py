@@ -34,7 +34,7 @@ def contact(request):
             "New Message from" + name , #subject
             message, #message itself
             email, #from email address
-            ['clairelally08@gmail.com'], #to email address
+            ['waggyboxmain@gmail.com'], #to email address
         )
 
         return render(request, 'main/contact.html', {"name" : name})
