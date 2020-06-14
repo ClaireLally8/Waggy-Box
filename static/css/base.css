@@ -233,3 +233,13 @@ footer {
     padding-left:7rem;
     padding-right:7rem;
 }
+.item-image {
+    padding-top:5rem;
+}
+.future-name {
+    font-family:"Rubik";
+    font-weight:200;
+    color:#8f9d95;
+    padding-left:3rem;
+    padding-right:3rem;
+}
