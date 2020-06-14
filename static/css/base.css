@@ -175,3 +175,61 @@ footer {
     color:black;
     background-color:#9c8f9d;
 }
+.card .card-body h1, .card .card-body h2, .card .card-body h3, .card .card-body h4, .card .card-body h5, .card .card-body h6 {
+    min-height:80px;
+}
+.card-title {
+    font-family: "Rubik";
+    font-weight:300!important;
+    color:#9c8f9d;
+    font-size:1.1rem;
+}
+.card-price{
+    font-family:"Karla";
+    color:#8f9d95;
+}
+.small-text {
+    font-size:1rem;
+}
+.pages-items {
+    text-align:center;
+    padding-top:5rem;
+    font-family:"Rubik";
+    font-weight:200;
+    color:#9c8f9d;
+}
+.change-page-link {
+    font-family:"Karla";
+    color:#8f9d95;
+    border:none;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+}
+.change-page-link:hover {
+    text-decoration:underline;
+    color:#CCE1D0;
+}
+.page-top {
+    margin-top:5rem!important;
+}
+.item-description {
+    padding-top:10rem!important;
+    font-family:"Karla";
+    padding-left:5rem;
+    padding-right:5rem;
+}
+.product-name {
+    font-family:"Rubik";
+    font-weight:200;
+    color:#8f9d95;
+    padding-top:10rem;
+    padding-left:3rem;
+    padding-right:3rem;
+}
+.product-price {
+    font-family:"Karla";
+    font-size:1.4rem;
+    color:#9c8f9d;
+    padding-left:7rem;
+    padding-right:7rem;
+}
