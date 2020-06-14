@@ -7,11 +7,7 @@ from django.core.paginator import Paginator
 
 def index(request):
     if request.user.is_authenticated:
-        items = FutureItem.objects.all()
-    context = {
-        'items': items,
-    }
-    return render(request, 'main/dashboard.html', context)
+        return redirect(dashboard)
 
     return render(request, 'main/index.html')
 
