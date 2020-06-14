@@ -36,10 +36,10 @@
          <h3 class="font-weight-bold mb-4">Contact Us</h3>
 
           <!-- Name -->
-          <input type="text" name="name" id="defaultContactFormName" class="form-control mb-4" placeholder="Name" required>
+          <input type="text" name="name" id="defaultContactFormName" class="form-control mb-4" {% if request.user.is_authenticated %} placeholder= {{user.first_name}} {% endif %} required>
 
           <!-- Email -->
-          <input type="email" name="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail" required>
+          <input type="email" name="email" id="defaultContactFormEmail" class="form-control mb-4" {% if request.user.is_authenticated %} placeholder= {{user.email}} {% endif %} required>
 
           <!-- Message -->
           <div class="form-group">
