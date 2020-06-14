@@ -1,8 +1,7 @@
 from django.shortcuts import render
-from django.conf import settings
 from django.core.mail import send_mail
-from shop.models import CurrentItem, Category
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from shop.models import CurrentItem
+from django.core.paginator import Paginator
 # Create your views here.
 
 
@@ -36,21 +35,19 @@ def shop(request):
     return render(request, 'main/shop.html', context)
 
 
-
 def contact(request):
     if request.method == "POST":
         name = request.POST['name']
         email = request.POST['email']
         message = request.POST['message']
 
-        # send an email 
         send_mail(
-            "New Message from" + name , #subject
-            message, #message itself
-            email, #from email address
-            ['waggyboxmain@gmail.com'], #to email address
+            "New Message from" + name,
+            message,
+            email,
+            ['waggyboxmain@gmail.com'],
         )
 
-        return render(request, 'main/contact.html', {"name" : name})
+        return render(request, 'main/contact.html', {"name": name})
 
     return render(request, 'main/contact.html')
