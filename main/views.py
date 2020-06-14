@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.core.mail import send_mail
 from shop.models import CurrentItem, Category
 from django.core.paginator import Paginator
@@ -45,6 +45,7 @@ def shop_item(request, item_id):
     }
 
     return render(request, 'main/shop_item.html', context)
+
 
 def contact(request):
     if request.method == "POST":
