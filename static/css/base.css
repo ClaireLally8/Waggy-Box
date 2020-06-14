@@ -209,3 +209,27 @@ footer {
     text-decoration:underline;
     color:#CCE1D0;
 }
+.page-top {
+    margin-top:5rem!important;
+}
+.item-description {
+    padding-top:10rem!important;
+    font-family:"Karla";
+    padding-left:5rem;
+    padding-right:5rem;
+}
+.product-name {
+    font-family:"Rubik";
+    font-weight:200;
+    color:#8f9d95;
+    padding-top:10rem;
+    padding-left:3rem;
+    padding-right:3rem;
+}
+.product-price {
+    font-family:"Karla";
+    font-size:1.4rem;
+    color:#9c8f9d;
+    padding-left:7rem;
+    padding-right:7rem;
+}
