@@ -24,7 +24,7 @@ def shop(request):
     """ A view to show all products, including sorting and search queries """
 
     item_list = CurrentItem.objects.all()
-    paginator = Paginator(item_list, 10)
+    paginator = Paginator(item_list, 12)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
