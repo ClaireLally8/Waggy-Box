@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.conf import settings
 from django.core.mail import send_mail
+from shop.models import CurrentItem, Category
 # Create your views here.
 
 
@@ -20,7 +21,15 @@ def dashboard(request):
 
 
 def shop(request):
-    return render(request, 'main/shop.html')
+    """ A view to show all products, including sorting and search queries """
+
+    items = CurrentItem.objects.all()
+
+    context = {
+        'items': items,
+    }
+
+    return render(request, 'main/shop.html', context)
 
 
 def contact(request):
