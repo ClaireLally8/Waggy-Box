@@ -1,13 +1,17 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.core.mail import send_mail
-from shop.models import CurrentItem, Category
+from shop.models import CurrentItem, FutureItem
 from django.core.paginator import Paginator
 # Create your views here.
 
 
 def index(request):
     if request.user.is_authenticated:
-        return render(request, 'main/dashboard.html')
+        items = FutureItem.objects.all()
+    context = {
+        'items': items,
+    }
+    return render(request, 'main/dashboard.html', context)
 
     return render(request, 'main/index.html')
 
@@ -17,7 +21,11 @@ def about(request):
 
 
 def dashboard(request):
-    return render(request, 'main/dashboard.html')
+    items = FutureItem.objects.all()
+    context = {
+        'items': items,
+    }
+    return render(request, 'main/dashboard.html', context)
 
 
 def shop(request):
