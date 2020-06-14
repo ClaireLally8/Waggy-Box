@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.conf import settings
 from django.core.mail import send_mail
 from shop.models import CurrentItem, Category
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 # Create your views here.
 
 
@@ -23,13 +24,17 @@ def dashboard(request):
 def shop(request):
     """ A view to show all products, including sorting and search queries """
 
-    items = CurrentItem.objects.all()
+    item_list = CurrentItem.objects.all()
+    paginator = Paginator(item_list, 10)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
 
     context = {
-        'items': items,
-    }
+        'page_obj': page_obj
+        }
 
     return render(request, 'main/shop.html', context)
+
 
 
 def contact(request):
