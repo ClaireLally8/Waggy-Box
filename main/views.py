@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.core.mail import send_mail
-from shop.models import CurrentItem
+from shop.models import CurrentItem, Category
 from django.core.paginator import Paginator
 # Create your views here.
 
@@ -34,6 +34,17 @@ def shop(request):
 
     return render(request, 'main/shop.html', context)
 
+
+def shop_item(request, item_id):
+    """ A view to show individual product details """
+
+    item = get_object_or_404(CurrentItem, pk=item_id)
+
+    context = {
+        'item': item,
+    }
+
+    return render(request, 'main/shop_item.html', context)
 
 def contact(request):
     if request.method == "POST":
