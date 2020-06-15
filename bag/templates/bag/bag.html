@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<a href="{% url 'shop' %}" class="view-bag"><i class="fas fa-chevron-left"></i>Back to Shop</a>
+<h2 class="section-head text-center my-5">Your Cart</h2>
+    {% if bag_items %}
+        <div class="table-responsive rounded"></div>
+    {% else %}
+    <div class="bag-image">
+    <p class="text-center section-text ">Uh oh...it looks like your bag is empty! </p>
+    </div>
+    {% endif %}
+{% endblock %}
