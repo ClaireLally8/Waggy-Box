@@ -245,3 +245,15 @@ footer {
     padding-left:3rem;
     padding-right:3rem;
 }
+.view-bag {
+    font-family:"Rubik";
+    font-size:1rem;
+    font-weight:200;
+    color:#9c8f9d;
+    padding-right:8rem;
+    padding-left:5rem;
+}
+.view-bag:hover {
+    color:#8f9d95;
+    text-decoration:underline;
+}
