@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@300;400;500;700&display=swap');
 html, body {
  height: 100%;
+ font-family: "Karla";
 }
 .main-container {
  min-height: 100vh; /* will cover the 100% of viewport */
