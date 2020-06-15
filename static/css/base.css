@@ -51,6 +51,11 @@ footer {
     background-size: cover;
     padding-bottom:19rem;
 }
+.bag-image {
+    background: url("../images/shop-puppy.png") no-repeat center center;
+    background-size: cover;
+    padding-bottom:30rem;
+}
 .landing-main {
     margin-top:6rem;
     padding-bottom:2rem;
