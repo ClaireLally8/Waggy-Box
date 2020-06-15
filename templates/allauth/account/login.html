@@ -28,8 +28,8 @@ for a {{ site_name }} account and sign in below:</p>
 {% include "socialaccount/snippets/login_extra.html" %}
 
 {% else %}
-<p class="section-text text-center">If you have not created an account yet, then please
-<a href="{{ signup_url }}">sign up</a></p>
+<p class="section-text text-center mt-5">If you have not created an account yet, then please
+<a class="nav-link pt-3" href="{{ signup_url }}">sign up here</a></p>
 {% endif %}
 
 <form class="login text-center mt-5 section-text" method="POST" action="{% url 'account_login' %}">
@@ -39,6 +39,6 @@ for a {{ site_name }} account and sign in below:</p>
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
   <a class="login-link" href="{% url 'account_reset_password' %}">Forgot Password</a><br>
-  <button class="btn btn-sage" type="submit">Login</button>
+  <button class=" mt-5 btn btn-sage" type="submit">Login</button>
 </form>
 {% endblock %}
