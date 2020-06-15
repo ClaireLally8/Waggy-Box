@@ -1,9 +1,8 @@
 {% extends "base.html" %}
-
-{% load i18n %}
+{% load static %}
 {% load account socialaccount %}
 
-{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block head_title %}Login{% endblock %}
 
 {% block content %}
 
@@ -12,9 +11,9 @@
 {% get_providers as socialaccount_providers %}
 
 {% if socialaccount_providers %}
-<p>{% blocktrans with site.name as site_name %}Please sign in with one
+<p>Please sign in with one
 of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
-for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
+for a {{ site_name }} account and sign in below:</p>
 
 <div class="socialaccount_ballot">
 
@@ -22,15 +21,15 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
     {% include "socialaccount/snippets/provider_list.html" with process="login" %}
   </ul>
 
-  <div class="login-or">{% trans 'or' %}</div>
+  <div class="login-or">or</div>
 
 </div>
 
 {% include "socialaccount/snippets/login_extra.html" %}
 
 {% else %}
-<p class="section-text text-center">{% blocktrans %}If you have not created an account yet, then please
-<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+<p class="section-text text-center">If you have not created an account yet, then please
+<a href="{{ signup_url }}">sign up</a></p>
 {% endif %}
 
 <form class="login text-center mt-5 section-text" method="POST" action="{% url 'account_login' %}">
@@ -39,7 +38,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <a class="login-link" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a><br>
-  <button class="btn-sage" type="submit">{% trans "Sign In" %}</button>
+  <a class="login-link" href="{% url 'account_reset_password' %}">Forgot Password</a><br>
+  <button class="btn btn-sage" type="submit">Login</button>
 </form>
 {% endblock %}
