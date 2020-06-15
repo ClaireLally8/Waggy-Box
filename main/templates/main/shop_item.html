@@ -2,6 +2,10 @@
 {% load static %}
 
 {% block content %}
+<div class="  justify-content-end mt-5">
+<a href="{% url 'shop' %}" class="view-bag"><i class="fas fa-chevron-left"></i> Go Back</a>
+<a href="{% url 'view_bag' %}" class="view-bag"><i class="fas fa-shopping-cart"></i>View Cart</a>
+</div>
 <section class="text-center page-top mt-5">
       <h2 class="h2-responsive text-center product-name mb-3 ">{{ item.name }}</h2>
   <div class="row">
