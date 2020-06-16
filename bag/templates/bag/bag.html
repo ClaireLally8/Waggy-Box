@@ -86,8 +86,7 @@
     var form = $(this).prev('.update-form');
     form.submit();
   })
-
-  // Remove item and reload on click
+// Remove item and reload on click
   $('.remove-item').click(function(e) {
     var csrfToken = "{{ csrf_token }}";
     var itemId = $(this).attr('id').split('remove_')[1];
@@ -102,6 +101,3 @@
         location.reload();
       });
   })
-
-</script>
-{% endblock %}
