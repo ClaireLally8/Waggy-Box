@@ -279,3 +279,36 @@ footer {
     color:#9c8f9d;
     font-size:1.2rem;
 }
+.table-head {
+    font-family:"Rubik";
+    color:#8f9d95;
+    font-size:1rem;
+    font-weight:300;
+}
+.update-link {
+    font-family:"Rubik";
+    font-size:0.8rem;
+    color:#8f9d95!important;
+}
+.update-link:hover {
+    text-decoration:underline!important;
+    color:#9c8f9d!important;
+}
+.remvove-item:hover{
+    color:#8f9d95!important;
+    text-decoration:underline!important;
+}
+.remove-item {
+
+    color:#9c8f9d!important;
+    font-family:"Rubik";
+    font-size:0.8rem;
+}
+.grand-total {
+    font-family:"Rubik";
+    font-weight:200;
+    color:#8F9D95;
+}
+.cart {
+    padding-bottom:5rem;
+}

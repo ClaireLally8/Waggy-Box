@@ -3,16 +3,17 @@
 
 {% block content %}
 <a href="{% url 'shop' %}" class="view-bag"><i class="fas fa-chevron-left"></i>Back to Shop</a>
-<h2 class="section-head text-center my-5">Your Cart</h2>
+<h2 class="section-head text-center cart my-5">Your Cart</h2>
 {% if bag_items %}
+<div class="container">
 <div class="table-responsive rounded">
-  <table class="table table-sm table-borderless">
+  <table class="table table-borderless">
     <thead class="text-black">
       <tr>
-        <th scope="col table-head">Product Info</th>
+        <th scope="col" class="table-head">Product Info</th>
         <th scope="col"></th>
-        <th scope="col table-head">Price</th>
-        <th scope="col table-head">Qty</th>
+        <th scope="col" class="table-head">Price</th>
+        <th scope="col" class="table-head">Qty</th>
       </tr>
     </thead>
 
@@ -25,7 +26,7 @@
         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
       </td>
       <td class="py-3 item-price">
-        <p class="my-0">${{ item.product.price }}</p>
+        <p class="my-0">€{{ item.product.price }}</p>
       </td>
       <td class="py-3 w-25">
         <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
@@ -36,26 +37,26 @@
             </div>
           </div>
         </form>
-        <a class="update-link"><small>Update</small></a>
-        <a class="remove-item float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
+        <a class="update-link">Update</a>
+        <a class="remove-item float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">Remove</a>
       </td>
     </tr>
     {% endfor %}
     <tr>
-      <td colspan="5" class="pt-5 text-right">
-        <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+      <td colspan="5" class="pt-5 text-right mb-5">
+        <h4 class="mt-4 grand-total">Grand Total: €{{ grand_total|floatformat:2 }}</h4>
       </td>
     </tr>
     <tr>
       <td colspan="5" class="text-right">
-        <a href="{% url 'shop' %}" class="btn btn-lilac rounded-0 btn-lg">
+        <a href="{% url 'shop' %}" class="btn btn-lilac rounded-0">
           <span class="icon">
             <i class="fas fa-chevron-left"></i>
           </span>
           <span class="text-uppercase">Keep Shopping</span>
         </a>
-        <a href="" class="btn btn-sage rounded-0 btn-lg">
-          <span class="text-uppercase">Secure Checkout</span>
+        <a href="" class="btn btn-sage rounded-0">
+          <span class="text-uppercase">Proceed to Payment</span>
           <span class="icon">
             <i class="fas fa-lock"></i>
           </span>
@@ -64,7 +65,7 @@
     </tr>
   </table>
 </div>
-
+</div>
 {% else %}
 <div class="bag-image">
   <p class="text-center section-text ">Uh oh...it looks like your bag is empty! </p>
