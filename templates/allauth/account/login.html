@@ -30,6 +30,7 @@ for a {{ site_name }} account and sign in below:</p>
 {% else %}
 <p class="section-text text-center mt-5">If you have not created an account yet, then please
 <a class="nav-link pt-3" href="{{ signup_url }}">sign up here</a></p>
+
 {% endif %}
 
 <form class="login text-center mt-5 section-text" method="POST" action="{% url 'account_login' %}">
