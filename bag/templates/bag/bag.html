@@ -24,13 +24,19 @@
       </td>
       <td class="py-3">
         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-        <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
       </td>
       <td class="py-3">
         <p class="my-0">${{ item.product.price }}</p>
       </td>
       <td class="py-3 w-25">
-        <p class="my-0">{{ item.quantity }}</p>
+        <form class="form update-form" method="POST" action="">
+          {% csrf_token %}
+          <div class="form-group">
+            <div class="input-group">
+              <input class="form-control form-control-sm qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+            </div>
+          </div>
+        </form>
       </td>
       <td class="py-3">
         <p class="my-0">${{ item.product.price }}</p>
