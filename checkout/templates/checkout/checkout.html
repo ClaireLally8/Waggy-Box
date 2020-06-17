@@ -60,12 +60,13 @@
           </div>
         </fieldset>
         <fieldset class="px-3">
-          <legend class="fieldset-label small some-purple px-2 w-auto">Payment</legend>
-          <!-- A Stripe card element will go here -->
-          <div class="mb-3" id="card-element"></div>
+        <legend class="fieldset-label small some-purple px-2 w-auto">Payment</legend>
+        <div id="card-element" class="some-purple section-text">
+            <!-- Elements will create input elements here -->
+        </div>
 
-          <!-- Used to display form errors -->
-          <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+        <!-- We'll put the error messages in this element -->
+        <div  class="mb-3 text-danger" id="card-errors" role="alert"></div>
         </fieldset>
 
         <div class="submit-button text-right mt-5 mb-2">
