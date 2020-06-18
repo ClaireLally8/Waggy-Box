@@ -1,5 +1,5 @@
-var stripePublicKey = 'pk_test_51GuOTyBpkRa0f8yOc64BrLIUtt2wXoukVgkJG2zpTjFX8TFBNDH17RQMoe8NJVpdDUOX46InWROu8T2zyGygsEof00nyqmFuzl';
-var clientSecret = $('client_secret').text().slice(1, -1);
+var stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
+var clientSecret = $('#id_client_secret').text().slice(1, -1);
 var stripe = Stripe(stripePublicKey);
 var elements = stripe.elements();
 var card = elements.create('card');
