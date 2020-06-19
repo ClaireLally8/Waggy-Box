@@ -56,6 +56,11 @@ footer {
     background-size: cover;
     padding-bottom:30rem;
 }
+.checkout-image{
+    background: url("../images/checkout-puppy.png") no-repeat center center;
+    background-size: cover;
+    padding-bottom:15rem;
+}
 .landing-main {
     margin-top:6rem;
     padding-bottom:2rem;
@@ -317,4 +322,11 @@ footer {
 }
 .some-purple {
    color: #9c8f9d;
+}
+.post-link {
+    color:#9c8f9d;
+}
+.post-link:hover {
+    color:#9c8f9d;
+    text-decoration:underline;
 }
