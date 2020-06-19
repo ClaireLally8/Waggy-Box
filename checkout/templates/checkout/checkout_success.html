@@ -36,10 +36,10 @@
       </div>
 
       <div class="col-lg-6 col-md-6 col-sm-12">
-        <h5 class="some-purple mt-5">Items Ordered <small>({{ product_count}})</small></h5>
+        <h5 class="some-purple mt-5">Items Ordered</h5>
         {% for item in order.lineitems.all %}
         <img class="w-50 img-fluid" src="{{ item.item.image.url }}" alt="{{ item.name }}">
-        <p class="darkgreen pt-2">{{ item.item.name }}<br><small class="some-purple">
+        <p class="darkgreen">{{ item.item.name }}<br><small class="some-purple">
             Qty: {{ item.quantity }}<br>
             Price: {{ item.item.price }}</small></p>
         {% endfor %}
