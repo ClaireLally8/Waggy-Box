@@ -35,10 +35,10 @@ def checkout(request):
             order = order_form.save()
             for item_id, item_data in bag.items():
                 try:
-                    product = CurrentItem.objects.get(id=item_id)
+                    item = CurrentItem.objects.get(id=item_id)
                     order_line_item = OrderLineItem(
                         order=order,
-                        item=product,
+                        item=item,
                         quantity=item_data,
                         )
                     order_line_item.save()
