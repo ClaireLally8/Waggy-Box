@@ -3,25 +3,53 @@
 
 {% block content %}
 <section class="checkout-image">
-<div class="container">
-<div class="row">
+  <div class="container">
+    <div class="row">
       <div class="col-lg-4 col-md-4 col-sm-12">
-        <h2 class="text-center landing-main">Order Successful!</h2>
+        <h2 class="text-center landing-main darkgreen"><i class="far fa-check-circle"></i><br>Order Successful!</h2>
         <p class="text-center landing-sub">Thank you for placing your order! Your pooch won't regret it!</p>
       </div>
     </div>
-</div>
+  </div>
 </section>
-<section class="text-part my-3">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<h5 class="section-head text-center mb-5">So...</h5>
-    <p class="section-text darkgreen text-center">We'll send you an order cofirmation email shortly, and your order should be with you shortly. </p>
-    <p class="section-text darkgreen text-center">In the meantime, why not have a <a class="post-link" href="{% url 'dashboard' %}">sneak peek at some of next months products?</a><br> Or how about <a class="post-link" href="{% url 'shop' %}">returning to the shop</a> to look for some more doggie goodness!</p>
-</div>
-</div>
-</div>
+<section class="order-review">
+  <h2 class="section-head text-center my-5">Your Order Summary</h2>
+  <p class="text-center section-text darkgreen">Order Number : #{{ order.order_number }}</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h5 class="some-purple mt-5">Order Info</h5>
+        <p class="darkgreen pt-2">Order Date: {{ order.date }}</p>
+        <p class="darkgreen pt-2">Total Cost: €{{ order.order_total }}</p>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h5 class="some-purple mt-5">Items Ordered</h5>
+        {% for item in order.lineitems.all %}
+        <p class="darkgreen pt-2">{{ item.item.name }}<br><small class="some-purple">
+            Qty: {{ item.quantity }}<br>
+            Price: {{ item.item.price }}</small></p>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h5 class="mt-3 some-purple">Delivery Info:</h5>
+        <p class="darkgreen">{{ order.full_name }},<br>{{ order.email }},<br>{{ order.phone_number }}</p>
+        <p class="darkgreen">{{ order.street_address1 }},<br>
+          {% if order.street_address2 %}{{ order.street_address2 }},<br>{% endif %}
+          {{ order.town_or_city }}<br>
+          {% if order.county%}{{ order.county }},<br>{% endif %}
+          {% if order.postcode %}{{ order.postcode }}{% endif %},<br>
+          {{ order.country }}.</p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+      </div>
+
+
+
+    </div>
 </section>
 
 {% endblock %}
