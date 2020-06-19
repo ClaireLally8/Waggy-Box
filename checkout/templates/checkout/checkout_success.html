@@ -1,29 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
-{% block content %}
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4">Thank You</h2>
-                <hr>
-                <p class="text-black">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-12 col-lg-7"></div>
-        </div>
-        <div class="row">
-			<div class="col-12 col-lg-7 text-right">
-				<a href="{% url 'shop' %}" class="btn btn-black rounded-0 my-2">
-					<span class="icon mr-2">
-						<i class="fas fa-gifts"></i>
-					</span>
-					<span class="text-uppercase">Now check out the latest deals!</span>
-				</a>
-			</div>
-		</div>
+{% block content %}
+<section class="checkout-image">
+<div class="container">
+<div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <h2 class="text-center landing-main">Order Successful!</h2>
+        <p class="text-center landing-sub">Thank you for placing your order! Your pooch won't regret it!</p>
+      </div>
     </div>
+</div>
+</section>
+<section class="text-part my-3">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<h5 class="section-head text-center mb-5">So...</h5>
+    <p class="section-text darkgreen text-center">We'll send you an order cofirmation email shortly, and your order should be with you shortly. </p>
+    <p class="section-text darkgreen text-center">In the meantime, why not have a <a class="post-link" href="{% url 'dashboard' %}">sneak peek at some of next months products?</a><br> Or how about <a class="post-link" href="{% url 'shop' %}">returning to the shop</a> to look for some more doggie goodness!</p>
+</div>
+</div>
+</div>
+</section>
+
 {% endblock %}
