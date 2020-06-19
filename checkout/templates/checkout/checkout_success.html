@@ -18,9 +18,21 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="Order-info">
         <h5 class="some-purple mt-5">Order Info</h5>
         <p class="darkgreen pt-2">Order Date: {{ order.date }}</p>
         <p class="darkgreen pt-2">Total Cost: €{{ order.order_total }}</p>
+      </div>
+      <div class="delivery-info">
+        <h5 class="mt-5 some-purple">Delivery Info:</h5>
+        <p class="darkgreen">{{ order.full_name }},<br>{{ order.email }},<br>{{ order.phone_number }}</p>
+        <p class="darkgreen">{{ order.street_address1 }},<br>
+          {% if order.street_address2 %}{{ order.street_address2 }},<br>{% endif %}
+          {{ order.town_or_city }}<br>
+          {% if order.county%}{{ order.county }},<br>{% endif %}
+          {% if order.postcode %}{{ order.postcode }}{% endif %},<br>
+          {{ order.country }}.</p>
+      </div>
       </div>
 
       <div class="col-lg-6 col-md-6 col-sm-12">
@@ -33,23 +45,6 @@
         {% endfor %}
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <h5 class="mt-3 some-purple">Delivery Info:</h5>
-        <p class="darkgreen">{{ order.full_name }},<br>{{ order.email }},<br>{{ order.phone_number }}</p>
-        <p class="darkgreen">{{ order.street_address1 }},<br>
-          {% if order.street_address2 %}{{ order.street_address2 }},<br>{% endif %}
-          {{ order.town_or_city }}<br>
-          {% if order.county%}{{ order.county }},<br>{% endif %}
-          {% if order.postcode %}{{ order.postcode }}{% endif %},<br>
-          {{ order.country }}.</p>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12">
-      </div>
-
-
-
     </div>
 </section>
 
