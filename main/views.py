@@ -50,28 +50,6 @@ def shop_item(request, item_id):
 
     return render(request, 'main/shop_item.html', context)
 
-    item_list = CurrentItem.objects.all()
-    paginator = Paginator(item_list, 12)
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-
-    context = {
-        'page_obj': page_obj
-        }
-
-    return render(request, 'main/shop.html', context)
-
-
-def shop_item(request, item_id):
-    """ A view to show individual product details """
-
-    item = get_object_or_404(CurrentItem, pk=item_id)
-
-    context = {
-        'item': item,
-    }
-
-    return render(request, 'main/shop_item.html', context)
 
 def contact(request):
     if request.method == "POST":
