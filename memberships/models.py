@@ -5,6 +5,7 @@ MEMBERSHIP_CHOICES = (
     ('Premium', 'prem'),
 )
 
+
 # Membership type View for DB admin
 class Membership(models.Model):
     slug = models.SlugField()
