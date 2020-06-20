@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 
 MEMBERSHIP_CHOICES = (
@@ -18,3 +19,14 @@ class Membership(models.Model):
 
     def __str__(self):
         return self.membership_type
+
+
+class UserMembership(models.Model):
+    user = models.OneToOneField(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    stripe_customer_id = models.CharField(max_length=40)
+    membership = models.ForeignKey(
+        Membership, on_delete=models.SET_NULL, null=True)
+
+    def __str__(self):
+        return self.user.username
