@@ -6,6 +6,7 @@ import stripe
 MEMBERSHIP_CHOICES = (
     ('Regular', 'reg'),
     ('Premium', 'prem'),
+    ('Free', 'free'),
 )
 
 
