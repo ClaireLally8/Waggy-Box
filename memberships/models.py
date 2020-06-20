@@ -1,6 +1,8 @@
 from django.conf import settings
 from django.db import models
 
+import stripe
+
 MEMBERSHIP_CHOICES = (
     ('Regular', 'reg'),
     ('Premium', 'prem'),
