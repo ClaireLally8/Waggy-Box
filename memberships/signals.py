@@ -4,7 +4,7 @@ from django.conf import settings
 from .models import UserMemebership, Membership
 
 import stripe
-
+stripe.api_key = settings.STRIPE_SECRET_KEY
 
 def post_save_usermembership_create(sender, instance, created, *args, **kwargs):
     user_membership, created = UserMembership.objects.get_or_create(
