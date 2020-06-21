@@ -2,7 +2,24 @@
 {% load static %}
 
 {% block content %}
-{% for membership in memberships %}
-<h2> {{ membership.membership_type }}
+<h2 class="section-head text-center mt-5">Choose your subscription type!</h2>
+<div class="row mt-5">
+{% for member in memberships %}
+{% if member.membership_type != 'Free' %}
+<div class="col-6 d-flex justify-content-around my-5">
+<div class="card card-image"
+  style="background-image: url({{ MEDIA_URL }}{{member.image}});" >
+  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+    <div>
+      <h5 class="pink-text"><i class="fas fa-bone pr-2"></i>{{ member.membership_type }}</h5>
+      <h3 class="card-title pt-2"><strong>{{ member.price }}</strong></h3>
+      <p>{{ member.description }}</p>
+      <a class="btn btn-pink"><i class="fas fa-clone left"></i> Choose this plan!</a>
+    </div>
+  </div>
+</div>
+</div>
+{% endif %}
 {% endfor %}
+</div>
 {% endblock %}
