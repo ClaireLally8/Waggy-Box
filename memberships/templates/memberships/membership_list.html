@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+{% for membership in memberships %}
+<h2> {{ membership.membership_type }}
+{% endfor %}
+{% endblock %}
