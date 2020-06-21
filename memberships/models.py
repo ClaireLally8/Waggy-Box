@@ -20,6 +20,9 @@ class Membership(models.Model):
         default='Regular',
         max_length=30)
     price = models.IntegerField(default=15)
+    description = models.TextField(default="DESCRIPTION")
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
     stripe_plan_id = models.CharField(max_length=40)
 
     def __str__(self):
