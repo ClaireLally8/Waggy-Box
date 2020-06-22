@@ -1,5 +1,5 @@
 from django.conf import settings
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse, HttpResponse
 from .models import Membership, UserMembership, Subscription
 
 
@@ -15,6 +15,15 @@ def get_user_subscription(request):
     if user_subscription_qs.exists():
         user_subscription = user_subscription_qs.first()
         return user_subscription
+    return None
+
+
+def get_selected_membership(request):
+    membership_type = request.session['selected_membership_type']
+    selected_membership_qs = Membership.objects.filter(
+        membership_type=membership_type)
+    if selected_membership_qs.exists():
+        return selected_membership_qs.first()
     return None
 
 
@@ -35,5 +44,6 @@ def selected_membership(request):
         current_membership = get_user_membership(request)
         selected_membership_type = request.POST.get('membership_type')
         selected_membership = Membership.objects.get(membership_type=selected_membership_type)
+        request.session['selected_membership_type'] = selected_membership.membership_type
 
         return render(request, 'memberships/payment.html')
