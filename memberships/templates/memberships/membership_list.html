@@ -2,19 +2,24 @@
 {% load static %}
 
 {% block content %}
-<h2 class="section-head text-center mt-5">Choose your subscription type!</h2>
+<h2 class="section-head text-center mt-5">Choose your subscription type</h2>
+<p class="section-text text-center">In order to gain additional access to the site, you need to activate your subscription.  <br>Just choose your plan & follow the page to get set-up!</p>
 <div class="row mt-5">
 {% for member in memberships %}
 {% if member.membership_type != 'Free' %}
-<div class="col-6 d-flex justify-content-around my-5">
-<div class="card card-image"
-  style="background-image: url({{ MEDIA_URL }}{{member.image}});" >
-  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+<div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-around my-5">
+<div class="card card-image mx-2"
+  style="background-image: url({{ MEDIA_URL }}{{member.image}}); max-width:600px; height:450px;">
+  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4" style="height:450px;">
     <div>
-      <h5 class="pink-text"><i class="fas fa-bone pr-2"></i>{{ member.membership_type }}</h5>
-      <h3 class="card-title pt-2"><strong>{{ member.price }}</strong></h3>
+      <h5 class="some-purple"><i class="fas fa-bone pr-2"></i>{{ member.membership_type }}</h5>
+      <h3 class="card-title pt-2 darkgreen"><strong>€{{ member.price }}</strong></h3>
       <p>{{ member.description }}</p>
-      <a class="btn btn-pink"><i class="fas fa-clone left"></i> Choose this plan!</a>
+      {% if member.membership_type != user_membership %}
+      <a class="btn btn-lilac mt-4">Choose this plan!</a>
+      {% else %}
+      <p class="darkgreen pt-4">This is your current plan </p>
+      {% endif %}
     </div>
   </div>
 </div>
