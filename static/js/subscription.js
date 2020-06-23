@@ -6,7 +6,7 @@ var elements = stripe.elements();
 
   // Custom styling can be passed to options when creating an Element.
   // (Note that this demo uses a wider set of styles than the guide below.)
-  var style = {
+    var style = {
     base: {
       color: '#32325d',
       lineHeight: '18px',
