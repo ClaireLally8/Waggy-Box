@@ -36,7 +36,6 @@ def membership_list(request):
     memberships = Membership.objects.all()
     current_membership = get_user_membership(request)
     user_membership = str(current_membership.membership)
-    print('wtf')
     context = {
         'memberships': memberships,
         'user_membership': user_membership,
@@ -46,7 +45,6 @@ def membership_list(request):
         selected_membership_type = request.POST.get('membership_type')
         selected_membership = Membership.objects.get(membership_type=selected_membership_type)
         request.session['selected_membership_type'] = selected_membership.membership_type
-        print(request.session['selected_membership_type'])
         return render(request, 'memberships/payment.html', context)
 
     return render(request, 'memberships/membership_list.html', context)
