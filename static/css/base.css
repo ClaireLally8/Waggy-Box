@@ -330,3 +330,7 @@ footer {
     color:#9c8f9d;
     text-decoration:underline;
 }
+.is-hidden {
+    visibility:hidden!important;
+    display:none;
+}
