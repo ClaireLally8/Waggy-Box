@@ -2,20 +2,10 @@
 {% load static %}
 
 {% block content %}
+<h3>{{selected_membership}}</h3>
+<h3>{{selected_membership.price}}</h3>
 
-{{ selected_membership }}
-{{ selected_membership.price }}
- <form action="{% url 'payments' %}" method="post" id="payment-form">
-    {% csrf_token %}
-    <div id="card-element">
-            <!-- Elements will create input elements here -->
-        </div>
 
-        <!-- We'll put the error messages in this element -->
-        <div  class="mb-3 text-danger" id="card-errors" role="alert">
-        </div>
-        <button class="btn btn-sage mt-5" type="submit">Submit</button>
- </form>
 {% endblock %}
 
 {% block postloadjs %}
