@@ -17,7 +17,7 @@ MEMBERSHIP_CHOICES = (
 class Membership(models.Model):
     membership_type = models.CharField(
         choices=MEMBERSHIP_CHOICES,
-        default='Regular',
+        default='Free',
         max_length=30)
     price = models.IntegerField(default=15)
     description = models.TextField(default="DESCRIPTION")
