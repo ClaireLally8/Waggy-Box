@@ -39,11 +39,14 @@ def membership_list(request):
     return render(request, 'memberships/membership_list.html', context)
 
 
-def selected_membership(request):
+def payments(request):
     if request.method == "POST":
         current_membership = get_user_membership(request)
         selected_membership_type = request.POST.get('membership_type')
         selected_membership = Membership.objects.get(membership_type=selected_membership_type)
         request.session['selected_membership_type'] = selected_membership.membership_type
 
-        return render(request, 'memberships/payment.html')
+        context = {
+            'selected_membership': selected_membership
+        }
+        return render(request, 'memberships/payment.html', context)
