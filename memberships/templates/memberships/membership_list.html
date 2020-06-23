@@ -16,9 +16,9 @@
       <h3 class="card-title pt-2 darkgreen"><strong>€{{ member.price }}</strong></h3>
       <p>{{ member.description }}</p>
       {% if member.membership_type != user_membership %}
-      <form method="POST" action="{% url 'selected_membership'%}">
+      <form method="POST" action="{% url 'payments'%}">
       {% csrf_token %}
-      <button type="submit" class="btn-sage">I want this one!</button>
+      <button type="submit" class="btn btn-sage">I want this one!</button>
       {% else %}
       <p class="darkgreen pt-4">This is your current plan </p>
       {% endif %}
