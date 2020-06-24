@@ -1,11 +1,13 @@
 from django.conf import settings
-from django.shortcuts import render, redirect, reverse, HttpResponsePermanentRedirect
+from django.shortcuts import render, redirect, reverse
 from .models import Membership, UserMembership, Subscription
+
 
 import stripe
 
 stripe_public_key = settings.STRIPE_PUBLIC_KEY
 stripe_secret_key = settings.STRIPE_SECRET_KEY
+print(stripe_public_key)
 
 
 def get_user_membership(request):
@@ -44,7 +46,13 @@ def membership_list(request):
     if request.method == "POST":
         selected_membership_type = request.POST.get('membership_type')
         selected_membership = Membership.objects.get(membership_type=selected_membership_type)
-        request.session['selected_membership_type'] = selected_membership.membership_type
+        request.session['membership'] = selected_membership.membership_type
+        token = request.POST['stripeToken']
+        context = {
+
+            'selected_membership': selected_membership,
+            'stripe_public_key': stripe_public_key,
+        }
         return render(request, 'memberships/payment.html', context)
 
     return render(request, 'memberships/membership_list.html', context)
@@ -55,8 +63,6 @@ def payments(request):
     selected_membership = get_selected_membership(request)
     selected_membership_type = request.POST.get('membership_type')
 
-    stripe_public_key = settings.STRIPE_PUBLIC_KEY
-    stripe_secret_key = settings.STRIPE_SECRET_KEY
     if request.method == "POST":
         subscription = stripe.Subscription.create(
                 customer=user_membership.stripe_customer_id,
@@ -67,7 +73,7 @@ def payments(request):
         context = {
             'subscription_id': subscription.id
         }
-        return redirect(request, 'memberships/update-success.html', context)
+        return render(request, 'memberships/update-success.html', context)
 
     context = {
         'selected_membership': selected_membership
