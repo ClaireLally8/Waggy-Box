@@ -1,10 +1,13 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
+@login_required()
 def view_bag(request):
 
     return render(request, 'bag/bag.html')
 
+@login_required()
 def add_to_bag(request, item_id):
 
     quantity = int(request.POST.get('quantity'))
@@ -19,7 +22,7 @@ def add_to_bag(request, item_id):
     request.session['bag'] = bag
     return redirect(redirect_url)
 
-
+@login_required()
 def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
     quantity = int(request.POST.get('quantity'))
@@ -33,7 +36,7 @@ def adjust_bag(request, item_id):
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
 
-
+@login_required()
 def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
 
