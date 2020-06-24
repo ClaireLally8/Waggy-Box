@@ -1,5 +1,5 @@
 from django.conf import settings
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Membership, UserMembership, Subscription
 
 
@@ -55,6 +55,7 @@ def membership_list(request):
         'memberships': memberships,
         'user_membership': user_membership,
     }
+
     return render(request, 'memberships/membership_list.html', context)
 
 
@@ -87,3 +88,4 @@ def payments(request):
 
 
 def update_membership(request, subscription_id):
+    return render(request, 'main/dashboard.html')
