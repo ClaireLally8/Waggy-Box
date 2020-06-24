@@ -5,7 +5,7 @@
 <h3>{{selected_membership}}</h3>
 <h3>{{selected_membership.price}}</h3>
 {{ stripe_public_key}}
-<form id="payment-form">
+<form id="payment-form" action = "{% url 'payments' %}">
     <div id="card-element">
             <!-- Elements will create input elements here -->
         </div>
@@ -13,7 +13,7 @@
         <div  class="mb-3 text-danger" id="card-errors" role="alert">
         </div>
 
-<div id="stripe-token-handler" class="is-hidden">Success! Got token: <span class="token"></span></div>
+<div id="stripe-token-handler"><span class="token"></span></div>
  <button id="submit" class="btn btn-sage rounded-0" type="submit">Complete Order
           </button>
 </form>
