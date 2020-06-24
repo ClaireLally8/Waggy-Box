@@ -1,5 +1,5 @@
 from django.conf import settings
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, get_object_or_404
 from .models import Membership, UserMembership, Subscription
 
 
@@ -35,19 +35,12 @@ def get_selected_membership(request):
 
 
 def membership_list(request):
-    memberships = Membership.objects.all()
-    current_membership = get_user_membership(request)
-    user_membership = str(current_membership.membership)
-    context = {
-        'memberships': memberships,
-        'user_membership': user_membership,
-    }
-
     if request.method == "POST":
         selected_membership_type = request.POST.get('membership_type')
-        selected_membership = Membership.objects.get(membership_type=selected_membership_type)
-        request.session['membership'] = selected_membership.membership_type
-        print(request.session['membership'])
+        selected_membership = Membership.objects.get(
+            membership_type=selected_membership_type)
+        request.session['selected_membership_type'] = selected_membership.membership_type
+
         context = {
 
             'selected_membership': selected_membership,
@@ -55,26 +48,36 @@ def membership_list(request):
         }
         return render(request, 'memberships/payment.html', context)
 
+    memberships = Membership.objects.all()
+    current_membership = get_user_membership(request)
+    user_membership = str(current_membership.membership)
+    context = {
+        'memberships': memberships,
+        'user_membership': user_membership,
+    }
     return render(request, 'memberships/membership_list.html', context)
 
 
 def payments(request):
     user_membership = get_user_membership(request)
     selected_membership = get_selected_membership(request)
-    selected_membership_type = request.POST.get('membership_type')
 
     if request.method == "POST":
         token = request.POST['stripeToken']
+        customer = stripe.Customer.retrieve(user_membership.stripe_customer_id)
+        customer.source = token
+        print(customer.source)
+        customer.save()
         subscription = stripe.Subscription.create(
                 customer=user_membership.stripe_customer_id,
                 items=[
-                    { "plan": selected_membership.stripe_plan_id },
+                    {"plan": selected_membership.stripe_plan_id},
                 ]
             )
         context = {
             'subscription_id': subscription.id
         }
-        return render(request, 'memberships/update-success.html', context)
+        return render(request, 'main/dashboard.html', context)
 
     context = {
         'selected_membership': selected_membership
@@ -82,15 +85,5 @@ def payments(request):
     
     return render(request, 'memberships/payment.html', context)
 
-def update_membership(request):
-    user_membership = get_user_membership(request)
-    selected_membership = get_selected_membership(request)
-    user_membership.membership = selected_membership
-    user_membership.save()
 
-    sub, created = Subscription.objects.get_or_create(user_membership=user_membership)
-    sub.stripe_subscription_id = subscription_id
-    sub.active = True
-    sub.save()
-
-    return render(request, 'memberships/update-success.html', context)
+def update_membership(request, subscription_id):
