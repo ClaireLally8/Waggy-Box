@@ -332,5 +332,5 @@ footer {
 }
 .is-hidden {
     visibility:hidden!important;
-    display:none;
+    display:none!important;
 }
