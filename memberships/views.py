@@ -47,7 +47,7 @@ def membership_list(request):
         selected_membership_type = request.POST.get('membership_type')
         selected_membership = Membership.objects.get(membership_type=selected_membership_type)
         request.session['membership'] = selected_membership.membership_type
-        token = request.POST['stripeToken']
+        print(request.session['membership'])
         context = {
 
             'selected_membership': selected_membership,
@@ -64,6 +64,7 @@ def payments(request):
     selected_membership_type = request.POST.get('membership_type')
 
     if request.method == "POST":
+        token = request.POST['stripeToken']
         subscription = stripe.Subscription.create(
                 customer=user_membership.stripe_customer_id,
                 items=[
