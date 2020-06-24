@@ -1,22 +1,21 @@
 from django.conf import settings
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Membership, UserMembership, Subscription
-
+from django.contrib.auth.decorators import login_required
 
 import stripe
 
 stripe_public_key = settings.STRIPE_PUBLIC_KEY
 stripe_secret_key = settings.STRIPE_SECRET_KEY
-print(stripe_public_key)
 
-
+@login_required()
 def get_user_membership(request):
     current_user_qs = UserMembership.objects.filter(user=request.user)
     if current_user_qs.exists():
         return current_user_qs.first()
     return None
 
-
+@login_required()
 def get_user_subscription(request):
     user_subscription_qs = Subscription.objects.filter(
         user_membership=get_user_membership(request))
@@ -25,7 +24,7 @@ def get_user_subscription(request):
         return user_subscription
     return None
 
-
+@login_required()
 def get_selected_membership(request):
     membership_type = request.session['selected_membership_type']
     selected_membership_qs = Membership.objects.filter(
@@ -34,7 +33,7 @@ def get_selected_membership(request):
         return selected_membership_qs.first()
     return None
 
-
+@login_required()
 def membership_list(request):
     if request.method == "POST":
         selected_membership_type = request.POST.get('membership_type')
@@ -59,7 +58,7 @@ def membership_list(request):
 
     return render(request, 'memberships/membership_list.html', context)
 
-
+@login_required()
 def payments(request):
     user_membership = get_user_membership(request)
     selected_membership = get_selected_membership(request)
