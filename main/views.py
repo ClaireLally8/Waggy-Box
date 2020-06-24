@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.core.mail import send_mail
 from shop.models import CurrentItem, FutureItem
 from django.core.paginator import Paginator
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 
@@ -15,7 +16,7 @@ def index(request):
 def about(request):
     return render(request, 'main/about.html')
 
-
+@login_required()
 def dashboard(request):
     items = FutureItem.objects.all()
     context = {
@@ -23,7 +24,7 @@ def dashboard(request):
     }
     return render(request, 'main/dashboard.html', context)
 
-
+@login_required()
 def shop(request):
     """ A view to show all products, including sorting and search queries """
 
@@ -38,7 +39,7 @@ def shop(request):
 
     return render(request, 'main/shop.html', context)
 
-
+@login_required()
 def shop_item(request, item_id):
     """ A view to show individual product details """
 
