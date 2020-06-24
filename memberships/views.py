@@ -18,7 +18,8 @@ def get_user_membership(request):
 
 
 def get_user_subscription(request):
-    user_subscription_qs = Subscription.objects.filter(user_membership=get_user_membership(request))
+    user_subscription_qs = Subscription.objects.filter(
+        user_membership=get_user_membership(request))
     if user_subscription_qs.exists():
         user_subscription = user_subscription_qs.first()
         return user_subscription
@@ -67,25 +68,36 @@ def payments(request):
         token = request.POST['stripeToken']
         customer = stripe.Customer.retrieve(user_membership.stripe_customer_id)
         customer.source = token
-        print(customer.source)
         customer.save()
+
         subscription = stripe.Subscription.create(
                 customer=user_membership.stripe_customer_id,
                 items=[
                     {"plan": selected_membership.stripe_plan_id},
                 ]
             )
-        context = {
-            'subscription_id': subscription.id
-        }
-        return render(request, 'main/dashboard.html', context)
+        subscription_id = subscription.id
+
+        user_membership = get_user_membership(request)
+        selected_membership = get_selected_membership(request)
+        user_membership.membership = selected_membership
+        user_membership.save()
+
+        sub, created = Subscription.objects.get_or_create(
+            user_membership=user_membership)
+        sub.stripe_subscription_id = subscription_id
+        sub.active = True
+        sub.save()
+
+        try:
+            del request.session['selected_membership_type']
+        except:
+            pass
+
+        return render(request, 'memberships/update-success.html')
 
     context = {
         'selected_membership': selected_membership
     }
-    
+
     return render(request, 'memberships/payment.html', context)
-
-
-def update_membership(request, subscription_id):
-    return render(request, 'main/dashboard.html')
