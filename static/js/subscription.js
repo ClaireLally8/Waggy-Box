@@ -58,9 +58,6 @@ var elements = stripe.elements();
   });
 
   var successElement = document.getElementById('stripe-token-handler');
-  document.querySelector('.wrapper').addEventListener('click', function() {
-    successElement.className = 'is-hidden';
-  });
 
   function stripeTokenHandler(token) {
     successElement.className = '';
@@ -74,5 +71,4 @@ var elements = stripe.elements();
     form.appendChild(hiddenInput);
 
     // Submit the form
-    form.submit();
   }
