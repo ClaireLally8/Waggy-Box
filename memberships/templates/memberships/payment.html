@@ -2,10 +2,27 @@
 {% load static %}
 
 {% block content %}
-<h3>{{selected_membership}}</h3>
-<h3>{{selected_membership.price}}</h3>
 <form id="payment-form" method="POST" action="{% url 'payments'%}">
 {% csrf_token %}
+        <fieldset class="rounded px-3 mb-5">
+          <legend class="fieldset-label small some-purple px-2 w-auto">Details</legend>
+          {{ form.full_name | as_crispy_field }}
+          {{ form.email | as_crispy_field }}
+          {{ form.phone_number | as_crispy_field }}
+        </fieldset>
+        <fieldset class="rounded px-3 mb-5">
+          <legend class="fieldset-label small some-purple px-2 w-auto">Delivery</legend>
+          {{ form.street_address1 | as_crispy_field }}
+          {{ form.street_address2 | as_crispy_field }}
+          {{ form.town_or_city | as_crispy_field }}
+          {{ form.country | as_crispy_field }}
+          {{ form.postcode | as_crispy_field }}
+          {{ form.county | as_crispy_field }}
+          <div class="form-check form-check-inline float-right mr-0">
+            <label class="form-check-label darkgreen section-text" for="id-save-info">Save this delivery information to my profile</label>
+            <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
+          </div>
+        </fieldset>
     <div id="card-element">
             <!-- Elements will create input elements here -->
         </div>
