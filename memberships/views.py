@@ -1,5 +1,5 @@
 from django.conf import settings
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse
 from .models import Membership, UserMembership, Subscription
 from django.contrib.auth.decorators import login_required
 
@@ -100,3 +100,13 @@ def payments(request):
     }
 
     return render(request, 'memberships/payment.html', context)
+
+def subscription_overview(request):
+    user = get_user_membership(request)
+    subscription = get_user_subscription(request)
+
+    context = {
+        'user': user,
+        'subscription': subscription,
+    }
+    return render(request, memberships/subscription_overview.html, context)
