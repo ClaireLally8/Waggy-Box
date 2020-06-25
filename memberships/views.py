@@ -2,6 +2,7 @@ from django.conf import settings
 from django.shortcuts import render, redirect, reverse
 from .models import Membership, UserMembership, Subscription
 from django.contrib.auth.decorators import login_required
+from .forms import SubscriptionForm
 
 import stripe
 
@@ -44,18 +45,20 @@ def membership_list(request):
         selected_membership = Membership.objects.get(
             membership_type=selected_membership_type)
         request.session['selected_membership_type'] = selected_membership.membership_type
+        form = SubscriptionForm()
+
 
         context = {
 
             'selected_membership': selected_membership,
             'stripe_public_key': stripe_public_key,
+            'form': form
         }
         return render(request, 'memberships/payment.html', context)
 
     memberships = Membership.objects.all()
     current_membership = get_user_membership(request)
     subscription = get_user_subscription(request)
-
     user_membership = str(current_membership.membership)
     context = {
         'memberships': memberships,
@@ -70,41 +73,64 @@ def membership_list(request):
 def payments(request):
     user_membership = get_user_membership(request)
     selected_membership = get_selected_membership(request)
+    form = SubscriptionForm()
 
     if request.method == "POST":
+        form_data = {
+                'full_name': request.POST['full_name'],
+                'email': request.POST['email'],
+                'phone_number': request.POST['phone_number'],
+                'country': request.POST['country'],
+                'postcode': request.POST['postcode'],
+                'town_or_city': request.POST['town_or_city'],
+                'street_address1': request.POST['street_address1'],
+                'street_address2': request.POST['street_address2'],
+                'county': request.POST['county'],
+            }
         token = request.POST['stripeToken']
-        customer = stripe.Customer.retrieve(user_membership.stripe_customer_id)
-        customer.source = token
-        customer.save()
+        form = SubscriptionForm(form_data)
 
-        subscription = stripe.Subscription.create(
-            customer=user_membership.stripe_customer_id,
-            items=[
-                {"plan": selected_membership.stripe_plan_id},
-            ]
-        )
-        subscription_id = subscription.id
+        if form.is_valid():
+            customer = stripe.Customer.retrieve(
+                user_membership.stripe_customer_id)
+            customer.source = token
+            customer.save()
+            sub_form = form.save()
 
-        user_membership = get_user_membership(request)
-        selected_membership = get_selected_membership(request)
-        user_membership.membership = selected_membership
-        user_membership.save()
+            Cust_Details = UserMembership(
+                        sub_form=sub_form,
+                    )
+            Cust_Details.save()
 
-        sub, created = Subscription.objects.get_or_create(
-            user_membership=user_membership)
-        sub.stripe_subscription_id = subscription_id
-        sub.active = True
-        sub.save()
+            subscription = stripe.Subscription.create(
+                customer=user_membership.stripe_customer_id,
+                items=[
+                    {"plan": selected_membership.stripe_plan_id},
+                ]
+            )
 
-        try:
-            del request.session['selected_membership_type']
-        except BaseException:
-            pass
+            subscription_id = subscription.id
+            user_membership = get_user_membership(request)
+            selected_membership = get_selected_membership(request)
+            sub, created = Subscription.objects.get_or_create(
+                user_membership=user_membership)
+            sub.stripe_subscription_id = subscription_id
+            sub.active = True
+            sub.save()
 
-        return render(request, 'memberships/update-success.html')
+            try:
+                del request.session['selected_membership_type']
+            except BaseException:
+                pass
+
+            return render(request, 'memberships/update-success.html')
+
+        else:
+            return redirect(reverse('payment'))
 
     context = {
-        'selected_membership': selected_membership
+        'selected_membership': selected_membership,
+        'form': form,
     }
 
     return render(request, 'memberships/payment.html', context)
