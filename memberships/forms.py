@@ -2,7 +2,7 @@ from django import forms
 from .models import UserMembership
 
 
-class OrderForm(forms.ModelForm):
+class SubscriptionForm(forms.ModelForm):
     class Meta:
         model = UserMembership
         fields = ('full_name', 'email', 'phone_number',
