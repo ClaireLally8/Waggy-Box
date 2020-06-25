@@ -12,9 +12,9 @@ stripe_secret_key = settings.STRIPE_SECRET_KEY
 
 @login_required()
 def get_user_membership(request):
-    current_user_qs = UserMembership.objects.filter(user=request.user)
-    if current_user_qs.exists():
-        return current_user_qs.first()
+    user_membership_qs = UserMembership.objects.filter(user=request.user)
+    if user_membership_qs.exists():
+        return user_membership_qs.first()
     return None
 
 
@@ -58,11 +58,11 @@ def membership_list(request):
 
     memberships = Membership.objects.all()
     current_membership = get_user_membership(request)
+    users_membership = str(current_membership.membership)
     subscription = get_user_subscription(request)
-    user_membership = str(current_membership.membership)
     context = {
         'memberships': memberships,
-        'user_membership': user_membership,
+        'users_membership': users_membership,
         'subscription': subscription,
     }
 
@@ -95,12 +95,6 @@ def payments(request):
                 user_membership.stripe_customer_id)
             customer.source = token
             customer.save()
-            sub_form = form.save()
-
-            Cust_Details = UserMembership(
-                        sub_form=sub_form,
-                    )
-            Cust_Details.save()
 
             subscription = stripe.Subscription.create(
                 customer=user_membership.stripe_customer_id,
@@ -108,15 +102,18 @@ def payments(request):
                     {"plan": selected_membership.stripe_plan_id},
                 ]
             )
-
-            subscription_id = subscription.id
             user_membership = get_user_membership(request)
             selected_membership = get_selected_membership(request)
+            user_membership.membership = selected_membership
+            user_membership.save()
+
+            subscription_id = subscription.id
             sub, created = Subscription.objects.get_or_create(
                 user_membership=user_membership)
             sub.stripe_subscription_id = subscription_id
             sub.active = True
             sub.save()
+            form.save(commit=True)
 
             try:
                 del request.session['selected_membership_type']
@@ -124,9 +121,8 @@ def payments(request):
                 pass
 
             return render(request, 'memberships/update-success.html')
-
         else:
-            return redirect(reverse('payment'))
+            return redirect(reverse('membership_list'))
 
     context = {
         'selected_membership': selected_membership,
