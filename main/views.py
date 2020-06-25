@@ -16,6 +16,7 @@ def index(request):
 def about(request):
     return render(request, 'main/about.html')
 
+
 @login_required()
 def dashboard(request):
     items = FutureItem.objects.all()
@@ -23,6 +24,7 @@ def dashboard(request):
         'items': items,
     }
     return render(request, 'main/dashboard.html', context)
+
 
 @login_required()
 def shop(request):
@@ -35,9 +37,10 @@ def shop(request):
 
     context = {
         'page_obj': page_obj
-        }
+    }
 
     return render(request, 'main/shop.html', context)
+
 
 @login_required()
 def shop_item(request, item_id):

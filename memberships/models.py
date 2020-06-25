@@ -39,10 +39,11 @@ class UserMembership(models.Model):
     def __str__(self):
         return self.user.username
 
-def post_save_usermembership_create(sender, instance, created, *args, **kwargs):
+
+def post_save_usermembership_create(
+        sender, instance, created, *args, **kwargs):
     user_membership, created = UserMembership.objects.get_or_create(
         user=instance)
-
 
     if user_membership.stripe_customer_id is None or user_membership.stripe_customer_id == '':
         new_customer_id = stripe.Customer.create(email=instance.email)
@@ -54,7 +55,6 @@ def post_save_usermembership_create(sender, instance, created, *args, **kwargs):
 
 post_save.connect(post_save_usermembership_create,
                   sender=settings.AUTH_USER_MODEL)
-
 
 
 class Subscription(models.Model):

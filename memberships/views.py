@@ -8,12 +8,14 @@ import stripe
 stripe_public_key = settings.STRIPE_PUBLIC_KEY
 stripe_secret_key = settings.STRIPE_SECRET_KEY
 
+
 @login_required()
 def get_user_membership(request):
     current_user_qs = UserMembership.objects.filter(user=request.user)
     if current_user_qs.exists():
         return current_user_qs.first()
     return None
+
 
 @login_required()
 def get_user_subscription(request):
@@ -24,6 +26,7 @@ def get_user_subscription(request):
         return user_subscription
     return None
 
+
 @login_required()
 def get_selected_membership(request):
     membership_type = request.session['selected_membership_type']
@@ -32,6 +35,7 @@ def get_selected_membership(request):
     if selected_membership_qs.exists():
         return selected_membership_qs.first()
     return None
+
 
 @login_required()
 def membership_list(request):
@@ -58,6 +62,7 @@ def membership_list(request):
 
     return render(request, 'memberships/membership_list.html', context)
 
+
 @login_required()
 def payments(request):
     user_membership = get_user_membership(request)
@@ -70,11 +75,11 @@ def payments(request):
         customer.save()
 
         subscription = stripe.Subscription.create(
-                customer=user_membership.stripe_customer_id,
-                items=[
-                    {"plan": selected_membership.stripe_plan_id},
-                ]
-            )
+            customer=user_membership.stripe_customer_id,
+            items=[
+                {"plan": selected_membership.stripe_plan_id},
+            ]
+        )
         subscription_id = subscription.id
 
         user_membership = get_user_membership(request)
@@ -90,7 +95,7 @@ def payments(request):
 
         try:
             del request.session['selected_membership_type']
-        except:
+        except BaseException:
             pass
 
         return render(request, 'memberships/update-success.html')
@@ -101,6 +106,7 @@ def payments(request):
 
     return render(request, 'memberships/payment.html', context)
 
+
 def subscription_overview(request):
     user = get_user_membership(request)
     subscription = get_user_subscription(request)
@@ -109,4 +115,4 @@ def subscription_overview(request):
         'user': user,
         'subscription': subscription,
     }
-    return render(request, memberships/subscription_overview.html, context)
+    return render(request, 'memberships/subscription_overview.html', context)
