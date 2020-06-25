@@ -54,10 +54,13 @@ def membership_list(request):
 
     memberships = Membership.objects.all()
     current_membership = get_user_membership(request)
+    subscription = get_user_subscription(request)
+
     user_membership = str(current_membership.membership)
     context = {
         'memberships': memberships,
         'user_membership': user_membership,
+        'subscription': subscription,
     }
 
     return render(request, 'memberships/membership_list.html', context)
@@ -106,13 +109,3 @@ def payments(request):
 
     return render(request, 'memberships/payment.html', context)
 
-
-def subscription_overview(request):
-    user = get_user_membership(request)
-    subscription = get_user_subscription(request)
-
-    context = {
-        'user': user,
-        'subscription': subscription,
-    }
-    return render(request, 'memberships/subscription_overview.html', context)
