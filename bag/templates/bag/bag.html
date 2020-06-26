@@ -2,7 +2,9 @@
 {% load static %}
 
 {% block content %}
+<div class="d-flex justify-content-start mt-5">
 <a href="{% url 'shop' %}" class="view-bag"><i class="fas fa-chevron-left"></i>Back to Shop</a>
+</div>
 <h2 class="section-head text-center cart my-5">Your Cart</h2>
 {% if bag_items %}
 <div class="container">
@@ -10,10 +12,10 @@
   <table class="table table-borderless">
     <thead class="text-black">
       <tr>
-        <th scope="col" class="table-head">Product Info</th>
+        <th scope="col" class="table-head">Product Information</th>
         <th scope="col"></th>
-        <th scope="col" class="table-head">Price</th>
-        <th scope="col" class="table-head">Qty</th>
+        <th scope="col" class="table-head">Total Price</th>
+        <th scope="col" class="table-head">Quantity</th>
       </tr>
     </thead>
 
@@ -38,7 +40,7 @@
           </div>
         </form>
         <a class="update-link">Update</a>
-        <a class="remove-item float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">Remove</a>
+        <a class="remove-item float-right" id="remove_{{ item.item_id }}">Remove</a>
       </td>
     </tr>
     {% endfor %}
@@ -79,19 +81,16 @@
 
   // Remove item and reload on click
   $('.remove-item').click(function(e) {
-    var csrfToken = "{{ csrf_token }}";
-    var itemId = $(this).attr('id').split('remove_')[1];
-    var url = `/bag/remove/${itemId}/`;
-    var data = {
-      'csrfmiddlewaretoken': csrfToken,
-      'product_size': size
-    };
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('product_size');
+        var url = `/bag/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
-    $.post(url, data)
-      .done(function() {
-        location.reload();
-      });
-  })
-
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
 </script>
 {% endblock %}
