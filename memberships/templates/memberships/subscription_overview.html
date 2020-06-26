@@ -2,9 +2,9 @@
 {% load static %}
 
 {% block content %}
-<h2 class="section-head text-center py-5">Subscription information for:<br><small>{{user.email}}</small></h2>
-<div class="row">
-<div class="col-6">
+<h2 class="section-head text-center pt-5">Subscription information for:</h2><p class="small-sect-head pb-5">{{user.email}}</p>
+<div class="row pt-5">
+<div class="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
 <div class="pl-5">
 <p class="some-purple"><small>Your Details</small></p>
 <p class="darkgreen">{{ current_membership.full_name }},<br>{{ current_membership.email }},<br>{{ current_membership.phone_number }}</p>
@@ -16,7 +16,7 @@
             {{ current_membership.country }}.</p>
 </div>
 </div>
-<div class="col-6">
+<div class="col-lg-6 col-md-6 col-sm-12">
 <p class="some-purple"><small>Subscription Details</small></p>
 <p class="darkgreen">{{ current_membership.membership }} Tier<br>
 {% for member in memberships %}

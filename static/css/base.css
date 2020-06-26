@@ -181,8 +181,8 @@ footer {
     padding-top:4rem;
 }
 .btn-sage{
-    color:white;
-    background-color:#CCE1D0;
+    color:black;
+    background-color:#8f9d95;
     font-family:"Rubik";
     font-weight:200;
     border:none;
@@ -337,4 +337,23 @@ footer {
 .is-hidden {
     visibility:hidden!important;
     display:none!important;
+}
+.sub-link {
+    color:#8F9D95;
+    font-family: "Rubik";
+    font-weight:200;
+}
+.sub-link:hover {
+    color:#9c8f9d;
+    font-family: "Rubik";
+    font-weight:200;
+    text-decoration: underline;
+}
+.small-sect-head {
+    text-align:center;
+    color:#9c8f9d;
+    text-decoration: underline;
+    font-size:1.2rem;
+    font-family: "Rubik";
+    font-weight:200;
 }
