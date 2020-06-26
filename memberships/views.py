@@ -134,16 +134,18 @@ def sub_overview(request):
 
 @login_required
 def cancelSubscription(request):
-    user_sub = get_user_subscription(request)
-    sub = stripe.Subscription.retrieve(user_sub.stripe_subscription_id)
-    sub.delete()
-
-    user_sub.active = False
-    user_sub.save()
-
-    free_membership = Membership.objects.get(membership_type='Free')
     user_membership = get_user_membership(request)
-    user_membership.membership = free_membership
-    user_membership.save()
 
+    if user_membership.membership != 'Free':
+        user_sub = get_user_subscription(request)
+        sub = stripe.Subscription.retrieve(user_sub.stripe_subscription_id)
+        sub.delete()
+        user_sub.active = False
+        user_sub.save()
+        free_membership = Membership.objects.get(membership_type='Free')
+        user_membership = get_user_membership(request)
+        user_membership.membership = free_membership
+        user_membership.save()
+
+        return redirect(reverse('sub_overview'))
     return redirect(reverse('sub_overview'))
