@@ -16,7 +16,6 @@ class CurrentItem(models.Model):
     pid = models.CharField(max_length=50, null=True, blank=True)
     name = models.CharField(max_length=150)
     description = models.TextField()
-    shortdescription = models.TextField(max_length=200, default='Click to find out more')
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
