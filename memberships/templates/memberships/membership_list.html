@@ -2,33 +2,45 @@
 {% load static %}
 
 {% block content %}
-<h2 class="section-head text-center mt-5">Choose your subscription type</h2>
-<p class="section-text text-center">In order to gain additional access to the site, you need to activate your subscription.  <br>Just choose your plan & follow the page to get set-up!</p>
-<div class="row mt-5">
-{% for member in memberships %}
-{% if member.membership_type != 'Free' %}
-<div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-around my-5">
-<div class="card card-image mx-2"
-  style="background-image: url({{ MEDIA_URL }}{{member.image}}); max-width:600px; height:450px;">
-  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4" style="height:450px;">
-    <div>
-      <h5 class="some-purple"><i class="fas fa-bone pr-2"></i>{{ member.membership_type }}</h5>
-      <h3 class="card-title pt-2 darkgreen"><strong>€{{ member.price }}</strong></h3>
-      <p>{{ member.description }}</p>
-      {% if member.membership_type != users_membership %}
-      <form method="POST" action="{% url 'membership_list'%}">
-      {% csrf_token %}
-      <button type="submit" class="btn btn-sage">I want this one!</button>
-      {% else %}
-      <p class="darkgreen pt-4">This is your current plan </p>
-      {% endif %}
-      <input type="hidden" name="membership_type" value="{{ member.membership_type }}">
-      </form>
+<!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+
+<section class="pricing mt-5">
+
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      {% for member in memberships %}
+      {% if member.membership_type != 'Free' %}
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase text-center">{{ member.membership_type }}</h5>
+            <h6 class="card-price text-center">€{{ member.price }}<p class="period">/month</p></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><p class="fa-li"><i class="fas fa-check"></i></p><p>{{ member.description_one }}</p></li>
+              <li><p class="fa-li"><i class="fas fa-check"></i></p><p>{{ member.description_two }}</p></li>
+              <li><p class="fa-li"><i class="fas fa-check"></i></p><p>{{ member.description_three}}</p></li>
+              {% if member.description_four != 'DESCRIPTION' %}
+              <li><p class="fa-li"><i class="fas fa-check"></i></p><p>{{ member.description_four }}</p></li>
+              {% endif %}
+            </ul>
+            {% if member.membership_type != users_membership %}
+            <form method="POST" action="{% url 'membership_list'%}">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-lilac btn-block">This One!</button>
+            {% else %}
+            <p class="darkgreen pt-4">This is your current plan </p>
+            {% endif %}
+            <input type="hidden" name="membership_type" value="{{ member.membership_type }}">
+            </form>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    {% endfor %}
+
     </div>
   </div>
-</div>
-</div>
-{% endif %}
-{% endfor %}
-</div>
+</section>
+
 {% endblock %}
