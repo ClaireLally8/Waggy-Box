@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h2 class="section-head text-center py-5">Subscription information for:<br><small>{{user.email}}</small></h2>
+<div class="row">
+<div class="col-6">
+<div class="pl-5">
+<p class="some-purple"><small>Your Details</small></p>
+<p class="darkgreen">{{ current_membership.full_name }},<br>{{ current_membership.email }},<br>{{ current_membership.phone_number }}</p>
+          <p class="darkgreen">{{ current_membership.street_address1 }},<br>
+            {% if current_membership.street_address2 %}{{ current_membership.street_address2 }},<br>{% endif %}
+            {{ current_membership.town_or_city }}<br>
+            {% if current_membership.county%}{{ current_membership.county }},<br>{% endif %}
+            {% if current_membership.postcode %}{{ current_membership.postcode }}{% endif %},<br>
+            {{ current_membership.country }}.</p>
+</div>
+</div>
+<div class="col-6">
+<p class="some-purple"><small>Subscription Details</small></p>
+<p class="darkgreen">{{ current_membership.membership }}<br>
+{% for member in memberships %}
+{% if member == current_membership.membership %}
+€{{ member.price }}<small>/month</small>
+              <p class="darkgreen pl-4">{{ member.description_one }}</p>
+              <p class="darkgreen pl-4">{{ member.description_two }}</p>
+              <p class="darkgreen pl-4">{{ member.description_three}}</p>
+              {% if member.description_four != 'DESCRIPTION' %}
+              <p class="darkgreen pl-4">{{ member.description_four }}</p>
+              {% endif %}</p>
+{% endif %}
+{% endfor %}
+<a href="{% url 'membership_list' %}" class="some-lilac pt-5 text-center">Change Subscription</a>
+<a href="{% url 'cancelSubscription' %}" class="some-lilac pt-5 text-center">Cancel Subscription</a>
+</div>
+</div>
+
+
+
+{% endblock %} 
