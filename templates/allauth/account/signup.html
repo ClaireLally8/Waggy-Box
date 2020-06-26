@@ -6,16 +6,14 @@
 
 {% block content %}
 <h1 class="text-center section-head mt-5">Get Started</h1>
-
 <p class="section-text text-center mt-5">Already have an account? Then please <a class="nav-link" href="{{ login_url }}">login here</a>.</p>
 
-<form class="signup text-center mt-5 section-text" id="signup_form" method="post" action="{% url 'account_signup' %}">
+<form class="signupmt-5 text-center section-text" id="signup_form" method="post" action="{% url 'account_signup' %}">
   {% csrf_token %}
   {{ form.as_p }}
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <button class="btn btn-sage" type="submit">Sign Up &raquo;</button>
+  <button class="btn btn-lilac mt-3" type="submit">Register</button>
 </form>
-
 {% endblock %}

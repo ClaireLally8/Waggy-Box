@@ -61,6 +61,11 @@ footer {
     background-size: cover;
     padding-bottom:15rem;
 }
+.signup-img {
+    background: url("../images/signup-dog.png") no-repeat center center;
+    background-size: cover;
+    padding-bottom:25rem;
+}
 .landing-main {
     margin-top:6rem;
     padding-bottom:2rem;
@@ -75,11 +80,11 @@ footer {
 .about-us, .testimonials {
     padding:8rem 3rem 8rem 3rem;
 }
-.section-head {
+.section-head, h1, h2, h3, h4, h5, h6 {
     font-family:"Rubik";
     color:#9c8f9d;
 }
-.section-text {
+.section-text, p {
     font-family:"Karla";
 }
 .how-it-works {
