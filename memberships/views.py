@@ -108,7 +108,7 @@ def payments(request):
             except BaseException:
                 pass
 
-            return render(request, 'memberships/update-success.html')
+            return redirect('sub_overview')
         else:
             return redirect(reverse('membership_list'))
 
