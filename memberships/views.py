@@ -47,7 +47,6 @@ def membership_list(request):
         request.session['selected_membership_type'] = selected_membership.membership_type
         form = SubscriptionForm()
 
-
         context = {
 
             'selected_membership': selected_membership,
@@ -72,21 +71,22 @@ def membership_list(request):
 @login_required()
 def payments(request):
     user_membership = get_user_membership(request)
-    selected_membership = get_selected_membership(request)
+    selected_muser_membershipembership = get_selected_membership(request)
     form = SubscriptionForm()
 
     if request.method == "POST":
         form_data = request.POST
         token = request.POST['stripeToken']
-        form = SubscriptionForm(form_data)
+        form = SubscriptionForm(form_data, instance=user_membership)
 
         if form.is_valid():
             customer = stripe.Customer.retrieve(
                 user_membership.stripe_customer_id)
             customer.source = token
             customer.save()
-            form.save(commit=False)
+            form.save()
 
+            selected_membership = get_selected_membership(request)
             subscription = stripe.Subscription.create(
                 customer=user_membership.stripe_customer_id,
                 items=[
@@ -94,10 +94,8 @@ def payments(request):
                 ]
             )
             user_membership = get_user_membership(request)
-            selected_membership = get_selected_membership(request)
             user_membership.membership = selected_membership
             user_membership.save()
-
 
             subscription_id = subscription.id
             sub, created = Subscription.objects.get_or_create(
@@ -112,8 +110,6 @@ def payments(request):
             except BaseException:
                 pass
 
-            form.instance.user = request.user
-            form.save()
             return render(request, 'memberships/update-success.html')
         else:
             return redirect(reverse('membership_list'))
