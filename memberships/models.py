@@ -20,13 +20,12 @@ class Membership(models.Model):
     membership_type = models.CharField(
         choices=MEMBERSHIP_CHOICES,
         default='Free',
-        max_length=30)
+        max_length=30, null=False, blank=False)
     price = models.IntegerField(default=15)
     description_one = models.TextField(default="DESCRIPTION")
     description_two = models.TextField(default="DESCRIPTION")
     description_three = models.TextField(default="DESCRIPTION")
     description_four = models.TextField(default="DESCRIPTION")
-    description_five = models.TextField(default="DESCRIPTION")
     stripe_plan_id = models.CharField(max_length=40)
 
     def __str__(self):
@@ -37,15 +36,15 @@ class UserMembership(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     stripe_customer_id = models.CharField(max_length=40)
     membership = models.ForeignKey(Membership, on_delete=models.SET_NULL, null=True)
-    full_name = models.CharField(max_length=50, null=True, blank=True)
-    email = models.EmailField(max_length=254, null=True, blank=True)
-    phone_number = models.CharField(max_length=20, null=True, blank=True)
-    country = CountryField(blank_label='Country',  default="Ireland")
+    full_name = models.CharField(max_length=50,  null=False)
+    email = models.EmailField(max_length=254,  null=False)
+    phone_number = models.CharField(max_length=20,  null=False)
+    country = CountryField(blank_label='Country',  default="Ireland" )
     postcode = models.CharField(max_length=20, null=True, blank=True)
-    town_or_city = models.CharField(max_length=40, null=True, blank=True)
-    street_address1 = models.CharField(max_length=80, null=True, blank=True)
+    town_or_city = models.CharField(max_length=40,  null=False)
+    street_address1 = models.CharField(max_length=80,  null=False)
     street_address2 = models.CharField(max_length=80, null=True, blank=True)
-    county = models.CharField(max_length=80, null=True, blank=True)
+    county = models.CharField(max_length=80,  null=False)
 
     def __str__(self):
         return self.user.username
