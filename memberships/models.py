@@ -22,9 +22,11 @@ class Membership(models.Model):
         default='Free',
         max_length=30)
     price = models.IntegerField(default=15)
-    description = models.TextField(default="DESCRIPTION")
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
+    description_one = models.TextField(default="DESCRIPTION")
+    description_two = models.TextField(default="DESCRIPTION")
+    description_three = models.TextField(default="DESCRIPTION")
+    description_four = models.TextField(default="DESCRIPTION")
+    description_five = models.TextField(default="DESCRIPTION")
     stripe_plan_id = models.CharField(max_length=40)
 
     def __str__(self):
@@ -56,9 +58,9 @@ def post_save_usermembership_create(
 
     if user_membership.stripe_customer_id is None or user_membership.stripe_customer_id == '':
         new_customer_id = stripe.Customer.create(email=instance.email)
-        free_membership = Membership.objects.get(membership_type='Free')
+        # free_membership = Membership.objects.get(membership_type='Free')
         user_membership.stripe_customer_id = new_customer_id['id']
-        user_membership.membership = free_membership
+        # user_membership.membership = free_membership
         user_membership.save()
 
 
