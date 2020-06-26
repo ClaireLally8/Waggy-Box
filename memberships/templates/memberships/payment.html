@@ -6,8 +6,8 @@
 <h2 class="section-head text-center my-5">Subscription Checkout</h2>
 <div class="order-summary">
 <h6 class="some-purple text-right mt-5">Subscription Details</h6> 
-<p class="section-text text-right">{{selected_membership}}</p>
-<p class="section-text text-right">€{{selected_membership.price}}<small> per month</small></p>
+<p class="section-text text-right">{{ selected_membership}}</p>
+<p class="section-text text-right">€{{ selected_membership.price}}<small> per month</small></p>
 
 </div>
 <form id="payment-form" method="POST" action="{% url 'payments'%}" class="mt-5">
