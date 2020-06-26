@@ -32,8 +32,9 @@ class Membership(models.Model):
 
 
 class UserMembership(models.Model):
-    user = models.OneToOneField(
-        settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    stripe_customer_id = models.CharField(max_length=40)
+    membership = models.ForeignKey(Membership, on_delete=models.SET_NULL, null=True)
     full_name = models.CharField(max_length=50, null=True, blank=True)
     email = models.EmailField(max_length=254, null=True, blank=True)
     phone_number = models.CharField(max_length=20, null=True, blank=True)
@@ -43,9 +44,6 @@ class UserMembership(models.Model):
     street_address1 = models.CharField(max_length=80, null=True, blank=True)
     street_address2 = models.CharField(max_length=80, null=True, blank=True)
     county = models.CharField(max_length=80, null=True, blank=True)
-    stripe_customer_id = models.CharField(max_length=40)
-    membership = models.ForeignKey(
-        Membership, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
         return self.user.username
