@@ -148,14 +148,13 @@ footer {
   opacity: 1;
 }
 .about-main {
-    padding-top:2rem;
+    padding-top:3rem;
     padding-bottom:2rem;
     color:#9c8f9d;
     font-family:"Rubik";
 }
 .darkcolor {
     color:#dfcce1;
-    text-shadow: 2px 2px 7px black;
 }
 .dog-name {
     font-family:"Rubik";
