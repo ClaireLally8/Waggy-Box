@@ -71,7 +71,6 @@ def membership_list(request):
 @login_required()
 def payments(request):
     user_membership = get_user_membership(request)
-    selected_muser_membershipembership = get_selected_membership(request)
     form = SubscriptionForm()
 
     if request.method == "POST":
@@ -102,8 +101,7 @@ def payments(request):
                 user_membership=user_membership)
             sub.stripe_subscription_id = subscription_id
             sub.active = True
-            sub.save()
-            
+            sub.save() 
 
             try:
                 del request.session['selected_membership_type']
@@ -121,3 +119,31 @@ def payments(request):
 
     return render(request, 'memberships/payment.html', context)
 
+
+def sub_overview(request):
+    current_membership = get_user_membership(request)
+    subscription = get_user_subscription(request)
+    memberships = Membership.objects.all()
+    
+    context = {
+        'current_membership': current_membership,
+        'subscription': subscription,
+        'memberships': memberships,
+    }
+    return render(request, 'memberships/subscription_overview.html', context)
+
+@login_required
+def cancelSubscription(request):
+    user_sub = get_user_subscription(request)
+    sub = stripe.Subscription.retrieve(user_sub.stripe_subscription_id)
+    sub.delete()
+
+    user_sub.active = False
+    user_sub.save()
+
+    free_membership = Membership.objects.get(membership_type='Free')
+    user_membership = get_user_membership(request)
+    user_membership.membership = free_membership
+    user_membership.save()
+
+    return redirect(reverse('sub_overview'))
