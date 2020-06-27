@@ -79,7 +79,7 @@ footer {
     font-family:"Karla";
 }
 .about-us, .testimonials {
-    padding:8rem 3rem 8rem 3rem;
+    padding:4rem 3rem 8rem 3rem;
 }
 .section-head{
     font-family:"Rubik";
@@ -92,7 +92,7 @@ footer {
     padding:0rem 3rem 0rem 3rem;
 }
 .how-icons {
-    color:#e3d3fd;
+    color:#9f94b1;
     font-size:3rem;
 }
 .how-title, .testimonial-intro, .about-title, .top-how {
