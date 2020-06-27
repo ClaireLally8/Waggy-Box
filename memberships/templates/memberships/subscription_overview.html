@@ -18,7 +18,7 @@
 </div>
 <div class="col-lg-6 col-md-6 col-sm-12">
 <p class="some-purple"><small>Subscription Details</small></p>
-<p class="darkgreen">{{ current_membership.membership }} Tier<br>
+<p class="darkgreen">{{ current_membership.membership }}<br>
 {% for member in memberships %}
 {% if member == current_membership.membership %}
 {% if member.membership_type != 'Free' %}
@@ -30,19 +30,15 @@
               <p class="darkgreen pl-4 text-center">{{ member.description_four }}</p>
               {% endif %}</p>
               <hr>
-              <div class="d-flex justify-content-around mt-5">
-<a class="sub-link" href="{% url 'membership_list' %}">Change Subscription</a>
-<a class="sub-link" href="{% url 'cancelSubscription' %}">Cancel Subscription</a>
-</div>
+              
 {% else %}
-<p class="darkgreen pr-5">You have no active subscription. <br> To add a subscription, click the change subscription link below</p>
-<div class="d-flex justify-content-around mt-5">
-<a class="sub-link" href="{% url 'membership_list' %}">Change Subscription</a>
-</div>
-
 {% endif %}
 {% endif %}
 {% endfor %}
+<div class="d-flex justify-content-around mt-5">
+<a class="sub-link" href="{% url 'membership_list' %}">Change Subscription</a>
+<a class="sub-link" href="{% url 'cancelSubscription' %}">Cancel Subscription</a>
+</div>
 </div>
 </div>
 
