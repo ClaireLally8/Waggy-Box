@@ -1,0 +1,277 @@
+[
+{
+ "model": "shop.category",
+ "pk": 6,
+ "fields": {
+  "name": "Toys"
+ }
+},
+{
+ "model": "shop.category",
+ "pk": 7,
+ "fields": {
+  "name": "Treats"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 1,
+ "fields": {
+  "category": 6,
+  "pid": "Kong-Jaxx-Infinity-Tug-Toy",
+  "name": "Kong Jaxx Infinity Tug Toy",
+  "description": "KONG Jaxx is built from durable materials that are designed to reward appropriate chewing behavior while satisfying instinctual needs. The unique burly construction is ideal for tugging and fetching fun, while the sturdy rope adds flexibility for dynamic interactive play sessions. Constructed for easy gripping and squeaker free for quiet time, this toy is built to stand-up to multiple play needs for fun that stands the test of time.",
+  "price": "13.00",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/7/4/74185_kong_kong_jaxx_infinity_tug_1.jpg",
+  "image": "74185_kong_kong_jaxx_infinity_tug_1_1_6F3ciTb.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 2,
+ "fields": {
+  "category": 6,
+  "pid": "Kong-Jaxx-Braided-Tug-Toy",
+  "name": "Kong Jaxx Braided Tug Toy",
+  "description": "KONG Jaxx is built from durable materials that are designed to reward appropriate chewing behavior while satisfying instinctual needs. The unique burly construction is ideal for tugging and fetching fun, while the sturdy rope adds flexibility for dynamic interactive play sessions. Constructed for easy gripping and squeaker free for quiet time, this toy is built to stand-up to multiple play needs for fun that stands the test of time.",
+  "price": "13.00",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/p/j/pj11_1_-20200107224632-20200107231847-1000x1000.jpg",
+  "image": "pj11_1_-20200107224632-20200107231847-1000x1000.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 3,
+ "fields": {
+  "category": 6,
+  "pid": "Nerf-Max-Court-Squeak-X-Ring",
+  "name": "Nerf Max Court Squeak X-Ring",
+  "description": "Enjoy some play time with your dog with the Nerf Dog Max Court Squeak X-Ring. A playful squeaker toy that will keep your dog engaged for hours. It's Nerf or Nothin!",
+  "price": "13.00",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/m/a/max-court-elite-squeak-x-ring-p3746-10385_image.jpg",
+  "image": "max-court-elite-squeak-x-ring-p3746-10385_image.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 4,
+ "fields": {
+  "category": 6,
+  "pid": "Rosewood-Cuddle-Tugs-Giraffe",
+  "name": "Rosewood Cuddle Tugs Giraffe",
+  "description": "Charming on the outside tough on the inside, this luxury plush Giraffe is made with the highest quality materials available. Featuring multi-textured fabrics and a range of features. The tough plush material exceeds industry durability standards allowing the traditional ripping points to stay stronger for longer.",
+  "price": "10.99",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/2/7/27655_pk.jpg",
+  "image": "27655_pk_I385wpi.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 5,
+ "fields": {
+  "category": 6,
+  "pid": "Rosewood-Ropes-A-Go-Go-Jungle-Gator",
+  "name": "Rosewood Ropes-A-Go-Go Jungle Gator",
+  "description": "Charming on the outside tough on the inside, this luxury plush Gator is made with the highest quality materials available. Featuring multi-textured fabrics and a range of features. The tough plush material exceeds industry durability standards allowing the traditional ripping points to stay stronger for longer.",
+  "price": "10.99",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/2/7/27635_pk.jpg",
+  "image": "27635_pk_WUSpa89.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 6,
+ "fields": {
+  "category": 6,
+  "pid": "Rosewood-Thunder-Tugga-Leggy-Zebra",
+  "name": "Rosewood Thunder Tugga Leggy Zebra",
+  "description": "The plush Thunda Tuggas Leggies appear soft and sweet, but these feisty fellas let out a series of rapid squeaks when their legs are pulled. Your dog can munch, bite, chew, and squeak its way to canine bliss. Durable K9 Tuff Guard makes this toy the perfect companion for your best friend.",
+  "price": "13.00",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/2/7/27615_pk.jpg",
+  "image": "27615_pk.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 7,
+ "fields": {
+  "category": 6,
+  "pid": "Bionic-Stick-Orange",
+  "name": "Bionic Stick Orange",
+  "description": "The Bionic Urban Stick is an interactive treat holding dog chew toy that stands up to the toughest chewers. The bright orange color of this bone makes this chew toy easy to spot outdoors! Naturally free of all the stuff you don't want your dog chewing on like lead BPA and phthalates, the Bionic Urban Stick is made with unmatched durability and double the treat holding compartments, making chew time super fun.",
+  "price": "5.90",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/2/7/27230_pk.jpg",
+  "image": "27230_pk_fFwGVwY.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 8,
+ "fields": {
+  "category": 6,
+  "pid": "KONG-Shakers-Duck-Honker-Large",
+  "name": "KONG Shakers Duck Honker Large",
+  "description": "KONG Shakers Honkers Duck lets the fun fly with an internal neck which features a texture that satisfies a dogs\u2019 natural chewing instincts while the long floppy legs spark shaking and tugging play sessions. KONG Shakers Honkers low tone squawk and the reinforced plush design keeps dogs tickled pink and playing longer.",
+  "price": "13.99",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/s/h/shk31_1_-20180910182624-20180910190812-1000x1000.jpg",
+  "image": "shk31_1_-20180910182624-20180910190812-1000x1000_XTvbu4q.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 9,
+ "fields": {
+  "category": null,
+  "pid": "Beco-Bamboo-David-The-Dolphin-Toy",
+  "name": "Beco Bamboo David The Dolphin Toy",
+  "description": "David the Dolphin is made from recycled plastic bottles and has an interactive squeaker which is recyclable. David is double stitched and double layered, with an extra thick black lining, making him tough and durable. Whether your dog enjoys a wrestle or a cuddle, David is ready to go.\r\n\r\nAll seams are reinforced with tough cloth to keep the stuffing in and your dog's chewing instincts at bay. If your dog manages to get through the first tough layer, Beco have a backup. The stuffing and lining of these toys is made from recycled plastic. They help you keep plastic out of our oceans to protect the wildlife in them.",
+  "price": "8.99",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/d/o/dolphin-w-name-450x450.jpg",
+  "image": "dolphin-w-name-450x450_Nb4pNVJ.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 10,
+ "fields": {
+  "category": 6,
+  "pid": "KONG-Hopz-Treat-Dispenser-Ball-Toy",
+  "name": "KONG Hopz Treat Dispenser Ball Toy",
+  "description": "The KONG Hopz is a rewarding treat dispenser that satisfies natural foraging instincts for on-going mental enrichment. Its orbital shape creates an unpredictable movement sparking engagement as dogs figure out this clever puzzle toy. The subtle rocking motion combines with a squeaker that keeps a dog interest piqued and extends play time.",
+  "price": "6.99",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/k/o/kong-hopz-ball.jpg",
+  "image": "kong-hopz-ball_I2VXnI2.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 11,
+ "fields": {
+  "category": 6,
+  "pid": "KONG-Comfort-Kiddos-Small-Elephant",
+  "name": "KONG Comfort Kiddos Small Elephant",
+  "description": "KONG Comfort Kiddos are ideal for doggie play and cuddle time. Featuring a low tone bellow squeaker that pique a dog\u2019s curiosity and a removable squeaker for quiet time. The squeaker is easy to remove, making it ideal for cuddle time, insert back into the toy for countless indoor play sessions.",
+  "price": "6.90",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/c/o/comfort_kiddos_elephant_1.jpg",
+  "image": "comfort_kiddos_elephant_1.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 12,
+ "fields": {
+  "category": 6,
+  "pid": "KONG-Comfort-Kiddos-Small-Pig",
+  "name": "KONG Comfort Kiddos Small Pig",
+  "description": "KONG Comfort Kiddos are ideal for doggie play and cuddle time. Featuring a low tone bellow squeaker that pique a dog\u2019s curiosity and a removable squeaker for quiet time. The squeaker is easy to remove, making it ideal for cuddle time, insert back into the toy for countless indoor play sessions.",
+  "price": "8.00",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/c/o/comfort_kiddos_pig.jpg",
+  "image": "comfort_kiddos_pig.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 13,
+ "fields": {
+  "category": 7,
+  "pid": "Go-Native-Essential-Dog-Treats-Duck",
+  "name": "Go Native Essential Dog Treats Duck",
+  "description": "New from Connolly's Red Mills is their Go Native Essential Dog Treats Duck 100g; a super premium, wholly Irish and very tasty food. Made using only the finest naturally sourced ingredients, Connolly's have perfected their recipe in their state of the art facilities using modern technologies and pet nutrition experts, now available to your pet!\r\n\r\nWith over 30% meat content, Red Mill's Go Native Duck Treats are the tastiest and most nutritious dog treats available.",
+  "price": "2.00",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/g/o/gonative_duck_treats_02.png",
+  "image": "gonative_duck_treats_02.png"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 14,
+ "fields": {
+  "category": 7,
+  "pid": "Go-Native-Essential-Dog-Treats-Herring",
+  "name": "Go Native Essential Dog Treats Herring",
+  "description": "ew from Connolly's Red Mills is their Go Native Essential Dog Treats Herring 100g; a super premium, wholly Irish and very tasty food. Made using only the finest naturally sourced ingredients, Connolly's have perfected their recipe in their state of the art facilities using modern technologies and pet nutrition experts, now available to your pet!\r\n\r\nWith over 30% meat content, Red Mill's Go Native Herring Treats are the tastiest and most nutritious dog treats available.",
+  "price": "3.90",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/g/o/gonative_herring_treats_03_1.jpg",
+  "image": "gonative_herring_treats_03_1.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 15,
+ "fields": {
+  "category": 7,
+  "pid": "Soopa-Sweet-Potato-Chews",
+  "name": "Soopa Sweet Potato Chews",
+  "description": "Soopa Tasty Chews are the ultimate healthy and tasty treat for your pet. Packed with botanicals and healthy ingredients for dogs, these treats help balance a healthy diet. Ideal for all sizes of dogs.",
+  "price": "3.90",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/s/w/sweet-potato-1_grande.jpg",
+  "image": "sweet-potato-1_grande.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 16,
+ "fields": {
+  "category": 7,
+  "pid": "Carnilove Dog Treats Duck And Rosemary",
+  "name": "Carnilove-Dog-Treats-Duck-And-Rosemary",
+  "description": "This delicious snack is suitable for sensitive dogs, with meat and berries it is natural source of antioxidants for strong immunity. New to Carnilove. Can be used to compliment any food.",
+  "price": "3.90",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/c/a/carnilove_soft_dog_treats_duck_rosemary.jpg",
+  "image": "carnilove_soft_dog_treats_duck_rosemary.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 17,
+ "fields": {
+  "category": 7,
+  "pid": "Carnilove-Dog-Treats-Mackeral-And-Berries",
+  "name": "Carnilove Dog Treats Mackeral And Berries",
+  "description": "This delicious snack is suitable for sensitive dogs, with meat and berries it is natural source of antioxidants for strong immunity. New to Carnilove. Can be used to compliment any food.",
+  "price": "3.90",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/c/a/carnilove_crunchy_dog_treats_mackerel_raspberries.jpg",
+  "image": "carnilove_crunchy_dog_treats_mackerel_raspberries.jpg"
+ }
+},
+{
+ "model": "shop.futureitem",
+ "pk": 5,
+ "fields": {
+  "pid": "Kong",
+  "name": "KONG Classic",
+  "image_url": "https://shop-cdn-m.mediazs.com/bilder/kong/classic/red/2/400/46452_pla_kong_classic_hs_01_2.jpg",
+  "image": "46452_pla_kong_classic_hs_01_2.jpg"
+ }
+},
+{
+ "model": "shop.futureitem",
+ "pk": 6,
+ "fields": {
+  "pid": "toy",
+  "name": "Treat Strategy Game",
+  "image_url": "https://shop-cdn-m.mediazs.com/bilder/trixie/dog/activity/turn/around/strategy/game/9/800/73780_pla_trixie_dog_activity_turn_around_hs_02_9.jpg",
+  "image": "73780_pla_trixie_dog_activity_turn_around_hs_02_9.jpg"
+ }
+},
+{
+ "model": "shop.futureitem",
+ "pk": 7,
+ "fields": {
+  "pid": "treat",
+  "name": "Wolf of Wilderness Wild Bites Dog Snacks",
+  "image_url": "https://shop-cdn-m.mediazs.com/bilder/g/wolf/of/wilderness/wild/bites/dog/snacks/special/price/8/400/zop_18_085_wow_snacks__wild_bites_wildhills_p2_1000x1000_8.jpg",
+  "image": "zop_18_085_wow_snacks__wild_bites_wildhills_p2_1000x1000_8.jpg"
+ }
+},
+{
+ "model": "shop.futureitem",
+ "pk": 8,
+ "fields": {
+  "pid": "KONG-CuteSeas-Octopus",
+  "name": "KONG CuteSeas Octopus",
+  "image_url": "https://shop-cdn-m.mediazs.com/bilder/kong/cuteseas/octopus/7/400/492023_kong_oktopus_7.jpg",
+  "image": "492023_kong_oktopus_7.jpg"
+ }
+}
+]
