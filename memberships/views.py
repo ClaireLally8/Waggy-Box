@@ -136,7 +136,7 @@ def sub_overview(request):
 def cancelSubscription(request):
     user_membership = get_user_membership(request)
 
-    if user_membership.membership != 'Free':
+    if user_membership.membership != 'Free' or user_membership.membership is not None:
         user_sub = get_user_subscription(request)
         sub = stripe.Subscription.retrieve(user_sub.stripe_subscription_id)
         sub.delete()
