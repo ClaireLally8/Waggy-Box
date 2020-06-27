@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+{% for order in orders %}
+{{order.order_number}}
+{% endfor %}
+{% endblock %}
