@@ -80,7 +80,7 @@ footer {
 .about-us, .testimonials {
     padding:8rem 3rem 8rem 3rem;
 }
-.section-head, h1, h2, h3, h4, h5, h6 {
+.section-head{
     font-family:"Rubik";
     color:#9c8f9d;
 }
@@ -356,4 +356,7 @@ footer {
     font-size:1.2rem;
     font-family: "Rubik";
     font-weight:200;
+}
+.member-type {
+    font-size:1.7rem;
 }
