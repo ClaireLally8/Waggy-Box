@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block content %}
-<h2 class="section-head text-center pt-5">Subscription information for:</h2><p class="small-sect-head pb-5">{{user.email}}</p>
+<h2 class="section-head text-center pt-5">Subscription information for:</h2><p class="small-sect-head pb-5">{{ user.username }}</p>
 <div class="row pt-5">
 <div class="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
 <div class="pl-5">
-<p class="some-purple"><small>Your Details</small></p>
+<p class="some-purple">Your Details</p>
 <p class="darkgreen">{{ current_membership.full_name }},<br>{{ current_membership.email }},<br>{{ current_membership.phone_number }}</p>
           <p class="darkgreen">{{ current_membership.street_address1 }},<br>
             {% if current_membership.street_address2 %}{{ current_membership.street_address2 }},<br>{% endif %}
@@ -17,12 +17,13 @@
 </div>
 </div>
 <div class="col-lg-6 col-md-6 col-sm-12">
-<p class="some-purple"><small>Subscription Details</small></p>
+<div class="px-5">
+<p class="some-purple">Subscription Details</p>
 <p class="darkgreen">{{ current_membership.membership }}<br>
 {% for member in memberships %}
 {% if member == current_membership.membership %}
 {% if member.membership_type != 'Free' %}
-€{{ member.price }}<small>/month</small>
+€{{ member.price }}<sub>/month</sub>
               <p class="darkgreen pl-4 text-center">{{ member.description_one }}</p>
               <p class="darkgreen pl-4 text-center">{{ member.description_two }}</p>
               <p class="darkgreen pl-4 text-center">{{ member.description_three}}</p>
@@ -38,6 +39,8 @@
 <div class="d-flex justify-content-around mt-5">
 <a class="sub-link" href="{% url 'membership_list' %}">Change Subscription</a>
 <a class="sub-link" href="{% url 'cancelSubscription' %}">Cancel Subscription</a>
+</div>
+<p class="text-center pt-5"><strong>Please Note</strong> subscription boxes will be sent on the 15<sup>th</sup> of each month</p>
 </div>
 </div>
 </div>
