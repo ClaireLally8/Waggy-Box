@@ -36,15 +36,15 @@ class UserMembership(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     stripe_customer_id = models.CharField(max_length=40)
     membership = models.ForeignKey(Membership, on_delete=models.SET_NULL, null=True)
-    full_name = models.CharField(max_length=50,  null=False)
-    email = models.EmailField(max_length=254,  null=False)
-    phone_number = models.CharField(max_length=20,  null=False)
+    full_name = models.CharField(max_length=50,  null=False, default="Please enter your full name")
+    email = models.EmailField(max_length=254,  null=False, default="Please enter your email address")
+    phone_number = models.CharField(max_length=20,  null=False, default="Please enter your phone number")
     country = CountryField(blank_label='Country',  default="Ireland" )
     postcode = models.CharField(max_length=20, null=True, blank=True)
-    town_or_city = models.CharField(max_length=40,  null=False)
-    street_address1 = models.CharField(max_length=80,  null=False)
+    town_or_city = models.CharField(max_length=40,  null=False, default="Please enter your City")
+    street_address1 = models.CharField(max_length=80,  null=False, default="Please enter address line 1")
     street_address2 = models.CharField(max_length=80, null=True, blank=True)
-    county = models.CharField(max_length=80,  null=False)
+    county = models.CharField(max_length=80,  null=True)
 
     def __str__(self):
         return self.user.username
