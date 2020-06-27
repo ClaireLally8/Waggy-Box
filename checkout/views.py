@@ -110,12 +110,16 @@ def checkout_success(request, order_number):
 
     return render(request, template, context)
 
+
 @login_required()
 def order_history(request):
     orders = Order.objects.filter(user=request.user)
+    if orders is not None:
+        context = {
+            'orders': orders
+        }
+        return render(request, 'checkout/order_history.html')
+    
+    return redirect('dashboard')
 
-    context = {
-        'orders': order
-    }
-
-    return render(request, 'checout/order_history.html', context)
+    
