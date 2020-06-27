@@ -1,8 +1,8 @@
 /* COLOUR SCHEME
-#CCE1D0
-#8f9d95
-#dfcce1
-#9c8f9d
+#c6dabe
+#a8b194
+#e3d3fd
+#9f94b1
 #e1dacc
 */
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@300;400;500;700&display=swap');
@@ -22,19 +22,20 @@ footer {
  position:relative;
 }
 .light-noshadow{
-    background-color:#CCE1D0;
+    background-color:#c6dabe;
     box-shadow:none;
     text-shadow: none;
 }
 .nav-link{
-    color:#9c8f9d!important;
+    color:#9f94b1!important;
     font-size:1rem;
     letter-spacing:1;
     font-family:"Rubik"!important;
     font-weight:300;
 }
 .nav-link:hover{
-    color:#dfcce1!important;
+    color:#a8b194!important;
+    text-decoration: underline!important;
 }
 .landingsection {
     background: url("../images/landing.jpg") no-repeat center center;
@@ -69,12 +70,12 @@ footer {
 .landing-main {
     margin-top:6rem;
     padding-bottom:2rem;
-    color:#9c8f9d;
+    color:#9f94b1;
     font-family:"Rubik";
 }
 .landing-sub {
     padding-bottom:6rem;
-    color:#9c8f9d;
+    color:#9f94b1;
     font-family:"Karla";
 }
 .about-us, .testimonials {
@@ -82,7 +83,7 @@ footer {
 }
 .section-head{
     font-family:"Rubik";
-    color:#9c8f9d;
+    color:#9f94b1;
 }
 .section-text, p {
     font-family:"Karla";
@@ -91,7 +92,7 @@ footer {
     padding:0rem 3rem 0rem 3rem;
 }
 .how-icons {
-    color:#dfcce1;
+    color:#e3d3fd;
     font-size:3rem;
 }
 .how-title, .testimonial-intro, .about-title, .top-how {
@@ -99,19 +100,19 @@ footer {
 }
 .name {
     font-family:"Karla";
-    color:#9c8f9d;
+    color:#9f94b1;
 }
 .job {
     font-family:"Rubik";
-    color:#9c8f9d;
+    color:#9f94b1;
     font-weight:300;
 }
 .quote {
     font-family:"Rubik";
-    color:#8f9d95;
+    color:#a8b194;
 }
 .star-icon {
-    color:#dfcce1;
+    color:#e3d3fd;
     padding:1.5rem 0rem 1.5rem 0rem
 }
 .icon-part{
@@ -119,25 +120,25 @@ footer {
     padding-bottom:3rem;
 }
 .footer-head {
-    color:#9c8f9d;
+    color:#9f94b1;
     font-family:"Rubik";
     font-weight:500;
     font-size:1.2rem;
 }
 .footer-text, .footer-link {
-    color:#9c8f9d!important;
+    color:#9f94b1!important;
     font-family:"Karla";
     font-size:1rem;
 }
 .footer-link:hover {
-    color:#8f9d95;
+    color:#a8b194;
     text-decoration: underline;
 }
 .dash-text{
     position: absolute;
-   opacity: 85%;
-  color:#dfcce1;
-  background-color:#8f9d95;
+   opacity: 90%;
+  color:#9f94b1;
+  background-color:#c6dabe;
   font-family:"Rubik";
   font-weight:200;
   top: 70%;
@@ -148,23 +149,22 @@ footer {
   border-radius: 0px 7px 7px 0px;
 }
 .dash-text:hover{
-    color:#8f9d95;
-  background-color:#dfcce1;
-  opacity: 1;
+    color:#c6dabe;
+  background-color:#9f94b1;
 }
 .about-main {
     padding-top:3rem;
     padding-bottom:2rem;
-    color:#9c8f9d;
+    color:#9f94b1;
     font-family:"Rubik";
 }
 .darkcolor {
-    color:#dfcce1;
+    color:#e3d3fd;
 }
 .dog-name {
     font-family:"Rubik";
     font-weight:200;
-    color:#8f9d95;
+    color:#a8b194;
     font-size:1.4rem;
 }
 .dog-image {
@@ -182,25 +182,24 @@ footer {
 }
 .btn-sage{
     color:black;
-    background-color:#8f9d95;
+    background-color:#9f94b1;
     font-family:"Rubik";
     font-weight:200;
     border:none;
 }
 .btn-sage:hover{
     color:black;
-    background-color:#9c8f9d;
+    background-color:#a8b194;
 }
 .btn-lilac{
     font-family:"Rubik";
     font-weight:200;
     border:none;
-    color:black;
-    background-color:#9c8f9d;
+    color:black!important;
+    background-color:#9f94b1;
 }
 .btn-lilac:hover{
-     color:white;
-    background-color:#CCE1D0;
+    background-color:#a8b194;
 }
 .card .card-body h1, .card .card-body h2, .card .card-body h3, .card .card-body h4, .card .card-body h5, .card .card-body h6 {
     min-height:80px;
@@ -208,12 +207,12 @@ footer {
 .card-title {
     font-family: "Rubik";
     font-weight:300!important;
-    color:#9c8f9d;
+    color:#9f94b1;
     font-size:1.1rem;
 }
 .card-price{
     font-family:"Karla";
-    color:#8f9d95;
+    color:#a8b194;
 }
 .small-text {
     font-size:1rem;
@@ -223,18 +222,18 @@ footer {
     padding-top:5rem;
     font-family:"Rubik";
     font-weight:200;
-    color:#9c8f9d;
+    color:#9f94b1;
 }
 .change-page-link, .login-link {
     font-family:"Karla";
-    color:#8f9d95;
+    color:#a8b194;
     border:none;
     padding-left:0.5rem;
     padding-right:0.5rem;
 }
 .change-page-link:hover, .login-link:hover {
     text-decoration:underline;
-    color:#CCE1D0;
+    color:#c6dabe;
 }
 .page-top {
     margin-top:3rem!important;
@@ -248,7 +247,7 @@ footer {
 .product-name {
     font-family:"Rubik";
     font-weight:200;
-    color:#8f9d95;
+    color:#a8b194;
     padding-top:10rem;
     padding-left:3rem;
     padding-right:3rem;
@@ -256,7 +255,7 @@ footer {
 .product-price {
     font-family:"Karla";
     font-size:1.4rem;
-    color:#9c8f9d;
+    color:#9f94b1;
     padding-left:7rem;
     padding-right:7rem;
 }
@@ -266,7 +265,7 @@ footer {
 .future-name {
     font-family:"Rubik";
     font-weight:200;
-    color:#8f9d95;
+    color:#a8b194;
     padding-left:3rem;
     padding-right:3rem;
 }
@@ -274,64 +273,64 @@ footer {
     font-family:"Rubik";
     font-size:1rem;
     font-weight:200;
-    color:#9c8f9d;
+    color:#9f94b1;
     padding-right:8rem;
     padding-left:5rem;
 }
 .view-bag:hover {
-    color:#8f9d95;
+    color:#a8b194;
     text-decoration:underline;
 }
 .quantity {
     font-family: "Rubik";
     font-weight:200;
-    color:#9c8f9d;
+    color:#9f94b1;
     font-size:1.2rem;
 }
 .table-head {
     font-family:"Rubik";
-    color:#8f9d95;
+    color:#a8b194;
     font-size:1rem;
     font-weight:300;
 }
 .update-link {
     font-family:"Rubik";
     font-size:0.8rem;
-    color:#8f9d95!important;
+    color:#a8b194!important;
 }
 .update-link:hover {
     text-decoration:underline!important;
-    color:#9c8f9d!important;
+    color:#9f94b1!important;
 }
 .remvove-item:hover{
-    color:#8f9d95!important;
+    color:#a8b194!important;
     text-decoration:underline!important;
 }
 .remove-item {
 
-    color:#9c8f9d!important;
+    color:#9f94b1!important;
     font-family:"Rubik";
     font-size:0.8rem;
 }
 .grand-total {
     font-family:"Rubik";
     font-weight:200;
-    color:#8F9D95;
+    color:#a8b194;
 }
 .cart {
     padding-bottom:5rem;
 }
 .darkgreen {
-    color: #8f9d95;
+    color: #a8b194;
 }
 .some-purple {
-   color: #9c8f9d;
+   color: #9f94b1;
 }
 .post-link {
-    color:#9c8f9d;
+    color:#9f94b1;
 }
 .post-link:hover {
-    color:#9c8f9d;
+    color:#9f94b1;
     text-decoration:underline;
 }
 .is-hidden {
@@ -339,19 +338,19 @@ footer {
     display:none!important;
 }
 .sub-link {
-    color:#8F9D95;
+    color:#a8b194;
     font-family: "Rubik";
     font-weight:200;
 }
 .sub-link:hover {
-    color:#9c8f9d;
+    color:#9f94b1;
     font-family: "Rubik";
     font-weight:200;
     text-decoration: underline;
 }
 .small-sect-head {
     text-align:center;
-    color:#9c8f9d;
+    color:#9f94b1;
     text-decoration: underline;
     font-size:1.2rem;
     font-family: "Rubik";
