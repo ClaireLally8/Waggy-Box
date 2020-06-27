@@ -2,37 +2,15 @@
 {% load static %}
 
 {% block content %}
-<h2 class="py-5 text-center section-head">Dashboard</h2>
-<div class="row my-5">
-<div class="col-lg-6 col-md-6 col-sm-12 mt-5 text-center">
-<a href="{% url 'sub_overview' %}" class="dash-text">Subscription Overview</a>
-<img src ="{% static 'images/navdogs1.jpeg' %}" height="300" width="300" class="img-fluid z-depth-2 dash-img">
-</div>
-<div class="col-lg-6 col-md-6 col-sm-12 mt-5 text-center">
-<a href="{% url 'shop' %}" class="dash-text">Shop Products</a>
-<img src ="{% static 'images/navdogs2.jpeg' %}" height="300" width="300" class="img-fluid z-depth-2 dash-img">
-</div>
-<div class="col-lg-6 col-md-6 col-sm-12 mt-5 text-center">
-<a href="{% url 'order_history' %}" class="dash-text">Order History</a>
-<img src ="{% static 'images/navdogs3.jpeg' %}" height="300" width="300" class="img-fluid z-depth-2 dash-img">
-</div>
-<div class="col-lg-6 col-md-6 col-sm-12 mt-5 text-center">
-<a href="{% url 'contact' %}" class="dash-text">Toy Suggestions</a>
-<img src ="{% static 'images/navdogs4.jpeg' %}" height="300" width="300" class="img-fluid z-depth-2 dash-img">
-</div>
-</div><br><br><br>
-<hr class="divider">
-<h2 class="my-5 text-center section-head">A sneak peek into next months goodies...</h2>
-<div class="container">
+<div class="dash-img">
 <div class="row">
-{% for item in items %}
-<div class="col-lg-3 col-md-6 col-sm-12">
-<div class="image d-flex justify-content-center">
-<img src="{{ MEDIA_URL }}{{ item.image }}" class="img-fluid item-image" height="200" width="200" alt="Product Image">
-</div>
-<p class="future-name text-center ">{{ item.name }}</p>
-</div>
-{% endfor %}
+<div class="col-lg-4 col-md-4 col-sm-12"><br><br><br>
+<h2 class="section-head some-purple py-5 mx-5">Welcome {{ user.username }}!</h2>
+<p class= "section-text some-purple mx-5">This is your personal dashboard, you can review your orders, purchas items, adjust your subscription & even leave feedback here!</p>
 </div>
 </div>
+</div>
+<hr class="divider">
+<h3 class="section-head text-center my-5">Navigation</h3>
+
 {% endblock %}
