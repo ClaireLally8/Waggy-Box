@@ -20,12 +20,12 @@ class Membership(models.Model):
     membership_type = models.CharField(
         choices=MEMBERSHIP_CHOICES,
         default='Free',
-        max_length=30, null=False, blank=False)
+        max_length=200, null=False, blank=False)
     price = models.IntegerField(default=15)
-    description_one = models.TextField(default="DESCRIPTION")
-    description_two = models.TextField(default="DESCRIPTION")
-    description_three = models.TextField(default="DESCRIPTION")
-    description_four = models.TextField(default="DESCRIPTION")
+    description_one = models.TextField(max_length=500, default="DESCRIPTION")
+    description_two = models.TextField(max_length=500, default="DESCRIPTION")
+    description_three = models.TextField(max_length=500, default="DESCRIPTION")
+    description_four = models.TextField(max_length=500, default="DESCRIPTION")
     stripe_plan_id = models.CharField(max_length=40)
 
     def __str__(self):
