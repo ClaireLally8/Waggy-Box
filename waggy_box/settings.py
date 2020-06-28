@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 from os import path
+import dj_database_url
 if path.exists("env.py"):
     import env
 
@@ -50,6 +51,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'memberships',
+    'django_countries',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -119,12 +121,17 @@ WSGI_APPLICATION = 'waggy_box.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
