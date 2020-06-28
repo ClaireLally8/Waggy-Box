@@ -1,11 +1,9 @@
 import uuid
-
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
 
 from django_countries.fields import CountryField
-
 from shop.models import CurrentItem
 
 
@@ -63,8 +61,7 @@ class Order(models.Model):
 
 class OrderLineItem(models.Model):
     order = models.ForeignKey(
-        Order,
-        null=False,
+        Order, null=False,
         blank=False,
         on_delete=models.CASCADE,
         related_name='lineitems')

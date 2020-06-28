@@ -13,23 +13,18 @@
 <hr class="divider">
 <h3 class="section-head text-center my-5">Navigation</h3>
 <div class="container">
-<div class="row py-5">
-<div class="col-lg-3 col-md-6 col-sm-12">
+<div class="row">
+<div class="col-lg-4 col-md-6 col-sm-12">
 <a href="{% url 'sub_overview' %}">
 <img src ="{% static 'images/paw-print-icon.png' %}" class="img-fluid dash-icon">
 <br><p class="dash-link pl-4">Subscription Overview</p></a>
 </div>
-<div class="col-lg-3 col-md-6 col-sm-12">
+<div class="col-lg-4 col-md-6 col-sm-12">
 <a href="{% url 'shop' %}">
 <img src ="{% static 'images/shop-icon.png' %}" class="img-fluid dash-icon">
 <br><p class="dash-link pl-4">Shop</p></a>
 </div>
-<div class="col-lg-3 col-md-6 col-sm-12">
-<a href="{% url 'order_history' %}">
-<img src ="{% static 'images/dog-head-icon.png' %}" class="img-fluid dash-icon">
-<br><p class="dash-link pl-4">Order History</p></a>
-</div>
-<div class="col-lg-3 col-md-6 col-sm-12">
+<div class="col-lg-4 col-md-6 col-sm-12">
 <a href="{% url 'contact' %}">
 <img src ="{% static 'images/paw-heart-icon.png' %}" class="img-fluid dash-icon">
 <br><p class="dash-link pl-4">Get in touch!</p></a>
@@ -39,7 +34,7 @@
 <hr class="divider my-5">
 <div class="container">
 <h3 class="section-head text-center my-5">Take a look at some of next months goodies!</h3>
-<div class="row my-5">
+<div class="d-flex justify-content-center">
 {% for item in items %}
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="image d-flex justify-content-center">
