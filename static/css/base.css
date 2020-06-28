@@ -9,6 +9,7 @@
 html, body {
  height: 100%;
  font-family: "Karla";
+ color: #68707c;
 }
 .main-container {
  min-height: 100vh; /* will cover the 100% of viewport */
@@ -22,25 +23,37 @@ footer {
  position:relative;
 }
 .light-noshadow{
-    background-color:#c6dabe;
+    background-color:#bbd4ce;
     box-shadow:none;
     text-shadow: none;
 }
 .nav-link{
-    color:#9f94b1!important;
+    color:#264e70!important;
     font-size:1rem;
     letter-spacing:1;
     font-family:"Rubik"!important;
     font-weight:300;
 }
 .nav-link:hover{
-    color:#a8b194!important;
+    color:#fdebd3!important;
     text-decoration: underline!important;
+}
+.link {
+    color:#f9b4ab;
+}
+.link:hover {
+    color:#679186;
+    text-decoration:underline;
 }
 .landingsection {
     background: url("../images/landing.jpg") no-repeat center center;
     background-size:cover;
     padding-bottom:8rem;
+}
+.dash-img {
+    background: url("../images/dash-dog.png") no-repeat center center;
+    background-size:cover;
+    padding-bottom:20rem;
 }
 .about-img {
     background: url("../images/about.png") no-repeat center center;
@@ -70,12 +83,12 @@ footer {
 .landing-main {
     margin-top:6rem;
     padding-bottom:2rem;
-    color:#9f94b1;
+    color:#679186;
     font-family:"Rubik";
 }
 .landing-sub {
     padding-bottom:6rem;
-    color:#9f94b1;
+    color:#f9b4ab;
     font-family:"Karla";
 }
 .about-us, .testimonials {
@@ -83,16 +96,17 @@ footer {
 }
 .section-head{
     font-family:"Rubik";
-    color:#9f94b1;
+    color:#679186;
 }
 .section-text, p {
     font-family:"Karla";
+    color:#264e70;
 }
 .how-it-works {
     padding:0rem 3rem 0rem 3rem;
 }
 .how-icons {
-    color:#9f94b1;
+    color:#f9b4ab;
     font-size:3rem;
 }
 .how-title, .testimonial-intro, .about-title, .top-how {
@@ -100,62 +114,48 @@ footer {
 }
 .name {
     font-family:"Karla";
-    color:#9f94b1;
+    color:#264e70;
 }
 .job {
     font-family:"Rubik";
-    color:#9f94b1;
+    color:#bbd4ce;
     font-weight:300;
 }
 .quote {
     font-family:"Rubik";
-    color:#a8b194;
+    color:#f9b4ab;
 }
 .star-icon {
-    color:#e3d3fd;
+    color:#fdebd3;
     padding:1.5rem 0rem 1.5rem 0rem
 }
 .icon-part{
     padding-top:2rem;
     padding-bottom:3rem;
 }
+.dash-icon {
+    max-height:150px;
+    max-width:150px;
+}
 .footer-head {
-    color:#9f94b1;
+    color:#264e70!important;
     font-family:"Rubik";
     font-weight:500;
     font-size:1.2rem;
 }
 .footer-text, .footer-link {
-    color:#9f94b1!important;
+    color:#264e70!important;
     font-family:"Karla";
     font-size:1rem;
 }
 .footer-link:hover {
-    color:#a8b194;
+    color:#fdebd3!important;
     text-decoration: underline;
-}
-.dash-text{
-    position: absolute;
-   opacity: 90%;
-  color:#9f94b1;
-  background-color:#c6dabe;
-  font-family:"Rubik";
-  font-weight:200;
-  top: 70%;
-  font-size: 1.3em;
-  padding-left: 0.34em;
-  padding-right: 0.34em;
-  padding-bottom: 0.2em;
-  border-radius: 0px 7px 7px 0px;
-}
-.dash-text:hover{
-    color:#c6dabe;
-  background-color:#9f94b1;
 }
 .about-main {
     padding-top:3rem;
     padding-bottom:2rem;
-    color:#9f94b1;
+    color:#f9b4ab;
     font-family:"Rubik";
 }
 .darkcolor {
@@ -163,8 +163,7 @@ footer {
 }
 .dog-name {
     font-family:"Rubik";
-    font-weight:200;
-    color:#a8b194;
+    color:#f9b4ab;
     font-size:1.4rem;
 }
 .dog-image {
@@ -180,26 +179,15 @@ footer {
 .dogs {
     padding-top:4rem;
 }
-.btn-sage{
-    color:black;
-    background-color:#9f94b1;
-    font-family:"Rubik";
-    font-weight:200;
-    border:none;
-}
-.btn-sage:hover{
-    color:black;
-    background-color:#a8b194;
-}
 .btn-lilac{
     font-family:"Rubik";
-    font-weight:200;
     border:none;
-    color:black!important;
-    background-color:#9f94b1;
+    color:#264e70!important;
+    background-color:#f9b4ab;
 }
 .btn-lilac:hover{
-    background-color:#a8b194;
+    background-color:#679186;
+    text-decoration:underline;
 }
 .card .card-body h1, .card .card-body h2, .card .card-body h3, .card .card-body h4, .card .card-body h5, .card .card-body h6 {
     min-height:80px;
@@ -221,7 +209,6 @@ footer {
     text-align:center;
     padding-top:5rem;
     font-family:"Rubik";
-    font-weight:200;
     color:#9f94b1;
 }
 .change-page-link, .login-link {
@@ -246,7 +233,6 @@ footer {
 }
 .product-name {
     font-family:"Rubik";
-    font-weight:200;
     color:#a8b194;
     padding-top:10rem;
     padding-left:3rem;
@@ -264,15 +250,13 @@ footer {
 }
 .future-name {
     font-family:"Rubik";
-    font-weight:200;
-    color:#a8b194;
+    color:#679186;
     padding-left:3rem;
     padding-right:3rem;
 }
 .view-bag {
     font-family:"Rubik";
     font-size:1rem;
-    font-weight:200;
     color:#9f94b1;
     padding-right:8rem;
     padding-left:5rem;
@@ -283,7 +267,6 @@ footer {
 }
 .quantity {
     font-family: "Rubik";
-    font-weight:200;
     color:#9f94b1;
     font-size:1.2rem;
 }
@@ -314,17 +297,16 @@ footer {
 }
 .grand-total {
     font-family:"Rubik";
-    font-weight:200;
     color:#a8b194;
 }
 .cart {
     padding-bottom:5rem;
 }
 .darkgreen {
-    color: #a8b194;
+    color: #679186;
 }
 .some-purple {
-   color: #9f94b1;
+   color: #264e70;
 }
 .post-link {
     color:#9f94b1;
@@ -340,12 +322,10 @@ footer {
 .sub-link {
     color:#a8b194;
     font-family: "Rubik";
-    font-weight:200;
 }
 .sub-link:hover {
     color:#9f94b1;
     font-family: "Rubik";
-    font-weight:200;
     text-decoration: underline;
 }
 .small-sect-head {
@@ -354,16 +334,22 @@ footer {
     text-decoration: underline;
     font-size:1.2rem;
     font-family: "Rubik";
-    font-weight:200;
 }
 .member-type {
     font-size:1.7rem;
+}
+.dash-link {
+    color:#264e70;
+}
+.dash-link:hover {
+    color:#bbd4ce;
+    text-decoration: underline;
 }
 .divider {
     width: 100px;
     padding-top: 3em;
     padding-bottom:2em;
-    border-top:2px solid #a8b194;
+    border-top:2px solid #679186;
     border-radius:50%;
     transform: rotate(180deg);
 }
@@ -371,8 +357,7 @@ footer {
     width: 100px;
     padding-top: 3em;
     padding-bottom:2em;
-    border-top:2px solid #e3d3fd;
+    border-top:2px solid #f9b4ab;
     border-radius:50%;
     transform: rotate(360deg);
-
 }
