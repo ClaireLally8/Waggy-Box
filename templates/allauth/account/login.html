@@ -29,7 +29,7 @@ for a {{ site_name }} account and sign in below:</p>
 
 {% else %}
 <p class="section-text text-center mt-5">If you have not created an account yet, then please
-<a class="nav-link pt-3" href="{{ signup_url }}">sign up here</a></p>
+<a class="link pt-3" href="{{ signup_url }}">sign up here</a></p>
 
 {% endif %}
 
@@ -39,7 +39,7 @@ for a {{ site_name }} account and sign in below:</p>
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <a class="login-link" href="{% url 'account_reset_password' %}">Forgot Password</a><br>
-  <button class=" mt-5 btn btn-sage" type="submit">Login</button>
+  <a class="link" href="{% url 'account_reset_password' %}">Forgot Password</a><br>
+  <button class=" mt-5 btn btn-lilac" type="submit">Login</button>
 </form>
 {% endblock %}

@@ -6,7 +6,7 @@
 
 {% block content %}
 <h1 class="text-center section-head mt-5">Get Started</h1>
-<p class="section-text text-center mt-5">Already have an account? Then please <a class="nav-link" href="{{ login_url }}">login here</a>.</p>
+<p class="section-text text-center mt-5">Already have an account? Then please <a class="link" href="{{ login_url }}">login here</a>.</p>
 
 <form class="signupmt-5 text-center section-text" id="signup_form" method="post" action="{% url 'account_signup' %}">
   {% csrf_token %}
