@@ -1,0 +1,1599 @@
+[
+{
+ "model": "contenttypes.contenttype",
+ "pk": 113,
+ "fields": {
+  "app_label": "admin",
+  "model": "logentry"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 114,
+ "fields": {
+  "app_label": "auth",
+  "model": "permission"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 115,
+ "fields": {
+  "app_label": "auth",
+  "model": "group"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 116,
+ "fields": {
+  "app_label": "auth",
+  "model": "user"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 117,
+ "fields": {
+  "app_label": "contenttypes",
+  "model": "contenttype"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 118,
+ "fields": {
+  "app_label": "sessions",
+  "model": "session"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 119,
+ "fields": {
+  "app_label": "sites",
+  "model": "site"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 120,
+ "fields": {
+  "app_label": "account",
+  "model": "emailaddress"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 121,
+ "fields": {
+  "app_label": "account",
+  "model": "emailconfirmation"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 122,
+ "fields": {
+  "app_label": "socialaccount",
+  "model": "socialapp"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 123,
+ "fields": {
+  "app_label": "socialaccount",
+  "model": "socialaccount"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 124,
+ "fields": {
+  "app_label": "socialaccount",
+  "model": "socialtoken"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 125,
+ "fields": {
+  "app_label": "shop",
+  "model": "category"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 126,
+ "fields": {
+  "app_label": "shop",
+  "model": "currentitem"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 127,
+ "fields": {
+  "app_label": "shop",
+  "model": "futureitem"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 128,
+ "fields": {
+  "app_label": "checkout",
+  "model": "order"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 129,
+ "fields": {
+  "app_label": "checkout",
+  "model": "orderlineitem"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 130,
+ "fields": {
+  "app_label": "memberships",
+  "model": "membership"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 131,
+ "fields": {
+  "app_label": "memberships",
+  "model": "usermembership"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 132,
+ "fields": {
+  "app_label": "memberships",
+  "model": "subscription"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 133,
+ "fields": {
+  "app_label": "checkout",
+  "model": "userprofile"
+ }
+},
+{
+ "model": "sessions.session",
+ "pk": "idwhc1oxdjsv8gysdrx5iblo9qra009c",
+ "fields": {
+  "session_data": "MDkxMzUxZjZjZWE2YmFhY2Y5ZGUyYjZjNGVhZjYzOTQ4NjVkOWZhYzp7Il9hdXRoX3VzZXJfaWQiOiI0MiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiY2Y3ZTJjZWFiN2Q1MmE0MGE1YjFhYmYyZjNjNjk5MTFkYmNhYzJjYyJ9",
+  "expire_date": "2020-07-12T16:59:18.212Z"
+ }
+},
+{
+ "model": "sites.site",
+ "pk": 1,
+ "fields": {
+  "domain": "example.com",
+  "name": "example.com"
+ }
+},
+{
+ "model": "shop.category",
+ "pk": 6,
+ "fields": {
+  "name": "Toys"
+ }
+},
+{
+ "model": "shop.category",
+ "pk": 7,
+ "fields": {
+  "name": "Treats"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 1,
+ "fields": {
+  "category": 6,
+  "pid": "Kong-Jaxx-Infinity-Tug-Toy",
+  "name": "Kong Jaxx Infinity Tug Toy",
+  "description": "KONG Jaxx is built from durable materials that are designed to reward appropriate chewing behavior while satisfying instinctual needs. The unique burly construction is ideal for tugging and fetching fun, while the sturdy rope adds flexibility for dynamic interactive play sessions. Constructed for easy gripping and squeaker free for quiet time, this toy is built to stand-up to multiple play needs for fun that stands the test of time.",
+  "price": "13.00",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/7/4/74185_kong_kong_jaxx_infinity_tug_1.jpg",
+  "image": "74185_kong_kong_jaxx_infinity_tug_1_1_6F3ciTb.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 2,
+ "fields": {
+  "category": 6,
+  "pid": "Kong-Jaxx-Braided-Tug-Toy",
+  "name": "Kong Jaxx Braided Tug Toy",
+  "description": "KONG Jaxx is built from durable materials that are designed to reward appropriate chewing behavior while satisfying instinctual needs. The unique burly construction is ideal for tugging and fetching fun, while the sturdy rope adds flexibility for dynamic interactive play sessions. Constructed for easy gripping and squeaker free for quiet time, this toy is built to stand-up to multiple play needs for fun that stands the test of time.",
+  "price": "13.00",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/p/j/pj11_1_-20200107224632-20200107231847-1000x1000.jpg",
+  "image": "pj11_1_-20200107224632-20200107231847-1000x1000.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 3,
+ "fields": {
+  "category": 6,
+  "pid": "Nerf-Max-Court-Squeak-X-Ring",
+  "name": "Nerf Max Court Squeak X-Ring",
+  "description": "Enjoy some play time with your dog with the Nerf Dog Max Court Squeak X-Ring. A playful squeaker toy that will keep your dog engaged for hours. It's Nerf or Nothin!",
+  "price": "13.00",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/m/a/max-court-elite-squeak-x-ring-p3746-10385_image.jpg",
+  "image": "max-court-elite-squeak-x-ring-p3746-10385_image.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 4,
+ "fields": {
+  "category": 6,
+  "pid": "Rosewood-Cuddle-Tugs-Giraffe",
+  "name": "Rosewood Cuddle Tugs Giraffe",
+  "description": "Charming on the outside tough on the inside, this luxury plush Giraffe is made with the highest quality materials available. Featuring multi-textured fabrics and a range of features. The tough plush material exceeds industry durability standards allowing the traditional ripping points to stay stronger for longer.",
+  "price": "10.99",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/2/7/27655_pk.jpg",
+  "image": "27655_pk_I385wpi.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 5,
+ "fields": {
+  "category": 6,
+  "pid": "Rosewood-Ropes-A-Go-Go-Jungle-Gator",
+  "name": "Rosewood Ropes-A-Go-Go Jungle Gator",
+  "description": "Charming on the outside tough on the inside, this luxury plush Gator is made with the highest quality materials available. Featuring multi-textured fabrics and a range of features. The tough plush material exceeds industry durability standards allowing the traditional ripping points to stay stronger for longer.",
+  "price": "10.99",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/2/7/27635_pk.jpg",
+  "image": "27635_pk_WUSpa89.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 6,
+ "fields": {
+  "category": 6,
+  "pid": "Rosewood-Thunder-Tugga-Leggy-Zebra",
+  "name": "Rosewood Thunder Tugga Leggy Zebra",
+  "description": "The plush Thunda Tuggas Leggies appear soft and sweet, but these feisty fellas let out a series of rapid squeaks when their legs are pulled. Your dog can munch, bite, chew, and squeak its way to canine bliss. Durable K9 Tuff Guard makes this toy the perfect companion for your best friend.",
+  "price": "13.00",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/2/7/27615_pk.jpg",
+  "image": "27615_pk.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 7,
+ "fields": {
+  "category": 6,
+  "pid": "Bionic-Stick-Orange",
+  "name": "Bionic Stick Orange",
+  "description": "The Bionic Urban Stick is an interactive treat holding dog chew toy that stands up to the toughest chewers. The bright orange color of this bone makes this chew toy easy to spot outdoors! Naturally free of all the stuff you don't want your dog chewing on like lead BPA and phthalates, the Bionic Urban Stick is made with unmatched durability and double the treat holding compartments, making chew time super fun.",
+  "price": "5.90",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/2/7/27230_pk.jpg",
+  "image": "27230_pk_fFwGVwY.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 8,
+ "fields": {
+  "category": 6,
+  "pid": "KONG-Shakers-Duck-Honker-Large",
+  "name": "KONG Shakers Duck Honker Large",
+  "description": "KONG Shakers Honkers Duck lets the fun fly with an internal neck which features a texture that satisfies a dogs\u2019 natural chewing instincts while the long floppy legs spark shaking and tugging play sessions. KONG Shakers Honkers low tone squawk and the reinforced plush design keeps dogs tickled pink and playing longer.",
+  "price": "13.99",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/s/h/shk31_1_-20180910182624-20180910190812-1000x1000.jpg",
+  "image": "shk31_1_-20180910182624-20180910190812-1000x1000_XTvbu4q.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 9,
+ "fields": {
+  "category": null,
+  "pid": "Beco-Bamboo-David-The-Dolphin-Toy",
+  "name": "Beco Bamboo David The Dolphin Toy",
+  "description": "David the Dolphin is made from recycled plastic bottles and has an interactive squeaker which is recyclable. David is double stitched and double layered, with an extra thick black lining, making him tough and durable. Whether your dog enjoys a wrestle or a cuddle, David is ready to go.\r\n\r\nAll seams are reinforced with tough cloth to keep the stuffing in and your dog's chewing instincts at bay. If your dog manages to get through the first tough layer, Beco have a backup. The stuffing and lining of these toys is made from recycled plastic. They help you keep plastic out of our oceans to protect the wildlife in them.",
+  "price": "8.99",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/d/o/dolphin-w-name-450x450.jpg",
+  "image": "dolphin-w-name-450x450_Nb4pNVJ.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 10,
+ "fields": {
+  "category": 6,
+  "pid": "KONG-Hopz-Treat-Dispenser-Ball-Toy",
+  "name": "KONG Hopz Treat Dispenser Ball Toy",
+  "description": "The KONG Hopz is a rewarding treat dispenser that satisfies natural foraging instincts for on-going mental enrichment. Its orbital shape creates an unpredictable movement sparking engagement as dogs figure out this clever puzzle toy. The subtle rocking motion combines with a squeaker that keeps a dog interest piqued and extends play time.",
+  "price": "6.99",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/k/o/kong-hopz-ball.jpg",
+  "image": "kong-hopz-ball_I2VXnI2.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 11,
+ "fields": {
+  "category": 6,
+  "pid": "KONG-Comfort-Kiddos-Small-Elephant",
+  "name": "KONG Comfort Kiddos Small Elephant",
+  "description": "KONG Comfort Kiddos are ideal for doggie play and cuddle time. Featuring a low tone bellow squeaker that pique a dog\u2019s curiosity and a removable squeaker for quiet time. The squeaker is easy to remove, making it ideal for cuddle time, insert back into the toy for countless indoor play sessions.",
+  "price": "6.90",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/c/o/comfort_kiddos_elephant_1.jpg",
+  "image": "comfort_kiddos_elephant_1.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 12,
+ "fields": {
+  "category": 6,
+  "pid": "KONG-Comfort-Kiddos-Small-Pig",
+  "name": "KONG Comfort Kiddos Small Pig",
+  "description": "KONG Comfort Kiddos are ideal for doggie play and cuddle time. Featuring a low tone bellow squeaker that pique a dog\u2019s curiosity and a removable squeaker for quiet time. The squeaker is easy to remove, making it ideal for cuddle time, insert back into the toy for countless indoor play sessions.",
+  "price": "8.00",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/c/o/comfort_kiddos_pig.jpg",
+  "image": "comfort_kiddos_pig.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 13,
+ "fields": {
+  "category": 7,
+  "pid": "Go-Native-Essential-Dog-Treats-Duck",
+  "name": "Go Native Essential Dog Treats Duck",
+  "description": "New from Connolly's Red Mills is their Go Native Essential Dog Treats Duck 100g; a super premium, wholly Irish and very tasty food. Made using only the finest naturally sourced ingredients, Connolly's have perfected their recipe in their state of the art facilities using modern technologies and pet nutrition experts, now available to your pet!\r\n\r\nWith over 30% meat content, Red Mill's Go Native Duck Treats are the tastiest and most nutritious dog treats available.",
+  "price": "2.00",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/g/o/gonative_duck_treats_02.png",
+  "image": "gonative_duck_treats_02.png"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 14,
+ "fields": {
+  "category": 7,
+  "pid": "Go-Native-Essential-Dog-Treats-Herring",
+  "name": "Go Native Essential Dog Treats Herring",
+  "description": "ew from Connolly's Red Mills is their Go Native Essential Dog Treats Herring 100g; a super premium, wholly Irish and very tasty food. Made using only the finest naturally sourced ingredients, Connolly's have perfected their recipe in their state of the art facilities using modern technologies and pet nutrition experts, now available to your pet!\r\n\r\nWith over 30% meat content, Red Mill's Go Native Herring Treats are the tastiest and most nutritious dog treats available.",
+  "price": "3.90",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/g/o/gonative_herring_treats_03_1.jpg",
+  "image": "gonative_herring_treats_03_1.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 15,
+ "fields": {
+  "category": 7,
+  "pid": "Soopa-Sweet-Potato-Chews",
+  "name": "Soopa Sweet Potato Chews",
+  "description": "Soopa Tasty Chews are the ultimate healthy and tasty treat for your pet. Packed with botanicals and healthy ingredients for dogs, these treats help balance a healthy diet. Ideal for all sizes of dogs.",
+  "price": "3.90",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/s/w/sweet-potato-1_grande.jpg",
+  "image": "sweet-potato-1_grande.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 16,
+ "fields": {
+  "category": 7,
+  "pid": "Carnilove Dog Treats Duck And Rosemary",
+  "name": "Carnilove-Dog-Treats-Duck-And-Rosemary",
+  "description": "This delicious snack is suitable for sensitive dogs, with meat and berries it is natural source of antioxidants for strong immunity. New to Carnilove. Can be used to compliment any food.",
+  "price": "3.90",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/c/a/carnilove_soft_dog_treats_duck_rosemary.jpg",
+  "image": "carnilove_soft_dog_treats_duck_rosemary.jpg"
+ }
+},
+{
+ "model": "shop.currentitem",
+ "pk": 17,
+ "fields": {
+  "category": 7,
+  "pid": "Carnilove-Dog-Treats-Mackeral-And-Berries",
+  "name": "Carnilove Dog Treats Mackeral And Berries",
+  "description": "This delicious snack is suitable for sensitive dogs, with meat and berries it is natural source of antioxidants for strong immunity. New to Carnilove. Can be used to compliment any food.",
+  "price": "3.90",
+  "image_url": "https://equipetmedia-14eef.kxcdn.com/pub/media/catalog/product/cache/73909235653d85c295017b1250ef0ee9/c/a/carnilove_crunchy_dog_treats_mackerel_raspberries.jpg",
+  "image": "carnilove_crunchy_dog_treats_mackerel_raspberries.jpg"
+ }
+},
+{
+ "model": "shop.futureitem",
+ "pk": 5,
+ "fields": {
+  "pid": "Kong",
+  "name": "KONG Classic",
+  "image_url": "https://shop-cdn-m.mediazs.com/bilder/kong/classic/red/2/400/46452_pla_kong_classic_hs_01_2.jpg",
+  "image": "46452_pla_kong_classic_hs_01_2.jpg"
+ }
+},
+{
+ "model": "shop.futureitem",
+ "pk": 6,
+ "fields": {
+  "pid": "toy",
+  "name": "Treat Strategy Game",
+  "image_url": "https://shop-cdn-m.mediazs.com/bilder/trixie/dog/activity/turn/around/strategy/game/9/800/73780_pla_trixie_dog_activity_turn_around_hs_02_9.jpg",
+  "image": "73780_pla_trixie_dog_activity_turn_around_hs_02_9.jpg"
+ }
+},
+{
+ "model": "shop.futureitem",
+ "pk": 7,
+ "fields": {
+  "pid": "treat",
+  "name": "Wolf of Wilderness Wild Bites Dog Snacks",
+  "image_url": "https://shop-cdn-m.mediazs.com/bilder/g/wolf/of/wilderness/wild/bites/dog/snacks/special/price/8/400/zop_18_085_wow_snacks__wild_bites_wildhills_p2_1000x1000_8.jpg",
+  "image": "zop_18_085_wow_snacks__wild_bites_wildhills_p2_1000x1000_8.jpg"
+ }
+},
+{
+ "model": "shop.futureitem",
+ "pk": 8,
+ "fields": {
+  "pid": "KONG-CuteSeas-Octopus",
+  "name": "KONG CuteSeas Octopus",
+  "image_url": "https://shop-cdn-m.mediazs.com/bilder/kong/cuteseas/octopus/7/400/492023_kong_oktopus_7.jpg",
+  "image": "492023_kong_oktopus_7.jpg"
+ }
+},
+{
+ "model": "checkout.order",
+ "pk": 25,
+ "fields": {
+  "order_number": "5C65FD0BACDF46CBB4D29269B7B0E2A5",
+  "full_name": "Claire Lally",
+  "email": "clairelally08@gmail.com",
+  "phone_number": "0852071712",
+  "country": "IE",
+  "postcode": "K78 Y1K2",
+  "town_or_city": "Lucan",
+  "street_address1": "32 Hillcrest Walk",
+  "street_address2": null,
+  "county": "Co.Dublin",
+  "date": "2020-06-27T18:26:07.827Z",
+  "order_total": "0.00",
+  "grand_total": "0.00"
+ }
+},
+{
+ "model": "checkout.order",
+ "pk": 26,
+ "fields": {
+  "order_number": "A2374A1FC0A14ECA9617962406361487",
+  "full_name": "Claire Lally",
+  "email": "clairelally08@gmail.com",
+  "phone_number": "0852071712",
+  "country": "IE",
+  "postcode": "K78 Y1K2",
+  "town_or_city": "Lucan",
+  "street_address1": "32 Hillcrest Walk",
+  "street_address2": null,
+  "county": "Co.Dublin",
+  "date": "2020-06-27T18:27:13.766Z",
+  "order_total": "78.00",
+  "grand_total": "78.00"
+ }
+},
+{
+ "model": "checkout.order",
+ "pk": 27,
+ "fields": {
+  "order_number": "B3462ADD2DFC418DA295945FD543B923",
+  "full_name": "Claire Lally",
+  "email": "clairelally08@gmail.com",
+  "phone_number": "0852071712",
+  "country": "IE",
+  "postcode": "K78 Y1K2",
+  "town_or_city": "Lucan",
+  "street_address1": "32 Hillcrest Walk",
+  "street_address2": null,
+  "county": "Co.Dublin",
+  "date": "2020-06-28T15:10:37.063Z",
+  "order_total": "6.90",
+  "grand_total": "6.90"
+ }
+},
+{
+ "model": "checkout.order",
+ "pk": 28,
+ "fields": {
+  "order_number": "B08387B329D64A66B8D990506A942904",
+  "full_name": "Claire Lally",
+  "email": "clairelally08@gmail.com",
+  "phone_number": "0852071712",
+  "country": "IE",
+  "postcode": "K78 Y1K2",
+  "town_or_city": "Lucan",
+  "street_address1": "32 Hillcrest Walk",
+  "street_address2": null,
+  "county": "Co.Dublin",
+  "date": "2020-06-28T15:23:17.108Z",
+  "order_total": "18.90",
+  "grand_total": "18.90"
+ }
+},
+{
+ "model": "checkout.order",
+ "pk": 29,
+ "fields": {
+  "order_number": "A150F5D2EFA0429399E305D2AC4E5BF8",
+  "full_name": "Claire Lally",
+  "email": "clairelally08@gmail.com",
+  "phone_number": "0852071712",
+  "country": "IE",
+  "postcode": "K78 Y1K2",
+  "town_or_city": "Lucan",
+  "street_address1": "32 Hillcrest Walk",
+  "street_address2": null,
+  "county": "Co.Dublin",
+  "date": "2020-06-28T15:25:22.311Z",
+  "order_total": "13.00",
+  "grand_total": "13.00"
+ }
+},
+{
+ "model": "checkout.order",
+ "pk": 30,
+ "fields": {
+  "order_number": "F02B6D803F4747B2ADBC57B34B44AE56",
+  "full_name": "Claire Lally",
+  "email": "clairelally08@gmail.com",
+  "phone_number": "0852071712",
+  "country": "IE",
+  "postcode": "K78 Y1K2",
+  "town_or_city": "Lucan",
+  "street_address1": "32 Hillcrest Walk",
+  "street_address2": null,
+  "county": "Co.Dublin",
+  "date": "2020-06-28T15:37:06.502Z",
+  "order_total": "13.00",
+  "grand_total": "13.00"
+ }
+},
+{
+ "model": "checkout.orderlineitem",
+ "pk": 22,
+ "fields": {
+  "order": 26,
+  "item": 2,
+  "quantity": 5,
+  "lineitem_total": "65.00"
+ }
+},
+{
+ "model": "checkout.orderlineitem",
+ "pk": 23,
+ "fields": {
+  "order": 26,
+  "item": 1,
+  "quantity": 1,
+  "lineitem_total": "13.00"
+ }
+},
+{
+ "model": "checkout.orderlineitem",
+ "pk": 24,
+ "fields": {
+  "order": 27,
+  "item": 11,
+  "quantity": 1,
+  "lineitem_total": "6.90"
+ }
+},
+{
+ "model": "checkout.orderlineitem",
+ "pk": 25,
+ "fields": {
+  "order": 28,
+  "item": 2,
+  "quantity": 1,
+  "lineitem_total": "13.00"
+ }
+},
+{
+ "model": "checkout.orderlineitem",
+ "pk": 26,
+ "fields": {
+  "order": 28,
+  "item": 7,
+  "quantity": 1,
+  "lineitem_total": "5.90"
+ }
+},
+{
+ "model": "checkout.orderlineitem",
+ "pk": 27,
+ "fields": {
+  "order": 29,
+  "item": 2,
+  "quantity": 1,
+  "lineitem_total": "13.00"
+ }
+},
+{
+ "model": "checkout.orderlineitem",
+ "pk": 28,
+ "fields": {
+  "order": 30,
+  "item": 2,
+  "quantity": 1,
+  "lineitem_total": "13.00"
+ }
+},
+{
+ "model": "memberships.membership",
+ "pk": 1,
+ "fields": {
+  "membership_type": "Free",
+  "price": 0,
+  "description_one": "Free Membership",
+  "description_two": "na",
+  "description_three": "na",
+  "description_four": "na",
+  "stripe_plan_id": "price_1GyL11LBUH62NJcIJxr6vCXo"
+ }
+},
+{
+ "model": "memberships.membership",
+ "pk": 2,
+ "fields": {
+  "membership_type": "Regular",
+  "price": 15,
+  "description_one": "5 tested & approved toys, delivered to your door every month",
+  "description_two": "2 bags of high quality treats, guaranteed to be loved by your pooches",
+  "description_three": "Option to re-purchase any toys you love",
+  "description_four": "DESCRIPTION",
+  "stripe_plan_id": "price_1GyL11LBUH62NJcIGVo62sKk"
+ }
+},
+{
+ "model": "memberships.membership",
+ "pk": 3,
+ "fields": {
+  "membership_type": "Premium",
+  "price": 25,
+  "description_one": "7 tested and approved toys guaranteed for your doggie to love!",
+  "description_two": "4 packets of treats, that we assure you dog will love the taste of!",
+  "description_three": "Option to re-purchase any items you love again!",
+  "description_four": "Every month, you will be entered into the lotto draw to win a box worth a whopping 50 euro!",
+  "stripe_plan_id": "price_1GyL11LBUH62NJcIvTn7Zx0e"
+ }
+},
+{
+ "model": "memberships.subscription",
+ "pk": 10,
+ "fields": {
+  "user_membership": 5,
+  "stripe_subscription_id": "sub_HYAATJmEHtGHum",
+  "active": true
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 450,
+ "fields": {
+  "name": "Can add log entry",
+  "content_type": 113,
+  "codename": "add_logentry"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 451,
+ "fields": {
+  "name": "Can change log entry",
+  "content_type": 113,
+  "codename": "change_logentry"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 452,
+ "fields": {
+  "name": "Can delete log entry",
+  "content_type": 113,
+  "codename": "delete_logentry"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 453,
+ "fields": {
+  "name": "Can view log entry",
+  "content_type": 113,
+  "codename": "view_logentry"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 454,
+ "fields": {
+  "name": "Can add permission",
+  "content_type": 114,
+  "codename": "add_permission"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 455,
+ "fields": {
+  "name": "Can change permission",
+  "content_type": 114,
+  "codename": "change_permission"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 456,
+ "fields": {
+  "name": "Can delete permission",
+  "content_type": 114,
+  "codename": "delete_permission"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 457,
+ "fields": {
+  "name": "Can view permission",
+  "content_type": 114,
+  "codename": "view_permission"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 458,
+ "fields": {
+  "name": "Can add group",
+  "content_type": 115,
+  "codename": "add_group"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 459,
+ "fields": {
+  "name": "Can change group",
+  "content_type": 115,
+  "codename": "change_group"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 460,
+ "fields": {
+  "name": "Can delete group",
+  "content_type": 115,
+  "codename": "delete_group"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 461,
+ "fields": {
+  "name": "Can view group",
+  "content_type": 115,
+  "codename": "view_group"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 462,
+ "fields": {
+  "name": "Can add user",
+  "content_type": 116,
+  "codename": "add_user"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 463,
+ "fields": {
+  "name": "Can change user",
+  "content_type": 116,
+  "codename": "change_user"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 464,
+ "fields": {
+  "name": "Can delete user",
+  "content_type": 116,
+  "codename": "delete_user"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 465,
+ "fields": {
+  "name": "Can view user",
+  "content_type": 116,
+  "codename": "view_user"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 466,
+ "fields": {
+  "name": "Can add content type",
+  "content_type": 117,
+  "codename": "add_contenttype"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 467,
+ "fields": {
+  "name": "Can change content type",
+  "content_type": 117,
+  "codename": "change_contenttype"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 468,
+ "fields": {
+  "name": "Can delete content type",
+  "content_type": 117,
+  "codename": "delete_contenttype"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 469,
+ "fields": {
+  "name": "Can view content type",
+  "content_type": 117,
+  "codename": "view_contenttype"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 470,
+ "fields": {
+  "name": "Can add session",
+  "content_type": 118,
+  "codename": "add_session"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 471,
+ "fields": {
+  "name": "Can change session",
+  "content_type": 118,
+  "codename": "change_session"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 472,
+ "fields": {
+  "name": "Can delete session",
+  "content_type": 118,
+  "codename": "delete_session"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 473,
+ "fields": {
+  "name": "Can view session",
+  "content_type": 118,
+  "codename": "view_session"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 474,
+ "fields": {
+  "name": "Can add site",
+  "content_type": 119,
+  "codename": "add_site"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 475,
+ "fields": {
+  "name": "Can change site",
+  "content_type": 119,
+  "codename": "change_site"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 476,
+ "fields": {
+  "name": "Can delete site",
+  "content_type": 119,
+  "codename": "delete_site"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 477,
+ "fields": {
+  "name": "Can view site",
+  "content_type": 119,
+  "codename": "view_site"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 478,
+ "fields": {
+  "name": "Can add email address",
+  "content_type": 120,
+  "codename": "add_emailaddress"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 479,
+ "fields": {
+  "name": "Can change email address",
+  "content_type": 120,
+  "codename": "change_emailaddress"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 480,
+ "fields": {
+  "name": "Can delete email address",
+  "content_type": 120,
+  "codename": "delete_emailaddress"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 481,
+ "fields": {
+  "name": "Can view email address",
+  "content_type": 120,
+  "codename": "view_emailaddress"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 482,
+ "fields": {
+  "name": "Can add email confirmation",
+  "content_type": 121,
+  "codename": "add_emailconfirmation"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 483,
+ "fields": {
+  "name": "Can change email confirmation",
+  "content_type": 121,
+  "codename": "change_emailconfirmation"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 484,
+ "fields": {
+  "name": "Can delete email confirmation",
+  "content_type": 121,
+  "codename": "delete_emailconfirmation"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 485,
+ "fields": {
+  "name": "Can view email confirmation",
+  "content_type": 121,
+  "codename": "view_emailconfirmation"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 486,
+ "fields": {
+  "name": "Can add social application",
+  "content_type": 122,
+  "codename": "add_socialapp"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 487,
+ "fields": {
+  "name": "Can change social application",
+  "content_type": 122,
+  "codename": "change_socialapp"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 488,
+ "fields": {
+  "name": "Can delete social application",
+  "content_type": 122,
+  "codename": "delete_socialapp"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 489,
+ "fields": {
+  "name": "Can view social application",
+  "content_type": 122,
+  "codename": "view_socialapp"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 490,
+ "fields": {
+  "name": "Can add social account",
+  "content_type": 123,
+  "codename": "add_socialaccount"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 491,
+ "fields": {
+  "name": "Can change social account",
+  "content_type": 123,
+  "codename": "change_socialaccount"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 492,
+ "fields": {
+  "name": "Can delete social account",
+  "content_type": 123,
+  "codename": "delete_socialaccount"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 493,
+ "fields": {
+  "name": "Can view social account",
+  "content_type": 123,
+  "codename": "view_socialaccount"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 494,
+ "fields": {
+  "name": "Can add social application token",
+  "content_type": 124,
+  "codename": "add_socialtoken"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 495,
+ "fields": {
+  "name": "Can change social application token",
+  "content_type": 124,
+  "codename": "change_socialtoken"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 496,
+ "fields": {
+  "name": "Can delete social application token",
+  "content_type": 124,
+  "codename": "delete_socialtoken"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 497,
+ "fields": {
+  "name": "Can view social application token",
+  "content_type": 124,
+  "codename": "view_socialtoken"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 498,
+ "fields": {
+  "name": "Can add category",
+  "content_type": 125,
+  "codename": "add_category"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 499,
+ "fields": {
+  "name": "Can change category",
+  "content_type": 125,
+  "codename": "change_category"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 500,
+ "fields": {
+  "name": "Can delete category",
+  "content_type": 125,
+  "codename": "delete_category"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 501,
+ "fields": {
+  "name": "Can view category",
+  "content_type": 125,
+  "codename": "view_category"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 502,
+ "fields": {
+  "name": "Can add current item",
+  "content_type": 126,
+  "codename": "add_currentitem"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 503,
+ "fields": {
+  "name": "Can change current item",
+  "content_type": 126,
+  "codename": "change_currentitem"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 504,
+ "fields": {
+  "name": "Can delete current item",
+  "content_type": 126,
+  "codename": "delete_currentitem"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 505,
+ "fields": {
+  "name": "Can view current item",
+  "content_type": 126,
+  "codename": "view_currentitem"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 506,
+ "fields": {
+  "name": "Can add future item",
+  "content_type": 127,
+  "codename": "add_futureitem"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 507,
+ "fields": {
+  "name": "Can change future item",
+  "content_type": 127,
+  "codename": "change_futureitem"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 508,
+ "fields": {
+  "name": "Can delete future item",
+  "content_type": 127,
+  "codename": "delete_futureitem"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 509,
+ "fields": {
+  "name": "Can view future item",
+  "content_type": 127,
+  "codename": "view_futureitem"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 510,
+ "fields": {
+  "name": "Can add order",
+  "content_type": 128,
+  "codename": "add_order"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 511,
+ "fields": {
+  "name": "Can change order",
+  "content_type": 128,
+  "codename": "change_order"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 512,
+ "fields": {
+  "name": "Can delete order",
+  "content_type": 128,
+  "codename": "delete_order"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 513,
+ "fields": {
+  "name": "Can view order",
+  "content_type": 128,
+  "codename": "view_order"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 514,
+ "fields": {
+  "name": "Can add order line item",
+  "content_type": 129,
+  "codename": "add_orderlineitem"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 515,
+ "fields": {
+  "name": "Can change order line item",
+  "content_type": 129,
+  "codename": "change_orderlineitem"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 516,
+ "fields": {
+  "name": "Can delete order line item",
+  "content_type": 129,
+  "codename": "delete_orderlineitem"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 517,
+ "fields": {
+  "name": "Can view order line item",
+  "content_type": 129,
+  "codename": "view_orderlineitem"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 518,
+ "fields": {
+  "name": "Can add membership",
+  "content_type": 130,
+  "codename": "add_membership"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 519,
+ "fields": {
+  "name": "Can change membership",
+  "content_type": 130,
+  "codename": "change_membership"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 520,
+ "fields": {
+  "name": "Can delete membership",
+  "content_type": 130,
+  "codename": "delete_membership"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 521,
+ "fields": {
+  "name": "Can view membership",
+  "content_type": 130,
+  "codename": "view_membership"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 522,
+ "fields": {
+  "name": "Can add user membership",
+  "content_type": 131,
+  "codename": "add_usermembership"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 523,
+ "fields": {
+  "name": "Can change user membership",
+  "content_type": 131,
+  "codename": "change_usermembership"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 524,
+ "fields": {
+  "name": "Can delete user membership",
+  "content_type": 131,
+  "codename": "delete_usermembership"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 525,
+ "fields": {
+  "name": "Can view user membership",
+  "content_type": 131,
+  "codename": "view_usermembership"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 526,
+ "fields": {
+  "name": "Can add subscription",
+  "content_type": 132,
+  "codename": "add_subscription"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 527,
+ "fields": {
+  "name": "Can change subscription",
+  "content_type": 132,
+  "codename": "change_subscription"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 528,
+ "fields": {
+  "name": "Can delete subscription",
+  "content_type": 132,
+  "codename": "delete_subscription"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 529,
+ "fields": {
+  "name": "Can view subscription",
+  "content_type": 132,
+  "codename": "view_subscription"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 530,
+ "fields": {
+  "name": "Can add user profile",
+  "content_type": 133,
+  "codename": "add_userprofile"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 531,
+ "fields": {
+  "name": "Can change user profile",
+  "content_type": 133,
+  "codename": "change_userprofile"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 532,
+ "fields": {
+  "name": "Can delete user profile",
+  "content_type": 133,
+  "codename": "delete_userprofile"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 533,
+ "fields": {
+  "name": "Can view user profile",
+  "content_type": 133,
+  "codename": "view_userprofile"
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 41,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$DQYnQ4c6rhSv$L0z/tC1B1x08u5IvFX+Ipo5AOjnEisIrZ9tUDDrWi0c=",
+  "last_login": "2020-06-28T15:38:03.578Z",
+  "is_superuser": true,
+  "username": "root",
+  "first_name": "",
+  "last_name": "",
+  "email": "",
+  "is_staff": true,
+  "is_active": true,
+  "date_joined": "2020-06-28T15:37:53.542Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 42,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$k0lPbSuNCxqI$EyUNrY1nM7y2ZV/E6UKZ8oF1WpBmW0BYs9F5x70qfhY=",
+  "last_login": "2020-06-28T16:12:10.380Z",
+  "is_superuser": true,
+  "username": "admin",
+  "first_name": "",
+  "last_name": "",
+  "email": "",
+  "is_staff": true,
+  "is_active": true,
+  "date_joined": "2020-06-28T16:11:59.496Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "memberships.usermembership",
+ "pk": 4,
+ "fields": {
+  "user": 41,
+  "stripe_customer_id": "cus_HY8rjrpaGv9C7h",
+  "membership": null,
+  "full_name": "Please enter your full name",
+  "email": "Please enter your email address",
+  "phone_number": "Please enter your phone number",
+  "country": "Ireland",
+  "postcode": null,
+  "town_or_city": "Please enter your City",
+  "street_address1": "Please enter address line 1",
+  "street_address2": null,
+  "county": null
+ }
+},
+{
+ "model": "memberships.usermembership",
+ "pk": 5,
+ "fields": {
+  "user": 42,
+  "stripe_customer_id": "cus_HY9PfGvikirJlR",
+  "membership": 3,
+  "full_name": "Claire Lally",
+  "email": "clairelally08@gmail.com",
+  "phone_number": "0852071712",
+  "country": "IE",
+  "postcode": "K78 Y1K2",
+  "town_or_city": "Lucan",
+  "street_address1": "32 Hillcrest Walk",
+  "street_address2": null,
+  "county": "Co.Dublin"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 149,
+ "fields": {
+  "action_time": "2020-06-28T15:38:46.502Z",
+  "user": 41,
+  "content_type": 116,
+  "object_id": "38",
+  "object_repr": "admin",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 150,
+ "fields": {
+  "action_time": "2020-06-28T15:38:46.528Z",
+  "user": 41,
+  "content_type": 116,
+  "object_id": "39",
+  "object_repr": "main",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 151,
+ "fields": {
+  "action_time": "2020-06-28T15:38:46.550Z",
+  "user": 41,
+  "content_type": 116,
+  "object_id": "40",
+  "object_repr": "newTest",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 152,
+ "fields": {
+  "action_time": "2020-06-28T16:13:07.615Z",
+  "user": 42,
+  "content_type": 130,
+  "object_id": "1",
+  "object_repr": "Free",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 153,
+ "fields": {
+  "action_time": "2020-06-28T16:56:35.192Z",
+  "user": 42,
+  "content_type": 130,
+  "object_id": "2",
+  "object_repr": "Regular",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 154,
+ "fields": {
+  "action_time": "2020-06-28T16:58:34.432Z",
+  "user": 42,
+  "content_type": 130,
+  "object_id": "3",
+  "object_repr": "Premium",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+}
+]
