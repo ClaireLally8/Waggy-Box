@@ -21,7 +21,8 @@
         <div class="Order-info">
           <h5 class="some-purple mt-5">Order Info</h5>
           <p class="darkgreen pt-2">Order Date: {{ order.date }}</p>
-          <p class="darkgreen pt-2">Total Cost: €{{ order.order_total }}</p>
+          <p class="darkgreen pt-1">Est Delivery Length: 5 days</p>
+          <p class="darkgreen pt-1">Total Cost: €{{ order.order_total }}</p>
         </div>
         <div class="delivery-info">
           <h5 class="mt-5 some-purple">Delivery Info:</h5>
@@ -46,6 +47,7 @@
       </div>
     </div>
   </div>
+  <a class="px-5" href="{% url 'dashboard' %}"><p class="text-center link">Back to Dashboard</p></a>
 </section>
 
 {% endblock %}
