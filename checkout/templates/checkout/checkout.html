@@ -6,37 +6,7 @@
     <h1 class="section-head py-5 text-center">Checkout</h1>
   </div>
   <div class="row">
-    <div class="col-12 col-lg-4 order-lg-last mb-5">
-      <p class="section-text darkgreen">Order Summary ({{ product_count }})</p>
-      <div class="row">
-        <div class="col-7 offset-2">
-          <p class="mb-1 mt-0 small some-purple">Item</p>
-        </div>
-      </div>
-      {% for item in bag_items %}
-      <div class="row">
-        <div class="col-2 mb-1">
-          <a href="{% url 'shop_item' item.product.id %}">
-            <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.name }}">
-          </a>
-        </div>
-        <div class="col-7">
-          <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-          <p class="my-0 small darkgreen">Qty: {{ item.quantity }}</p>
-        </div>
-      </div>
-      {% endfor %}
-      <hr class="my-0">
-      <div class="row darkgreen section-text text-right">
-        <div class="col-7 offset-2">
-          <p class="my-0">Total:</p>
-        </div>
-        <div class="col-3">
-          <p class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-lg-8">
+    <div class="col-12">
       <p class="section-text  darkgreen">Please fill out the form below to complete your order</p>
       <form action="{% url 'checkout' %}" method="POST" id="payment-form">
         {% csrf_token %}
@@ -67,9 +37,9 @@
         </fieldset>
 
         <div class="submit-button text-right mt-5 mb-2">
-          <a href="{% url 'view_bag' %}" class="btn btn-lilac rounded-0">Return to Bag
+          <a href="{% url 'view_bag' %}" class="btn btn-lilac">Return to Bag
           </a>
-          <button id="submit-button" class="btn btn-sage rounded-0">Complete Order
+          <button id="submit-button" class="btn btn-lilac">Complete Order
           </button>
           <p class="small some-purple my-0">
             <span class="icon">
@@ -81,6 +51,40 @@
       </form>
     </div>
   </div>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-12 col-lg-6 col-md-6 mx-5">
+      <p class="section-text darkgreen">Order Summary ({{ product_count }})</p>
+      <div class="row">
+        <div class="col-7 offset-2">
+          <p class="mb-2 mt-3 small some-purple">Item</p>
+        </div>
+      </div>
+      {% for item in bag_items %}
+      <div class="row">
+        <div class="col-2 mb-1">
+          <a href="{% url 'shop_item' item.product.id %}">
+            <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.name }}">
+          </a>
+        </div>
+        <div class="col-7">
+          <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+          <p class="my-0 small darkgreen">Qty: {{ item.quantity }}</p>
+        </div>
+      </div>
+      {% endfor %}
+      <hr class="my-3">
+      <div class="row darkgreen section-text text-right">
+        <div class="col-7 offset-2">
+          <p class="my-0">Total:</p>
+        </div>
+        <div class="col-3">
+          <p class="mx-5"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
+        </div>
+      </div>
+    </div>
+</div>
 </div>
 {% endblock %}
 
