@@ -195,12 +195,12 @@ footer {
 .card-title {
     font-family: "Rubik";
     font-weight:300!important;
-    color:#679186;
+    color:#9f94b1;
     font-size:1.1rem;
 }
 .card-price{
     font-family:"Karla";
-    color:#f9b4ab;
+    color:#a8b194;
 }
 .small-text {
     font-size:1rem;
@@ -209,18 +209,18 @@ footer {
     text-align:center;
     padding-top:5rem;
     font-family:"Rubik";
-    color:#f9b4ab;
+    color:#9f94b1;
 }
-.change-page-link{
+.change-page-link, .login-link {
     font-family:"Karla";
-    color:#679186;
+    color:#a8b194;
     border:none;
     padding-left:0.5rem;
     padding-right:0.5rem;
 }
-.change-page-link:hover {
+.change-page-link:hover, .login-link:hover {
     text-decoration:underline;
-    color:#264e70;
+    color:#c6dabe;
 }
 .page-top {
     margin-top:3rem!important;
@@ -233,7 +233,7 @@ footer {
 }
 .product-name {
     font-family:"Rubik";
-    color:#679186;
+    color:#a8b194;
     padding-top:10rem;
     padding-left:3rem;
     padding-right:3rem;
@@ -241,7 +241,7 @@ footer {
 .product-price {
     font-family:"Karla";
     font-size:1.4rem;
-    color:#f9b4ab;
+    color:#9f94b1;
     padding-left:7rem;
     padding-right:7rem;
 }
@@ -257,46 +257,47 @@ footer {
 .view-bag {
     font-family:"Rubik";
     font-size:1rem;
-    color:#f9b4ab;
+    color:#9f94b1;
     padding-right:8rem;
     padding-left:5rem;
 }
 .view-bag:hover {
-    color:#bbd4ce;
+    color:#a8b194;
     text-decoration:underline;
 }
 .quantity {
     font-family: "Rubik";
-    color:#679186;
+    color:#9f94b1;
     font-size:1.2rem;
 }
 .table-head {
     font-family:"Rubik";
-    color:#bbd4ce;
+    color:#a8b194;
     font-size:1rem;
     font-weight:300;
 }
 .update-link {
     font-family:"Rubik";
     font-size:0.8rem;
-    color:#679186!important;
+    color:#a8b194!important;
 }
 .update-link:hover {
     text-decoration:underline!important;
-    color:#264e70!important;
+    color:#9f94b1!important;
 }
 .remvove-item:hover{
     color:#a8b194!important;
     text-decoration:underline!important;
 }
 .remove-item {
-    color:#264e70!important;
+
+    color:#9f94b1!important;
     font-family:"Rubik";
     font-size:0.8rem;
 }
 .grand-total {
     font-family:"Rubik";
-    color:#679186;
+    color:#a8b194;
 }
 .cart {
     padding-bottom:5rem;
@@ -319,19 +320,19 @@ footer {
     display:none!important;
 }
 .sub-link {
-    color:#679186;
+    color:#a8b194;
     font-family: "Rubik";
 }
 .sub-link:hover {
-    color:#bbd4ce;
+    color:#9f94b1;
     font-family: "Rubik";
     text-decoration: underline;
 }
 .small-sect-head {
     text-align:center;
-    color:#f9b4ab;
+    color:#9f94b1;
     text-decoration: underline;
-    font-size:1.5rem;
+    font-size:1.2rem;
     font-family: "Rubik";
 }
 .member-type {
