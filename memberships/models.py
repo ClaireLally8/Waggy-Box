@@ -4,7 +4,6 @@ from django.conf import settings
 from django.db import models
 
 import stripe
-from django_countries.fields import CountryField
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
@@ -22,10 +21,10 @@ class Membership(models.Model):
         default='Free',
         max_length=200, null=False, blank=False)
     price = models.IntegerField(default=15)
-    description_one = models.TextField(max_length=500, default="DESCRIPTION")
-    description_two = models.TextField(max_length=500, default="DESCRIPTION")
-    description_three = models.TextField(max_length=500, default="DESCRIPTION")
-    description_four = models.TextField(max_length=500, default="DESCRIPTION")
+    description_one = models.TextField()
+    description_two = models.TextField()
+    description_three = models.TextField()
+    description_four = models.TextField()
     stripe_plan_id = models.CharField(max_length=40)
 
     def __str__(self):
@@ -39,8 +38,7 @@ class UserMembership(models.Model):
     full_name = models.CharField(max_length=200,  null=False, default="Please enter your full name")
     email = models.EmailField(max_length=254,  null=False, default="Please enter your email address")
     phone_number = models.CharField(max_length=30,  null=False, default="Please enter your phone number")
-    country = CountryField(blank_label='Country *', null=False, blank=False)
-    postcode = models.CharField(max_length=20, null=True, blank=True)
+    postcode = models.CharField(max_length=500, null=True, blank=True)
     town_or_city = models.CharField(max_length=40,  null=False, default="Please enter your City")
     street_address1 = models.CharField(max_length=80,  null=False, default="Please enter address line 1")
     street_address2 = models.CharField(max_length=80, null=True, blank=True)
