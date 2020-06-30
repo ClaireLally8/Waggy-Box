@@ -5,35 +5,34 @@
 <div class="dash-img">
 <div class="row">
 <div class="col-lg-4 col-md-4 col-sm-12"><br><br><br>
-<h2 class="section-head some-purple py-5 mx-5">Welcome {{ user.username }}!</h2>
-<p class= "section-text some-purple mx-5">This is your personal dashboard, you can review your orders, purchase items, adjust your subscription & even leave feedback here!</p>
+<h2 class="section-head darkgreen py-5 mx-5">Welcome {{ user.username }}!</h2>
+<p class= "section-text darkgreen mx-5">This is your personal dashboard, you can review your orders, purchase items, adjust your subscription & even leave feedback here!</p>
 </div>
 </div>
 </div>
 <hr class="divider">
 <h3 class="section-head text-center my-5">Navigation</h3>
 <div class="container">
-<div class="row">
-<div class="col-lg-4 col-md-6 col-sm-12">
+<div class = "row nav-section">
+<div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
 <a href="{% url 'sub_overview' %}">
-<img src ="{% static 'images/paw-print-icon.png' %}" class="img-fluid dash-icon">
-<br><p class="dash-link pl-4">Subscription Overview</p></a>
-</div>
-<div class="col-lg-4 col-md-6 col-sm-12">
+<img src ="{% static 'images/dash-nav.png' %}" class="img-fluid dash-icon">
+<p class="nav-text text-center mt-3">Subscription <br>Overview</p></a>
+</div><div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
 <a href="{% url 'shop' %}">
-<img src ="{% static 'images/shop-icon.png' %}" class="img-fluid dash-icon">
-<br><p class="dash-link pl-4">Shop</p></a>
-</div>
-<div class="col-lg-4 col-md-6 col-sm-12">
+<img src ="{% static 'images/dash-nav2.png' %}" class="img-fluid dash-icon text-center">
+<p class="nav-text text-center mt-3">Shop</p></a>
+</div><div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
 <a href="{% url 'contact' %}">
-<img src ="{% static 'images/paw-heart-icon.png' %}" class="img-fluid dash-icon">
-<br><p class="dash-link pl-4">Get in touch!</p></a>
+<img src ="{% static 'images/dash-nav3.png' %}" class="img-fluid dash-icon text-center"><p class="nav-text text-center mt-3">Get in Touch!</p></a>
 </div>
 </div>
 </div>
+
 <hr class="divider my-5">
-<div class="container">
-<h3 class="section-head text-center my-5">Take a look at some of next months goodies!</h3>
+<div class="container next-month">
+<h3 class="section-head text-center my-5">What's next?</h3>
+<p class="text-center section-text mt-2">Here's a sneak peek into some of next months goodies!</p>
 <div class="d-flex justify-content-center">
 {% for item in items %}
 <div class="col-lg-3 col-md-6 col-sm-12">

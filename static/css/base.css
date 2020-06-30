@@ -135,7 +135,23 @@ footer {
 }
 .dash-icon {
     max-height:150px;
-    max-width:150px;
+    max-width: 150px;
+}
+.nav-text {
+    color:#679186;
+    font-family:"Karla";
+    font-size:1.1rem;
+}
+.nav-text:hover {
+    color:#bbd4ce;
+    text-decoration:underline;
+}
+.nav-section {
+    margin-top: 8rem!important;
+    margin-bottom: 5rem!important;
+}
+.next-month {
+    padding-top:4rem;
 }
 .footer-head {
     color:#264e70!important;
