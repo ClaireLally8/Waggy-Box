@@ -48,6 +48,9 @@ footer {
     color:#679186;
     text-decoration:underline;
 }
+.section {
+    padding: 6rem 0rem 6rem 0rem;
+}
 .landingsection {
     background: url("../images/landing.jpg") no-repeat center center;
     background-size:cover;
@@ -83,37 +86,47 @@ footer {
     background-size: cover;
     padding-bottom:25rem;
 }
-.landing-main {
+.page-head {
     margin-top:6rem;
     padding-bottom:2rem;
     color:#679186;
     font-family:"Rubik";
+    font-size:4rem;
 }
-.landing-sub {
-    padding-bottom:6rem;
+.page-sub {
+    padding-bottom:3rem;
     color:#f9b4ab;
     font-family:"Karla";
-}
-.about-us, .testimonials {
-    padding:4rem 3rem 8rem 3rem;
+    font-size:1.3rem;
 }
 .section-head{
     font-family:"Rubik";
     color:#679186;
+    font-size:2.3rem;
 }
 .section-text, p {
     font-family:"Karla";
     color:#264e70;
-}
-.how-it-works {
-    padding:0rem 3rem 0rem 3rem;
+    font-size:1.1rem;
 }
 .how-icons {
     color:#f9b4ab;
-    font-size:3rem;
+    font-size:2.4rem;
+    padding-bottom:1.2rem;
 }
-.how-title, .testimonial-intro, .about-title, .top-how {
-    padding-bottom:4rem;
+.how {
+    text-align:center;
+    display:block;
+}
+.how-small {
+    font-family:Karla;
+    font-size:1rem;
+    color:#264e70;
+}
+.how-med {
+    font-family: Rubik;
+    color:#679186;
+    letter-spacing: 1.8px;
 }
 .name {
     font-family:"Karla";
@@ -366,8 +379,8 @@ footer {
 }
 .divider {
     width: 100px;
-    padding-top: 3em;
-    padding-bottom:2em;
+    padding-top: 3rem;
+    padding-bottom:3rem;
     border-top:2px solid #679186;
     border-radius:50%;
     transform: rotate(180deg);
