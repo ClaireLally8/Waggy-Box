@@ -83,7 +83,7 @@ footer {
 .signup-img {
     background: url("../images/signup-dog.png") no-repeat center center;
     background-size: cover;
-    padding-bottom:25rem;
+    padding-bottom:15rem;
 }
 .page-head {
     margin-top:6rem;
@@ -91,6 +91,12 @@ footer {
     color:#679186;
     font-family:"Rubik";
     font-size:4rem;
+}
+.signup {
+    margin-top:9rem;
+}
+.signup-text {
+    display:none;
 }
 .page-sub {
     padding-bottom:3rem;
@@ -391,4 +397,13 @@ footer {
     border-top:2px solid #f9b4ab;
     border-radius:50%;
     transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 1026px) { 
+    .signup-img { 
+    display: none; 
+  }
+  .signup-text {
+      display:block;
+  }
 }
