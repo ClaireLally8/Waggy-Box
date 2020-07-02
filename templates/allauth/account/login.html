@@ -1,45 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
-{% load account socialaccount %}
 
 {% block head_title %}Login{% endblock %}
 
 {% block content %}
-
+<div class="container">
 <h1 class="text-center section-head mt-5">Login to Waggy Box</h1>
 
-{% get_providers as socialaccount_providers %}
-
-{% if socialaccount_providers %}
-<p>Please sign in with one
-of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
-for a {{ site_name }} account and sign in below:</p>
-
-<div class="socialaccount_ballot">
-
-  <ul class="socialaccount_providers">
-    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-  </ul>
-
-  <div class="login-or">or</div>
-
-</div>
-
-{% include "socialaccount/snippets/login_extra.html" %}
-
-{% else %}
 <p class="section-text text-center mt-5">If you have not created an account yet, then please
 <a class="link pt-3" href="{{ signup_url }}">sign up here</a></p>
 
-{% endif %}
-
 <form class="login text-center mt-5 section-text" method="POST" action="{% url 'account_login' %}">
+<div class="row">
+<div class="col- container">
   {% csrf_token %}
-  {{ form.as_p }}
+ {% crispy form %}
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <a class="link" href="{% url 'account_reset_password' %}">Forgot Password</a><br>
-  <button class=" mt-5 btn btn-lilac" type="submit">Login</button>
+  <a class="link" href="{% url 'account_reset_password' %}">Forgot Password</a><br><br>
+  <button class=" mt-5 btn btn-lilac px-5" type="submit">Login</button>
+</div>
+</div>
 </form>
+</div>
 {% endblock %}
