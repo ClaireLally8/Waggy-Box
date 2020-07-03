@@ -92,7 +92,7 @@ footer {
     font-family:"Rubik";
     font-size:4rem;
 }
-.signup {
+.sign-up-section {
     margin-top:9rem;
 }
 .signup-text {
@@ -221,6 +221,7 @@ footer {
     border:none;
     color:#264e70!important;
     background-color:#f9b4ab;
+    letter-spacing:1.2px!important;
 }
 .btn-lilac:hover{
     background-color:#679186;
@@ -397,13 +398,4 @@ footer {
     border-top:2px solid #f9b4ab;
     border-radius:50%;
     transform: rotate(360deg);
-}
-
-@media only screen and (max-width: 1026px) { 
-    .signup-img { 
-    display: none; 
-  }
-  .signup-text {
-      display:block;
-  }
 }
