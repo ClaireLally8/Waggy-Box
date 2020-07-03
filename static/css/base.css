@@ -85,6 +85,11 @@ footer {
     background-size: cover;
     padding-bottom:15rem;
 }
+.login-img {
+    background: url("../images/login-dog.png") no-repeat center center;
+    background-size: cover;
+    padding-bottom:15rem;
+}
 .page-head {
     margin-top:6rem;
     padding-bottom:2rem;
