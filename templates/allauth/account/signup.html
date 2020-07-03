@@ -6,31 +6,23 @@
 
 {% block content %}
 
-  <div class="signup-img">
+  <section class="signup-img section">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-8">
       </div>
       <div class="col-sm-12 col-md-6  col-lg-4 ">
-      <h1 class="text-center section-head signup">We can't wait for you to join us!</h1>
+      <h1 class="text-center section-head sign-up-section">We can't wait for you to join us!</h1>
     <p class="section-text page-sub pt-2">If you already have an account with us, you can just <a class="link" href="{{ login_url }}">login here</a> or enter your details below to register an account with Waggy-Box!</p>
 </div>
     </div>
-  </div>
 </div>
-<div class="signup-text">
-<div class="container">
-<h1 class="text-center section-head signup">We can't wait for you to join us!</h1>
-    <p class="section-text page-sub pt-2">If you already have an account with us, you can just <a class="link" href="{{ login_url }}">login here</a> or enter your details below to register an account with Waggy-Box!</p>
-
-</div>
-</div>
-<div class="d-flex justify-content-center py-5" style="position:relative"><div class="divider" style="position:absolute"></div></div>
-    
+  </section>
+<div class="d-flex justify-content-center py-5" style="position:relative"><div class="divider" style="position:absolute"></div></div>  
 <section class="section">
 <div class="container">
-<h2 class="section-head text-center pb-5">Lets get started!</h2>
-<form class="signupmt-5 text-center section-text" id="signup_form" method="post" action="{% url 'account_signup' %}">
+<h2 class="section-head text-center pb-5">Sign up here!</h2>
+<form class="signup mt-5 text-center section-text" method="post" action="{% url 'account_signup' %}">
   {% csrf_token %}
   <div class="row d-flex justify-content-center pt-5">
   <div class="col-sm-12 col-md-6 col-lg-4">{{ form.username | as_crispy_field }}</div>
