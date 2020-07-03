@@ -49,7 +49,7 @@
   </head>
 
   <body>
-    <header class="container-fluid fixed-top"></header>
+    <header class="container-fluid"></header>
 
     {% if messages %}
     <div class="message-container"></div>
@@ -58,7 +58,7 @@
     {% block page_header %}
     {% endblock %}
     <!--Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light light-noshadow">
+    <nav class="navbar navbar-expand-lg navbar-light light-noshadow z-depth-2 fixed-top">
       <a class="navbar-brand" href="{% url 'index' %}">
         <img src="{% static 'images/logo.png' %}" height="50" class="pr-4" alt="Site logo">
       </a>
@@ -141,5 +141,4 @@
     </footer>
 
   </body>
-
 </html>
