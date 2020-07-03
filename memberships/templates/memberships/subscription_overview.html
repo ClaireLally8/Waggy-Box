@@ -7,7 +7,7 @@
 <div class="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
 <div class="pl-5">
 <p class="some-purple">Your Details</p>
-{% if current_membership.full_name %}
+{% if subscription.active %}
 <p class="darkgreen">{{ current_membership.full_name }},<br>{{ current_membership.email }},<br>{{ current_membership.phone_number }}</p>
           <p class="darkgreen">{{ current_membership.street_address1 }},<br>
             {% if current_membership.street_address2 %}{{ current_membership.street_address2 }},<br>{% endif %}
@@ -16,7 +16,7 @@
             {% if current_membership.postcode %}{{ current_membership.postcode }}{% endif %},<br>
            {{ current_membership.country }}.</p>
  {% else %}
- <p>Your current memebership is not active.<br>  Please activate now</p>          
+ <p class="darkgreen">Your current memebership is not active.<br>  Please activate now</p>          
 {% endif %}
 </div>
 </div>
@@ -51,7 +51,7 @@
 <a class="sub-link" href="{% url 'membership_list' %}">Change Subscription</a>
 <a class="sub-link" href="{% url 'cancelSubscription' %}">Cancel Subscription</a>
 {% else %}
-<a class="sub-link" href="{% url 'membership_list' %}">Purchase Subscription</a>
+<a class="sub-link" href="{% url 'membership_list' %}">Activate Subscription</a>
 {% endif %}
 </div>
 <p class="text-center pt-5"><strong>Please Note</strong> subscription boxes will be sent on the 15<sup>th</sup> of each month</p>
