@@ -2,15 +2,20 @@
 {% load static %}
 
 {% block content %}
-<div class="dash-img">
-<div class="row">
-<div class="col-lg-4 col-md-4 col-sm-12"><br><br><br>
-<h2 class="section-head darkgreen py-5 mx-5">Welcome {{ user.username }}!</h2>
-<p class= "section-text darkgreen mx-5">This is your personal dashboard, you can review your orders, purchase items, adjust your subscription & even leave feedback here!</p>
+<section class="dash-img section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-8">
+      </div>
+      <div class="col-sm-12 col-md-6  col-lg-4 ">
+        <h1 class="text-center page-head">Welcome {{ user.username }}!</h1>
+        <p class="text-center page-sub">This is your personal dashboard, you can review your orders, purchase items, adjust your subscription & even leave feedback here!</p>
 </div>
-</div>
-</div>
-<hr class="divider">
+    </div>
+  </div>
+</section>
+<div class="d-flex justify-content-center py-5" style="position:relative"><div class="divider" style="position:absolute"></div></div>
+<section class="section">
 <h3 class="section-head text-center my-5">Navigation</h3>
 <div class="container">
 <div class = "row nav-section">
@@ -28,20 +33,22 @@
 </div>
 </div>
 </div>
-
-<hr class="divider my-5">
-<div class="container next-month">
+</section>
+<div class="d-flex justify-content-center py-5" style="position:relative"><div class="divider" style="position:absolute"></div></div>
+<section class="section">
+<div class="container">
 <h3 class="section-head text-center my-5">What's next?</h3>
 <p class="text-center section-text mt-2">Here's a sneak peek into some of next months goodies!</p>
-<div class="d-flex justify-content-center">
+<div class="row d-flex justify-content-center">
 {% for item in items %}
-<div class="col-lg-3 col-md-6 col-sm-12">
-<div class="image d-flex justify-content-center">
+<div class="col-lg-3 col-md-6 col-sm-12 z-depth-1 mt-5 mx-2">
+<div class="image">
 <img src="{{ MEDIA_URL }}{{ item.image }}" class="img-fluid item-image" height="200" width="200" alt="Product Image">
 </div>
-<p class="future-name text-center ">{{ item.name }}</p>
+<p class="items-name pb-3">{{ item.name }}</p>
 </div>
 {% endfor %}
 </div>
 </div>
+</section>
 {% endblock %}
