@@ -48,7 +48,7 @@ footer {
     text-decoration:underline;
 }
 .section {
-    padding: 6rem 0rem 6rem 0rem;
+    padding: 4rem 0rem 3rem 0rem;
 }
 .landingsection {
     background: url("../images/landing.jpg") no-repeat center center;
@@ -58,7 +58,6 @@ footer {
 .dash-img {
     background: url("../images/dash-dog.png") no-repeat center center;
     background-size:cover;
-    padding-bottom:20rem;
 }
 .about-img {
     background: url("../images/about.png") no-repeat center center;
@@ -291,11 +290,12 @@ footer {
 .item-image {
     padding-top:5rem;
 }
-.future-name {
+.items-name {
     font-family:"Rubik";
     color:#679186;
     padding-left:3rem;
     padding-right:3rem;
+    letter-spacing:1.2px;
 }
 .view-bag {
     font-family:"Rubik";
