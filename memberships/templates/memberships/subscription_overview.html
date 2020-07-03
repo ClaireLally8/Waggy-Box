@@ -45,9 +45,14 @@
 {% endif %}
 {% endif %}
 {% endfor %}
+
 <div class="d-flex justify-content-around mt-5">
+{% if subscription.current_membership %}
 <a class="sub-link" href="{% url 'membership_list' %}">Change Subscription</a>
 <a class="sub-link" href="{% url 'cancelSubscription' %}">Cancel Subscription</a>
+{% else %}
+<a class="sub-link" href="{% url 'membership_list' %}">Purchase Subscription</a>
+{% endif %}
 </div>
 <p class="text-center pt-5"><strong>Please Note</strong> subscription boxes will be sent on the 15<sup>th</sup> of each month</p>
 </div>
