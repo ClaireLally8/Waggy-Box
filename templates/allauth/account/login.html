@@ -4,24 +4,38 @@
 {% block head_title %}Login{% endblock %}
 
 {% block content %}
+<section class="login-img section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-8">
+      </div>
+      <div class="col-sm-12 col-md-6  col-lg-4 ">
+      <h1 class="text-center section-head sign-up-section">Login to Waggy Box</h1>
+    <p class="section-text page-sub pt-2">Welcome back to Waggy Box! You can login here, but if you have not created an account yet, then please
+<a class="link pt-3" href="{{ signup_url }}">sign up here</a></p></div>
+    </div>
+</div>
+  </section>
+<div class="d-flex justify-content-center py-5" style="position:relative"><div class="divider" style="position:absolute"></div></div>  
+
+<section class="section">
 <div class="container">
-<h1 class="text-center section-head mt-5">Login to Waggy Box</h1>
-
-<p class="section-text text-center mt-5">If you have not created an account yet, then please
-<a class="link pt-3" href="{{ signup_url }}">sign up here</a></p>
-
 <form class="login text-center mt-5 section-text" method="POST" action="{% url 'account_login' %}">
-<div class="row">
-<div class="col- container">
   {% csrf_token %}
- {% crispy form %}
+  <div class="row d-flex justify-content-center py-5">
+  <div class="col-sm-12 col-md-6 col-lg-4">{{ form.login | as_crispy_field }}</div>
+  <div class="col-sm-12 col-md-6 col-lg-4">{{ form.password | as_crispy_field }}</div>
+  </div>
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <a class="link" href="{% url 'account_reset_password' %}">Forgot Password</a><br><br>
-  <button class=" mt-5 btn btn-lilac px-5" type="submit">Login</button>
-</div>
-</div>
+  <a class="link mt-5" href="{% url 'account_reset_password' %}">Forgot your Password?</a><br><br>
+  <div class="row d-flex justify-content-center">
+  <div class="col-sm-6 col-md-6 col-lg-3">
+  <button class="btn btn-lilac mt-3 btn-block" type="submit">Login</button>
+  </div>
+  </div>
 </form>
 </div>
+</section>
 {% endblock %}
