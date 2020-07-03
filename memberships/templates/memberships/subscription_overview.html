@@ -7,13 +7,17 @@
 <div class="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
 <div class="pl-5">
 <p class="some-purple">Your Details</p>
+{% if current_membership.full_name %}
 <p class="darkgreen">{{ current_membership.full_name }},<br>{{ current_membership.email }},<br>{{ current_membership.phone_number }}</p>
           <p class="darkgreen">{{ current_membership.street_address1 }},<br>
             {% if current_membership.street_address2 %}{{ current_membership.street_address2 }},<br>{% endif %}
             {{ current_membership.town_or_city }}<br>
             {% if current_membership.county%}{{ current_membership.county }},<br>{% endif %}
             {% if current_membership.postcode %}{{ current_membership.postcode }}{% endif %},<br>
-            {{ current_membership.country }}.</p>
+           {{ current_membership.country }}.</p>
+ {% else %}
+ <p>Your current memebership is not active.<br>  Please activate now</p>          
+{% endif %}
 </div>
 </div>
 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -22,17 +26,22 @@
 <p class="darkgreen">{{ current_membership.membership }}<br>
 {% for member in memberships %}
 {% if member == current_membership.membership %}
-{% if member.membership_type != 'Free' %}
+{% if member.membership_type %}
 €{{ member.price }}<sub>/month</sub>
+            {% if member.description_one != 'NA' %}        
               <p class="darkgreen pl-4 text-center">{{ member.description_one }}</p>
+              {% endif %}
+              {% if member.description_two != 'NA' %} 
               <p class="darkgreen pl-4 text-center">{{ member.description_two }}</p>
+              {% endif %}
+              {% if member.description_three != 'NA' %} 
               <p class="darkgreen pl-4 text-center">{{ member.description_three}}</p>
-              {% if member.description_four != 'DESCRIPTION' %}
+              {% endif %}
+              {% if member.description_four != 'NA' %}
               <p class="darkgreen pl-4 text-center">{{ member.description_four }}</p>
               {% endif %}</p>
               <hr>
               
-{% else %}
 {% endif %}
 {% endif %}
 {% endfor %}
