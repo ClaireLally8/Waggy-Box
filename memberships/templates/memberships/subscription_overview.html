@@ -16,13 +16,14 @@
             {% if current_membership.postcode %}{{ current_membership.postcode }}{% endif %},<br>
            {{ current_membership.country }}.</p>
  {% else %}
- <p class="darkgreen">Your current memebership is not active.<br>  Please activate now</p>          
+ <p class="darkgreen">Your current memebership is not active.</p>          
 {% endif %}
 </div>
 </div>
 <div class="col-lg-6 col-md-6 col-sm-12">
 <div class="px-5">
 <p class="some-purple">Subscription Details</p>
+{% if subscription.active %}
 <p class="darkgreen">{{ current_membership.membership }}<br>
 {% for member in memberships %}
 {% if member == current_membership.membership %}
@@ -40,11 +41,13 @@
               {% if member.description_four != 'NA' %}
               <p class="darkgreen pl-4 text-center">{{ member.description_four }}</p>
               {% endif %}</p>
-              <hr>
               
 {% endif %}
 {% endif %}
 {% endfor %}
+{% else %}
+<p class="darkgreen">Activate your subscription below</p>
+{% endif %}
 
 <div class="d-flex justify-content-around mt-5">
 {% if subscription.active %}
