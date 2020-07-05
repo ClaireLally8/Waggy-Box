@@ -268,7 +268,6 @@ footer {
     margin-top:3rem!important;
 }
 .item-description {
-    padding-top:10rem!important;
     font-family:"Karla";
     padding-left:5rem;
     padding-right:5rem;
@@ -296,17 +295,6 @@ footer {
     padding-left:3rem;
     padding-right:3rem;
     letter-spacing:1.2px;
-}
-.view-bag {
-    font-family:"Rubik";
-    font-size:1rem;
-    color:#9f94b1;
-    padding-right:8rem;
-    padding-left:5rem;
-}
-.view-bag:hover {
-    color:#a8b194;
-    text-decoration:underline;
 }
 .quantity {
     font-family: "Rubik";
@@ -404,7 +392,10 @@ footer {
     border-radius:50%;
     transform: rotate(360deg);
 }
-
+.shop-image {
+    max-height: 60vh;
+    /* width: 80vw; */
+}
 .heartbeat:hover {
 	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
 	        animation: heartbeat 1.5s ease-in-out infinite both;
