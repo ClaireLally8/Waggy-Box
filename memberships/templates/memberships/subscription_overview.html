@@ -28,20 +28,7 @@
 {% for member in memberships %}
 {% if member == current_membership.membership %}
 {% if member.membership_type %}
-€{{ member.price }}<sub>/month</sub>
-            {% if member.description_one != 'NA' %}        
-              <p class="darkgreen pl-4 text-center">{{ member.description_one }}</p>
-              {% endif %}
-              {% if member.description_two != 'NA' %} 
-              <p class="darkgreen pl-4 text-center">{{ member.description_two }}</p>
-              {% endif %}
-              {% if member.description_three != 'NA' %} 
-              <p class="darkgreen pl-4 text-center">{{ member.description_three}}</p>
-              {% endif %}
-              {% if member.description_four != 'NA' %}
-              <p class="darkgreen pl-4 text-center">{{ member.description_four }}</p>
-              {% endif %}</p>
-              
+€{{ member.price }}<sub>/month</sub>              
 {% endif %}
 {% endif %}
 {% endfor %}
