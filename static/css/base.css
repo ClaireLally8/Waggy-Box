@@ -226,6 +226,8 @@ footer {
     color:#264e70!important;
     background-color:#f9b4ab;
     letter-spacing:1.2px!important;
+    float: none;
+    display: block;
 }
 .btn-lilac:hover{
     background-color:#679186;
@@ -249,7 +251,7 @@ footer {
 }
 .pages-items {
     text-align:center;
-    padding-top:5rem;
+    margin-top:5rem;
     font-family:"Rubik";
     color:#9f94b1;
 }
@@ -269,8 +271,6 @@ footer {
 }
 .item-description {
     font-family:"Karla";
-    padding-left:5rem;
-    padding-right:5rem;
 }
 .product-name {
     font-family:"Rubik";
