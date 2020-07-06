@@ -29,8 +29,8 @@
         <!-- Default form contact -->
        <form id="contact-form" action = "{% url 'contact' %}" name="contact-form" method="POST">
             {% csrf_token %}
-          <input type="text" name="name" id="defaultContactFormName" class="form-control mb-4" placeholder = "Name" required>
-          <input type="email" name="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder = "Email Address" required>
+          <input type="email" name="from_email" id="defaultContactFormEmail" class="form-control mb-4" placeholder = "Email Address" required>
+          <input type="text" name="Subject" id="defaultContactFormSubject" class="form-control mb-4" placeholder = "Subject" required>
           <div class="form-group">
             <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
               placeholder="Message" name="message" required></textarea>
