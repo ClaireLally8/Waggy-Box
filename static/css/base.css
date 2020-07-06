@@ -59,6 +59,9 @@ footer {
     vertical-align: middle;
     line-height: 7rem;
 }
+.capitalize {
+    text-transform: capitalize;
+}
 .section {
     padding: 4rem 0rem 3rem 0rem;
 }
