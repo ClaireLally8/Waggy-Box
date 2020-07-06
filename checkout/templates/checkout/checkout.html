@@ -6,39 +6,36 @@
   <div class="heading">
     <h1 class="section-head py-5 text-center">Checkout</h1>
   </div>
-  <div class="row">
-    <div class="col-12">
-      <p class="section-text  darkgreen">Please fill out the form below to complete your order</p>
+    <a href="{% url 'view_bag' %}" class="view-bag"><i class="fas fa-shopping-cart ml-2"></i>Return to Cart</a>
+      <p class="section-text  darkgreen pt-5">Please fill out the form below to complete your order</p>
       <form action="{% url 'checkout' %}" method="POST" id="payment-form">
         {% csrf_token %}
-        <fieldset class="rounded px-3 mb-5">
-          <legend class="fieldset-label small some-purple px-2 w-auto">Details</legend>
-          {{ order_form.full_name }}
-          {{ order_form.email }}
-          {{ order_form.phone_number }}
-        </fieldset>
-        <fieldset class="rounded px-3 mb-5">
-          <legend class="fieldset-label small some-purple px-2 w-auto">Delivery</legend>
-          {{ order_form.street_address1 }}
-          {{ order_form.street_address2 }}
-          {{ order_form.town_or_city }}
-          {{ order_form.postcode }}
-          {{ order_form.county }}
-        </fieldset>
-        <fieldset class="px-3">
-        <legend class="fieldset-label small some-purple px-2 w-auto">Payment</legend>
-        <div id="card-element">
+        <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <h6 class="some-purple mt-5">Your Details</h6>
+          {{ order_form.full_name | as_crispy_field }}
+          {{ order_form.email | as_crispy_field }}
+          {{ order_form.phone_number | as_crispy_field }}
+          <h6 class="some-purple mt-5">Card Details</h6>
+                  <div id="card-element">
             <!-- Elements will create input elements here -->
         </div>
 
         <!-- We'll put the error messages in this element -->
         <div  class="mb-3 text-danger" id="card-errors" role="alert">
         </div>
-        </fieldset>
-
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <h6 class="some-purple mt-5">Delivery Details</h6>
+          {{ order_form.street_address1 | as_crispy_field }}
+          {{ order_form.street_address2 | as_crispy_field }}
+          {{ order_form.town_or_city | as_crispy_field }}
+          {{ order_form.postcode | as_crispy_field }}
+          {{ order_form.county | as_crispy_field }}
+        </div>
+        </div>
+        <div class="container d-flex justify-content-end">
         <div class="submit-button text-right mt-5 mb-2">
-          <a href="{% url 'view_bag' %}" class="btn btn-lilac">Return to Bag
-          </a>
           <button id="submit-button" class="btn btn-lilac">Complete Order
           </button>
           <p class="small some-purple my-0">
@@ -48,10 +45,9 @@
             <span>Your card will be charged <strong>€{{ grand_total|floatformat:2 }}</strong></span>
           </p>
         </div>
+        </div>
       </form>
     </div>
-  </div>
-</div>
 <div class="container">
 <div class="row">
     <div class="col-12 col-lg-6 col-md-6 mx-5">

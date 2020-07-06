@@ -55,6 +55,11 @@ footer {
     background-size:cover;
     padding-bottom:8rem;
 }
+.uhoh-img {
+    background: url("../images/uhoh-dog.png") no-repeat center center;
+    background-size:cover;
+    padding-bottom: 18rem;
+}
 .dash-img {
     background: url("../images/dash-dog.png") no-repeat center center;
     background-size:cover;
