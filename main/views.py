@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.core.mail import send_mail
+from django.core.mail import BadHeaderError, send_mail
+from django.http import HttpResponse, HttpResponseRedirect
 from shop.models import CurrentItem, FutureItem
 from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
@@ -50,7 +51,7 @@ def dashboard(request):
 def shop(request):
     """ A view to show all products, including sorting and search queries """
     subscription = get_user_subscription(request)
-    if subscription.active: 
+    if subscription.active:
         item_list = CurrentItem.objects.all()
         paginator = Paginator(item_list, 12)
         page_number = request.GET.get('page')
@@ -81,17 +82,11 @@ def shop_item(request, item_id):
 
 def contact(request):
     if request.method == "POST":
-        name = request.POST['name']
-        email = request.POST['email']
-        message = request.POST['message']
-
-        send_mail(
-            "New Message from" + name,
-            message,
-            email,
-            ['waggyboxmain@gmail.com'],
-        )
-
-        return render(request, 'main/contact.html', {"name": name})
+        subject = request.POST.get('subject', '')
+        message = request.POST.get('message', '')
+        from_email = request.POST.get('from_email', '')
+        if subject and message and from_email:
+            send_mail(subject, message, from_email, ['waggyboxmain@gmail.com'])
+            return render(request, 'main/contact.html')
 
     return render(request, 'main/contact.html')
