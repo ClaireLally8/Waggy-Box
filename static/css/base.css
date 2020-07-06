@@ -47,6 +47,18 @@ footer {
     color:#679186;
     text-decoration:underline;
 }
+.social-media {
+    font-size:1.6rem;
+    vertical-align: middle;
+    color:white;
+}
+.social-media:hover {
+    color:#264e70!important;
+}
+.media-footer {
+    vertical-align: middle;
+    line-height: 7rem;
+}
 .section {
     padding: 4rem 0rem 3rem 0rem;
 }
