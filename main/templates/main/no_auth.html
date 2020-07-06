@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="uhoh-img section">
+  <div class="container landing">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-8">
+      </div>
+      <div class="col-sm-12 col-md-6  col-lg-4 ">
+        <h1 class="text-center page-head">Uh Oh!</h1>
+        <p class="text-center page-sub">Your subscription is not active, so you can't view this page!<br>You can review your subscription <a href="{% url 'sub_overview' %}">here</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %} 
