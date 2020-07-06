@@ -5,9 +5,9 @@
 <section class="checkout-image">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-12">
-        <h2 class="text-center landing-main darkgreen"><i class="far fa-check-circle"></i><br>Order Successful!</h2>
-        <p class="text-center landing-sub">Thank you for placing your order! Your pooch won't regret it!</p>
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <h2 class="text-center page-head darkgreen"><i class="far fa-check-circle"></i><br>Order Successful!</h2>
+        <p class="text-center page-sub">Thank you for placing your order! Your pooch won't regret it!</p>
       </div>
     </div>
   </div>
@@ -17,15 +17,15 @@
   <p class="text-center section-text darkgreen">Order Number : #{{ order.order_number }}</p>
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="Order-info">
-          <h5 class="some-purple mt-5">Order Info</h5>
+          <h5 class="some-purple mt-5">Order Information.</h5>
           <p class="darkgreen pt-2">Order Date: {{ order.date }}</p>
           <p class="darkgreen pt-1">Est Delivery Length: 5 days</p>
           <p class="darkgreen pt-1">Total Cost: €{{ order.order_total }}</p>
         </div>
         <div class="delivery-info">
-          <h5 class="mt-5 some-purple">Delivery Info:</h5>
+          <h5 class="mt-5 some-purple">Delivery Information:</h5>
           <p class="darkgreen">{{ order.full_name }},<br>{{ order.email }},<br>{{ order.phone_number }}</p>
           <p class="darkgreen">{{ order.street_address1 }},<br>
             {% if order.street_address2 %}{{ order.street_address2 }},<br>{% endif %}
@@ -36,10 +36,10 @@
         </div>
       </div>
 
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <h5 class="some-purple mt-5">Items Ordered</h5>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <h5 class="some-purple my-5">Items Ordered.</h5>
         {% for item in order.lineitems.all %}
-        <img class="w-50 img-fluid" src="{{ item.item.image.url }}" alt="{{ item.name }}">
+        <img class="w-25 img-fluid" src="{{ item.item.image.url }}" alt="{{ item.name }}">
         <p class="darkgreen">{{ item.item.name }}<br><small class="some-purple">
             Qty: {{ item.quantity }}<br>
             Price: {{ item.item.price }}</small></p>
