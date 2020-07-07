@@ -42,9 +42,9 @@
 <p class="text-center section-text mt-2">Here's a sneak peek into some of next months goodies!</p>
 <div class="row d-flex justify-content-center">
 {% for item in items %}
-<div class="col-lg-3 col-md-6 col-sm-12 z-depth-1 mt-5 mx-2">
-<div class="image">
-<img src="{{ MEDIA_URL }}{{ item.image }}" class="img-fluid item-image" height="200" width="200" alt="Product Image">
+<div class="col-lg-3 col-md-6 col-sm-12 z-depth-1 mt-2 mx-2">
+<div class="image d-flex justify-content-center">
+<img src="{{ MEDIA_URL }}{{ item.image }}" class="img-fluid item-image pt-3" height="200" width="200" alt="Product Image">
 </div>
 <p class="items-name pb-3">{{ item.name }}</p>
 </div>
