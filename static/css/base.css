@@ -5,11 +5,11 @@
 #9f94b1
 #e1dacc
 */
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 html, body {
  height: 100%;
- font-family: "Karla";
- color: #68707c;
+ font-family: "Montserrat";
 }
 .main-container {
  min-height: 100vh; /* will cover the 100% of viewport */
@@ -25,27 +25,19 @@ footer {
  position:relative;
 }
 .light-noshadow{
-    background-color:#bbd4ce;
+    background-color:#297bb3;
     box-shadow:none;
     text-shadow: none;
 }
 .nav-link{
-    color:#264e70!important;
+    color: white!important;
     font-size:1rem;
     letter-spacing:1.2px;
-    font-family:"Rubik"!important;
-    font-weight:300;
+    font-family:"Montserrat"!important;
+    font-weight:200;
 }
 .nav-link:hover{
-    color:#fdebd3!important;
     text-decoration: underline!important;
-}
-.link {
-    color:#f9b4ab;
-}
-.link:hover {
-    color:#679186;
-    text-decoration:underline;
 }
 .social-media {
     font-size:1.6rem;
@@ -53,7 +45,7 @@ footer {
     color:white;
 }
 .social-media:hover {
-    color:#264e70!important;
+    color:#ff3a95!important;
 }
 .media-footer {
     vertical-align: middle;
@@ -112,9 +104,16 @@ footer {
 .page-head {
     margin-top:6rem;
     padding-bottom:2rem;
-    color:#679186;
+    color:#b32968;
     font-family:"Rubik";
     font-size:4rem;
+    font-weight:500;
+}
+.page-head-small{
+    color:#ff3a95;
+    font-family: "montserrat";
+    font-weight:500;
+    font-size:3rem;
 }
 .sign-up-section {
     margin-top:9rem;
@@ -124,22 +123,30 @@ footer {
 }
 .page-sub {
     padding-bottom:3rem;
-    color:#f9b4ab;
-    font-family:"Karla";
+    color:#297bb3;
+    font-family:"Montserrat";
     font-size:1.3rem;
+    font-weight:400;
+}
+.page-sub-small {
+    color:#297bb3!important;
+    font-family:"Montserrat";
+    font-size:1rem;
+    font-weight:300;
 }
 .section-head{
-    font-family:"Rubik";
-    color:#679186;
+    font-family:"Montserrat";
+    font-weight: 400;
+    letter-spacing:1.2px;
+    color:#297bb3;
     font-size:2.3rem;
 }
 .section-text, p {
-    font-family:"Karla";
-    color:#264e70;
-    font-size:1.1rem;
+    font-weight:300;
+    color:black;
 }
 .how-icons {
-    color:#f9b4ab;
+    color:#ff3a95;
     font-size:2.4rem;
     padding-bottom:1.2rem;
 }
@@ -148,30 +155,32 @@ footer {
     display:block;
 }
 .how-small {
-    font-family:Karla;
+    font-family:Montserrat;
+    font-weight:400;
     font-size:1rem;
-    color:#264e70;
 }
 .how-med {
-    font-family: Rubik;
-    color:#679186;
+    font-family: Montserrat;
+    font-weight:300;
+    color:#297bb3;
     letter-spacing: 1.8px;
 }
 .name {
-    font-family:"Karla";
-    color:#264e70;
+    font-family:"Montserrat";
+    color:#297bb3;
+    font-weight:500;
 }
 .job {
-    font-family:"Rubik";
-    color:#bbd4ce;
-    font-weight:300;
+    font-family:"Montserrat";
+    color:#b32968;
+    font-weight:400;
 }
 .quote {
-    font-family:"Rubik";
-    color:#f9b4ab;
+    font-family:"Montserrat";
+    font-weight:300;
 }
 .star-icon {
-    color:#fdebd3;
+    color:#ffe93a;
     padding:1.5rem 0rem 1.5rem 0rem
 }
 .icon-part{
@@ -199,18 +208,19 @@ footer {
     padding-top:4rem;
 }
 .footer-head {
-    color:#264e70!important;
-    font-family:"Rubik";
+    color:white!important;
+    font-family:"Montserrat";
     font-weight:500;
     font-size:1.2rem;
 }
 .footer-text, .footer-link {
-    color:#264e70!important;
-    font-family:"Karla";
+    color:white!important;
+    font-family:"Montserrat";
+    font-weight:300;
     font-size:1rem;
 }
 .footer-link:hover {
-    color:#fdebd3!important;
+    color:#ff3a95!important;
     text-decoration: underline;
 }
 .about-main {
@@ -223,8 +233,10 @@ footer {
     color:#e3d3fd;
 }
 .dog-name {
-    font-family:"Rubik";
-    color:#f9b4ab;
+    font-family:"Montserrat";
+    font-weight:400;
+    letter-spacing:1px;
+    color:#b32968;
     font-size:1.4rem;
 }
 .dog-image {
@@ -234,24 +246,30 @@ footer {
         padding-top:3rem;
 }
 .dog-about {
-    font-family:"Karla";
     font-size:1rem;
 }
 .dogs {
     padding-top:4rem;
 }
-.btn-lilac{
+.btn {
     font-family:"Rubik";
     border:none;
-    color:#264e70!important;
-    background-color:#f9b4ab;
+    color:white!important;
     letter-spacing:1.2px!important;
     float: none;
     display: block;
 }
-.btn-lilac:hover{
-    background-color:#679186;
-    text-decoration:underline;
+.button-main{
+    background-color:#ff3a95;
+}
+.button-main:hover{
+    background-color:#b32968;
+}
+.button-second {
+    background-color:#3ab0ff;
+}
+.button-second:hover {
+    background-color:#297bb3;
 }
 .card .card-body h1, .card .card-body h2, .card .card-body h3, .card .card-body h4, .card .card-body h5, .card .card-body h6 {
     min-height:80px;
@@ -259,12 +277,13 @@ footer {
 .card-title {
     font-family: "Rubik";
     font-weight:300!important;
-    color:#9f94b1;
+    color:#297bb3;
     font-size:1.1rem;
 }
 .card-price{
-    font-family:"Karla";
-    color:#a8b194;
+    font-family:"Montserrat";
+    font-weight:200;
+    color:#b32968;
 }
 .small-text {
     font-size:1rem;
@@ -273,132 +292,81 @@ footer {
     text-align:center;
     margin-top:5rem;
     font-family:"Rubik";
-    color:#9f94b1;
+    color:#b32968;
 }
-.change-page-link, .login-link {
-    font-family:"Karla";
-    color:#a8b194;
+.change-page-link {
+    font-family:"Montserrat";
+    font-weight:300;
+    color:#297bb3;
     border:none;
     padding-left:0.5rem;
     padding-right:0.5rem;
 }
-.change-page-link:hover, .login-link:hover {
+.change-page-link:hover {
     text-decoration:underline;
-    color:#c6dabe;
+    color:#3ab0ff;
 }
 .page-top {
     margin-top:3rem!important;
 }
-.item-description {
-    font-family:"Karla";
+.item-heading {
+    font-family:Montserrat;
+    font-weight:400;
+    color:#b32968;
 }
-.product-name {
-    font-family:"Rubik";
-    color:#a8b194;
-    padding-top:10rem;
-    padding-left:3rem;
-    padding-right:3rem;
+.item-subtext {
+    font-size:1rem;
+    font-weight:200;
 }
-.product-price {
-    font-family:"Karla";
-    font-size:1.4rem;
-    color:#9f94b1;
-    padding-left:7rem;
-    padding-right:7rem;
+.page-nav {
+    color:#b32968;
+    font-family:Montserrat;
+    font-weight:400;
+    font-size:1rem;
 }
-.items-name {
-    font-family:"Rubik";
-    color:#679186;
-    font-size:0.8rem;
-    padding-left:3rem;
-    padding-right:3rem;
-    letter-spacing:1.2px;
-}
-.quantity {
-    font-family: "Rubik";
-    color:#9f94b1;
-    font-size:1.2rem;
+.page-nav:hover {
+    text-decoration:underline;
+    color:#b32968;
 }
 .table-head {
     font-family:"Rubik";
-    color:#a8b194;
+    color:#297bb3;
     font-size:1rem;
     font-weight:300;
 }
-.update-link {
-    font-family:"Rubik";
-    font-size:0.8rem;
-    color:#a8b194!important;
+.pink-color, .pink-text {
+    color:#b32968!important;
 }
-.update-link:hover {
-    text-decoration:underline!important;
-    color:#9f94b1!important;
+.pink-color:hover {
+    color:#ff3a95!important;
 }
-.remvove-item:hover{
-    color:#a8b194!important;
-    text-decoration:underline!important;
+.blue-color, .blue-text {
+    color:#297bb3!important;
 }
-.remove-item {
-
-    color:#9f94b1!important;
-    font-family:"Rubik";
-    font-size:0.8rem;
+.blue-color:hover {
+    color:#3ab0ff!important;
 }
 .grand-total {
-    font-family:"Rubik";
-    color:#a8b194;
+    font-family:Montserrat;
+    font-weight:400;
+    color:#297bb3;
+    font-size:1.2rem;
 }
 .cart {
     padding-bottom:5rem;
-}
-.darkgreen {
-    color: #679186;
-}
-.some-purple {
-   color: #264e70;
-}
-.post-link {
-    color:#9f94b1;
-}
-.post-link:hover {
-    color:#9f94b1;
-    text-decoration:underline;
 }
 .is-hidden {
     visibility:hidden!important;
     display:none!important;
 }
-.sub-link {
-    color:#a8b194;
-    font-family: "Rubik";
-}
-.sub-link:hover {
-    color:#9f94b1;
-    font-family: "Rubik";
-    text-decoration: underline;
-}
-.small-sect-head {
-    text-align:center;
-    color:#9f94b1;
-    text-decoration: underline;
-    font-size:1.2rem;
-    font-family: "Rubik";
-}
 .member-type {
     font-size:1.7rem;
-}
-.dash-link {
-    color:#264e70;
-}
-.dash-link:hover {
-    color:#bbd4ce;
-    text-decoration: underline;
 }
 .divider {
     width: 100px;
     padding-top: 3rem;
     padding-bottom:3rem;
-    border-top:2px solid #679186;
+    border-top:2px solid #3ab0ff;
     border-radius:50%;
     transform: rotate(180deg);
 }
@@ -406,13 +374,12 @@ footer {
     width: 100px;
     padding-top: 3em;
     padding-bottom:2em;
-    border-top:2px solid #f9b4ab;
+    border-top:2px solid #ff3a95;
     border-radius:50%;
     transform: rotate(360deg);
 }
 .shop-image {
     max-height: 60vh;
-    /* width: 80vw; */
 }
 .heartbeat:hover {
 	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
@@ -485,4 +452,39 @@ footer {
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
   }
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+        border:none;
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
 }
