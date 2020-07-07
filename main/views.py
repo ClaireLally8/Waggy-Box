@@ -1,10 +1,10 @@
-from django.shortcuts import render, redirect, get_object_or_404
-from django.core.mail import BadHeaderError, send_mail
-from django.http import HttpResponse, HttpResponseRedirect
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.core.mail import send_mail
 from shop.models import CurrentItem, FutureItem
 from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
 from memberships.models import UserMembership, Subscription
+from .forms import ContactForm
 # Create your views here.
 
 @login_required()
@@ -81,12 +81,24 @@ def shop_item(request, item_id):
 
 
 def contact(request):
-    if request.method == "POST":
-        subject = request.POST.get('subject', '')
-        message = request.POST.get('message', '')
-        from_email = request.POST.get('from_email', '')
-        if subject and message and from_email:
-            send_mail(subject, message, from_email, ['waggyboxmain@gmail.com'])
-            return render(request, 'main/contact.html')
+    """A view that allows the user to send and email message redirects back to the contact page"""
+    if request.method == 'POST':  # If the form has been submitted...
+        user_form = ContactForm(request.POST)  # A form bound to the POST data
+        if user_form.is_valid():
+            send_mail(
+                request.POST['subject'],
+                request.POST['message'],
+                request.POST['email'],
+                ['waggyboxmain@gmail.com'],
+                fail_silently=False,
+            )
 
-    return render(request, 'main/contact.html')
+            return redirect(reverse('contact'))
+
+    user_form = ContactForm()
+
+    context = {
+            'user_form': user_form,
+        }
+    return render(request, 'main/contact.html', context)
+

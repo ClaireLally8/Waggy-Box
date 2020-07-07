@@ -27,14 +27,11 @@
       <div class="col-md-6">
 
         <!-- Default form contact -->
-       <form id="contact-form" action = "{% url 'contact' %}" name="contact-form" method="POST">
+       <form id="contact_form" action = "{% url 'contact' %}" name="contact_form" method="POST">
             {% csrf_token %}
-          <input type="email" name="from_email" id="defaultContactFormEmail" class="form-control mb-4" placeholder = "Email Address" required>
-          <input type="text" name="Subject" id="defaultContactFormSubject" class="form-control mb-4" placeholder = "Subject" required>
-          <div class="form-group">
-            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
-              placeholder="Message" name="message" required></textarea>
-          </div>
+           {{ user_form.email | as_crispy_field }}
+           {{ user_form.subject | as_crispy_field }}
+           {{ user_form.message | as_crispy_field }}
           <button class="btn btn-lilac btn-block" type="submit">Send</button>
 
         </form>
