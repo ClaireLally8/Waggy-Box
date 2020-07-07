@@ -89,7 +89,7 @@ def contact(request):
                 request.POST['subject'],
                 request.POST['message'],
                 request.POST['email'],
-                ['waggyboxmain@gmail.com'],
+                ['waggyboxmain@gmail.com', request.POST['email']],
                 fail_silently=False,
             )
 
