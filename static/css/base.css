@@ -306,12 +306,10 @@ footer {
     padding-left:7rem;
     padding-right:7rem;
 }
-.item-image {
-    padding-top:5rem;
-}
 .items-name {
     font-family:"Rubik";
     color:#679186;
+    font-size:0.8rem;
     padding-left:3rem;
     padding-right:3rem;
     letter-spacing:1.2px;
