@@ -2,8 +2,10 @@
 {% load static %}
 
 {% block content %}
-<div class="d-flex justify-content-start mt-5">
-<a href="{% url 'shop' %}" class="view-bag"><i class="fas fa-chevron-left"></i>Back to Shop</a>
+<div class="section">
+<div class=" container d-flex justify-content-start mt-5">
+<a href="{% url 'shop' %}" class="page-nav"><i class="fas fa-chevron-left"></i>Back to Shop</a>
+</div>
 </div>
 <h2 class="section-head text-center cart my-5">Your Cart</h2>
 {% if bag_items %}
@@ -24,13 +26,13 @@
       <td class="p-3 w-25">
         <img class="img-fluid" src="{{ item.product.image.url }}">
       </td>
-      <td class="py-3 item-name">
-        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+      <td class="py-3 item-subtext">
+        <p class="my-0">{{ item.product.name }}</p>
       </td>
-      <td class="py-3 item-price">
+      <td class="py-3 item-subtext">
         <p class="my-0">€{{ item.product.price }}</p>
       </td>
-      <td class="py-3 w-25">
+      <td class="py-3 w-25 ">
         <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
           {% csrf_token %}
           <div class="form-group">
@@ -39,8 +41,8 @@
             </div>
           </div>
         </form>
-        <a class="update-link">Update</a>
-        <a class="remove-item float-right" id="remove_{{ item.item_id }}">Remove</a>
+        <a class="pink-color text-center my-2">Update</a>
+        <a class="blue-color float-right text-center my-2" id="remove_{{ item.item_id }}">Remove</a>
       </td>
     </tr>
     {% endfor %}
@@ -51,10 +53,10 @@
     </tr>
     <tr>
       <td colspan="5" class="text-right py-5">
-        <a href="{% url 'shop' %}" class="mr-5 btn btn-lilac rounded-0">
+        <a href="{% url 'shop' %}" class="mr-5 btn button-second my-2 rounded-0">
           <span class="text-uppercase">Keep Shopping</span>
         </a>
-        <a href="{% url 'checkout'%}" class="btn btn-lilac rounded-0">
+        <a href="{% url 'checkout'%}" class="btn button-main my-2 rounded-0">
           <span class="text-uppercase">Proceed to Payment</span>
         </a>
       </td>

@@ -10,9 +10,9 @@
       <div class="col-sm-12 col-md-6 col-lg-8">
       </div>
       <div class="col-sm-12 col-md-6  col-lg-4 ">
-      <h1 class="text-center section-head sign-up-section">Login to Waggy Box</h1>
-    <p class="section-text page-sub pt-2">Welcome back to Waggy Box! You can login here, but if you have not created an account yet, then please
-<a class="link pt-3" href="{{ signup_url }}">sign up here</a></p></div>
+      <h1 class="text-center page-head-small">Login to Waggy Box</h1>
+    <p class="section-text page-sub-small pt-2">Welcome back to Waggy Box! You can login here, but if you have not created an account yet, then please
+<a class="page-nav pt-3" href="{{ signup_url }}">sign up here</a></p></div>
     </div>
 </div>
   </section>
@@ -29,10 +29,10 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <a class="link mt-5" href="{% url 'account_reset_password' %}">Forgot your Password?</a><br><br>
+  <a class="page-nav mt-5" href="{% url 'account_reset_password' %}">Forgot your Password?</a><br><br>
   <div class="row d-flex justify-content-center">
   <div class="col-sm-6 col-md-6 col-lg-3">
-  <button class="btn btn-lilac mt-3 btn-block" type="submit">Login</button>
+  <button class="btn button-main mt-3 btn-block" type="submit">Login</button>
   </div>
   </div>
 </form>

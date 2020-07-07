@@ -22,14 +22,14 @@
 <div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
 <a href="{% url 'sub_overview' %}" class="heartbeat">
 <img src ="{% static 'images/dash-nav.png' %}" class="img-fluid dash-icon">
-<p class="nav-text text-center mt-3">Subscription <br>Overview</p></a>
+<p class="page-nav text-center mt-3">Subscription <br>Overview</p></a>
 </div><div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
 <a href="{% url 'shop' %}" class="heartbeat">
 <img src ="{% static 'images/dash-nav2.png' %}" class="img-fluid dash-icon text-center">
-<p class="nav-text text-center mt-3">Shop</p></a>
+<p class="page-nav text-center mt-3">Shop</p></a>
 </div><div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
 <a href="{% url 'contact' %}" class="heartbeat">
-<img src ="{% static 'images/dash-nav3.png' %}" class="img-fluid dash-icon text-center"><p class="nav-text text-center mt-3">Get in Touch!</p></a>
+<img src ="{% static 'images/dash-nav3.png' %}" class="img-fluid dash-icon text-center"><p class="page-nav text-center mt-3">Get in Touch!</p></a>
 </div>
 </div>
 </div>
@@ -46,7 +46,7 @@
 <div class="image d-flex justify-content-center">
 <img src="{{ MEDIA_URL }}{{ item.image }}" class="img-fluid item-image pt-3" height="200" width="200" alt="Product Image">
 </div>
-<p class="items-name pb-3">{{ item.name }}</p>
+<p class="card-title text-center py-3">{{ item.name }}</p>
 </div>
 {% endfor %}
 </div>

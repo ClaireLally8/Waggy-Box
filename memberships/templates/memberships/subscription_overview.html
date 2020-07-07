@@ -2,29 +2,29 @@
 {% load static %}
 
 {% block content %}
-<h2 class="section-head text-center pt-5">Subscription information for:</h2><p class="small-sect-head pb-5">{{ user.username }}</p>
+<h2 class="section-head text-center pt-5">Subscription information for:</h2><h5 class="text-center pink-text pb-5">{{ user.username }}</h5>
 <div class="row pt-5">
 <div class="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
 <div class="pl-5">
-<p class="some-purple">Your Details</p>
+<p class="pink-text">Your Details</p>
 {% if subscription.active %}
-<p class="darkgreen">{{ current_membership.full_name }},<br>{{ current_membership.email }},<br>{{ current_membership.phone_number }}</p>
-          <p class="darkgreen">{{ current_membership.street_address1 }},<br>
+<p class="">{{ current_membership.full_name }},<br>{{ current_membership.email }},<br>{{ current_membership.phone_number }}</p>
+          <p class="">{{ current_membership.street_address1 }},<br>
             {% if current_membership.street_address2 %}{{ current_membership.street_address2 }},<br>{% endif %}
             {{ current_membership.town_or_city }}<br>
             {% if current_membership.county%}{{ current_membership.county }},<br>{% endif %}
             {% if current_membership.postcode %}{{ current_membership.postcode }}{% endif %},<br>
            {{ current_membership.country }}.</p>
  {% else %}
- <p class="darkgreen">Your current memebership is not active.</p>          
+ <p class="">Your current memebership is not active.</p>          
 {% endif %}
 </div>
 </div>
 <div class="col-lg-6 col-md-6 col-sm-12">
 <div class="px-5">
-<p class="some-purple">Subscription Details</p>
+<p class="pink-text">Subscription Details</p>
 {% if subscription.active %}
-<p class="darkgreen">{{ current_membership.membership }}<br>
+<p class="">{{ current_membership.membership }}<br>
 {% for member in memberships %}
 {% if member == current_membership.membership %}
 {% if member.membership_type %}
@@ -33,21 +33,18 @@
 {% endif %}
 {% endfor %}
 {% else %}
-<p class="darkgreen">Activate your subscription below</p>
+<p>Activate your subscription below</p>
 {% endif %}
 
 <div class="d-flex justify-content-around mt-5">
 {% if subscription.active %}
-<a class="sub-link" href="{% url 'membership_list' %}">Change Subscription</a>
-<a class="sub-link" href="{% url 'cancelSubscription' %}">Cancel Subscription</a>
+<a class="blue-color" href="{% url 'membership_list' %}">Change Subscription</a>
+<a class="pink-color pink-text" href="{% url 'cancelSubscription' %}">Cancel Subscription</a>
 {% else %}
-<a class="sub-link" href="{% url 'membership_list' %}">Activate Subscription</a>
+<a class="blue-color" href="{% url 'membership_list' %}">Activate Subscription</a>
 {% endif %}
 </div>
 <p class="text-center pt-5"><strong>Please Note</strong> subscription boxes will be sent on the 15<sup>th</sup> of each month</p>
-</div>
-</div>
-</div>
 
 
 

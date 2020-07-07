@@ -6,7 +6,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-4 col-lg-4">
-        <h2 class="text-center page-head darkgreen"><i class="far fa-check-circle"></i><br>Order Successful!</h2>
+        <h2 class="text-center page-head "><i class="far fa-check-circle"></i><br>Order Successful!</h2>
         <p class="text-center page-sub">Thank you for placing your order! Your pooch won't regret it!</p>
       </div>
     </div>
@@ -14,20 +14,20 @@
 </section>
 <section class="order-review">
   <h2 class="section-head text-center my-5">Your Order Summary</h2>
-  <p class="text-center section-text darkgreen">Order Number : #{{ order.order_number }}</p>
+  <p class="text-center section-text ">Order Number : #{{ order.order_number }}</p>
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="Order-info">
-          <h5 class="some-purple mt-5">Order Information.</h5>
-          <p class="darkgreen pt-2">Order Date: {{ order.date }}</p>
-          <p class="darkgreen pt-1">Est Delivery Length: 5 days</p>
-          <p class="darkgreen pt-1">Total Cost: €{{ order.order_total }}</p>
+          <h5 class="pink-text mt-5">Order Information.</h5>
+          <p class=" pt-2">Order Date: {{ order.date }}</p>
+          <p class=" pt-1">Est Delivery Length: 5 days</p>
+          <p class=" pt-1">Total Cost: €{{ order.order_total }}</p>
         </div>
         <div class="delivery-info">
-          <h5 class="mt-5 some-purple">Delivery Information:</h5>
-          <p class="darkgreen">{{ order.full_name }},<br>{{ order.email }},<br>{{ order.phone_number }}</p>
-          <p class="darkgreen">{{ order.street_address1 }},<br>
+          <h5 class="mt-5 pink-text">Delivery Information:</h5>
+          <p class="">{{ order.full_name }},<br>{{ order.email }},<br>{{ order.phone_number }}</p>
+          <p class="">{{ order.street_address1 }},<br>
             {% if order.street_address2 %}{{ order.street_address2 }},<br>{% endif %}
             {{ order.town_or_city }}<br>
             {% if order.county%}{{ order.county }},<br>{% endif %}
@@ -37,17 +37,17 @@
       </div>
 
       <div class="col-sm-12 col-md-6 col-lg-6">
-        <h5 class="some-purple my-5">Items Ordered.</h5>
+        <h5 class="blue-text my-5">Items Ordered.</h5>
         {% for item in order.lineitems.all %}
         <img class="w-25 img-fluid" src="{{ item.item.image.url }}" alt="{{ item.name }}">
-        <p class="darkgreen">{{ item.item.name }}<br><small class="some-purple">
+        <p class="">{{ item.item.name }}<br><small class="blue-text">
             Qty: {{ item.quantity }}<br>
             Price: {{ item.item.price }}</small></p>
         {% endfor %}
       </div>
     </div>
   </div>
-  <a class="px-5" href="{% url 'dashboard' %}"><p class="text-center link">Back to Dashboard</p></a>
+  <a class="px-5" href="{% url 'dashboard' %}"><p class="page-nav text-center">Back to Dashboard</p></a>
 </section>
 
 {% endblock %}

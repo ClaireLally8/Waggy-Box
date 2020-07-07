@@ -8,14 +8,14 @@
 <h1 class= "text-center py-5 section-head">{% trans "Sign Out" %}</h1>
 
 <p class= "text-center section-text">{% trans 'Are you sure you want to sign out?' %}</p>
-
+<div class="d-flex justify-content-center">
 <form method="post" action="{% url 'account_logout' %}" class="text-center">
   {% csrf_token %}
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
   {% endif %}
-  <button class="btn btn-lilac" type="submit">{% trans 'Sign Out' %}</button>
+  <button class="btn button-main" type="submit">{% trans 'Sign Out' %}</button>
 </form>
-
+</div>
 
 {% endblock %}

@@ -12,22 +12,22 @@
         <div class="card mb-5 mb-lg-0">
           <div class="card-body">
             <h5 class="text-center section-head member-type">{{ member.membership_type }}</h5>
-            <h6 class="section-text text-center darkgreen">€{{ member.price }}<p class="period">/month</p></h6>
+            <h6 class="section-text text-center blue-text">€{{ member.price }}<sub>/month</sub></h6>
             <hr>
             <ul class="fa-ul">
-              <li><p class="fa-li"><i class="fas fa-bone some-purple"></i></p><p class="section-text">{{ member.description_one }}</p></li>
-              <li><p class="fa-li"><i class="fas fa-bone some-purple"></i></p><p class="section-text">{{ member.description_two }}</p></li>
-              <li><p class="fa-li"><i class="fas fa-bone some-purple"></i></p><p class="section-text">{{ member.description_three}}</p></li>
+              <li><p class="fa-li"><i class="fas fa-bone pink-text"></i></p><p class="section-text">{{ member.description_one }}</p></li>
+              <li><p class="fa-li"><i class="fas fa-bone pink-text"></i></p><p class="section-text">{{ member.description_two }}</p></li>
+              <li><p class="fa-li"><i class="fas fa-bone pink-text"></i></p><p class="section-text">{{ member.description_three}}</p></li>
               {% if member.description_four != 'DESCRIPTION' %}
-              <li><p class="fa-li"><i class="fas fa-bone some-purple"></i></p><p class="section-text">{{ member.description_four }}</p></li>
+              <li><p class="fa-li"><i class="fas fa-bone pink-text"></i></p><p class="section-text">{{ member.description_four }}</p></li>
               {% endif %}
             </ul>
             {% if member.membership_type != users_membership %}
             <form method="POST" action="{% url 'membership_list'%}">
             {% csrf_token %}
-            <button type="submit" class="btn btn-lilac btn-block">This One!</button>
+            <button type="submit" class="btn button-main btn-block">This One!</button>
             {% else %}
-            <p class="darkgreen text-center pt-4">This is your current plan </p>
+            <p class="blue-text text-center pt-4">This is your current plan </p>
             {% endif %}
             <input type="hidden" name="membership_type" value="{{ member.membership_type }}">
             </form>

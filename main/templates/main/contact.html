@@ -5,8 +5,9 @@
 
 
 <div class="contact-img">
-<h1 class="px-5 about-main text-right darkgreen">Somethin' on your mind? </h1>
-<h3 class="px-5 section-head text-right darkgreen">Let us know here!</h3>
+<div class="container">
+<h1 class="py-5 text-right section-head pink-text">Want to get in touch?</h1>
+</div>
 </div>
 <div class="container">
 <section class="mb-4">
@@ -32,7 +33,7 @@
            {{ user_form.email | as_crispy_field }}
            {{ user_form.subject | as_crispy_field }}
            {{ user_form.message | as_crispy_field }}
-          <button class="btn btn-lilac btn-block" type="submit">Send</button>
+          <button class="btn button-main btn-block" type="submit">Send</button>
 
         </form>
       </div>
