@@ -51,17 +51,20 @@ def dashboard(request):
 def shop(request):
     """ A view to show all products, including sorting and search queries """
     subscription = get_user_subscription(request)
-    if subscription.active:
-        item_list = CurrentItem.objects.all()
-        paginator = Paginator(item_list, 12)
-        page_number = request.GET.get('page')
-        page_obj = paginator.get_page(page_number)
+    if subscription:
+        if subscription.active:
+            item_list = CurrentItem.objects.all()
+            paginator = Paginator(item_list, 12)
+            page_number = request.GET.get('page')
+            page_obj = paginator.get_page(page_number)
 
-        context = {
-            'page_obj': page_obj
-        }
+            context = {
+                'page_obj': page_obj
+            }
 
-        return render(request, 'main/shop.html', context)
+            return render(request, 'main/shop.html', context)
+
+        return render(request, 'main/no_auth.html')
 
     return render(request, 'main/no_auth.html')
 
@@ -69,14 +72,18 @@ def shop(request):
 def shop_item(request, item_id):
     """ A view to show individual product details """
     subscription = get_user_subscription(request)
-    if subscription.active: 
-        item = get_object_or_404(CurrentItem, pk=item_id)
+    if subscription:
+        if subscription.active:
+            item = get_object_or_404(CurrentItem, pk=item_id)
 
-        context = {
-            'item': item,
-        }
+            context = {
+                'item': item,
+            }
 
-        return render(request, 'main/shop_item.html', context)
+            return render(request, 'main/shop_item.html', context)
+
+            return render(request, 'main/no_auth.html')
+
     return render(request, 'main/no_auth.html')
 
 
