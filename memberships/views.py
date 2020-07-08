@@ -3,6 +3,8 @@ from django.shortcuts import render, redirect, reverse
 from .models import Membership, UserMembership, Subscription
 from django.contrib.auth.decorators import login_required
 from .forms import SubscriptionForm
+from django.contrib import messages
+
 
 import stripe
 
@@ -101,13 +103,14 @@ def payments(request):
                 user_membership=user_membership)
             sub.stripe_subscription_id = subscription_id
             sub.active = True
-            sub.save() 
+            sub.save()
 
             try:
                 del request.session['selected_membership_type']
             except BaseException:
                 pass
 
+            messages.SUCCESS(request, 'Updated Successfully')
             return redirect('sub_overview')
         else:
             return redirect(reverse('membership_list'))
@@ -124,7 +127,7 @@ def sub_overview(request):
     current_membership = get_user_membership(request)
     subscription = get_user_subscription(request)
     memberships = Membership.objects.all()
-    
+
     context = {
         'current_membership': current_membership,
         'subscription': subscription,
