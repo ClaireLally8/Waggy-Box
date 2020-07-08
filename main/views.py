@@ -5,7 +5,6 @@ from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
 from memberships.models import UserMembership, Subscription
 from .forms import ContactForm
-
 from django.contrib import messages
 # Create your views here.
 
@@ -102,8 +101,7 @@ def contact(request):
                 fail_silently=False,
             )
 
-            
-            messages.SUCCESS(request, 'Contact form sent successfully!')
+            messages.add_message(request, messages.SUCCESS, 'Profile details updated.')
             return redirect('contact')
 
     user_form = ContactForm()
