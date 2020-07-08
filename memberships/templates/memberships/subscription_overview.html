@@ -2,74 +2,75 @@
 {% load static %}
 
 {% block content %}
-<h2 class="section-head text-center pt-5">Subscription information for:</h2><h5 class="text-center pink-text pb-5 capitalize">{{ user.username }}</h5>
+<h2 class="section-head text-center pt-5">Subscription information for:</h2>
+<h5 class="text-center pink-text pb-5 capitalize">{{ user.username }}</h5>
 {% if messages %}
-    {% for message in messages %}
-    <h3 class="text-center message"> {{ message }}</h3>
-    {% endfor %}
-{% endif %}
-<div class="row pt-5"> 
-
-<div class="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
-<div class="pl-5">
-<p class="pink-text">Your Details</p>
-{% if subscription.active %}
-<p>{{ current_membership.full_name }},<br>{{ current_membership.email }},<br>{{ current_membership.phone_number }}</p>
-          <p>{{ current_membership.street_address1 }},<br>
-            {% if current_membership.street_address2 %}{{ current_membership.street_address2 }},<br>{% endif %}
-            {{ current_membership.town_or_city }}<br>
-            {% if current_membership.county%}{{ current_membership.county }},<br>{% endif %}
-            {% if current_membership.postcode %}{{ current_membership.postcode }}{% endif %},<br>
-           {{ current_membership.country }}.</p>
- {% else %}
- <p>Your current memebership is not active.</p>          
-{% endif %}
-</div>
-</div>
-<div class="col-lg-6 col-md-6 col-sm-12">
-<div class="px-5">
-<p class="pink-text">Subscription Details</p>
-{% if subscription.active %}
-<p>{{ current_membership.membership }}<br>
-{% for member in memberships %}
-{% if member == current_membership.membership %}
-{% if member.membership_type %}
-€{{ member.price }}<sub>/month</sub>              
-{% endif %}
-{% endif %}
+{% for message in messages %}
+<h3 class="text-center message"> {{ message }}</h3>
 {% endfor %}
-{% else %}
-<p>Activate your subscription below</p>
 {% endif %}
+<div class="row pt-5">
 
-<div class="d-flex justify-content-around mt-5">
-{% if subscription.active %}
-<a class="blue-color" href="{% url 'membership_list' %}">Change Subscription</a>
-<a id="modalActivate" class="pink-color" data-toggle="modal" data-target="#exampleModalPreview">Cancel Subscription</a>
-{% else %}
-<a class="blue-color" href="{% url 'membership_list' %}">Activate Subscription</a>
-{% endif %}
-</div>
-<p class="text-center pt-5"><strong>Please Note</strong> subscription boxes will be sent on the 15<sup>th</sup> of each month</p>
-
-<div class="modal fade top" id="exampleModalPreview" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm modal-frame modal-top" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="section-head text-center" id="exampleModalPreviewLabel"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="section-text text-center pink-text center py-5">
-        Are you sure you want to cancel your subscription?
-      </div>
-      <div class="modal-footer">
-        <a  class="btn button-second" data-dismiss="modal">Close</a>
-        <a href="{% url 'cancelSubscription' %}" class="btn button-main">Cancel Subscription</a>
-      </div>
+  <div class="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
+    <div class="pl-5">
+      <p class="pink-text">Your Details</p>
+      {% if subscription.active %}
+      <p>{{ current_membership.full_name }},<br>{{ current_membership.email }},<br>{{ current_membership.phone_number }}</p>
+      <p>{{ current_membership.street_address1 }},<br>
+        {% if current_membership.street_address2 %}{{ current_membership.street_address2 }},<br>{% endif %}
+        {{ current_membership.town_or_city }}<br>
+        {% if current_membership.county%}{{ current_membership.county }},<br>{% endif %}
+        {% if current_membership.postcode %}{{ current_membership.postcode }}{% endif %},<br>
+        {{ current_membership.country }}.</p>
+      {% else %}
+      <p>Your current memebership is not active.</p>
+      {% endif %}
     </div>
   </div>
-</div>
+  <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="px-5">
+      <p class="pink-text">Subscription Details</p>
+      {% if subscription.active %}
+      <p>{{ current_membership.membership }}<br>
+        {% for member in memberships %}
+        {% if member == current_membership.membership %}
+        {% if member.membership_type %}
+        €{{ member.price }}<sub>/month</sub>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        {% else %}
+        <p>Activate your subscription below</p>
+        {% endif %}
 
-{% endblock %} 
+        <div class="d-flex justify-content-around mt-5">
+          {% if subscription.active %}
+          <a class="blue-color" href="{% url 'membership_list' %}">Change Subscription</a>
+          <a id="modalActivate" class="pink-color" data-toggle="modal" data-target="#exampleModalPreview">Cancel Subscription</a>
+          {% else %}
+          <a class="blue-color" href="{% url 'membership_list' %}">Activate Subscription</a>
+          {% endif %}
+        </div>
+        <p class="text-center pt-5"><strong>Please Note</strong> subscription boxes will be sent on the 15<sup>th</sup> of each month</p>
+
+        <div class="modal fade top" id="exampleModalPreview" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm modal-frame modal-top" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="section-head text-center" id="exampleModalPreviewLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="section-text text-center pink-text center py-5">
+                Are you sure you want to cancel your subscription?
+              </div>
+              <div class="modal-footer">
+                <a class="btn button-second" data-dismiss="modal">Close</a>
+                <a href="{% url 'cancelSubscription' %}" class="btn button-main">Cancel Subscription</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% endblock %}
