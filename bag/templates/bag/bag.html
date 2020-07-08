@@ -3,66 +3,66 @@
 
 {% block content %}
 <div class="section">
-<div class=" container d-flex justify-content-start mt-5">
-<a href="{% url 'shop' %}" class="page-nav"><i class="fas fa-chevron-left"></i>Back to Shop</a>
-</div>
+  <div class=" container d-flex justify-content-start mt-5">
+    <a href="{% url 'shop' %}" class="page-nav"><i class="fas fa-chevron-left"></i>Back to Shop</a>
+  </div>
 </div>
 <h2 class="section-head text-center cart my-5">Your Cart</h2>
 {% if bag_items %}
 <div class="container">
-<div class="table-responsive rounded">
-  <table class="table table-borderless">
-    <thead class="text-black">
-      <tr>
-        <th scope="col" class="table-head">Product Information</th>
-        <th scope="col"></th>
-        <th scope="col" class="table-head">Total Price</th>
-        <th scope="col" class="table-head">Quantity</th>
-      </tr>
-    </thead>
+  <div class="table-responsive rounded">
+    <table class="table table-borderless">
+      <thead class="text-black">
+        <tr>
+          <th scope="col" class="table-head">Product Information</th>
+          <th scope="col"></th>
+          <th scope="col" class="table-head">Total Price</th>
+          <th scope="col" class="table-head">Quantity</th>
+        </tr>
+      </thead>
 
-    {% for item in bag_items %}
-    <tr>
-      <td class="p-3 w-25">
-        <img class="img-fluid" src="{{ item.product.image.url }}">
-      </td>
-      <td class="py-3 item-subtext">
-        <p class="my-0">{{ item.product.name }}</p>
-      </td>
-      <td class="py-3 item-subtext">
-        <p class="my-0">€{{ item.product.price }}</p>
-      </td>
-      <td class="py-3 w-25 ">
-        <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
-          {% csrf_token %}
-          <div class="form-group">
-            <div class="input-group">
-              <input class="form-control form-control-sm qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="10" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+      {% for item in bag_items %}
+      <tr>
+        <td class="p-3 w-25">
+          <img class="img-fluid" src="{{ item.product.image.url }}">
+        </td>
+        <td class="py-3 item-subtext">
+          <p class="my-0">{{ item.product.name }}</p>
+        </td>
+        <td class="py-3 item-subtext">
+          <p class="my-0">€{{ item.product.price }}</p>
+        </td>
+        <td class="py-3 w-25 ">
+          <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
+            {% csrf_token %}
+            <div class="form-group">
+              <div class="input-group">
+                <input class="form-control form-control-sm qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="10" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+              </div>
             </div>
-          </div>
-        </form>
-        <a class="pink-color update-link text-center my-2">Update</a>
-        <a class="blue-color float-right remove-item text-center my-2" id="remove_{{ item.item_id }}">Remove</a>
-      </td>
-    </tr>
-    {% endfor %}
-    <tr>
-      <td colspan="5" class="pt-5 text-right mb-5">
-        <h4 class="mt-4 grand-total">Grand Total: €{{ grand_total|floatformat:2 }}</h4>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="5" class="text-right py-5">
-        <a href="{% url 'shop' %}" class="mr-5 btn button-second my-2 rounded-0">
-          <span class="text-uppercase">Keep Shopping</span>
-        </a>
-        <a href="{% url 'checkout'%}" class="btn button-main my-2 rounded-0">
-          <span class="text-uppercase">Proceed to Payment</span>
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
+          </form>
+          <a class="pink-color update-link text-center my-2">Update</a>
+          <a class="blue-color float-right remove-item text-center my-2" id="remove_{{ item.item_id }}">Remove</a>
+        </td>
+      </tr>
+      {% endfor %}
+      <tr>
+        <td colspan="5" class="pt-5 text-right mb-5">
+          <h4 class="mt-4 grand-total">Grand Total: €{{ grand_total|floatformat:2 }}</h4>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5" class="text-right py-5">
+          <a href="{% url 'shop' %}" class="mr-5 btn button-second my-2 rounded-0">
+            <span class="text-uppercase">Keep Shopping</span>
+          </a>
+          <a href="{% url 'checkout'%}" class="btn button-main my-2 rounded-0">
+            <span class="text-uppercase">Proceed to Payment</span>
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
 </div>
 {% else %}
 <div class="bag-image">
@@ -83,16 +83,20 @@
 
   // Remove item and reload on click
   $('.remove-item').click(function(e) {
-        var csrfToken = "{{ csrf_token }}";
-        var itemId = $(this).attr('id').split('remove_')[1];
-        var size = $(this).data('product_size');
-        var url = `/bag/remove/${itemId}/`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+    var csrfToken = "{{ csrf_token }}";
+    var itemId = $(this).attr('id').split('remove_')[1];
+    var size = $(this).data('product_size');
+    var url = `/bag/remove/${itemId}/`;
+    var data = {
+      'csrfmiddlewaretoken': csrfToken,
+      'product_size': size
+    };
 
-        $.post(url, data)
-         .done(function() {
-             location.reload();
-         });
-    })
+    $.post(url, data)
+      .done(function() {
+        location.reload();
+      });
+  })
+
 </script>
 {% endblock %}
