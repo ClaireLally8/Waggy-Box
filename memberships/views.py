@@ -110,7 +110,7 @@ def payments(request):
             except BaseException:
                 pass
 
-            messages.SUCCESS(request, 'Updated Successfully')
+            messages.add_message(request, messages.SUCCESS, 'Subscription update successfully')
             return redirect('sub_overview')
         else:
             return redirect(reverse('membership_list'))
@@ -150,5 +150,7 @@ def cancelSubscription(request):
         user_membership.membership = free_membership
         user_membership.save()
 
+        messages.add_message(request, messages.SUCCESS, 'Subscription update successfully')
         return redirect(reverse('sub_overview'))
+    messages.add_message(request, messages.SUCCESS, 'Oops! There was an error! Try again')
     return redirect(reverse('sub_overview'))

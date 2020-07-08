@@ -101,7 +101,7 @@ def contact(request):
                 fail_silently=False,
             )
 
-            messages.add_message(request, messages.SUCCESS, 'Profile details updated.')
+            messages.add_message(request, messages.SUCCESS, 'Contact form sent successfully!')
             return redirect('contact')
 
     user_form = ContactForm()

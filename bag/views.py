@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 # Create your views here.
 
@@ -37,6 +38,8 @@ def adjust_bag(request, item_id):
         bag.pop(item_id)
 
     request.session['bag'] = bag
+
+    messages.add_message(request, messages.SUCCESS, 'Bag updated')
     return redirect(reverse('view_bag'))
 
 
@@ -49,7 +52,10 @@ def remove_from_bag(request, item_id):
         bag.pop(item_id)
 
         request.session['bag'] = bag
+
+        messages.add_message(request, messages.SUCCESS, 'Bag updated')
         return HttpResponse(status=200)
 
     except Exception as e:
+        messages.add_message(request, messages.SUCCESS, 'error! Try again!')
         return HttpResponse(status=500)

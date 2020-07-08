@@ -8,6 +8,11 @@
 </div>
 </div>
 <h2 class="section-head text-center cart my-5">Your Cart</h2>
+{% if messages %}
+    {% for message in messages %}
+    <h3 class="text-center message"> {{ message }}</h3>
+    {% endfor %}
+{% endif %}
 {% if bag_items %}
 <div class="container">
 <div class="table-responsive rounded">

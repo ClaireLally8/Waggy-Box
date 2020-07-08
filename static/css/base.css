@@ -15,7 +15,6 @@ html, body {
   color: #b32968;
   background: #ffe93a;
 }
-
 ::selection {
   color: #b32968;
   background: #ffe93a;
@@ -367,6 +366,11 @@ footer {
 .is-hidden {
     visibility:hidden!important;
     display:none!important;
+}
+.message {
+    color:#b32968;
+    font-weight:800;
+    font-size:1.2rem;
 }
 .member-type {
     font-size:1.7rem;
