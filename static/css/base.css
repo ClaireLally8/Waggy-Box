@@ -202,11 +202,6 @@ footer {
     max-height:150px;
     max-width: 150px;
 }
-.nav-text {
-    color:#679186;
-    font-family:"Karla";
-    font-size:1.1rem;
-}
 .nav-text:hover {
     color:#bbd4ce;
     text-decoration:underline;
@@ -233,12 +228,6 @@ footer {
 .footer-link:hover {
     color:#ff3a95!important;
     text-decoration: underline;
-}
-.about-main {
-    padding-top:3rem;
-    padding-bottom:2rem;
-    color:#f9b4ab;
-    font-family:"Rubik";
 }
 .darkcolor {
     color:#e3d3fd;
