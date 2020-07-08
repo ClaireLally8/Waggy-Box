@@ -11,6 +11,15 @@ html, body {
  height: 100%;
  font-family: "Montserrat";
 }
+::-moz-selection { /* Code for Firefox */
+  color: #b32968;
+  background: #ffe93a;
+}
+
+::selection {
+  color: #b32968;
+  background: #ffe93a;
+}
 .main-container {
  min-height: 100vh; /* will cover the 100% of viewport */
  overflow: hidden;
