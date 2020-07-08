@@ -39,7 +39,6 @@ def adjust_bag(request, item_id):
 
     request.session['bag'] = bag
 
-    messages.add_message(request, messages.SUCCESS, 'Bag updated')
     return redirect(reverse('view_bag'))
 
 
@@ -53,7 +52,6 @@ def remove_from_bag(request, item_id):
 
         request.session['bag'] = bag
 
-        messages.add_message(request, messages.SUCCESS, 'Bag updated')
         return HttpResponse(status=200)
 
     except Exception as e:
