@@ -88,11 +88,11 @@
       </div>
     </nav>
     <main class="main-container">
-    {% if messages %}
-    {% for message in messages %}
-    <h3 class="is-hidden"> {{ message }}</h3>
-    {% endfor %}
-{% endif %}
+      {% if messages %}
+      {% for message in messages %}
+      <h3 class="is-hidden"> {{ message }}</h3>
+      {% endfor %}
+      {% endif %}
       {% block content %}
       {% endblock %}
     </main>
@@ -103,18 +103,18 @@
       <div class="container-fluid text-center text-md-left">
         <div class="row">
           <div class="col-md-6 mt-md-0 mt-3 d-flex justify-content-center media-footer">
-          <!-- Facebook -->
-          <a class="fb-ic social-media" href='https://www.facebook.com/' target="_blank">
-            <i class="fab fa-facebook-f mr-4"> </i>
-          </a>
-          <!-- Twitter -->
-          <a class="tw-ic social-media" href='https://twitter.com/explore' target="_blank">
-            <i class="fab fa-twitter mr-4"> </i>
-          </a>
-          <!--Instagram-->
-          <a class="ins-ic social-media" href='https://www.instagram.com/' target="_blank">
-            <i class="fab fa-instagram"> </i>
-          </a></div>
+            <!-- Facebook -->
+            <a class="fb-ic social-media" href='https://www.facebook.com/' target="_blank">
+              <i class="fab fa-facebook-f mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic social-media" href='https://twitter.com/explore' target="_blank">
+              <i class="fab fa-twitter mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic social-media" href='https://www.instagram.com/' target="_blank">
+              <i class="fab fa-instagram"> </i>
+            </a></div>
           <hr class="clearfix w-100 d-md-none pb-3">
           <div class="col-md-3 mb-md-0 mb-3">
             <h5 class="text-uppercase footer-head">Navigation</h5>
@@ -154,4 +154,5 @@
     </footer>
 
   </body>
+
 </html>
