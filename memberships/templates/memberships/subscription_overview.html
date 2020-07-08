@@ -4,6 +4,13 @@
 {% block content %}
 <h2 class="section-head text-center pt-5">Subscription information for:</h2><h5 class="text-center pink-text pb-5 capitalize">{{ user.username }}</h5>
 <div class="row pt-5">
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
 <div class="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
 <div class="pl-5">
 <p class="pink-text">Your Details</p>
