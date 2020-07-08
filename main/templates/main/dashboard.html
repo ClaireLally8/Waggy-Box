@@ -10,47 +10,57 @@
       <div class="col-sm-12 col-md-6  col-lg-4 ">
         <h1 class="text-center page-head capitalize">Welcome {{ user.username }}!</h1>
         <p class="text-center page-sub">This is your personal dashboard, you can review your orders, purchase items, adjust your subscription & even leave feedback here!</p>
-</div>
+      </div>
     </div>
   </div>
 </section>
-<div class="d-flex justify-content-center py-5" style="position:relative"><div class="divider" style="position:absolute"></div></div>
+<div class="d-flex justify-content-center py-5" style="position:relative">
+  <div class="divider" style="position:absolute"></div>
+</div>
 <section class="section">
-<h3 class="section-head text-center my-5">Navigation</h3>
-<div class="container">
-<div class = "row nav-section">
-<div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
-<a href="{% url 'sub_overview' %}" class="heartbeat">
-<img src ="{% static 'images/dash-nav.png' %}" class="img-fluid dash-icon">
-<p class="page-nav text-center mt-3">Subscription <br>Overview</p></a>
-</div><div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
-<a href="{% url 'shop' %}" class="heartbeat">
-<img src ="{% static 'images/dash-nav2.png' %}" class="img-fluid dash-icon text-center">
-<p class="page-nav text-center mt-3">Shop</p></a>
-</div><div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
-<a href="{% url 'contact' %}" class="heartbeat">
-<img src ="{% static 'images/dash-nav3.png' %}" class="img-fluid dash-icon text-center"><p class="page-nav text-center mt-3">Get in Touch!</p></a>
-</div>
-</div>
-</div>
+  <h3 class="section-head text-center my-5">Navigation</h3>
+  <div class="container">
+    <div class="row nav-section">
+      <div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
+        <a href="{% url 'sub_overview' %}" class="heartbeat">
+          <img src="{% static 'images/dash-nav.png' %}" class="img-fluid dash-icon">
+          <p class="page-nav text-center mt-3">Subscription <br>Overview</p>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
+        <a href="{% url 'shop' %}" class="heartbeat">
+          <img src="{% static 'images/dash-nav2.png' %}" class="img-fluid dash-icon text-center">
+          <p class="page-nav text-center mt-3">Shop</p>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
+        <a href="{% url 'contact' %}" class="heartbeat">
+          <img src="{% static 'images/dash-nav3.png' %}" class="img-fluid dash-icon text-center">
+          <p class="page-nav text-center mt-3">Get in Touch!</p>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
 {% if subscription.active %}
-<div class="d-flex justify-content-center py-5" style="position:relative"><div class="divider" style="position:absolute"></div></div>
-<section class="section">
-<div class="container">
-<h3 class="section-head text-center my-5">What's next?</h3>
-<p class="text-center section-text mt-2">Here's a sneak peek into some of next months goodies!</p>
-<div class="row d-flex justify-content-center">
-{% for item in items %}
-<div class="col-lg-3 col-md-6 col-sm-12 z-depth-1 mt-2 mx-2">
-<div class="image d-flex justify-content-center">
-<img src="{{ MEDIA_URL }}{{ item.image }}" class="img-fluid item-image pt-3" height="200" width="200" alt="Product Image">
+<div class="d-flex justify-content-center py-5" style="position:relative">
+  <div class="divider" style="position:absolute"></div>
 </div>
-<p class="card-title text-center py-3">{{ item.name }}</p>
+<div class="section">
+  <div class="container">
+    <h3 class="section-head text-center my-5">What's next?</h3>
+    <p class="text-center section-text mt-2">Here's a sneak peek into some of next months goodies!</p>
+    <div class="row d-flex justify-content-center">
+      {% for item in items %}
+      <div class="col-lg-3 col-md-6 col-sm-12 z-depth-1 mt-2 mx-2">
+        <div class="image d-flex justify-content-center">
+          <img src="{{ MEDIA_URL }}{{ item.image }}" class="img-fluid item-image pt-3" height="200" width="200" alt="Product Image">
+        </div>
+        <p class="card-title text-center py-3">{{ item.name }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
-{% endfor %}
-</div>
-</div>
-</section>
 {% endif %}
 {% endblock %}

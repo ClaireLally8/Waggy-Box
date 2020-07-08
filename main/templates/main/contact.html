@@ -2,48 +2,46 @@
 {% load static %}
 
 {% block content %}
-
-
 <div class="contact-img">
-<div class="container">
-<h1 class="py-5 text-right section-head pink-text">Want to get in touch?</h1>
+  <div class="container">
+    <h1 class="py-5 text-right section-head pink-text">Want to get in touch?</h1>
+  </div>
 </div>
-</div>
 <div class="container">
-<section class="mb-4">
+  <section class="mb-4">
     <h2 class="h1-responsive section-head text-center my-4">Contact us</h2>
     <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours to help you.</p>
+      a matter of hours to help you.</p>
 
-<div class="container my-5 py-5 z-depth-1">
+    <div class="container my-5 py-5 z-depth-1">
 
-  <!--Section: Content-->
-  <section class="px-md-5 mx-md-5 text-center text-lg-left blue-text">
-  {% if messages %}
-    {% for message in messages %}
-    <h3 class="text-center message"> {{ message }}</h3>
-    {% endfor %}
-{% endif %}
-    <!--Grid row-->
-    <div class="row d-flex justify-content-center py-5">
+      <!--Section: Content-->
+      <section class="px-md-5 mx-md-5 text-center text-lg-left blue-text">
+        {% if messages %}
+        {% for message in messages %}
+        <h3 class="text-center message"> {{ message }}</h3>
+        {% endfor %}
+        {% endif %}
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center py-5">
 
-      <!--Grid column-->
-      <div class="col-md-6">
+          <!--Grid column-->
+          <div class="col-md-6">
 
-        <!-- Default form contact -->
-       <form id="contact_form" action = "{% url 'contact' %}" name="contact_form" method="POST">
-            {% csrf_token %}
-           {{ user_form.email | as_crispy_field }}
-           {{ user_form.subject | as_crispy_field }}
-           {{ user_form.message | as_crispy_field }}
-          <button class="btn button-main btn-block" type="submit">Send</button>
+            <!-- Default form contact -->
+            <form id="contact_form" action="{% url 'contact' %}" name="contact_form" method="POST">
+              {% csrf_token %}
+              {{ user_form.email | as_crispy_field }}
+              {{ user_form.subject | as_crispy_field }}
+              {{ user_form.message | as_crispy_field }}
+              <button class="btn button-main btn-block" type="submit">Send</button>
 
-        </form>
-      </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
-    </section>
-</div>
 
-</section>
+  </section>
 </div>
 {% endblock %}

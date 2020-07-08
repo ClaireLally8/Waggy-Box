@@ -3,35 +3,35 @@
 
 {% block content %}
 <section class="section">
-<div class="d-flex justify-content-around py-4 z-depth-1">
-  <a href="{% url 'shop' %}" class="page-nav"><i class="fas fa-chevron-left"></i> Go Back</a>
-  <a href="{% url 'view_bag' %}" class="page-nav"><i class="fas fa-shopping-cart"></i>View Cart</a>
-</div>
+  <div class="d-flex justify-content-around py-4 z-depth-1">
+    <a href="{% url 'shop' %}" class="page-nav"><i class="fas fa-chevron-left"></i> Go Back</a>
+    <a href="{% url 'view_bag' %}" class="page-nav"><i class="fas fa-shopping-cart"></i>View Cart</a>
+  </div>
 </section>
 <section class="section">
-<div class="row container-fluid">
-<div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
-<img src="{{ MEDIA_URL }}{{ item.image }}" alt="Item image" class="img-fluid shop-image">
-</div>
-<div class="col-sm-12 col-md-6 col-lg-6">
-<h4 class="h4-responsive mb-5 text-left pl-2 item-heading">{{ item.name }}</h4>
-<h5 class="h5-responsive text-left px-5 item-subtext"><small>€ {{ item.price }}</small></h5>
-<h5 class="h5-responsive px-5 mb-4 item-subtext"><small>Quantity:</small></h5>
-<form class="form pl-5" action="{% url 'add_to_bag' item.id %}" method="POST">
-          {% csrf_token %}
-                <input class="form-control w-25" type="number" name="quantity" value="1" min="1" max="10" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
-                <input type="submit" class="btn button-main btn-block mt-5" value="Add to Cart">
-              <input type="hidden" name="redirect_url" value="{{ request.path }}">
-        </form>
-</div>
-</div>
-<div class="container">
-<div class="row d-flex justify-content-center">
-<div class="col-sm-12 col-md-8 col-lg-10">
-<h3 class="text-left mt-3 item-heading">Item Description</h3>
-<p class="mb-5 mt-3 item-subtext">{{ item.description }}</p>
-</div>
-</div>
-</div>
+  <div class="row container-fluid">
+    <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
+      <img src="{{ MEDIA_URL }}{{ item.image }}" alt="Item image" class="img-fluid shop-image">
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <h4 class="h4-responsive mb-5 text-left pl-2 item-heading">{{ item.name }}</h4>
+      <h5 class="h5-responsive text-left px-5 item-subtext"><small>€ {{ item.price }}</small></h5>
+      <h5 class="h5-responsive px-5 mb-4 item-subtext"><small>Quantity:</small></h5>
+      <form class="form pl-5" action="{% url 'add_to_bag' item.id %}" method="POST">
+        {% csrf_token %}
+        <input class="form-control w-25" type="number" name="quantity" value="1" min="1" max="10" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+        <input type="submit" class="btn button-main btn-block mt-5" value="Add to Cart">
+        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-12 col-md-8 col-lg-10">
+        <h3 class="text-left mt-3 item-heading">Item Description</h3>
+        <p class="mb-5 mt-3 item-subtext">{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
 </section>
 {% endblock %}
