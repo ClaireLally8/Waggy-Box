@@ -10,7 +10,7 @@ Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in 
 ---
 ## User Experience 
 
-### User Stories
+#### User Stories
 
 - As a customer I want to: 
     - View the site from any device
@@ -25,3 +25,21 @@ Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in 
     - Read information on any items from the previous months subscription service
     - Find out more about the Waggy Box company as a whole
     - Be able to submit a contact form to get in touch with the site owner
+<br>
+---
+### Design 
+
+Waggy Box was designed with ease and playfulness in mind. Making use of bright colours and two sans-serif fonts with varying weights to ensure accurate emphasis is given to the secions. 
+
+#### Colour Scheme
+<img src="colour-scheme.png">
+
+#### Typography
+ 
+ - Montserrat:
+    - The primary font across the webiste, using four different weights: 200, 300, 400, 500
+    - Montserrat is a clean font used regularly, so it is both an attractive and appropriate choice to be the primary font across the site.
+
+- Rubik
+    - Rubik was used for the main page headings, of a weight 500 for the page headings and 300 for the sub-heading sections.
+    - Rubik added the element of playfulness to the application, without making it appear childish. 
