@@ -1,6 +1,6 @@
-<div style="text-align:center;"><img src="static/images/logo.png" max-height=200px></div>
+<h2 align=center><img src="static/images/logo.png" max-height=200px></h2>
 
-<div style="text-align:center; color:#ff3a95;">
+<div align=center color=#ff3a95>
 
 # [Waggy Box](https://waggy-box.herokuapp.com/)
 
@@ -116,7 +116,7 @@ The paid tier users have full access to the website.  They can review items in n
 ## **Features** 
 
 Elements on every page: 
-- Navbar
+- **Navbar**
     - Waggy Box makes use of a single navbar with varying elements depending on whether a user is logged in. 
         - Not logged in: <img src="https://i.ibb.co/DDSFqtW/Screenshot-2020-07-09-at-21-01-32.png">
         - Logged in: <img src="https://i.ibb.co/n3qXrC4/Screenshot-2020-07-09-at-20-59-18.png">
@@ -128,11 +128,11 @@ Elements on every page:
     - The login link brings users to the login page, where they can sign into the application.
     - When logged in, users can view the shop page also from the navbar, allowing them to review teh items for sale if htey have an active subscrption.  If the subscription is not active, it will bring users to a page directing them to create a subscription. 
 
-- Footer
+- **Footer**
     - There is one footer throughout the entire application.
         - On Desktop: <img src="https://i.ibb.co/SVdXy31/Screenshot-2020-07-09-at-20-57-02.png">
         - On Mobile: 
-        <div style="text-align:center;">
+        <div align=center>
         <img src="https://i.ibb.co/b3wKJ5P/Screenshot-2020-07-09-at-21-06-39.png" height=200>
         </div>
     - The footer is split into three core sections: Social Media, Navigation & Contact aspects.
@@ -145,12 +145,12 @@ Elements on every page:
 ### **Landing Page**
 The landing page is split into three core components: 
 
-- Main Landing Section 
+- **Main Landing Section**
     - This area contains the main landing image, which is of a pug lying with his belly up, looking straight up at the camera.  This image was chosen due to the cheeky, fun element involved & of course, the cute aspect of it too. 
     - Encorporated in this section is also a short about, on how Waggy Box was founded and why it came to be.  This allows users to get a deeper understanding of what the sites purpose is. 
-- How it works Section
+- **How it works Section**
     - The how it works section contains three card aspects, which is a short snippet of how the box works.  This area was changed multiple times throughout the application due to varying ideas of how I would have liked the page to be presented.  The final settling, was three card elements, with a shaodw on each, but a darker shaow on the middle element to make it appear as if it was standing out to the user. 
-- Testimonials Section
+- **Testimonials Section**
     - The testimonials section was taken from MDBoostrap Design Blocks.  There are three (fictional) testimonails, from dogs, for the added fun and to give the landing page some character. 
     - Each tesimonial is split into 5 parts: 
         - Dogs Image 
@@ -163,14 +163,32 @@ The landing page is split into three core components:
 ### **Dashboard**
 Similar to the landing page, the dashboard is split in three sections:
 
-- Main Image
+- **Main Image**
     - This main image is of a dog looking towards the central text, looking happy.  This image was chosen to create a happy overall feeling through this page.
     - The main text is personalised to the user, by welcoming them to the page and including their username.
-- Navigation through site
+- **Navigation through site**
     - There are three parts to this:
         - Subscription Overview Page which gives the user a breakdown of their subscription information and the details they're getting their box delivered to.
         - Shop which will bring users to the shop.  This page is only viewable for users with an active subscription, so the user will need to sign up to a monthly subscription in order for it to work.
         - The get in touch section will bring users to the contact page, where they can submit a contact form to the site owner.  
-- Future Months Items
+- **Future Months Items**
     - This area contains three items, which will feature in next months box.  If the users subscription is not active, this element will not be displayed to the users. 
-    
+
+### **Subscription Overview**
+This page contains two core features:
+- **Users details**
+    - This feature contains the information in the database about the users information, including:
+    Full Name, Email Address, Home Address and Phone Number.
+    - If there is no subscription or the subscription is not active, instead of displaying a blank section, the line 'Your current memebership is not active.' will appear instead.
+- **Subscription Information**
+    - This feature contains the subscription information for the user.  It contains information of the subscription name and price of the subscription per month. 
+    There are also links to change the user subscription or cancel the subscription.
+    - If there is no subscription active, then the message 'Activate your subscription below' is displayed, alongside a link to activate the subscription for users. 
+
+### **Shop**
+- The shop page contains featured items from the previous months subscription box, allowing users with an active subscription to view this and purchase any items they may wish to buy again at a lower price. 
+- Each item has an image, a name and a price assosciated with it, displayed on an all white background, with a shadow to allow them stand out. 
+- Whilst keeping the playful element with the text colours, this page also gives a clean-cut, minimalistic feel too. 
+- On a large screen, four shop items are displaying, on tablet three are displayed and on mobile one item is dislpayed per row. 
+- In order to keep the products displayed consistently, each card has a height restriction, keeping the fluid feeling across all aspects. 
+- The Shop page also includes links to allow users return back to the dashboard, or to view their cart. 
