@@ -100,7 +100,7 @@ The paid tier users have full access to the website.  They can review items in n
     - [Subscription-Overview](wireframes/tablet/subscription-tablet.png)
     - [Shop](wireframes/tablet/shop-tablet.png)
     - [Checkout](wireframes/tablet/checkout-tablet.png)
-    
+
 - **Mobile**
     - [Landing page](wireframes/mobile/landing-mobile.png)
     - [About page](wireframes/mobile/about-mobile.png)
@@ -111,4 +111,31 @@ The paid tier users have full access to the website.  They can review items in n
     - [Subscription-Overview](wireframes/mobile/subscription-mobile.png)
     - [Shop](wireframes/mobile/shop-mobile.png)
     - [Checkout](wireframes/mobile/checkout-mobile.png)    
+
+
+## **Features** 
+
+Elements on every page: 
+- Navbar
+    - Waggy Box makes use of a single navbar with varying elements depending on whether a user is logged in. 
+        - Not logged in: <img src="https://i.ibb.co/DDSFqtW/Screenshot-2020-07-09-at-21-01-32.png">
+        - Logged in: <img src="https://i.ibb.co/n3qXrC4/Screenshot-2020-07-09-at-20-59-18.png">
+        - On mobile the navar turns into a burger menu as such where users click on the hamburger icon and opens a drop down for the menu: 
+         <img src="https://i.ibb.co/pQ4Y5VZ/Screenshot-2020-07-09-at-21-02-47.png">
+
+    - The navbar contains links to the home page, where users can gather information about the company when they're not logged in. When a user is logged in, the home link brings the user to the main dashboard page, allowing users to review their subscription, access the shop and contact the site owner.
+    - The Get Started link brings users to the sign up page where they can sign up for the application.
+    - The login link brings users to the login page, where they can sign into the application.
+    - When logged in, users can view the shop page also from the navbar, allowing them to review teh items for sale if htey have an active subscrption.  If the subscription is not active, it will bring users to a page directing them to create a subscription. 
+
+- Footer
+    - There is one footer throughout the entire application.
+        - On Desktop: <img src="https://i.ibb.co/SVdXy31/Screenshot-2020-07-09-at-20-57-02.png">
+        - On Mobile: <img src="https://i.ibb.co/b3wKJ5P/Screenshot-2020-07-09-at-21-06-39.png">
+    - The footer is split into three core sections: Social Media, Navigation & Contact aspects.
+        - Social Media section contains three icons, where when clicked bring users to Facebook, Twitter and Instagram, with the intention of bringing users to the relevant pages assosicated with Waggy Box. 
+        - Navigation section has three links, About Us which when cliced reidrects the user to the about page, Contact us which brings the user to the contact page and then get started which brings the user to the registration page.
+        - Contact Us section contains all the (fictional) contact information for the Waggy Box company, including the address and a contact number for the site owners. 
+
+
 
