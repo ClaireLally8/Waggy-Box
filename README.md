@@ -27,6 +27,7 @@ Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in 
     - Be able to submit a contact form to get in touch with the site owner
 <br>
 ---
+
 ### Design 
 
 Waggy Box was designed with ease and playfulness in mind. Making use of bright colours and two sans-serif fonts with varying weights to ensure accurate emphasis is given to the secions. 
