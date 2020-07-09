@@ -29,7 +29,7 @@ Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in 
 
 ---
 
-### **Design** 
+## **Design** 
 
 Waggy Box was designed with ease and playfulness in mind. Making use of bright colours and two sans-serif fonts with varying weights to ensure accurate emphasis is given to the secions. 
 
@@ -59,4 +59,4 @@ The paid tier users have full access to the website.  They can review items in n
     - Rubik was used for the main page headings, of a weight 500 for the page headings and 300 for the sub-heading sections.
     - Rubik added the element of playfulness to the application, without making it appear childish. 
 
-#### 
+## Frameworks
