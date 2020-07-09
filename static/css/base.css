@@ -1,4 +1,3 @@
-=
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 html, body {
@@ -79,7 +78,7 @@ footer {
 .about-img {
     background: url("../images/about.png") no-repeat center center;
     background-size: cover;
-    padding-bottom:20rem;
+    padding-bottom:25rem;
 }
 .contact-img {
     background: url("../images/contact.png") no-repeat center center;
@@ -484,4 +483,17 @@ footer {
 		padding-right: 10px; 
 		white-space: nowrap;
 	}
+}
+@media only screen and (max-width: 425px) {
+    .about-img {
+        padding-bottom:10rem;
+        height:40rem;
+    }
+    .heading {
+        color:#297bb3!important;
+        text-shadow: 0.5px 2px gray;
+    }
+    .subbing {
+        color:black!important;
+    }
 }
