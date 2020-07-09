@@ -131,7 +131,10 @@ Elements on every page:
 - Footer
     - There is one footer throughout the entire application.
         - On Desktop: <img src="https://i.ibb.co/SVdXy31/Screenshot-2020-07-09-at-20-57-02.png">
-        - On Mobile: <img src="https://i.ibb.co/b3wKJ5P/Screenshot-2020-07-09-at-21-06-39.png">
+        - On Mobile: 
+        <div style="text-align:center;">
+        <img src="https://i.ibb.co/b3wKJ5P/Screenshot-2020-07-09-at-21-06-39.png" height=200>
+        </div>
     - The footer is split into three core sections: Social Media, Navigation & Contact aspects.
         - Social Media section contains three icons, where when clicked bring users to Facebook, Twitter and Instagram, with the intention of bringing users to the relevant pages assosicated with Waggy Box. 
         - Navigation section has three links, About Us which when cliced reidrects the user to the about page, Contact us which brings the user to the contact page and then get started which brings the user to the registration page.
