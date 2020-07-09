@@ -137,5 +137,22 @@ Elements on every page:
         - Navigation section has three links, About Us which when cliced reidrects the user to the about page, Contact us which brings the user to the contact page and then get started which brings the user to the registration page.
         - Contact Us section contains all the (fictional) contact information for the Waggy Box company, including the address and a contact number for the site owners. 
 
+- Blue was chosen for both of these features due to the appealing contrast it has aganist the white background, and matches well with both Black and white font colors. The blue also incorporates the playful element that was achieved throughout the website. 
 
+### **Landing Page**
+The landing page is split into three core components: 
+
+- Main Landing Section 
+    - This area contains the main landing image, which is of a pug lying with his belly up, looking straight up at the camera.  This image was chosen due to the cheeky, fun element involved & of course, the cute aspect of it too. 
+    - Encorporated in this section is also a short about, on how Waggy Box was founded and why it came to be.  This allows users to get a deeper understanding of what the sites purpose is. 
+- How it works Section
+    - The how it works section contains three card aspects, which is a short snippet of how the box works.  This area was changed multiple times throughout the application due to varying ideas of how I would have liked the page to be presented.  The final settling, was three card elements, with a shaodw on each, but a darker shaow on the middle element to make it appear as if it was standing out to the user. 
+- Testimonials Section
+    - The testimonials section was taken from MDBoostrap Design Blocks.  There are three (fictional) testimonails, from dogs, for the added fun and to give the landing page some character. 
+    - Each tesimonial is split into 5 parts: 
+        - Dogs Image 
+        - Dogs Name
+        - Dogs Job
+        - Dogs Comment on Waggy Box
+        - Dog star rating. 
 
