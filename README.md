@@ -47,7 +47,7 @@ The paid tier users have full access to the website.  They can review items in n
 
 
 #### **Colour Scheme**
-<img src="colour-scheme.png">
+<img src="design/colour-scheme.png">
 
 #### **Typography**
  
@@ -159,3 +159,18 @@ The landing page is split into three core components:
         - Dogs Comment on Waggy Box
         - Dog star rating. 
 
+
+### **Dashboard**
+Similar to the landing page, the dashboard is split in three sections:
+
+- Main Image
+    - This main image is of a dog looking towards the central text, looking happy.  This image was chosen to create a happy overall feeling through this page.
+    - The main text is personalised to the user, by welcoming them to the page and including their username.
+- Navigation through site
+    - There are three parts to this:
+        - Subscription Overview Page which gives the user a breakdown of their subscription information and the details they're getting their box delivered to.
+        - Shop which will bring users to the shop.  This page is only viewable for users with an active subscription, so the user will need to sign up to a monthly subscription in order for it to work.
+        - The get in touch section will bring users to the contact page, where they can submit a contact form to the site owner.  
+- Future Months Items
+    - This area contains three items, which will feature in next months box.  If the users subscription is not active, this element will not be displayed to the users. 
+    
