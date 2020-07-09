@@ -1,10 +1,4 @@
-/* COLOUR SCHEME
-#c6dabe
-#a8b194
-#e3d3fd
-#9f94b1
-#e1dacc
-*/
+=
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 html, body {
@@ -12,12 +6,12 @@ html, body {
  font-family: "Montserrat";
 }
 ::-moz-selection { /* Code for Firefox */
-  color: #b32968;
-  background: #ffe93a;
+  color:white;
+  background-color:#ff3a95;
 }
 ::selection {
-  color: #b32968;
-  background: #ffe93a;
+  color:white;
+  background-color:#ff3a95;
 }
 label {
     display:none;
