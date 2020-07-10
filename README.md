@@ -116,7 +116,9 @@ The paid tier users have full access to the website.  They can review items in n
 
 <h2 align=center><strong>Features</strong></h2>
 
-### **Elements on every page:**
+### **Current Features**
+
+#### **Elements on every page:**
 
 - **Navbar**
     - Waggy Box makes use of a single navbar with varying elements depending on whether a user is logged in. 
@@ -217,3 +219,16 @@ This page contains two core features:
 - Beneath, so a form where users can fill out their details alongside an area to add their message to send on to the Waggy Box email. 
 - When the user sends the email, a copy will send to the user themselves and the Waggy Box email address also. 
 - Simlar to the other pages, a wide send button was used to ensure accessiblity for all users across all devices. 
+
+--- 
+
+#### **Future Features to Implement**
+
+1. Changing the sign up process to require users to activate their subscription before being able to access the dashbaord page.  This process was reviewed previously, however it required me to change many settings within the `allauth` package to get functional.  Due to restains with my Django knowledge, I chose to leave this as a future implementation. 
+2. Building an admin dashboard where admins can review how many active subscriptions, best selling subscription and the people who have cancelled their subscription recently. 
+3. Coupons & Discount Codes - Checkout pages to include a field for customers to enter discount codes or coupons to adjust their final payment cost.
+4. A page which contains a look into the items in the next month box & allow users to favourite those items & increase their chances of getting the box. 
+5. A monthly notification email that sends to remind users that their box is being sent today (which gets sent on the 15th of the month)
+
+---
+<h2 align=center><strong>Database Architecture</strong></h2>
