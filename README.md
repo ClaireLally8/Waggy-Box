@@ -232,3 +232,76 @@ This page contains two core features:
 
 ---
 <h2 align=center><strong>Database Architecture</strong></h2>
+
+#### Database Used 
+- Django makes use of the SQL Database, 
+    - Throughout development, I  used the SQLite Database.
+    - Once deployed, the database was moved over to PostgreSQL which was provided by heroku. 
+
+#### Database Models
+In order to fully visualise the structure of the database, I created an initial [ER Diagram](desgin/ER-diagram.pdf)
+
+As the website progressed, the structure of the models adjusted slightly, and the end result is structured with 7 different models.
+
+**Categories Model**
+
+| Name | Key in db | Validation | Data type |
+--- | --- | --- | --- 
+Category | Category | max_length=150 | CharField 
+
+**Current Items**
+
+| Name | Key in db | Validation | Data type |
+--- | --- | --- | --- 
+Category | Category | max_length=150 | CharField 
+Product ID | pid | max_length=50 | CharField
+Product Name | name | max_length=150 | CharField
+Product Description | description | max_length=500 | TextField
+Product Price | price | max_digits=6, decimal_places=2| DecimalField
+Product Image URL | image_url | max_length=1024, null=True, blank=True | URLField
+Product Image | image | null=True, blank=True | ImageField
+
+**Future Items**
+
+| Name | Key in db | Validation | Data type |
+--- | --- | --- | --- 
+Product ID | pid | max_length=50 | CharField
+Product Name | name | max_length=150 | CharField
+Product Image URL | image_url | max_length=1024, null=True, blank=True | URLField
+Product Image | image | null=True, blank=True | ImageField
+
+**Membership**
+
+| Name | Key in db | Validation | Data type |
+--- | --- | --- | --- 
+Membership Type | membership_type | choices=MEMBERSHIP_CHOICES,default='Free',max_length=200, null=False, blank=False  | CharField
+Monthly Cost | price | deafult=15 | IntegerField
+Membership Description | description_one |  | TextField
+Membership Description | description_two |  | TextField
+Membership Description | description_three |  | TextField
+Membership Description | description_four |  | TextField
+Stripe Price ID | stripe_plan_id | max_length=40 | CharField
+
+**User Membership**
+| Name | Key in db | Validation | Data type |
+--- | --- | --- | --- 
+Logged in User | user | settings.AUTH_USER_MODEL, on_delete=models.CASCADE  | OneToOneField
+Stripe Customer ID | stripe_customer_id | max_length=40 | CharField
+User Full Name | full_name | max_length=200,  null=False | TextField
+User Email Address | email | max_length=254,  null=False | EmailField
+User Phone Number | phone_number | max_length=30,  null=False | CharField
+User Address Line 1 | street_address1 | max_length=80,  null=False | CharField
+User Address Line 2 | street_address1 | max_length=80,  null=False | CharField
+User Town/City | town_or_city | max_length=40,  null=False | CharField
+User County | county | max_length=80,  null=False | CharField
+User Postcode | postcode | max_length=500,  null=False | CharField
+
+**Subscription**
+
+| Name | Key in db | Validation | Data type |
+--- | --- | --- | --- 
+User Membership Type | user_membership | UserMembership, on_delete=models.CASCADE | ForeignKey
+Stripe Subscription ID | stripe_subscription_id | max_length=40 | CharField
+Subscription Active | active | default=False | BooleanField
+
+ 
