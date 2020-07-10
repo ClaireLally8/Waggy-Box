@@ -22,12 +22,8 @@
 <div class="container">
 <form class="login text-center mt-5 section-text" method="POST" action="{% url 'account_login' %}">
   {% csrf_token %}
-    <div class="message">
-  {{form.errors}}
-  </div>
-  <div class="row d-flex justify-content-center py-5">
-  <div class="col-sm-12 col-md-6 col-lg-4">{{ form.login | as_crispy_field }}</div>
-  <div class="col-sm-12 col-md-6 col-lg-4">{{ form.password | as_crispy_field }}</div>
+<div class="row d-flex justify-content-around pt-5">
+  <div class="col-sm-12 col-md-6 col-lg-4">{{ form.as_p }}</div>
   </div>
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />

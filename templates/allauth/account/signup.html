@@ -17,6 +17,7 @@
 </div>
     </div>
 </div>
+<!-- {{ form.as_p }} -->
   </section>
 <div class="d-flex justify-content-center py-5" style="position:relative"><div class="divider" style="position:absolute"></div></div>  
 <section class="section">
@@ -24,16 +25,8 @@
 <h2 class="section-head text-center pb-5">Sign up here!</h2>
 <form class="signup mt-5 text-center section-text" method="post" action="{% url 'account_signup' %}">
   {% csrf_token %}
-      <div class="message">
-  {{form.errors}}
-  </div>
-  <div class="row d-flex justify-content-center pt-5">
-  <div class="col-sm-12 col-md-6 col-lg-4">{{ form.username | as_crispy_field }}</div>
-  <div class="col-sm-12 col-md-6 col-lg-4">{{ form.email | as_crispy_field }}</div>
-  </div>
-  <div class="row d-flex justify-content-center py-5">
-  <div class="col-sm-12 col-md-6 col-lg-4">{{ form.password1 | as_crispy_field }}</div>
-  <div class="col-sm-12 col-md-6 col-lg-4">{{ form.password2 | as_crispy_field }}</div>
+  <div class="row d-flex justify-content-around pt-5">
+  <div class="col-sm-12 col-md-6 col-lg-4">{{ form.as_p }}</div>
   </div>
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
