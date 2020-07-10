@@ -482,6 +482,7 @@ To deploy Waggy Box on heroku, the following steps need be taken:
 <h2 align=center><strong>Acknowledgements</strong></h2>
 Special thanks to the wonderful people of Student Care at Code Institute.  Neil, Mark, Lucy & Liam, y'all the best (ps Neil, I told you I could do it!!!! :P ) 
 
+
 Thanks to Simen Daehlin, for being my very last minute mentor throughout this project. 
 
 A great thanks the The Office, which sat playing in the background throughout the entire creation of this project.  I've watched all nine seasons twice now. 
@@ -489,3 +490,5 @@ A great thanks the The Office, which sat playing in the background throughout th
 The loveliest tutor support at Code Institute, Sammy & Scott particularly who put up with me asking some silly questions at all points during the creation of this project. 
 
 Lastly, thanks to the massive bottle of wine, that's sitting beside me waiting to be poured.  I couldn't have do it without you. 
+<div align=center>
+<img src="https://media.giphy.com/media/5xtDarmwsuR9sDRObyU/giphy.gif"></div>
