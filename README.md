@@ -340,4 +340,38 @@ As the website progressed, the structure of the models adjusted slightly, and th
     Item Total Price | lineitem_total | max_digits=6,decimal_places=2,null=False,blank=False,editable=False | DecimalField
 
 
- 
+---
+<h2 align=center><strong>Technologies Used</strong></h2>
+
+- Front End Technologies
+    - HTML5
+    - CSS
+    - [JQuery](https://jquery.com/) to simplify DOM manipulation.
+    - [Stripe](https://stripe.com/) as payment platform to validate and accept credit card payments securely.
+    - [AWS S3](http://aws.amazon.com/) to store images held in the database
+    - [MDBoostrap](https://mdbootstrap.com/) a front end framework used to create responsive aspects across the site. 
+
+- Backend Technologies
+    - [Python](https://www.python.org/) The backend programming language
+    - [Django 3.0](https://docs.djangoproject.com/en/3.0/releases/3.0/) the backend framework for rapid development & clean designs
+    - [Heroku](http://heroku.com/) the hosting platform used for deployment
+    - [PostgreSQL](https://www.postgresql.org/) for production database, provided by heroku.
+    - [SQLite](https://www.sqlite.org/index.html) for development database, provided by django.
+
+- Other Tools Used 
+    - [Gitpod](http://gitpod.io/) the cloud based IDE used for development 
+    - [Github](https://github.com/) to store and share all project code remotely.
+    - [InVision Studio](https://www.invisionapp.com/) used during the creation of wireframes. 
+    - [Balsamiq](https://balsamiq.com/?gclid=Cj0KCQjwo6D4BRDgARIsAA6uN1-NxDOthq9pGqYzB_1iRxlBvHVwi_4_LaZuGqQT46csctF0xCiTXUMaAqmuEALw_wcB) used to create low fidelty wireframes 
+    - [Lucid Chart](https://www.lucidchart.com/) Used to create the ER diagram
+    - [Adobe Illustrator](https://www.adobe.com/ie/products/illustrator.html?sdid=88X75SKS&mv=search&ef_id=Cj0KCQjwo6D4BRDgARIsAA6uN18-lPYcwgDF07hy3N3A4POfJ--Z2wr48oa5TmcFHhKaTyLtPNMCGcUaAkAYEALw_wcB:G:s&s_kwcid=AL!3085!3!441704131393!e!!&gclid=Cj0KCQjwo6D4BRDgARIsAA6uN18-lPYcwgDF07hy3N3A4POfJ--Z2wr48oa5TmcFHhKaTyLtPNMCGcUaAkAYEALw_wcB) to adjust minor aspects & create the logo. 
+    - [Canva](https://www.canva.com/) obtained all images from the Canva site. 
+    - [AutoPep8](https://pypi.org/project/autopep8/) - a python add on, to format code into PEP8 formatting. 
+    - [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to enable creation, configuration and management of AWS S3.
+    - [Django allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) to create the sign up/login functionality across the site. 
+    - [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)  to style django forms.
+    - [Django Storages](https://django-storages.readthedocs.io/en/latest/) a collection of custom storage backends with django to work with boto3 and AWS S3.
+    - [Gunicorn](https://pypi.org/project/gunicorn/)  WSGI HTTP Server for UNIX to aid in deployment of the Django project to heroku.
+    - [Pillow](https://pillow.readthedocs.io/en/stable/) as python imaging library to aid in processing image files to store in database.
+    - [Psycopg2](https://pypi.org/project/psycopg2/) as PostgreSQL database adapter for Python.
+
