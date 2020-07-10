@@ -480,8 +480,7 @@ To deploy Waggy Box on heroku, the following steps need be taken:
 
 ---
 <h2 align=center><strong>Acknowledgements</strong></h2>
-Special thanks to the wonderful people of Student Care at Code Institute.  Neil, Mark, Lucy & Liam, y'all the best (ps Neil, I told you I could do it!!!! :P ) 
-
+Special thanks to the wonderful people of Student Care team at CI.  Neil, Lucy, Mark & Liam, you guys are the best & the most awesome co-workers I've ever had! (ps Neil, I told you I could do it!!!! :P ) 
 
 Thanks to Simen Daehlin, for being my very last minute mentor throughout this project. 
 
