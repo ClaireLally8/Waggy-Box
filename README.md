@@ -149,6 +149,7 @@ The landing page is split into three core components:
 
 - **Main Landing Section**
     - This area contains the main landing image, which is of a pug lying with his belly up, looking straight up at the camera.  This image was chosen due to the cheeky, fun element involved & of course, the cute aspect of it too. 
+    - On the right side of this image there's the Waggy Box title, alongside a short biopic on the site and what it has to offer users. 
     - Encorporated in this section is also a short about, on how Waggy Box was founded and why it came to be.  This allows users to get a deeper understanding of what the sites purpose is. 
 - **How it works Section**
     - The how it works section contains three card aspects, which is a short snippet of how the box works.  This area was changed multiple times throughout the application due to varying ideas of how I would have liked the page to be presented.  The final settling, was three card elements, with a shaodw on each, but a darker shaow on the middle element to make it appear as if it was standing out to the user. 
@@ -196,7 +197,23 @@ This page contains two core features:
 - The Shop page also includes links to allow users return back to the dashboard, or to view their cart. 
 
 ### **Shop Items**
+- The shop item page was styled to be similar to a lot of the mainstream clothing shops websites, such as [H&M](https://www2.hm.com/en_gb/index.html) where the item image is on the left and the information to add the item to your cart is on the right. Beneath, is the item description.
+- The reasoning behind this layout was down to the minimalistic feel and the user-friendlyness of the layout. 
+- The `add to cart` button was increased in size from the deafult size to ensure that any user can use the button on all screensizes. 
+
 ### **Login/Register**
+- The login & register pages follow the same structure as the main pages with a core landing image, with the sites signature right alinged text and sub text with the neccessary link to redirect you to the sign up page or the login page. 
+- Beneath then are the forms where users can enter their details in order to sign up/login to their account. 
+- Similar to the button in the shop item page, the size was increased significantly to ensure that all users can use the button across all devices. 
 ### **Payments**
-### **Contact**
+- There are two payment pages used on the site.  One for paying for a subscription and the other is the shop checkout page.  Both of these pages follow the same general structure. 
+- On the left side of the page in desktop & table, users have to entire their personal details alongside their card number which was implemented using [Stripe](https://stripe.com/)
+- On the right hand side of the page, users will enter their delivery information, which is their full address.   As the product is limited to users in Ireland, there's no option to put Country in. 
 ### **About**
+- The about page features a short write up about how Waggy Box came to be. 
+- Beneath there is also a short description and image about each doggie tester, giving users an insight into Waggy Box and the overall company feel. 
+### **Contact**
+- There is a contact form within the website also.  The form is similarly structured to the other leading pages of the site, with a main image and a heading.
+- Beneath, so a form where users can fill out their details alongside an area to add their message to send on to the Waggy Box email. 
+- When the user sends the email, a copy will send to the user themselves and the Waggy Box email address also. 
+- Simlar to the other pages, a wide send button was used to ensure accessiblity for all users across all devices. 
