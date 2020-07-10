@@ -458,3 +458,34 @@ To deploy Waggy Box on heroku, the following steps need be taken:
 
 12) Navigate to the admin panel & create the Memberships in order to get the site to function correctly.
 13) This should be everything & your site should be running correctly now. You can run the project using
+
+---
+<h2 align=center><strong>Credits</strong></h2>
+
+### **Code** 
+
+- Some sections of code layout was taken from the MDBoostrap [design block](https://mdbootstrap.com/docs/jquery/design-blocks/) page.
+- The design for the subscription options page was taken from this layout on the [StartBootstrap page](https://startbootstrap.com/snippets/pricing-table/)
+- The Subscription service was created based on this [Just Django Tutorial](https://www.youtube.com/watch?v=zu2PBUHMEew&t=7506s)
+- The shop section, particularly the orders section was taken from the  Code Institute Boutique Ado mini project. 
+
+### **Media**
+- Images were taken from Canva - I purchased a premium subscription in order to amke use of these images.
+- The shop items images were taken from [Equipet website](http://equipetstores.com/)
+
+### **Content**
+- All content within the site was written by myself, with inspiration taken from [BusterBox](https://busterbox.com/) and [BarkBox](https://www.barkbox.com/)
+- Shop Items descriptions was taken from the [Equipet website](http://equipetstores.com/)
+
+
+---
+<h2 align=center><strong>Acknowledgements</strong></h2>
+Special thanks to the wonderful people of Student Care at Code Institute.  Neil, Mark, Lucy & Liam, y'all the best (ps Neil, I told you I could do it!!!! :P ) 
+
+Thanks to Simen Daehlin, for being my very last minute mentor throughout this project. 
+
+A great thanks the The Office, which sat playing in the background throughout the entire creation of this project.  I've watched all nine seasons twice now. 
+
+The loveliest tutor support at Code Institute, Sammy & Scott particularly who put up with me asking some silly questions at all points during the creation of this project. 
+
+Lastly, thanks to the massive bottle of wine, that's sitting beside me waiting to be poured.  I couldn't have do it without you. 
