@@ -375,3 +375,45 @@ As the website progressed, the structure of the models adjusted slightly, and th
     - [Pillow](https://pillow.readthedocs.io/en/stable/) as python imaging library to aid in processing image files to store in database.
     - [Psycopg2](https://pypi.org/project/psycopg2/) as PostgreSQL database adapter for Python.
 
+---
+<h2 align=center><strong>Testing</strong></h2>
+
+All information on testing can be found the in [TESTING.md](TESTING.md)
+
+---
+<h2 align=center><strong>Deployment</strong></h2>
+
+### **To run this project locally**
+To run this project on your own IDE, you will need to ensure you have the following in place: 
+
+1) Having your own IDE such as VS Code or Pycharm.  You will also need to ensure you have [PIP](https://pip.pypa.io/en/stable/installing/), [Python3](https://www.python.org/downloads/) and [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03) installed through the CLI on your machine.
+2) In order to access the full functionality of this site, you will also need to have the following set up:
+    - [Stripe](https://dashboard.stripe.com/register)
+    (As the site is in development - you will not need to use AWS S3 for this)
+
+3) Then you will need to save a copy of this repository to your computer.  This can be done by navigating to this page - https://github.com/ClaireLally8/Waggy-Box then clicking on the `Code` dropdown & downloading the .zip file. 
+4) Then in the CLI, entering the following command:
+
+        git clone https://github.com/ClaireLally8/Waggy-box
+
+5) Open your IDE, unzip the folder downloaded and use the `cd` command in the terminal to navigate to the root directory for the project. 
+6) Install all the required modules using 
+
+        pip -r requirements.txt
+7) Create an env.py file 
+    - In here, you need to have the following env variables: 
+        - `SECRET_KE`Y  : This key is your django secret key, that generates when you install django. 
+        - `STRIPE_PUBLIC_KEY` : This key is obtained when you set up stripe.
+        - `STRIPE_SECRET_KEY` : This key is obtained when you set up stripe.
+        - `EMAIL_HOST_USER` : This is your email address
+        - `EMAIL_HOST_PASS` : Your email password generated from apps. A how to can be found [here](https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab)
+8) Migrate your models using :
+
+        python manage.py migrate
+9) You will need to create a superuser using 
+
+        python manage.py createsuperuser
+10) Navigate to the admin panel & create the Memberships in order to get the site to function correctly.
+11) This should be everything & your site should be running correctly now. You can run the project using
+
+        python3 manage.py runserver
