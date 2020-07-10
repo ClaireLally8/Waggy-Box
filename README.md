@@ -417,3 +417,44 @@ To run this project on your own IDE, you will need to ensure you have the follow
 11) This should be everything & your site should be running correctly now. You can run the project using
 
         python3 manage.py runserver
+
+### **Heroku Deployment**
+To deploy Waggy Box on heroku, the following steps need be taken: 
+
+1) Creating a requirements.txt file, filled with all installed modules.  This can be done by typing the follwing into the terminal:
+
+        pip freeze > requirements.txt
+2) Create a Procfile with the following command in the terminal: 
+
+        echo web: python app.py > Procfile
+3) Git Add, git commit & git push these to github.
+4) Create a project on heroku by clicking the `new` button and setting your project name & region. 
+5) From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub
+6) Confirm the linking of the heroku app to the correct GitHub repository.
+7) Head over to the settings page & click on reveal config vars -> You need to set the following config variables: 
+    | Key | Value | 
+    --- | --- 
+    AWS_ACCESS_KEY_ID | `<secret key>` | 
+    AWS_SECRET_ACCESS_KEY | `<secret key>` |
+    AWS_STORAGE_BUCKET_NAME | `<AWS S3 bucket name>` |
+    DATABASE_URL | `<your postgres database url>` |
+    EMAIL_HOST_PASS | `<your email address password>` |
+    EMAIL_HOST_USER | `<your email address>` |
+    SECRET_KEY | `<django secret key>` |
+    STRIPE_PUBLIC_KEY | `<stripe public key>` |
+    STRIPE_SECRET_KEY | `<stripe secret key>` |
+    USE_AWS | `True` |
+
+8) From the terminal in your IDE - 
+    - Enter the heroku postres shell
+    - Migrate the database models
+    - Create your superuser account in your new database
+
+9) In your heroku dashboard, click "Deploy". Scroll down to "Manual Deploy", select the master branch then click "Deploy Branch".
+10) Once the build is complete, click the `View App` button 
+11) You will need to create a superuser using 
+
+        python manage.py createsuperuser
+
+12) Navigate to the admin panel & create the Memberships in order to get the site to function correctly.
+13) This should be everything & your site should be running correctly now. You can run the project using
