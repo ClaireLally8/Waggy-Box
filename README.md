@@ -8,7 +8,7 @@
 Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in Ireland. Finding durable toys and tasty treats has been the most difficult task I've encountered as a pet owner.  So, the idea of Waggy Box was created, to allieviate this difficulty.  All toys are tried and tested by my own three dogs, and only the toys approved by these guys will be featured in the monthly box. 
 
 ---
-## **User Experience**
+<h2 align=center><strong>User Experience</strong></h2>
 
 #### **User Stories**
 
@@ -29,7 +29,8 @@ Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in 
 
 ---
 
-## **Design** 
+<h3 align=center><strong>User Experience</strong></h3>
+<br>
 
 Waggy Box was designed with ease and playfulness in mind. Making use of bright colours and two sans-serif fonts with varying weights to ensure accurate emphasis is given to the secions. 
 
@@ -113,9 +114,10 @@ The paid tier users have full access to the website.  They can review items in n
     - [Checkout](design/wireframes/mobile/checkout-mobile.png)    
 
 
-## **Features** 
+<h2 align=center><strong>Features</strong></h2>
 
-Elements on every page: 
+### **Elements on every page:**
+
 - **Navbar**
     - Waggy Box makes use of a single navbar with varying elements depending on whether a user is logged in. 
         - Not logged in: <img src="https://i.ibb.co/DDSFqtW/Screenshot-2020-07-09-at-21-01-32.png">
@@ -192,3 +194,9 @@ This page contains two core features:
 - On a large screen, four shop items are displaying, on tablet three are displayed and on mobile one item is dislpayed per row. 
 - In order to keep the products displayed consistently, each card has a height restriction, keeping the fluid feeling across all aspects. 
 - The Shop page also includes links to allow users return back to the dashboard, or to view their cart. 
+
+### **Shop Items**
+### **Login/Register**
+### **Payments**
+### **Contact**
+### **About**
