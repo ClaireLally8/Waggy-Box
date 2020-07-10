@@ -304,4 +304,31 @@ User Membership Type | user_membership | UserMembership, on_delete=models.CASCAD
 Stripe Subscription ID | stripe_subscription_id | max_length=40 | CharField
 Subscription Active | active | default=False | BooleanField
 
+
+**Orders**
+
+| Name | Key in db | Validation | Data type |
+--- | --- | --- | --- 
+Order Number | user_membership | UserMembership, on_delete=models.CASCADE | ForeignKey
+User Full Name | full_name | max_length=200,  null=False | TextField
+User Email Address | email | max_length=254,  null=False | EmailField
+User Phone Number | phone_number | max_length=30,  null=False | CharField
+User Address Line 1 | street_address1 | max_length=80,  null=False | CharField
+User Address Line 2 | street_address1 | max_length=80,  null=False | CharField
+User Town/City | town_or_city | max_length=40,  null=False | CharField
+User County | county | max_length=80,  null=False | CharField
+User Postcode | postcode | max_length=500,  null=False | CharField
+Date | postcode | auto_now_add=True | DateTimeField
+Order Total| postcode | max_digits=10,decimal_places=2,null=False,default=0 | DecimalField
+Grand Total | postcode | max_digits=10,decimal_places=2,null=False,default=0 | DecimalField
+
+**Order Line Item**
+| Name | Key in db | Validation | Data type |
+--- | --- | --- | --- 
+Order | order | Order, null=False,blank=False,on_delete=models.CASCADE,related_name='lineitems | ForeignKey
+Item Ordered | item | CurrentItem,null=False,blank=False,on_delete=models.CASCADE | ForeignKey
+Item Quantity Ordered | quantity | null=False, blank=False, default=0 | IntegerField
+Item Total Price | lineitem_total | max_digits=6,decimal_places=2,null=False,blank=False,editable=False | DecimalField
+
+
  
