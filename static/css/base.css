@@ -354,8 +354,11 @@ footer {
 }
 .message {
     color:#ff3a95;
-    font-weight:500;
+    font-weight:200;
     font-size:1.2rem;
+}
+ul li {
+        list-style-type: none;
 }
 .member-type {
     font-size:1.7rem;
