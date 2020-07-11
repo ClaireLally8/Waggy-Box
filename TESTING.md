@@ -51,4 +51,4 @@
     -  `pip3 install pycodestyle`
 
 - Once these steps are complete, you can format the code into PEP8 formatting by entering this command into the terminal:
-    - `autopep8 --in-place --aggressive --aggressive app.py`
+    - `autopep8 --in-place --aggressive --aggressive <.py file name>`
