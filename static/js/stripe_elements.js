@@ -1,15 +1,15 @@
-let stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
-let clientSecret = $('#id_client_secret').text().slice(1, -1);
-let stripe = Stripe(stripePublicKey);
-let elements = stripe.elements();
-let card = elements.create('card');
+const stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
+const clientSecret = $('#id_client_secret').text().slice(1, -1);
+const stripe = Stripe(stripePublicKey);
+const elements = stripe.elements();
+const card = elements.create('card');
 card.mount('#card-element');
 
 // Handle realtime validation errors on the card element
 card.addEventListener('change', function (event) {
-    let errorDiv = document.getElementById('card-errors');
+    const errorDiv = document.getElementById('card-errors');
     if (event.error) {
-        let html = `
+        const html = `
             <span class="icon" role="alert">
                 <i class="fas fa-times"></i>
             </span>
@@ -22,7 +22,7 @@ card.addEventListener('change', function (event) {
 });
 
 // Handle form submit
-let form = document.getElementById('payment-form');
+const form = document.getElementById('payment-form');
 
 form.addEventListener('submit', function(ev) {
     ev.preventDefault();
@@ -34,8 +34,8 @@ form.addEventListener('submit', function(ev) {
         }
     }).then(function(result) {
         if (result.error) {
-            let errorDiv = document.getElementById('card-errors');
-            let html = `
+            const errorDiv = document.getElementById('card-errors');
+            const html = `
                 <span class="icon" role="alert">
                 <i class="fas fa-times"></i>
                 </span>
