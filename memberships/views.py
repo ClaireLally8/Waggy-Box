@@ -110,7 +110,10 @@ def payments(request):
             except BaseException:
                 pass
 
-            messages.add_message(request, messages.SUCCESS, 'Subscription update successfully')
+            messages.add_message(
+                request,
+                messages.SUCCESS,
+                'Subscription update successfully')
             return redirect('sub_overview')
         else:
             return redirect(reverse('membership_list'))
@@ -135,6 +138,7 @@ def sub_overview(request):
     }
     return render(request, 'memberships/subscription_overview.html', context)
 
+
 @login_required
 def cancelSubscription(request):
     user_membership = get_user_membership(request)
@@ -150,7 +154,13 @@ def cancelSubscription(request):
         user_membership.membership = free_membership
         user_membership.save()
 
-        messages.add_message(request, messages.SUCCESS, 'Subscription update successfully')
+        messages.add_message(
+            request,
+            messages.SUCCESS,
+            'Subscription update successfully')
         return redirect(reverse('sub_overview'))
-    messages.add_message(request, messages.SUCCESS, 'Oops! There was an error! Try again')
+    messages.add_message(
+        request,
+        messages.SUCCESS,
+        'Oops! There was an error! Try again')
     return redirect(reverse('sub_overview'))

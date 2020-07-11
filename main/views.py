@@ -8,6 +8,7 @@ from .forms import ContactForm
 from django.contrib import messages
 # Create your views here.
 
+
 @login_required()
 def get_user_membership(request):
     user_membership_qs = UserMembership.objects.filter(user=request.user)
@@ -69,6 +70,7 @@ def shop(request):
 
     return render(request, 'main/no_auth.html')
 
+
 @login_required()
 def shop_item(request, item_id):
     """ A view to show individual product details """
@@ -101,13 +103,15 @@ def contact(request):
                 fail_silently=False,
             )
 
-            messages.add_message(request, messages.SUCCESS, 'Contact form sent successfully!')
+            messages.add_message(
+                request,
+                messages.SUCCESS,
+                'Contact form sent successfully!')
             return redirect('contact')
 
     user_form = ContactForm()
 
     context = {
-            'user_form': user_form,
-        }
+        'user_form': user_form,
+    }
     return render(request, 'main/contact.html', context)
-
