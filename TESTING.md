@@ -4,6 +4,7 @@
 
 [Deployed Site](https://waggy-box.herokuapp.com/)
 
+<a href="https://trello.com/b/egLXahHC/testing" target=_blank>All Testing fixes can be reviewed here in this Trello Board</a>
 ### **Code Testing**
 <a href="https://trello.com/b/egLXahHC/testing" target=_blank>All Testing fixes can be reviewed here in this Trello Board</a>
 
@@ -52,3 +53,16 @@
 
 - Once these steps are complete, you can format the code into PEP8 formatting by entering this command into the terminal:
     - `autopep8 --in-place --aggressive --aggressive <.py file name>`
+
+**Python Unit Testing** 
+
+Unit testing was written up to test the core functionality of the site, including rendering pages, checkout and forms. 
+
+- In the terminal type the following command: 
+
+        python manage.py test <<app name>>
+
+- The test results will be shown within the terminal.
+
+
+### **User Story Testing**
