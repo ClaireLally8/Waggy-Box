@@ -34,9 +34,10 @@
               </li>
               {% endif %}
             </ul>
-            {% if member.membership_type != users_membership %}
+            
             <form method="POST" action="{% url 'membership_list'%}">
               {% csrf_token %}
+              {% if member.membership_type != users_membership %}
               <button type="submit" class="btn button-main btn-block">This One!</button>
               {% else %}
               <p class="blue-text text-center pt-4">This is your current plan </p>

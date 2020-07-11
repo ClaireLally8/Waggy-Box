@@ -35,7 +35,7 @@
         {% for member in memberships %}
         {% if member == current_membership.membership %}
         {% if member.membership_type %}
-        €{{ member.price }}<sub>/month</sub>
+        €{{ member.price }}<sub>/month</sub></p>
         {% endif %}
         {% endif %}
         {% endfor %}
@@ -57,7 +57,7 @@
           <div class="modal-dialog modal-sm modal-frame modal-top" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="section-head text-center" id="exampleModalPreviewLabel"></h5>
+                <h5 class="section-head text-center" id="exampleModalPreviewLabel">Cancel</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -72,5 +72,8 @@
             </div>
           </div>
         </div>
+    </div>
+  </div>
+</div>
 
-        {% endblock %}
+{% endblock %}

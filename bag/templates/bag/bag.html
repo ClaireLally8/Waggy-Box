@@ -20,10 +20,11 @@
           <th scope="col" class="table-head">Quantity</th>
         </tr>
       </thead>
-
+<tbody>
       {% for item in bag_items %}
+      <tr>
         <td class="p-3 w-25">
-          <img class="img-fluid" src="{{ item.product.image.url }}">
+          <img class="img-fluid" src="{{ item.product.image.url }}" alt="product image">
         </td>
         <td class="py-3 item-subtext">
           <p class="my-0">{{ item.product.name }}</p>
@@ -46,12 +47,12 @@
       </tr>
       {% endfor %}
       <tr>
-        <td colspan="5" class="pt-5 text-right mb-5">
+        <td colspan="4" class="pt-5 text-right mb-5">
           <h4 class="mt-4 grand-total">Grand Total: €{{ grand_total|floatformat:2 }}</h4>
         </td>
       </tr>
       <tr>
-        <td colspan="5" class="text-right py-5">
+        <td colspan="4" class="text-right py-5">
           <a href="{% url 'shop' %}" class="mr-5 btn button-second my-2 rounded-0">
             <span class="text-uppercase">Keep Shopping</span>
           </a>
@@ -60,6 +61,7 @@
           </a>
         </td>
       </tr>
+</tbody>
     </table>
   </div>
 </div>
@@ -73,7 +75,7 @@
 {% block postloadjs %}
 {{ block.super }}
 
-<script type="text/javascript">
+<script>
   // Update quantity on click
   $('.update-link').click(function(e) {
     var form = $(this).prev('.update-form');
