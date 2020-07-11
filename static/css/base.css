@@ -67,41 +67,41 @@ footer {
     padding-bottom:8rem;
 }
 .uhoh-img {
-    background: url("../images/uhoh-dog.png") no-repeat center center;
+    background: url("../images/uhoh-dog.jpg") no-repeat center center;
     background-size:cover;
     padding-bottom: 18rem;
 }
 .dash-img {
-    background: url("../images/dash-dog.png") no-repeat center center;
+    background: url("../images/dash-dog.jpg") no-repeat center center;
     background-size:cover;
 }
 .about-img {
-    background: url("../images/about.png") no-repeat center center;
+    background: url("../images/about.jpg") no-repeat center center;
     background-size: cover;
     padding-bottom:25rem;
 }
 .contact-img {
-    background: url("../images/contact.png") no-repeat center center;
+    background: url("../images/contact.jpg") no-repeat center center;
     background-size: cover;
     padding-bottom:19rem;
 }
 .bag-image {
-    background: url("../images/shop-puppy.png") no-repeat center center;
+    background: url("../images/shop-puppy.jpg") no-repeat center center;
     background-size: cover;
     padding-bottom:30rem;
 }
 .checkout-image{
-    background: url("../images/checkout-puppy.png") no-repeat center center;
+    background: url("../images/checkout-puppy.jpg") no-repeat center center;
     background-size: cover;
     padding-bottom:15rem;
 }
 .signup-img {
-    background: url("../images/signup-dog.png") no-repeat center center;
+    background: url("../images/signup-dog.jpg") no-repeat center center;
     background-size: cover;
     padding-bottom:15rem;
 }
 .login-img {
-    background: url("../images/login-dog.png") no-repeat center center;
+    background: url("../images/login-dog.jpg") no-repeat center center;
     background-size: cover;
     padding-bottom:15rem;
 }
