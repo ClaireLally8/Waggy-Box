@@ -127,7 +127,7 @@ footer {
 }
 .page-sub {
     padding-bottom:3rem;
-    color:#297bb3;
+    color: black;
     font-family:"Montserrat";
     font-size:1.3rem;
     font-weight:400;
@@ -236,7 +236,7 @@ footer {
     padding-top:5rem;
 }
 .dog-text{
-        padding-top:3rem;
+        padding-top:6rem;
 }
 .dog-about {
     font-size:1rem;
@@ -455,7 +455,7 @@ ul li {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 320px) {
 
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
@@ -498,5 +498,13 @@ ul li {
     }
     .subbing {
         color:black!important;
+    }
+    .dog-text {
+        padding-top: 0rem;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .light {
+        text-shadow: 0.8px 0.8px gray;
     }
 }

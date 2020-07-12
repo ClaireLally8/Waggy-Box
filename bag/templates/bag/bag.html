@@ -14,8 +14,8 @@
     <table class="table table-borderless">
       <thead class="text-black">
         <tr>
-          <th scope="col" class="table-head">Product Information</th>
           <th scope="col"></th>
+          <th scope="col" class="table-head my-5">Product Name</th>
           <th scope="col" class="table-head">Total Price</th>
           <th scope="col" class="table-head">Quantity</th>
         </tr>
@@ -23,7 +23,7 @@
 <tbody>
       {% for item in bag_items %}
       <tr>
-        <td class="p-3 w-25">
+        <td class="w-25">
           <img class="img-fluid" src="{{ item.product.image.url }}" alt="product image">
         </td>
         <td class="py-3 item-subtext">
