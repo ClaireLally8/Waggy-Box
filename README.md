@@ -5,9 +5,11 @@
 # [Waggy Box](https://waggy-box.herokuapp.com/)
 
 </div>
+
 Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in Ireland. Finding durable toys and tasty treats has been the most difficult task I've encountered as a pet owner.  So, the idea of Waggy Box was created, to allieviate this difficulty.  All toys are tried and tested by my own three dogs, and only the toys approved by these guys will be featured in the monthly box. 
 
 ---
+
 <h2 align=center id="top"><strong>Table of Contents</strong></h2>
 
 - <a href=#UX><h3><strong>User Experience</strong></h3></a>
@@ -69,6 +71,7 @@ Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in 
 
 
 ---
+
 <h2 align=center id="UX"><strong>User Experience</strong></h2>
 
 #### **User Stories**
@@ -87,8 +90,11 @@ Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in 
     - Find out more about the Waggy Box company as a whole
     - Be able to submit a contact form to get in touch with the site owner
 <br>
-<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
+
+<a href='#top'><h4 align=right><strong>Back To Top</strong></h4></a>
+
 ---
+
 #### **Design**
 
 Waggy Box was designed with ease and playfulness in mind. Making use of bright colours and two sans-serif fonts with varying weights to ensure accurate emphasis is given to the secions. 
@@ -173,7 +179,8 @@ The paid tier users have full access to the website.  They can review items in n
     - [Checkout](design/wireframes/mobile/checkout-mobile.png)    
 
 <br>
-<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
+
+<a href='#top'><h4 align=right><strong>Back To Top</strong></h4></a>
 
 ---
 <h2 align=center id="features"><strong>Features</strong></h2>
@@ -293,9 +300,11 @@ This page contains two core features:
 5. A monthly notification email that sends to remind users that their box is being sent today (which gets sent on the 15th of the month)
 
 <br>
-<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
+
+<a href='#top'><h4 align=right><strong>Back To Top</strong></h4></a>
 
 ---
+
 <h2 align=center id="da"><strong>Database Architecture</strong></h2>
 
 #### Database Used 
@@ -405,9 +414,11 @@ As the website progressed, the structure of the models adjusted slightly, and th
     Item Total Price | lineitem_total | max_digits=6,decimal_places=2,null=False,blank=False,editable=False | DecimalField
 
 <br>
-<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
+
+<a href='#top'><h4 align=right><strong>Back To Top</strong></h4></a>
 
 ---
+
 <h2 align=center id="technologies"><strong>Technologies Used</strong></h2>
 
 - ### **Front End Technologies**
@@ -443,20 +454,25 @@ As the website progressed, the structure of the models adjusted slightly, and th
     - [Psycopg2](https://pypi.org/project/psycopg2/) as PostgreSQL database adapter for Python.
 
 <br>
-<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
+
+<a href='#top'><h4 align=right><strong>Back To Top</strong></h4></a>
 
 ---
+
 <h2 align=center id="testing"><strong>Testing</strong></h2>
 
 All information on testing can be found the in [TESTING.md](TESTING.md)
 
 <br>
-<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
+
+<a href='#top'><h4 align=right><strong>Back To Top</strong></h4></a>
 
 ---
+
 <h2 align=center id="deployment"><strong>Deployment</strong></h2>
 
 ### **Local Deployment**
+
 <br>
 To run this project on your own IDE, you will need to ensure you have the following in place: 
 
@@ -495,6 +511,7 @@ To run this project on your own IDE, you will need to ensure you have the follow
 <br>
 
 ### **Heroku Deployment**
+
 <br>
 To deploy Waggy Box on heroku, the following steps need be taken: 
 
@@ -537,9 +554,11 @@ To deploy Waggy Box on heroku, the following steps need be taken:
 13) This should be everything & your site should be running correctly now. You can run the project using
 
 <br>
-<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
+
+<a href='#top'><h4 align=right><strong>Back To Top</strong></h4></a>
 
 ---
+
 <h2 align=center id="credits"><strong>Credits</strong></h2>
 
 ### **Code** 
@@ -558,7 +577,8 @@ To deploy Waggy Box on heroku, the following steps need be taken:
 - Shop Items descriptions was taken from the [Equipet website](http://equipetstores.com/)
 
 <br>
-<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
+
+<a href='#top'><h4 align=right><strong>Back To Top</strong></h4></a>
 
 ---
 <h2 align=center id="acknowledgements"><strong>Acknowledgements</strong></h2>
@@ -574,5 +594,7 @@ Lastly, thanks to the massive bottle of wine, that's sitting beside me waiting t
 <div align=center>
 <img src="https://media.giphy.com/media/5xtDarmwsuR9sDRObyU/giphy.gif"></div>
 </div>
+
 <br>
-<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
+
+<a href='#top'><h4 align=right><strong>Back To Top</strong></h4></a>
