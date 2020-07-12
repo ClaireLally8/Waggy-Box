@@ -11,6 +11,10 @@ from django.contrib import messages
 
 @login_required()
 def get_user_membership(request):
+    """ 
+    This view renders the logged in users membership type.  
+    Required in this view to limit the user access to certain pages. 
+    """
     user_membership_qs = UserMembership.objects.filter(user=request.user)
     if user_membership_qs.exists():
         return user_membership_qs.first()
@@ -19,6 +23,10 @@ def get_user_membership(request):
 
 @login_required()
 def get_user_subscription(request):
+    """ 
+    This view renders the logged in users subscription.  
+    Required in this view to limit the user access to certain pages. 
+    """
     user_subscription_qs = Subscription.objects.filter(
         user_membership=get_user_membership(request))
     if user_subscription_qs.exists():
@@ -28,6 +36,10 @@ def get_user_subscription(request):
 
 
 def index(request):
+    """ 
+    Renders the index page if the user is not logged in & 
+    renders the dashboard if the user is logged in.
+    """
     if request.user.is_authenticated:
         return redirect(dashboard)
 
@@ -35,11 +47,17 @@ def index(request):
 
 
 def about(request):
+    """
+    Renders the about html page.
+    """
     return render(request, 'main/about.html')
 
 
 @login_required()
 def dashboard(request):
+    """ 
+    This function renders the dashboard page. Returning the users subscription and the items which are next months items. 
+    """
     subscription = get_user_subscription(request)
     items = FutureItem.objects.all()
     context = {
@@ -51,7 +69,9 @@ def dashboard(request):
 
 @login_required()
 def shop(request):
-    """ A view to show all products, including sorting and search queries """
+    """ A view to show all products. Also returns items on a page, which is limited to 12 items per page. 
+    Checks if the user has a subscription and if this is active.
+    If no for both, it will return the no auth page, otherwise it will return the shop page. """
     subscription = get_user_subscription(request)
     if subscription:
         if subscription.active:
@@ -73,7 +93,9 @@ def shop(request):
 
 @login_required()
 def shop_item(request, item_id):
-    """ A view to show individual product details """
+    """ A view to show indivdual shop items. Checks if the user has a subscription and if this is active.
+    If no for both, it will return the no auth page, otherwise it will return the shop page. """
+
     subscription = get_user_subscription(request)
     if subscription:
         if subscription.active:
@@ -94,7 +116,7 @@ def contact(request):
     """A view that allows the user to send and email message redirects back to the contact page"""
     if request.method == 'POST':  # If the form has been submitted...
         user_form = ContactForm(request.POST)  # A form bound to the POST data
-        if user_form.is_valid():
+        if user_form.is_valid(): # If the form submitted is vaid, an email will be sent. 
             send_mail(
                 request.POST['subject'],
                 request.POST['message'],
@@ -102,7 +124,6 @@ def contact(request):
                 ['waggyboxmain@gmail.com', request.POST['email']],
                 fail_silently=False,
             )
-
             messages.add_message(
                 request,
                 messages.SUCCESS,

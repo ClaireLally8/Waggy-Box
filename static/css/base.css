@@ -1,5 +1,18 @@
+/* COLOuR SCHEME: 
+#ff3a95  - Pink used as background color when text is selected. 
+#b32968 - Used to page headings. 
+#ffe93a - Logo background colour
+#3ab0ff - HR color 
+#297bb3 - Navbar & Footer colour.  Small text colours. 
+*/
+
+/* FONTS USED 
+Montserrat : Main text. Various weights used to change the emphasis on text.
+Rubik - Page heading texts.  */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
 html, body {
  height: 100%;
  font-family: "Montserrat";
@@ -196,7 +209,7 @@ footer {
     max-width: 150px;
 }
 .nav-text:hover {
-    color:#bbd4ce;
+    color:#ff3a95;
     text-decoration:underline;
 }
 .nav-section {

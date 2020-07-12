@@ -15,6 +15,12 @@ import stripe
 
 @login_required()
 def checkout(request):
+    """
+    render the checkout page. Willl also process the checkout post request & fullfill this. 
+    If information is rendered incorrectly, it will redirect the user back to the bag 
+    and displays an error message prompting users to try again.
+    If all completed successfully this will direct the user to the checkout success view.
+    """
 
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
@@ -91,7 +97,7 @@ def checkout(request):
 @login_required()
 def checkout_success(request, order_number):
     """
-    Handle successful checkouts
+    Handle successful checkouts and renders the checkout success page allowing users to review their order.
     """
 
     order = get_object_or_404(Order, order_number=order_number)

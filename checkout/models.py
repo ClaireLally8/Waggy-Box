@@ -6,6 +6,10 @@ from django.conf import settings
 from shop.models import CurrentItem
 
 
+# The order model which contains user curated information from the
+# checkout page and the items the user has purchased also.
+
+
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
     full_name = models.CharField(max_length=50, null=False, blank=False)
@@ -58,6 +62,10 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
+    """
+    Model to store individual order items, the Order and Product they relate
+    to and the quantity the customer would like.
+    """
     order = models.ForeignKey(
         Order,
         null=False,

@@ -14,6 +14,7 @@ stripe_secret_key = settings.STRIPE_SECRET_KEY
 
 @login_required()
 def get_user_membership(request):
+    """ Function which gets the users membership """
     user_membership_qs = UserMembership.objects.filter(user=request.user)
     if user_membership_qs.exists():
         return user_membership_qs.first()
@@ -22,6 +23,7 @@ def get_user_membership(request):
 
 @login_required()
 def get_user_subscription(request):
+    """ Function which gets the users subscription """
     user_subscription_qs = Subscription.objects.filter(
         user_membership=get_user_membership(request))
     if user_subscription_qs.exists():
@@ -32,6 +34,7 @@ def get_user_subscription(request):
 
 @login_required()
 def get_selected_membership(request):
+    """ Function which gets the selected membership on the membership list page """
     membership_type = request.session['selected_membership_type']
     selected_membership_qs = Membership.objects.filter(
         membership_type=membership_type)
@@ -42,6 +45,9 @@ def get_selected_membership(request):
 
 @login_required()
 def membership_list(request):
+    """ This displays the membership list page. 
+    Also deals with a post request, which will take in the selected membership, store in a session and render the payment page.
+    If a GET request, it will then render the membership list page instead. """
     if request.method == "POST":
         selected_membership_type = request.POST.get('membership_type')
         selected_membership = Membership.objects.get(
@@ -72,6 +78,11 @@ def membership_list(request):
 
 @login_required()
 def payments(request):
+
+        """ This displays the membership payment. 
+    Also deals with a post request, which will take in the payment form and create a recurring subscription for the user via Stripe. 
+    If a GET request, it will then render the membership payment page. """
+
     user_membership = get_user_membership(request)
     form = SubscriptionForm()
 
@@ -127,6 +138,7 @@ def payments(request):
 
 
 def sub_overview(request):
+    """ This page renders the subscription overview. Renders the information for the user """
     current_membership = get_user_membership(request)
     subscription = get_user_subscription(request)
     memberships = Membership.objects.all()
@@ -141,6 +153,7 @@ def sub_overview(request):
 
 @login_required
 def cancelSubscription(request):
+        """ The view which processes a users request to cancel their subscription with Waggy Box. """
     user_membership = get_user_membership(request)
 
     if user_membership.membership != 'Free' or user_membership.membership is not None:

@@ -46,6 +46,7 @@
     {% endblock %}
 
     <title>Waggy Box {% block extra_title %}{% endblock %}</title>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="../static/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="../static/favicon.ico" type="image/x-icon" />
   </head>
@@ -95,11 +96,11 @@
       <h3 class="is-hidden"> {{ message }}</h3>
       {% endfor %}
       {% endif %}
+
       {% block content %}
       {% endblock %}
+
     </main>
-    {% block postloadjs %}
-    {% endblock %}
     <!-- Footer -->
     <footer class="page-footer font-small light-noshadow pt-4">
       <div class="container-fluid text-center text-md-left">
@@ -155,6 +156,9 @@
       </div>
     </footer>
 
+    {% block postloadjs %}
+    {% endblock %}
+    
   </body>
 
 </html>

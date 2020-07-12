@@ -8,6 +8,7 @@ class OrderLineItemAdminInline(admin.TabularInline):
 
 
 class OrderAdmin(admin.ModelAdmin):
+    # Sets the admin layout for the models.  This is one model & contains some read only fields & generic fields
     inlines = (OrderLineItemAdminInline,)
 
     readonly_fields = ('order_number', 'date',
