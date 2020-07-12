@@ -45,7 +45,7 @@
 
         <div class="d-flex justify-content-around mt-5">
           {% if subscription.active %}
-          <a class="blue-color" href="{% url 'membership_list' %}">Change Subscription</a>
+          <a class="blue-color" href="{% url 'membership_list' %}">Review Subscription</a>
           <a id="modalActivate" class="pink-color" data-toggle="modal" data-target="#exampleModalPreview">Cancel Subscription</a>
           {% else %}
           <a class="blue-color" href="{% url 'membership_list' %}">Activate Subscription</a>
