@@ -9,61 +9,60 @@ Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in 
 
 ---
 <h2 align=center id="top"><strong>Table of Contents</strong></h2>
-<a href=#UX><h3><strong>User Experience</strong></h3></a>
 
-- [**User Stories**](#user-stories)
-- [**Design**](#design)
-    - [**Colour Scheme**](#colour-scheme)
-    - [**Typography**](#typography)
-    - [**Frameworks**](#frameworks)
-    - [**Icons**](#icons)
-    - [**Wireframes**](#wireframes)
-        - [**Desktop**](#desktop)
-        - [**Tablet**](#tablet)
-        - [**Mobile**](#mobile)
+- <a href=#UX><h3><strong>User Experience</strong></h3></a>
+    - [**User Stories**](#user-stories)
+    - [**Design**](#design)
+        - [**Colour Scheme**](#colour-scheme)
+        - [**Typography**](#typography)
+        - [**Frameworks**](#frameworks)
+        - [**Icons**](#icons)
+        - [**Wireframes**](#wireframes)
+            - [**Desktop**](#desktop)
+            - [**Tablet**](#tablet)
+            - [**Mobile**](#mobile)
 
-<a href=#features><h3><strong>Features</strong></h3></a>
+- <a href=#features><h3><strong>Features</strong></h3></a>
+    - [**Current Features**](#current-features)
+        - [**Features on every page**](#features-on-every-page)
+        - [**Landing Page**](#landing-page)
+        - [**Dashboard**](#dashboard)
+        - [**Subscription Overview**](#subscription-overview)
+        - [**Shop**](#shop)
+        - [**Shop Items**](#shop-items)
+        - [**Login/Register**](#login-register)
+        - [**Payments**](#payments)
+        - [**About**](#about)
+        - [**Contact**](#contact)
+    - [**Future Features**](#future-features)
 
-- [**Current Features**](#current-features)
-    - [**Features on every page**](#features-on-every-page)
-    - [**Landing Page**](#landing-page)
-    - [**Dashboard**](#dashboard)
-    - [**Subscription Overview**](#subscription-overview)
-    - [**Shop**](#shop)
-    - [**Shop Items**](#shop-items)
-    - [**Login/Register**](#login-register)
-    - [**Payments**](#payments)
-    - [**About**](#about)
-    - [**Contact**](#contact)
-- [**Future Features**](#future-features)
+- <a href=#da><h3><strong>Database Architecture</strong></h3></a>
+    - [**Database Used**](#database-used)
+    - [**Database Models**](#database-models)
+        - [**Categories Model**](#categories)
+        - [**Current Items**](#current-items)
+        - [**Future Items**](#future-items)
+        - [**Membership**](#membership)
+        - [**User Membership**](#user-membership)
+        - [**Subscription**](#subscription)
+        - [**Order**](#order)
+        - [**Order Line Item**](#order-line-item)
 
-<a href=#da><h3><strong>Database Architecture</strong></h3></a>
-- [**Database Used**](#database-used)
-- [**Database Models**](#database-models)
-    - [**Categories Model**](#categories)
-    - [**Current Items**](#current-items)
-    - [**Future Items**](#future-items)
-    - [**Membership**](#membership)
-    - [**User Membership**](#user-membership)
-    - [**Subscription**](#subscription)
-    - [**Order**](#order)
-    - [**Order Line Item**](#order-line-item)
+- <a href=#techologies><h3><strong>Technologies Used</strong></h3></a>
+    - [**Front End Technologies**](#front-end-technologies)
+    - [**Backend Technologies**](#back-end-technologies)
+    - [**Other Tools Used**](#other-tools-used)
 
-<a href=#techologies><h3><strong>Technologies Used</strong></h3></a>
-- [**Front End Technologies**](#front-end-technologies)
-- [**Backend Technologies**](#back-end-technologies)
-- [**Other Tools Used**](#other-tools-used)
+- <a href=#deployment><h3><strong>Deployment</strong></h3></a>
+    - [**Local Deployment**](#local-deployment)
+    - [**Heroku Deployment**](#heroku-deployment)
 
-<a href=#deployment><h3><strong>Deployment</strong></h3></a>
-- [**Local Deployment**](#local-deployment)
-- [**Heroku Deployment**](#heroku-deployment)
+- <a href=#credits><h3><strong>Credits</strong></h3></a>
+    - [**Code**](#code)
+    - [**Media**](#media)
+    - [**Content**](#content)
 
-<a href=#credits><h3><strong>Credits</strong></h3></a>
-- [**Code**](#code)
-- [**Media**](#media)
-- [**Content**](#content)
-
-<a href=#acknowledgements><h3><strong>Acknowledgements</strong></h3></a>
+- <a href=#acknowledgements><h3><strong>Acknowledgements</strong></h3></a>
 
 
 ---
@@ -571,6 +570,6 @@ The loveliest tutor support at Code Institute, Sammy & Scott particularly who pu
 Lastly, thanks to the massive bottle of wine, that's sitting beside me waiting to be poured.  I couldn't have do it without you. 
 <div align=center>
 <img src="https://media.giphy.com/media/5xtDarmwsuR9sDRObyU/giphy.gif"></div>
-
+</div>
 <br>
 <a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>

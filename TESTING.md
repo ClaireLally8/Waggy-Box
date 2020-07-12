@@ -1,14 +1,54 @@
-<h1 align=center><strong>Waggy Box - Testing Information</strong></h1>
+<h2 align=center id="testing-top"><img src="static/images/logo.png" max-height=200px></h2>
 
-[Main README.md file](README.md)
+<div align=center>
 
-[Deployed Site](https://waggy-box.herokuapp.com/)
+# [Waggy Box Testing](https://waggy-box.herokuapp.com/)
 
-<a href="https://trello.com/b/egLXahHC/testing" target=_blank>All Testing fixes can be reviewed here in this Trello Board</a>
+</div>
 
-### **Code Testing**
 
-#### **Validator Testing** 
+- [**Main README.md file**](README.md)
+
+- <a href="https://trello.com/b/egLXahHC/testing" target=_blank><strong>All Testing fixes can be reviewed here in this Trello Board</strong></a>
+
+--- 
+
+<h2 align=center id="top"><strong>Table of Contents</strong></h2>
+
+- <a href=#code><h3><strong>Code Testing</strong></h3></a>
+    - [**Validator Testing**](#validator-testing)
+    - [**Python Unit Testing**](#python-unit-testing)
+
+- <a href=#us-testing><h3><strong>User Story Testing</strong></h3></a>
+- <a href=#manual><h3><strong>Manual Testing</strong></h3></a>
+    - [**Lighthouse**](#lighthouse)
+    - [**Responsive Testing**](#responsive-testing)
+        - [**Desktop Testing**](#desktop-testing)
+        - [**Laptop Testing**](#laptop-testing)
+        - [**Tablet Testing**](#tablet-testing)
+        - [**Mobile Testing**](#mobile-testing)
+
+- <a href=#bugs><h3><strong>Bugs Discovered</strong></h3></a>
+    - [**Resolved Bugs**](#resolved-bugs)
+    - [**Unresolved Bugs**](#unresolved-bugs)
+
+- <a href=#user-testing><h3><strong>Usability Testing</strong></h3></a>
+
+- <a href=#defensive><h3><strong>Defensive Design</strong></h3></a>
+    - [**Navbar**](#navbar)
+    - [**Footer**](#footer)
+    - [**Login/Signup**](#login-signup)
+    - [**Shop**](#shop)
+    - [**Subscription**](#subscription)
+    - [**Contact**](#contact)
+
+<a href=#testing-top><h4 align=right><strong>Back To Top</strong></h4></a>
+
+---
+
+<h2 align=center id="code"><strong>Code Testing</strong></h2>
+
+### **Validator Testing** 
 
 [W3C Markup Validation](https://validator.w3.org/)
  - W3C was used in the validation of both the HTML and CSS for the application.
@@ -53,7 +93,7 @@
 - Once these steps are complete, you can format the code into PEP8 formatting by entering this command into the terminal:
     - `autopep8 --in-place --aggressive --aggressive <.py file name>`
 
-**Python Unit Testing** 
+### **Python Unit Testing** 
 
 Unit testing was written up to test the core functionality of the site, including rendering pages, checkout and forms. 
 
@@ -63,48 +103,54 @@ Unit testing was written up to test the core functionality of the site, includin
 
 - The test results will be shown within the terminal.
 
+<a href=#testing-top><h4 align=right><strong>Back To Top</strong></h4></a>
 
-### **User Story Testing**
+---
 
-1) View the site from any device
+<h2 align=center id="us-testing"><strong>User Story Testing</strong></h2>
+
+1) **View the site from any device**
     - This application has been tested across all screen sizes & is shown to be fully responsive.  More about responsive testing undertaken in this application can be read in the below sections. 
-2) Create an account.
+2) **Create an account.**
     - With the inclusion of Django AllAuth, users can create an account & sign in, which gives them access to additional features across the application. 
 3) Be able to login/out without purchasing a subscription.
     - Users do not have to purcahse a subscription to gain access to the internal features of the webiste. 
     - The reason behind this, is to allow potential customers get a feel for the type of service they are signing up to before committing to it. 
-4) Gain additional features once I subscribe to a box.
+4) **Gain additional features once I subscribe to a box.**
     - With the use of the Subscription model & the active field, sections of the application are limited to only users with an active subscription. 
     - First time users, will not have a subscription, and so a filter to ensure if the users accessing do not have a subscription are also not allowed access to the entire application. 
-5) Choose the box type I would like to subscribe to & enter my own details for delivery
+5) **Choose the box type I would like to subscribe to & enter my own details for delivery**
     - This step can be achieved via the Subscription Overview page which is linked in the dashboard.
     - If a user tries to access the restricted pages without a subscription, an error page shows with directions on how to active their subscription. 
-6) Access my subscription overview where I can review my own information and subscription type.
+6) **Access my subscription overview where I can review my own information and subscription type.**
     - This can be done by the subscription overview page.  The page is personalised to each user, and displays the users subscription type an what price their subscription is.
     - If a user does not have an active subscription, then a link will be displayed redirecting the user to activate their subscription.
-
-7) Cancel or change my subscription type as I wish.
+7) **Cancel or change my subscription type as I wish.**
     - When a user has an active subscription, they are given two options to change or cancel their subscription. 
     - If a user clicks on the cancel subscription link, a modal will pop up asking the user if they are sure they would like to cancel.  Once confirmed, the page will redirect & a message will display notifying a user of their cancellation. 
     - If a user chooses to change their subscription to another, they click on the change subscription link, which will direct them to the subscription types list, when chosen, then users will be redirected to the payment page. Once confirmed then users will be redirected to the subscription overview page with a message notifying the of a sucessful subscription update. 
-8) Visit an online shop that contains any items from the previous months box.
+8) **Visit an online shop that contains any items from the previous months box.**
     - If a user has an active subscription they are able to view the shop, which contains items from the previous months subscription box. 
-9) Be able to purchase these items for delivery
+9) **Be able to purchase these items for delivery**
     - Users are able to purchase items in the online shop.  This can be done by accessing the shop via the link in the navbar, clicking into the item they would like to purchase, and clicking the add to cart option. 
     - This then redirects the user to the shopping cart.  The user is then given the option to process their payment or return to purcahse more items.
     - If the user chooses to proceed to pay for their item, then they can proceed to the checkout page where they enter their information to pay for the item and their delivery information also.
-10) Read information on any items from the previous months subscription service
+10) **Read information on any items from the previous months subscription service**
     - This can be achieved by navigating into the shop page and clicking on the item they would lke to purchase. 
     - At the bottom of the page, users can then review the items description where they get a more in depth idea of the product. 
-11) Find out more about the Waggy Box company as a whole
+11) **Find out more about the Waggy Box company as a whole**
     - The site contains a short section and a further compelling About page is included in the site. Providing the user with sufficient information to satisfy a users curiosity without overloading them with more than they need.
-12) Be able to submit a contact form to get in touch with the site owner
+12) **Be able to submit a contact form to get in touch with the site owner**
     - The site contains a contact form accessible through the main dashboard page and also through the site footer.
     - The contact form provides an easy way for the user to send an email to the site owner. 
     - The email that is sent to the shop owner includes all the needed info to reply directly to the sender.
 
+<a href=#testing-top><h4 align=right><strong>Back To Top</strong></h4></a>
 
-### **Manual Testing** 
+---
+
+<h2 align=center id="manual"><strong>Manual Testing</strong></h2>
+<br>
 Extensive manual testing was taken to ensure the application was responsive across all devices and achieved best practices in sofware developement. 
 
 #### **Lighthouse**
@@ -118,9 +164,11 @@ An audit was completed using Lighthouse on the Waggy Box page.  Quite a low `per
     - [Medium](https://medium.com/)
 - I learned that higher markings in Accessibility, Best Practices & SEO were more frequent than having a high performance rating. 
 
-#### **Responsive Testing**
+<br>
 
-##### Large Desktop Testing
+## **Responsive Testing**
+
+### **Desktop Testing**
 - 
     | Page | Responsive| Notes| 
     --- | --- | ---
@@ -140,7 +188,7 @@ An audit was completed using Lighthouse on the Waggy Box page.  Quite a low `per
     Checkout Success | Y | Page rendering as intended.  No incorrect shaped content & fonts sizes are appropriate. 
 
 
-##### Laptop Screen Testing (Same results as large monitor)
+### **Laptop Testing**
 - 
     | Page | Responsive| Notes| 
     --- | --- | ---
@@ -159,7 +207,7 @@ An audit was completed using Lighthouse on the Waggy Box page.  Quite a low `per
     Checkout | Y | This page followed a similar structure to the Membership Payment page.  See notes for this. 
     Checkout Success | Y | Page rendering as intended.  No incorrect shaped content & fonts sizes are appropriate. 
 
-##### Tablet Testing
+### **Tablet Testing**
 - 
     | Page | Responsive| Notes| 
     --- | --- | ---
@@ -178,7 +226,7 @@ An audit was completed using Lighthouse on the Waggy Box page.  Quite a low `per
     Checkout | Y | This page followed a similar structure to the Membership Payment page.  See notes for this. 
     Checkout Success | Y | White space rendering on main image.  Adjusted correctly & resolved by decreasing the padding on tablet screens & smaller. 
 
-##### Tablet Testing
+### **Mobile Testing**
 - 
     | Page | Responsive| Notes| 
     --- | --- | ---
@@ -197,9 +245,13 @@ An audit was completed using Lighthouse on the Waggy Box page.  Quite a low `per
     Checkout | Y | This page followed a similar structure to the Membership Payment page.  See notes for this. 
     Checkout Success | Y | Rendering well.  Dark text visible against the light background. Dark text not fully visible.  Looking into making this better - `text-shadow: 0.8px 0.8px gray;` was added on screens less than 1000px to the sub text.
 
-### **Bugs Discovered** 
+<a href=#testing-top><h4 align=right><strong>Back To Top</strong></h4></a>
 
-#### Resolved Bugs.
+---
+
+<h2 align=center id="bugs"><strong>Bugs Discovered</strong></h2>
+
+### **Resolved Bugs**
 
 1) A significant issue with Stripe working in the subscription during creation was discovered in getting the Stripe Token to correctly populate.  Thanks to the help from Simen Daehlin, this was resolved by manually adding the public key for Stripe in the membership_payment.html page. 
 2) When the Database is empty, an error occurs with the subscription. 
@@ -214,15 +266,18 @@ An audit was completed using Lighthouse on the Waggy Box page.  Quite a low `per
     - Due to the free Hobby-dev postgres package selected when setting up the heroku database, I was not able to set the permissions necessary to alow Django to create a test database when running manage.py test.
     - To fix this I reverted to accessing my sqlite3 database for testing.
 
-#### Unsolved Bugs.
+###  **Unresolved Bugs**
 1) Cart page images not hiding on small screen.
     - This seems to be an issue with the MDB framework, however when relevant classess were applied to product items, instead of hiding one image on a small screen & displaying another, both images were rendering to display.
 2) Allauth form fields rending significantly smaller than desired.  Due to a limited understanding of Django Allauth, I was unable to resolve this, however would like to look into this in the near future. 
 
+<a href=#testing-top><h4 align=right><strong>Back To Top</strong></h4></a>
 
-### User Testing
+--- 
 
-- A site wide User test was conducted.  The user was presented with the following aims:
+<h2 align=center id="user-testing"><strong>Usability Testing</strong></h2>
+
+- A site wide usability test was conducted.  The user was presented with the following aims:
     - You are hte owner of a large dog breed.  After tirelessly seeking good quality dog toys, you have given up. Until you come across the Waggy Box application.
     - Navigate to the `About Us` page to learn more about the Waggy Box company.
     - After reading the about page, you would love to sign up and try out the service. Navigate to the sign up page & create an account. 
@@ -233,12 +288,16 @@ An audit was completed using Lighthouse on the Waggy Box page.  Quite a low `per
     - Enter your details & checkout.
     - Now your item has arrived, but there seems to be an issue with the payments and you were charged for three items instead of 2.  You need to get in touch with the site owner to resolve this.
 
-- User Testing Feedback 
+- **User Testing Feedback** 
     - The option to allow users to subscribe straight from signing up. (Added to future implementations)
     - Adjusting the width of buttons to allow for more mobile friendly user - this was done & has greatly improved the UX. 
 
 
-### **Defensive Testing** 
+<a href=#testing-top><h4 align=right><strong>Back To Top</strong></h4></a>
+
+---
+
+<h2 align=center id="defensive"><strong>Defensive Testing</strong></h2>
 
 - #### **Navbar** 
     - All links were tested & deemed to be fully functional, directing users to the desired location. 
@@ -246,7 +305,7 @@ An audit was completed using Lighthouse on the Waggy Box page.  Quite a low `per
 - #### **Footer** 
     - Links to pages were tested & again deemed to be fully functional, directing users to the desired location to the `<a>` name.
     - Icons navigate to relevant external links when clicked & a new tab is opened for navigating to this page. 
-- #### **Login/Signup** 
+- #### **Login Signup** 
     - Links in these pages functioned correctly.
     - Buttons performed desired actions.
     - Required fields in forms rendered an error when not filled correctly.
@@ -270,3 +329,8 @@ An audit was completed using Lighthouse on the Waggy Box page.  Quite a low `per
     - Form flags error messgae if attempted submission and information is incorrect.
     - Messages display when form is sent correctly or if an error occurs when attempting to send. 
 
+<div align=center>
+<img src="https://media.giphy.com/media/dsKnRuALlWsZG/giphy.gif"></div>
+</div>
+
+<a href=#testing-top><h4 align=right><strong>Back To Top</strong></h4></a>
