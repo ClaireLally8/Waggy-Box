@@ -238,6 +238,35 @@ An audit was completed using Lighthouse on the Waggy Box page.  Quite a low `per
     - Adjusting the width of buttons to allow for more mobile friendly user - this was done & has greatly improved the UX. 
 
 
-### **Manual Testing Navigation.** 
+### **Defensive Testing** 
 
-#### 
+- #### **Navbar** 
+    - All links were tested & deemed to be fully functional, directing users to the desired location. 
+    - Logo redirects user to index page if logged out, when logged in it redirects the user to the dashboard page.
+- #### **Footer** 
+    - Links to pages were tested & again deemed to be fully functional, directing users to the desired location to the `<a>` name.
+    - Icons navigate to relevant external links when clicked & a new tab is opened for navigating to this page. 
+- #### **Login/Signup** 
+    - Links in these pages functioned correctly.
+    - Buttons performed desired actions.
+    - Required fields in forms rendered an error when not filled correctly.
+    - Messages displayed if information was submitted incorrectly. 
+- #### **Subscription Pages** 
+    - All links to other pages were checked & deemed rending correctly.
+    - Buttons performed the desired actions. 
+    - Pop-up modal on subscription overview page working correctly & only triggered upon clicking a button.
+    - Buttons performed desired actions & rendered to correct page.
+    - Any forms that needed to be filled out flashed relevant errors if filled incorrectly.
+    - Error messages flashed as desired when forms or pages were submitted incorrectly.
+- #### **Shop Pages** 
+    - Page links performed desired action when required.
+    - Shop pages do not display to users without an acitve paid subscription.
+    - Buttons performed desired actions & when aimed, rendered the correct page.
+    - Any forms that needed to be filled out flashed relevant errors if filled incorrectly.
+    - Error messages flashed as desired when forms or pages were submitted incorrectly.
+- #### **Contact Page** 
+    - Links perform the correct actions.
+    - Send button sends contact form & email gets delivered to site owner and the sender for review. 
+    - Form flags error messgae if attempted submission and information is incorrect.
+    - Messages display when form is sent correctly or if an error occurs when attempting to send. 
+
