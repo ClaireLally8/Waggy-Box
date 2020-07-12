@@ -6,7 +6,7 @@
 
 </div>
 
-Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in Ireland. Finding durable toys and tasty treats has been the most difficult task I've encountered as a pet owner.  So, the idea of Waggy Box was created, to allieviate this difficulty.  All toys are tried and tested by my own three dogs, and only the toys approved by these guys will be featured in the monthly box. 
+Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in Ireland. Finding durable toys and tasty treats has been the most difficult task I've encountered as a pet owner.  So, the idea of Waggy Box was created, to alleviate this difficulty.  All toys are tried and tested by my own three dogs, and only the toys approved by these guys will be featured in the monthly box. 
 
 ---
 
@@ -74,26 +74,31 @@ Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in 
 
 <h2 align=center id="UX"><strong>User Experience</strong></h2>
 
-#### **User Stories**
+- #### **User Stories**
+    1. As a user, I expect to be able to access the website from any device. 
+    2. As a user I expect any information on the website to be displayed in a clear & concise way
+    3. As a user, I expect to find information on the website quickly and effectively. 
+    4. As a user, I expect to be able to find out more information about the company. 
+    5. As a user, I expect to be able to read reviews from customers. 
+    6. As a user, I expect to be able to get in contact with the site owner for any reason. 
+    7. As a user, I expect to be able to create an account. 
+    8. As a user I expect my information to be stored on the backend so I don't have to re-enter the same information multiple times. 
+    9. As a user, I expect to be able to view information about the subscription I am paying for.
+    10. As a user, I would like to be able to have an option to change my subscription.
+    11. As a user, I expect to be able to cancel my membership easily.
+    12. As a user, I expect to be able to review items within the shop. 
+    13. As I user, I expect to be able to gain additional information on this product
+    14. As a user, I want to make an informed decision on whether to purchase an item in the shop
+    15. As a user, I expect to be able to review what I'm paying for all stages in the checkout & payment process. 
+    16. As a user, I expect to be able to get feedback from the website I am using when I interact with aspects.
 
-- As a visitor to the site, I would like:
-    1. To be able to access the website from any device to ensure I can review my information across all devices & platforms. 
-    2.  To be  able to find any information on the website in a clear & concise way so I can find what I need quickly and efficiently.
-    3. To be able to find out more information about the company so I know I'm getting a good service. 
-    4. To be able to read reviews from customers with active subscriptions so I know am getting a good service. 
-    5. To be able to get in contact with the site owner for any reason. 
-    6. To be able to create an account that stores my information so I don't need to re-enter it multiple time across the application. 
-    7. To be able to view information about the subscription I am paying for & have an option to change or cancel this to ensure I'm paying for the best one suited to my requirements.
-    8. To be able to review items within the shop and when clicked gain additional information on this product. 
-    9. To be able to review what I'm paying for all stages in the checkout & payment process. 
-    10. Get feedback from the website I am using when I interact with it, expecting messages & pop-up feedback to my actions, successful or unsuccessful.
 <a href='#top'><h4 align=right><strong>Back To Top</strong></h4></a>
 
 ---
 
 #### **Design**
 
-Waggy Box was designed with ease and playfulness in mind. Making use of bright colours and two sans-serif fonts with varying weights to ensure accurate emphasis is given to the secions. 
+Waggy Box was designed with ease and playfulness in mind. Making use of bright colors and two sans-serif fonts with varying weights to ensure accurate emphasis is given to the sections. 
 
 This project was aimed at dog owners and dog lovers, who regularly struggle to find great toys and treats tasty enough to train and play with their furry friends. 
 
@@ -105,7 +110,7 @@ Users are initially registered on the free tier page.  They have a limited view 
 
 **Paid Tier:**
 
-The paid tier users have full access to the website.  They can review items in next month's box, shop items from the previous month, contact the site owner and adjust their own subscription plan. 
+The paid tier users have full access to the website.  They can review items in next month's box, shop items from the previous month, contact the site owner, and adjust their own subscription plan. 
 
 
 #### **Colour Scheme**
@@ -114,7 +119,7 @@ The paid tier users have full access to the website.  They can review items in n
 #### **Typography**
  
  - **Montserrat:**
-    - The primary font across the webiste, using four different weights: 200, 300, 400, 500
+    - The primary font across the website, using four different weights: 200, 300, 400, 500
     - Montserrat is a clean font used regularly, so it is both an attractive and appropriate choice to be the primary font across the site.
 
 - **Rubik**
@@ -126,7 +131,7 @@ The paid tier users have full access to the website.  They can review items in n
     - Taking the responsiveness of Bootstrap and the front-end UI of Materialize, MDBoostrap makes use of both of these. So all aspects of the site were clean and accessible for all users. 
 
 - [JQuery](https://code.jquery.com/jquery/)
-    - In order to minimalise the amount of Javascript used across the application, I chose to implenent a lot of the JS functionality with JQuery.
+    - In order to minimalize the amount of Javascript used across the application, I chose to implement a lot of the JS functionality with JQuery.
 
 - [Django 3.0](https://docs.djangoproject.com/en/3.0/releases/3.0/) 
     - Django is a free and open-source web framework that I've used to render the back-end Python code with the front-end MDBoostrap and my own custom HTML and CSS. 
@@ -134,10 +139,10 @@ The paid tier users have full access to the website.  They can review items in n
 ### **Icons**
 
 - [MDBoostrap Icons](https://mdbootstrap.com/)
-    - A majority of icons used across the website were taken from MDBoostrap documentation. These icons are adapted from both Font Awesome and Materialize icons due to their clean appearence. 
+    - A majority of icons used across the website were taken from MDBoostrap documentation. These icons are adapted from both Font Awesome and Materialize icons due to their clean appearance. 
 - [Canva](https://www.canva.com/) 
     - Canva was the source of other Icons.  I purchased a pro subscription to canva for the duration of the project.  Canva has an extensive library of images and icons for use by designers and developers alike.
-    - The Waggy Box logo was also created using a canva logo template and customised to fit the feel and appearence of Waggy Box.
+    - The Waggy Box logo was also created using a canva logo template and customized to fit the feel and appearance of Waggy Box.
 
 ### **Wireframes**
 
@@ -189,13 +194,13 @@ The paid tier users have full access to the website.  They can review items in n
     - Waggy Box makes use of a single navbar with varying elements depending on whether a user is logged in. 
         - Not logged in: <img src="https://i.ibb.co/DDSFqtW/Screenshot-2020-07-09-at-21-01-32.png">
         - Logged in: <img src="https://i.ibb.co/n3qXrC4/Screenshot-2020-07-09-at-20-59-18.png">
-        - On mobile the navar turns into a burger menu as such where users click on the hamburger icon and opens a drop down for the menu: 
+        - On mobile the navbar turns into a burger menu as such where users click on the hamburger icon and open a drop-down for the menu: 
          <img src="https://i.ibb.co/pQ4Y5VZ/Screenshot-2020-07-09-at-21-02-47.png">
 
-    - The navbar contains links to the home page, where users can gather information about the company when they're not logged in. When a user is logged in, the home link brings the user to the main dashboard page, allowing users to review their subscription, access the shop and contact the site owner.
-    - The Get Started link brings users to the sign up page where they can sign up for the application.
+    - The navbar contains links to the home page, where users can gather information about the company when they're not logged in. When a user is logged in, the home link brings the user to the main dashboard page, allowing users to review their subscription, access the shop, and contact the site owner.
+    - The Get Started link brings users to the sign-up page where they can sign up for the application.
     - The login link brings users to the login page, where they can sign into the application.
-    - When logged in, users can view the shop page also from the navbar, allowing them to review teh items for sale if htey have an active subscrption.  If the subscription is not active, it will bring users to a page directing them to create a subscription. 
+    - When logged in, users can view the shop page also from the navbar, allowing them to review the items for sale if they have an active subscription.  If the subscription is not active, it will bring users to a page directing them to create a subscription. 
 
 - **Footer**
     - There is one footer throughout the entire application.
@@ -205,94 +210,94 @@ The paid tier users have full access to the website.  They can review items in n
         <img src="https://i.ibb.co/b3wKJ5P/Screenshot-2020-07-09-at-21-06-39.png" height=200>
         </div>
     - The footer is split into three core sections: Social Media, Navigation & Contact aspects.
-        - Social Media section contains three icons, where when clicked bring users to Facebook, Twitter and Instagram, with the intention of bringing users to the relevant pages assosicated with Waggy Box. 
-        - Navigation section has three links, About Us which when cliced reidrects the user to the about page, Contact us which brings the user to the contact page and then get started which brings the user to the registration page.
+        - Social Media section contains three icons, where when clicked bring users to Facebook, Twitter, and Instagram, with the intention of bringing users to the relevant pages associated with Waggy Box. 
+        - Navigation section has three links, About Us which when clicked redirects the user to the about page, Contact us which brings the user to the contact page and then gets started which brings the user to the registration page.
         - Contact Us section contains all the (fictional) contact information for the Waggy Box company, including the address and a contact number for the site owners. 
 
-- Blue was chosen for both of these features due to the appealing contrast it has aganist the white background, and matches well with both Black and white font colors. The blue also incorporates the playful element that was achieved throughout the website. 
+- Blue was chosen for both of these features due to the appealing contrast it has against the white background and matches well with both Black and white font colors. The blue also incorporates the playful element that was achieved throughout the website. 
 
 ### **Landing Page**
 The landing page is split into three core components: 
 
 - **Main Landing Section**
     - This area contains the main landing image, which is of a pug lying with his belly up, looking straight up at the camera.  This image was chosen due to the cheeky, fun element involved & of course, the cute aspect of it too. 
-    - On the right side of this image there's the Waggy Box title, alongside a short biopic on the site and what it has to offer users. 
-    - Encorporated in this section is also a short about, on how Waggy Box was founded and why it came to be.  This allows users to get a deeper understanding of what the sites purpose is. 
+    - On the right side of this image, there's the Waggy Box title, alongside a short biopic on the site and what it has to offer users. 
+    - Incorporated in this section is also a short about, how Waggy Box was founded and why it came to be.  This allows users to get a deeper understanding of what the purpose of the site is. 
 - **How it works Section**
-    - The how it works section contains three card aspects, which is a short snippet of how the box works.  This area was changed multiple times throughout the application due to varying ideas of how I would have liked the page to be presented.  The final settling, was three card elements, with a shaodw on each, but a darker shaow on the middle element to make it appear as if it was standing out to the user. 
+    - How it works section contains three card aspects, which is a short snippet of how the box works.  This area was changed multiple times throughout the application due to varying ideas of how I would have liked the page to be presented.  The final settling, was three card elements, with a shadow on each, but a darker shadow on the middle element to make it appear as if it was standing out to the user. 
 - **Testimonials Section**
-    - The testimonials section was taken from MDBoostrap Design Blocks.  There are three (fictional) testimonails, from dogs, for the added fun and to give the landing page some character. 
-    - Each tesimonial is split into 5 parts: 
+    - The testimonials section was taken from MDBoostrap Design Blocks.  There are three (fictional) testimonials, from dogs, for the added fun and to give the landing page some character. 
+    - Each testimonial is split into 5 parts: 
         - Dogs Image 
         - Dogs Name
         - Dogs Job
         - Dogs Comment on Waggy Box
-        - Dog star rating. 
+        - Dog's star rating. 
 
 
 ### **Dashboard**
-Similar to the landing page, the dashboard is split in three sections:
+Similar to the landing page, the dashboard is split into three sections:
 
 - **Main Image**
     - This main image is of a dog looking towards the central text, looking happy.  This image was chosen to create a happy overall feeling through this page.
-    - The main text is personalised to the user, by welcoming them to the page and including their username.
+    - The main text is personalized to the user, by welcoming them to the page and including their username.
 - **Navigation through site**
     - There are three parts to this:
         - Subscription Overview Page which gives the user a breakdown of their subscription information and the details they're getting their box delivered to.
-        - Shop which will bring users to the shop.  This page is only viewable for users with an active subscription, so the user will need to sign up to a monthly subscription in order for it to work.
+        - The shop will bring users to the shop.  This page is only viewable for users with an active subscription, so the user will need to sign up for a monthly subscription in order for it to work.
         - The get in touch section will bring users to the contact page, where they can submit a contact form to the site owner.  
 - **Future Months Items**
-    - This area contains three items, which will feature in next months box.  If the users subscription is not active, this element will not be displayed to the users. 
+    - This area contains three items, which will feature in next month's box.  If the user's subscription is not active, this element will not be displayed to the users. 
 
 ### **Subscription Overview**
 This page contains two core features:
 - **Users details**
-    - This feature contains the information in the database about the users information, including:
-    Full Name, Email Address, Home Address and Phone Number.
-    - If there is no subscription or the subscription is not active, instead of displaying a blank section, the line 'Your current memebership is not active.' will appear instead.
+    - This feature contains the information in the database about the user's information, including:
+    Full Name, Email Address, Home Address, and Phone Number.
+    - If there is no subscription or the subscription is not active, instead of displaying a blank section, the line 'Your current membership is not active.' will appear instead.
 - **Subscription Information**
-    - This feature contains the subscription information for the user.  It contains information of the subscription name and price of the subscription per month. 
+    - This feature contains the subscription information for the user.  It contains information on the subscription name and price of the subscription per month. 
     There are also links to change the user subscription or cancel the subscription.
     - If there is no subscription active, then the message 'Activate your subscription below' is displayed, alongside a link to activate the subscription for users. 
 
 ### **Shop**
-- The shop page contains featured items from the previous months subscription box, allowing users with an active subscription to view this and purchase any items they may wish to buy again at a lower price. 
-- Each item has an image, a name and a price assosciated with it, displayed on an all white background, with a shadow to allow them stand out. 
-- Whilst keeping the playful element with the text colours, this page also gives a clean-cut, minimalistic feel too. 
-- On a large screen, four shop items are displaying, on tablet three are displayed and on mobile one item is dislpayed per row. 
+- The shop page contains featured items from the previous month's subscription box, allowing users with an active subscription to view this and purchase any items they may wish to buy again at a lower price. 
+- Each item has an image, a name, and a price associated with it, displayed on an all-white background, with a shadow to allow them to stand out. 
+- Whilst keeping the playful element with the text colors, this page also gives a clean-cut, minimalistic feel too. 
+- On a large screen, four shop items are displaying, on tablet three are displayed and on mobile one item is displayed per row. 
 - In order to keep the products displayed consistently, each card has a height restriction, keeping the fluid feeling across all aspects. 
-- The Shop page also includes links to allow users return back to the dashboard, or to view their cart. 
+- The Shop page also includes links to allow users to return back to the dashboard or to view their cart. 
 
 ### **Shop Items**
-- The shop item page was styled to be similar to a lot of the mainstream clothing shops websites, such as [H&M](https://www2.hm.com/en_gb/index.html) where the item image is on the left and the information to add the item to your cart is on the right. Beneath, is the item description.
-- The reasoning behind this layout was down to the minimalistic feel and the user-friendlyness of the layout. 
-- The `add to cart` button was increased in size from the deafult size to ensure that any user can use the button on all screensizes. 
+- The shop item page was styled to be similar to a lot of the mainstream clothing shop websites, such as [H&M](https://www2.hm.com/en_gb/index.html) where the item image is on the left and the information to add the item to your cart is on the right. Beneath, is the item description.
+- The reasoning behind this layout was down to the minimalistic feel and the user-friendliness of the layout. 
+- The `add to cart` button was increased in size from the default size to ensure that any user can use the button on all screen sizes. 
 
 ### **Login Register**
-- The login & register pages follow the same structure as the main pages with a core landing image, with the sites signature right alinged text and sub text with the neccessary link to redirect you to the sign up page or the login page. 
+- The login & register pages follow the same structure as the main pages with a core landing image, with the site's signature right-aligned text and subtext with the necessary link to redirect you to the signup page or the login page. 
 - Beneath then are the forms where users can enter their details in order to sign up/login to their account. 
 - Similar to the button in the shop item page, the size was increased significantly to ensure that all users can use the button across all devices. 
 ### **Payments**
 - There are two payment pages used on the site.  One for paying for a subscription and the other is the shop checkout page.  Both of these pages follow the same general structure. 
 - On the left side of the page in desktop & table, users have to entire their personal details alongside their card number which was implemented using [Stripe](https://stripe.com/)
-- On the right hand side of the page, users will enter their delivery information, which is their full address.   As the product is limited to users in Ireland, there's no option to put Country in. 
+- On the right-hand side of the page, users will enter their delivery information, which is their full address.   As the product is limited to users in Ireland, there's no option to put Country in. 
 ### **About**
 - The about page features a short write up about how Waggy Box came to be. 
 - Beneath there is also a short description and image about each doggie tester, giving users an insight into Waggy Box and the overall company feel. 
 ### **Contact**
-- There is a contact form within the website also.  The form is similarly structured to the other leading pages of the site, with a main image and a heading.
+- There is a contact form within the website also.  The form is similarly structured to the other leading pages of the site, with the main image and a heading.
 - Beneath, so a form where users can fill out their details alongside an area to add their message to send on to the Waggy Box email. 
 - When the user sends the email, a copy will send to the user themselves and the Waggy Box email address also. 
-- Simlar to the other pages, a wide send button was used to ensure accessiblity for all users across all devices. 
+- Similar to the other pages, a wide send button was used to ensure accessibility for all users across all devices. 
 
 --- 
 
 #### **Future Features**
 
-1. Changing the sign up process to require users to activate their subscription before being able to access the dashbaord page.  This process was reviewed previously, however it required me to change many settings within the `allauth` package to get functional.  Due to restains with my Django knowledge, I chose to leave this as a future implementation. 
-2. Building an admin dashboard where admins can review how many active subscriptions, best selling subscription and the people who have cancelled their subscription recently. 
+1. Changing the signup process requires users to activate their subscription before being able to access the dashboard page.  This process was reviewed previously, however it required me to change many settings within the `allauth` package to get functional.  Due to restains with my Django knowledge, I chose to leave this as a future implementation. 
+2. Building an admin dashboard where admins can review how many active subscriptions, best selling subscriptions, and the people who have canceled their subscription recently. 
 3. Coupons & Discount Codes - Checkout pages to include a field for customers to enter discount codes or coupons to adjust their final payment cost.
-4. A page which contains a look into the items in the next month box & allow users to favourite those items & increase their chances of getting the box. 
+4. A page that contains a look into the items in the next month box & allows users to favorite those items & increase their chances of getting the box. 
 5. A monthly notification email that sends to remind users that their box is being sent today (which gets sent on the 15th of the month)
 
 <br>
@@ -306,10 +311,10 @@ This page contains two core features:
 #### Database Used 
 - Django makes use of the SQL Database, 
     - Throughout development, I  used the SQLite Database.
-    - Once deployed, the database was moved over to PostgreSQL which was provided by heroku. 
+    - Once deployed, the database was moved over to PostgreSQL which was provided by Heroku. 
 
 #### Database Models
-In order to fully visualise the structure of the database, I created an initial [ER Diagram](desgin/ER-diagram.pdf)
+In order to fully visualize the structure of the database, I created an initial [ER Diagram](desgin/ER-diagram.pdf)
 
 As the website progressed, the structure of the models adjusted slightly, and the end result is structured with 7 different models.
 
@@ -321,7 +326,7 @@ As the website progressed, the structure of the models adjusted slightly, and th
     Category | Category | max_length=150 | CharField 
 
 #### **Current Items**
-- This model is found within the shop app. It holds all the information for the items for sale within the current months shop. 
+- This model is found within the shop app. It holds all the information for the items for sale within the current month's shop. 
 
     | Name | Key in db | Validation | Data type |
     --- | --- | --- | --- 
@@ -334,7 +339,7 @@ As the website progressed, the structure of the models adjusted slightly, and th
     Product Image | image | null=True, blank=True | ImageField
 
 #### **Future Items**
-- This model is found within the shop app. It holds all the information for the items that will be included in next months box. 
+- This model is found within the shop app. It holds all the information for the items that will be included in next month's box. 
 
     | Name | Key in db | Validation | Data type |
     --- | --- | --- | --- 
@@ -357,7 +362,7 @@ As the website progressed, the structure of the models adjusted slightly, and th
     Stripe Price ID | stripe_plan_id | max_length=40 | CharField
 
 #### **User Membership**
-- This is found in the memberships app.  The User Memebership model holds information on each users membership.  This will defaut to free if a user does not have a subscription. 
+- This is found in the memberships app.  The User Membership model holds information on each user's membership.  This will default to free if a user does not have a subscription. 
 
     | Name | Key in db | Validation | Data type |
     --- | --- | --- | --- 
@@ -373,7 +378,7 @@ As the website progressed, the structure of the models adjusted slightly, and th
     User Postcode | postcode | max_length=500,  null=False | CharField
 
 #### **Subscription**
-- This model is found in the memberships app.  It holds the information on the subscription, if the user has an active subscription, and the strip subscription ID. It links to the User Membership. 
+- This model is found in the memberships app.  It holds the information on the subscription if the user has an active subscription and the strip subscription ID. It links to the User Membership. 
 
     | Name | Key in db | Validation | Data type |
     --- | --- | --- | --- 
@@ -401,7 +406,7 @@ As the website progressed, the structure of the models adjusted slightly, and th
     Grand Total | postcode | max_digits=10,decimal_places=2,null=False,default=0 | DecimalField
 
 #### **Order Line Item**
-- An instance of OrderItem is created for each unique product in the users cart. It links to the already existing Order for this user, the relevant product and the quantity the user wishes to buy.
+- An instance of OrderItem is created for each unique product in the user's cart. It links to the already existing Order for this user, the relevant product, and the quantity the user wishes to buy.
     | Name | Key in db | Validation | Data type |
     --- | --- | --- | --- 
     Order | order | Order, null=False,blank=False,on_delete=models.CASCADE,related_name='lineitems | ForeignKey
@@ -421,7 +426,7 @@ As the website progressed, the structure of the models adjusted slightly, and th
     - HTML5
     - CSS
     - [JQuery](https://jquery.com/) to simplify DOM manipulation.
-    - [Stripe](https://stripe.com/) as payment platform to validate and accept credit card payments securely.
+    - [Stripe](https://stripe.com/) as a payment platform to validate and accept credit card payments securely.
     - [AWS S3](http://aws.amazon.com/) to store images held in the database
     - [MDBoostrap](https://mdbootstrap.com/) a front end framework used to create responsive aspects across the site. 
 
@@ -441,12 +446,12 @@ As the website progressed, the structure of the models adjusted slightly, and th
     - [Adobe Illustrator](https://www.adobe.com/ie/products/illustrator.html?sdid=88X75SKS&mv=search&ef_id=Cj0KCQjwo6D4BRDgARIsAA6uN18-lPYcwgDF07hy3N3A4POfJ--Z2wr48oa5TmcFHhKaTyLtPNMCGcUaAkAYEALw_wcB:G:s&s_kwcid=AL!3085!3!441704131393!e!!&gclid=Cj0KCQjwo6D4BRDgARIsAA6uN18-lPYcwgDF07hy3N3A4POfJ--Z2wr48oa5TmcFHhKaTyLtPNMCGcUaAkAYEALw_wcB) to adjust minor aspects & create the logo. 
     - [Canva](https://www.canva.com/) obtained all images from the Canva site. 
     - [AutoPep8](https://pypi.org/project/autopep8/) - a python add on, to format code into PEP8 formatting. 
-    - [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to enable creation, configuration and management of AWS S3.
-    - [Django allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) to create the sign up/login functionality across the site. 
-    - [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)  to style django forms.
-    - [Django Storages](https://django-storages.readthedocs.io/en/latest/) a collection of custom storage backends with django to work with boto3 and AWS S3.
-    - [Gunicorn](https://pypi.org/project/gunicorn/)  WSGI HTTP Server for UNIX to aid in deployment of the Django project to heroku.
-    - [Pillow](https://pillow.readthedocs.io/en/stable/) as python imaging library to aid in processing image files to store in database.
+    - [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to enable the creation, configuration, and management of AWS S3.
+    - [Django allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) to create the signup/login functionality across the site. 
+    - [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)  to style Django forms.
+    - [Django Storages](https://django-storages.readthedocs.io/en/latest/) a collection of custom storage backends with Django to work with boto3 and AWS S3.
+    - [Gunicorn](https://pypi.org/project/gunicorn/)  WSGI HTTP Server for UNIX to aid in the deployment of the Django project to Heroku.
+    - [Pillow](https://pillow.readthedocs.io/en/stable/) a python imaging library to aid in processing image files to store in the database.
     - [Psycopg2](https://pypi.org/project/psycopg2/) as PostgreSQL database adapter for Python.
 
 <br>
@@ -457,7 +462,7 @@ As the website progressed, the structure of the models adjusted slightly, and th
 
 <h2 align=center id="testing"><strong>Testing</strong></h2>
 
-All information on testing can be found the in [TESTING.md](TESTING.md)
+All information on testing can be found in [TESTING.md](TESTING.md)
 
 <br>
 
@@ -478,21 +483,21 @@ To run this project on your own IDE, you will need to ensure you have the follow
     (As the site is in development - you will not need to use AWS S3 for this)
 
 3) Then you will need to save a copy of this repository to your computer.  This can be done by navigating to this page - https://github.com/ClaireLally8/Waggy-Box then clicking on the `Code` dropdown & downloading the .zip file. 
-4) Then in the CLI, entering the following command:
+4) Then in the CLI, enter the following command:
 
         git clone https://github.com/ClaireLally8/Waggy-box
 
-5) Open your IDE, unzip the folder downloaded and use the `cd` command in the terminal to navigate to the root directory for the project. 
+5) Open your IDE, unzip the folder downloaded, and use the `cd` command in the terminal to navigate to the root directory for the project. 
 6) Install all the required modules using 
 
         pip -r requirements.txt
 7) Create an env.py file 
     - In here, you need to have the following env variables: 
-        - `SECRET_KE`Y  : This key is your django secret key, that generates when you install django. 
-        - `STRIPE_PUBLIC_KEY` : This key is obtained when you set up stripe.
-        - `STRIPE_SECRET_KEY` : This key is obtained when you set up stripe.
-        - `EMAIL_HOST_USER` : This is your email address
-        - `EMAIL_HOST_PASS` : Your email password generated from apps. A how to can be found [here](https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab)
+        - `SECRET_KEY`: This key is your Django secret key, that generates when you install Django. 
+        - `STRIPE_PUBLIC_KEY`: This key is obtained when you set up stripe.
+        - `STRIPE_SECRET_KEY`: This key is obtained when you set up stripe.
+        - `EMAIL_HOST_USER`: This is your email address
+        - `EMAIL_HOST_PASS`: Your email password generated from apps. A how-to can be found [here](https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab)
 8) Migrate your models using :
 
         python manage.py migrate
@@ -509,18 +514,18 @@ To run this project on your own IDE, you will need to ensure you have the follow
 ### **Heroku Deployment**
 
 <br>
-To deploy Waggy Box on heroku, the following steps need be taken: 
+To deploy Waggy Box on Heroku, the following steps need be taken: 
 
-1) Creating a requirements.txt file, filled with all installed modules.  This can be done by typing the follwing into the terminal:
+1) Creating a requirements.txt file, filled with all installed modules.  This can be done by typing the following into the terminal:
 
         pip freeze > requirements.txt
 2) Create a Procfile with the following command in the terminal: 
 
         echo web: python app.py > Procfile
-3) Git Add, git commit & git push these to github.
-4) Create a project on heroku by clicking the `new` button and setting your project name & region. 
-5) From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub
-6) Confirm the linking of the heroku app to the correct GitHub repository.
+3) Git add, git commit & git push these to Github.
+4) Create a project on Heroku by clicking the `new` button and setting your project name & region. 
+5) From the Heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub
+6) Confirm the linking of the Heroku app to the correct GitHub repository.
 7) Head over to the settings page & click on reveal config vars -> You need to set the following config variables: 
     | Key | Value | 
     --- | --- 
@@ -559,13 +564,13 @@ To deploy Waggy Box on heroku, the following steps need be taken:
 
 ### **Code** 
 
-- Some sections of code layout was taken from the MDBoostrap [design block](https://mdbootstrap.com/docs/jquery/design-blocks/) page.
+- Some sections of the code layout were taken from the MDBoostrap [design block](https://mdbootstrap.com/docs/jquery/design-blocks/) page.
 - The design for the subscription options page was taken from this layout on the [StartBootstrap page](https://startbootstrap.com/snippets/pricing-table/)
 - The Subscription service was created based on this [Just Django Tutorial](https://www.youtube.com/watch?v=zu2PBUHMEew&t=7506s)
-- The shop section, particularly the orders section was taken from the  Code Institute Boutique Ado mini project. 
+- The shop section, particularly the orders section was taken from the  Code Institute Boutique Ado mini-project. 
 
 ### **Media**
-- Images were taken from Canva - I purchased a premium subscription in order to amke use of these images.
+- Images were taken from Canva - I purchased a premium subscription in order to make use of these images.
 - The shop items images were taken from [Equipet website](http://equipetstores.com/)
 
 ### **Content**
@@ -578,11 +583,11 @@ To deploy Waggy Box on heroku, the following steps need be taken:
 
 ---
 <h2 align=center id="acknowledgements"><strong>Acknowledgements</strong></h2>
-Special thanks to the wonderful people of Student Care team at CI.  Neil, Lucy, Mark & Liam, you guys are the best & the most awesome co-workers I've ever had! (ps Neil, I told you I could do it!!!! :P ) 
+Special thanks to the wonderful people of the Student Care team at CI.  Neil, Lucy, Mark & Liam, you guys are the best & the most awesome co-workers I've ever had! (ps Neil, I told you I could do it!!!! :P ) 
 
 Thanks to Simen Daehlin, for being my very last minute mentor throughout this project. 
 
-A great thanks the The Office, which sat playing in the background throughout the entire creation of this project.  I've watched all nine seasons twice now. 
+A great thanks to The Office, which sat playing in the background throughout the entire creation of this project.  I've watched all nine seasons twice now. 
 
 The loveliest tutor support at Code Institute, Sammy & Scott particularly who put up with me asking some silly questions at all points during the creation of this project. 
 
