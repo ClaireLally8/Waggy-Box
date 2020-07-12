@@ -53,6 +53,9 @@ Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in 
     - [**Backend Technologies**](#back-end-technologies)
     - [**Other Tools Used**](#other-tools-used)
 
+- ### [**TESTING.md**](TESTING.md)
+    - All testing can be found in this [**TESTING.md**](TESTING.md) file.
+
 - <a href=#deployment><h3><strong>Deployment</strong></h3></a>
     - [**Local Deployment**](#local-deployment)
     - [**Heroku Deployment**](#heroku-deployment)
