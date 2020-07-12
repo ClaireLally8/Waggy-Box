@@ -1,6 +1,6 @@
-<h2 align=center><img src="static/images/logo.png" max-height=200px></h2>
+<h2 align=center id="top"><img src="static/images/logo.png" max-height=200px></h2>
 
-<div align=center color=#ff3a95>
+<div align=center>
 
 # [Waggy Box](https://waggy-box.herokuapp.com/)
 
@@ -8,7 +8,66 @@
 Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in Ireland. Finding durable toys and tasty treats has been the most difficult task I've encountered as a pet owner.  So, the idea of Waggy Box was created, to allieviate this difficulty.  All toys are tried and tested by my own three dogs, and only the toys approved by these guys will be featured in the monthly box. 
 
 ---
-<h2 align=center><strong>User Experience</strong></h2>
+<h2 align=center id="top"><strong>Table of Contents</strong></h2>
+<a href=#UX><h3><strong>User Experience</strong></h3></a>
+
+- [**User Stories**](#user-stories)
+- [**Design**](#design)
+    - [**Colour Scheme**](#colour-scheme)
+    - [**Typography**](#typography)
+    - [**Frameworks**](#frameworks)
+    - [**Icons**](#icons)
+    - [**Wireframes**](#wireframes)
+        - [**Desktop**](#desktop)
+        - [**Tablet**](#tablet)
+        - [**Mobile**](#mobile)
+
+<a href=#features><h3><strong>Features</strong></h3></a>
+
+- [**Current Features**](#current-features)
+    - [**Features on every page**](#features-on-every-page)
+    - [**Landing Page**](#landing-page)
+    - [**Dashboard**](#dashboard)
+    - [**Subscription Overview**](#subscription-overview)
+    - [**Shop**](#shop)
+    - [**Shop Items**](#shop-items)
+    - [**Login/Register**](#login-register)
+    - [**Payments**](#payments)
+    - [**About**](#about)
+    - [**Contact**](#contact)
+- [**Future Features**](#future-features)
+
+<a href=#da><h3><strong>Database Architecture</strong></h3></a>
+- [**Database Used**](#database-used)
+- [**Database Models**](#database-models)
+    - [**Categories Model**](#categories)
+    - [**Current Items**](#current-items)
+    - [**Future Items**](#future-items)
+    - [**Membership**](#membership)
+    - [**User Membership**](#user-membership)
+    - [**Subscription**](#subscription)
+    - [**Order**](#order)
+    - [**Order Line Item**](#order-line-item)
+
+<a href=#techologies><h3><strong>Technologies Used</strong></h3></a>
+- [**Front End Technologies**](#front-end-technologies)
+- [**Backend Technologies**](#back-end-technologies)
+- [**Other Tools Used**](#other-tools-used)
+
+<a href=#deployment><h3><strong>Deployment</strong></h3></a>
+- [**Local Deployment**](#local-deployment)
+- [**Heroku Deployment**](#heroku-deployment)
+
+<a href=#credits><h3><strong>Credits</strong></h3></a>
+- [**Code**](#code)
+- [**Media**](#media)
+- [**Content**](#content)
+
+<a href=#acknowledgements><h3><strong>Acknowledgements</strong></h3></a>
+
+
+---
+<h2 align=center id="UX"><strong>User Experience</strong></h2>
 
 #### **User Stories**
 
@@ -26,11 +85,9 @@ Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in 
     - Find out more about the Waggy Box company as a whole
     - Be able to submit a contact form to get in touch with the site owner
 <br>
-
+<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
 ---
-
-<h3 align=center><strong>User Experience</strong></h3>
-<br>
+#### **Design**
 
 Waggy Box was designed with ease and playfulness in mind. Making use of bright colours and two sans-serif fonts with varying weights to ensure accurate emphasis is given to the secions. 
 
@@ -80,7 +137,7 @@ The paid tier users have full access to the website.  They can review items in n
 
 ### **Wireframes**
 
-- **Desktop**
+- #### **Desktop**
     - [Landing page](design/wireframes/desktop/landing-desktop.png)
     - [About page](design/wireframes/desktop/about-desktop.png)
     - [Contact](design/wireframes/desktop/contact-desktop.png)
@@ -91,7 +148,7 @@ The paid tier users have full access to the website.  They can review items in n
     - [Shop](design/wireframes/desktop/shop-desktop.png)
     - [Checkout](design/wireframes/desktop/checkout-desktop.png)
 
-- **Tablet**
+- #### **Tablet**
     - [Landing page](design/wireframes/tablet/landing-tablet.png)
     - [About page](design/wireframes/tablet/about-tablet.png)
     - [Contact](design/wireframes/tablet/contact-tablet.png)
@@ -102,7 +159,7 @@ The paid tier users have full access to the website.  They can review items in n
     - [Shop](design/wireframes/tablet/shop-tablet.png)
     - [Checkout](design/wireframes/tablet/checkout-tablet.png)
 
-- **Mobile**
+- #### **Mobile**
     - [Landing page](design/wireframes/mobile/landing-mobile.png)
     - [About page](design/wireframes/mobile/about-mobile.png)
     - [Contact](design/wireframes/mobile/contact-mobile.png)
@@ -113,12 +170,15 @@ The paid tier users have full access to the website.  They can review items in n
     - [Shop](design/wireframes/mobile/shop-mobile.png)
     - [Checkout](design/wireframes/mobile/checkout-mobile.png)    
 
+<br>
+<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
 
-<h2 align=center><strong>Features</strong></h2>
+---
+<h2 align=center id="features"><strong>Features</strong></h2>
 
 ### **Current Features**
 
-#### **Elements on every page:**
+#### **Features on every page**
 
 - **Navbar**
     - Waggy Box makes use of a single navbar with varying elements depending on whether a user is logged in. 
@@ -203,7 +263,7 @@ This page contains two core features:
 - The reasoning behind this layout was down to the minimalistic feel and the user-friendlyness of the layout. 
 - The `add to cart` button was increased in size from the deafult size to ensure that any user can use the button on all screensizes. 
 
-### **Login/Register**
+### **Login Register**
 - The login & register pages follow the same structure as the main pages with a core landing image, with the sites signature right alinged text and sub text with the neccessary link to redirect you to the sign up page or the login page. 
 - Beneath then are the forms where users can enter their details in order to sign up/login to their account. 
 - Similar to the button in the shop item page, the size was increased significantly to ensure that all users can use the button across all devices. 
@@ -222,7 +282,7 @@ This page contains two core features:
 
 --- 
 
-#### **Future Features to Implement**
+#### **Future Features**
 
 1. Changing the sign up process to require users to activate their subscription before being able to access the dashbaord page.  This process was reviewed previously, however it required me to change many settings within the `allauth` package to get functional.  Due to restains with my Django knowledge, I chose to leave this as a future implementation. 
 2. Building an admin dashboard where admins can review how many active subscriptions, best selling subscription and the people who have cancelled their subscription recently. 
@@ -230,8 +290,11 @@ This page contains two core features:
 4. A page which contains a look into the items in the next month box & allow users to favourite those items & increase their chances of getting the box. 
 5. A monthly notification email that sends to remind users that their box is being sent today (which gets sent on the 15th of the month)
 
+<br>
+<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
+
 ---
-<h2 align=center><strong>Database Architecture</strong></h2>
+<h2 align=center id="da"><strong>Database Architecture</strong></h2>
 
 #### Database Used 
 - Django makes use of the SQL Database, 
@@ -243,14 +306,14 @@ In order to fully visualise the structure of the database, I created an initial 
 
 As the website progressed, the structure of the models adjusted slightly, and the end result is structured with 7 different models.
 
-**Categories Model**
+#### **Categories**
 - This model contains information on all the categories that the store sells.
 
     | Name | Key in db | Validation | Data type |
     --- | --- | --- | --- 
     Category | Category | max_length=150 | CharField 
 
-**Current Items**
+#### **Current Items**
 - This model is found within the shop app. It holds all the information for the items for sale within the current months shop. 
 
     | Name | Key in db | Validation | Data type |
@@ -263,7 +326,7 @@ As the website progressed, the structure of the models adjusted slightly, and th
     Product Image URL | image_url | max_length=1024, null=True, blank=True | URLField
     Product Image | image | null=True, blank=True | ImageField
 
-**Future Items**
+#### **Future Items**
 - This model is found within the shop app. It holds all the information for the items that will be included in next months box. 
 
     | Name | Key in db | Validation | Data type |
@@ -273,7 +336,7 @@ As the website progressed, the structure of the models adjusted slightly, and th
     Product Image URL | image_url | max_length=1024, null=True, blank=True | URLField
     Product Image | image | null=True, blank=True | ImageField
 
-**Membership**
+#### **Membership**
 - This model is found within the Memberships app. This model contains the relevant information for the three membership choices - free, regular & premium. 
 
     | Name | Key in db | Validation | Data type |
@@ -286,7 +349,7 @@ As the website progressed, the structure of the models adjusted slightly, and th
     Membership Description | description_four |  | TextField
     Stripe Price ID | stripe_plan_id | max_length=40 | CharField
 
-**User Membership**
+#### **User Membership**
 - This is found in the memberships app.  The User Memebership model holds information on each users membership.  This will defaut to free if a user does not have a subscription. 
 
     | Name | Key in db | Validation | Data type |
@@ -302,7 +365,7 @@ As the website progressed, the structure of the models adjusted slightly, and th
     User County | county | max_length=80,  null=False | CharField
     User Postcode | postcode | max_length=500,  null=False | CharField
 
-**Subscription**
+#### **Subscription**
 - This model is found in the memberships app.  It holds the information on the subscription, if the user has an active subscription, and the strip subscription ID. It links to the User Membership. 
 
     | Name | Key in db | Validation | Data type |
@@ -312,7 +375,7 @@ As the website progressed, the structure of the models adjusted slightly, and th
     Subscription Active | active | default=False | BooleanField
 
 
-**Orders**
+#### **Orders**
 - An instance of the Order model is created before any OrderItems, as the latter relies on the former for a ForeignKey.
 
     | Name | Key in db | Validation | Data type |
@@ -330,7 +393,7 @@ As the website progressed, the structure of the models adjusted slightly, and th
     Order Total| postcode | max_digits=10,decimal_places=2,null=False,default=0 | DecimalField
     Grand Total | postcode | max_digits=10,decimal_places=2,null=False,default=0 | DecimalField
 
-**Order Line Item**
+#### **Order Line Item**
 - An instance of OrderItem is created for each unique product in the users cart. It links to the already existing Order for this user, the relevant product and the quantity the user wishes to buy.
     | Name | Key in db | Validation | Data type |
     --- | --- | --- | --- 
@@ -339,11 +402,13 @@ As the website progressed, the structure of the models adjusted slightly, and th
     Item Quantity Ordered | quantity | null=False, blank=False, default=0 | IntegerField
     Item Total Price | lineitem_total | max_digits=6,decimal_places=2,null=False,blank=False,editable=False | DecimalField
 
+<br>
+<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
 
 ---
-<h2 align=center><strong>Technologies Used</strong></h2>
+<h2 align=center id="technologies"><strong>Technologies Used</strong></h2>
 
-- Front End Technologies
+- ### **Front End Technologies**
     - HTML5
     - CSS
     - [JQuery](https://jquery.com/) to simplify DOM manipulation.
@@ -351,14 +416,14 @@ As the website progressed, the structure of the models adjusted slightly, and th
     - [AWS S3](http://aws.amazon.com/) to store images held in the database
     - [MDBoostrap](https://mdbootstrap.com/) a front end framework used to create responsive aspects across the site. 
 
-- Backend Technologies
+- ### **Backend Technologies**
     - [Python](https://www.python.org/) The backend programming language
     - [Django 3.0](https://docs.djangoproject.com/en/3.0/releases/3.0/) the backend framework for rapid development & clean designs
     - [Heroku](http://heroku.com/) the hosting platform used for deployment
     - [PostgreSQL](https://www.postgresql.org/) for production database, provided by heroku.
     - [SQLite](https://www.sqlite.org/index.html) for development database, provided by django.
 
-- Other Tools Used 
+- ### **Other Tools Used** 
     - [Gitpod](http://gitpod.io/) the cloud based IDE used for development 
     - [Github](https://github.com/) to store and share all project code remotely.
     - [InVision Studio](https://www.invisionapp.com/) used during the creation of wireframes. 
@@ -375,15 +440,22 @@ As the website progressed, the structure of the models adjusted slightly, and th
     - [Pillow](https://pillow.readthedocs.io/en/stable/) as python imaging library to aid in processing image files to store in database.
     - [Psycopg2](https://pypi.org/project/psycopg2/) as PostgreSQL database adapter for Python.
 
+<br>
+<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
+
 ---
-<h2 align=center><strong>Testing</strong></h2>
+<h2 align=center id="testing"><strong>Testing</strong></h2>
 
 All information on testing can be found the in [TESTING.md](TESTING.md)
 
----
-<h2 align=center><strong>Deployment</strong></h2>
+<br>
+<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
 
-### **To run this project locally**
+---
+<h2 align=center id="deployment"><strong>Deployment</strong></h2>
+
+### **Local Deployment**
+<br>
 To run this project on your own IDE, you will need to ensure you have the following in place: 
 
 1) Having your own IDE such as VS Code or Pycharm.  You will also need to ensure you have [PIP](https://pip.pypa.io/en/stable/installing/), [Python3](https://www.python.org/downloads/) and [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03) installed through the CLI on your machine.
@@ -418,7 +490,10 @@ To run this project on your own IDE, you will need to ensure you have the follow
 
         python3 manage.py runserver
 
+<br>
+
 ### **Heroku Deployment**
+<br>
 To deploy Waggy Box on heroku, the following steps need be taken: 
 
 1) Creating a requirements.txt file, filled with all installed modules.  This can be done by typing the follwing into the terminal:
@@ -459,8 +534,11 @@ To deploy Waggy Box on heroku, the following steps need be taken:
 12) Navigate to the admin panel & create the Memberships in order to get the site to function correctly.
 13) This should be everything & your site should be running correctly now. You can run the project using
 
+<br>
+<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
+
 ---
-<h2 align=center><strong>Credits</strong></h2>
+<h2 align=center id="credits"><strong>Credits</strong></h2>
 
 ### **Code** 
 
@@ -477,9 +555,11 @@ To deploy Waggy Box on heroku, the following steps need be taken:
 - All content within the site was written by myself, with inspiration taken from [BusterBox](https://busterbox.com/) and [BarkBox](https://www.barkbox.com/)
 - Shop Items descriptions was taken from the [Equipet website](http://equipetstores.com/)
 
+<br>
+<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
 
 ---
-<h2 align=center><strong>Acknowledgements</strong></h2>
+<h2 align=center id="acknowledgements"><strong>Acknowledgements</strong></h2>
 Special thanks to the wonderful people of Student Care team at CI.  Neil, Lucy, Mark & Liam, you guys are the best & the most awesome co-workers I've ever had! (ps Neil, I told you I could do it!!!! :P ) 
 
 Thanks to Simen Daehlin, for being my very last minute mentor throughout this project. 
@@ -491,3 +571,6 @@ The loveliest tutor support at Code Institute, Sammy & Scott particularly who pu
 Lastly, thanks to the massive bottle of wine, that's sitting beside me waiting to be poured.  I couldn't have do it without you. 
 <div align=center>
 <img src="https://media.giphy.com/media/5xtDarmwsuR9sDRObyU/giphy.gif"></div>
+
+<br>
+<a href=#top><h4 align=right><strong>Back To Top</strong></h4></a>
