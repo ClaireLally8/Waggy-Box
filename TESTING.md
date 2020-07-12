@@ -108,42 +108,42 @@ Unit testing was written up to test the core functionality of the site, includin
 ---
 
 <h2 align=center id="us-testing"><strong>User Story Testing</strong></h2>
+<br>
 
-1) **View the site from any device**
+1.  **To be able to access the website from any device to ensure I can review my information across all devices & platforms.**
     - This application has been tested across all screen sizes & is shown to be fully responsive.  More about responsive testing undertaken in this application can be read in the below sections. 
-2) **Create an account.**
-    - With the inclusion of Django AllAuth, users can create an account & sign in, which gives them access to additional features across the application. 
-3) Be able to login/out without purchasing a subscription.
-    - Users do not have to purcahse a subscription to gain access to the internal features of the webiste. 
-    - The reason behind this, is to allow potential customers get a feel for the type of service they are signing up to before committing to it. 
-4) **Gain additional features once I subscribe to a box.**
-    - With the use of the Subscription model & the active field, sections of the application are limited to only users with an active subscription. 
-    - First time users, will not have a subscription, and so a filter to ensure if the users accessing do not have a subscription are also not allowed access to the entire application. 
-5) **Choose the box type I would like to subscribe to & enter my own details for delivery**
-    - This step can be achieved via the Subscription Overview page which is linked in the dashboard.
-    - If a user tries to access the restricted pages without a subscription, an error page shows with directions on how to active their subscription. 
-6) **Access my subscription overview where I can review my own information and subscription type.**
-    - This can be done by the subscription overview page.  The page is personalised to each user, and displays the users subscription type an what price their subscription is.
-    - If a user does not have an active subscription, then a link will be displayed redirecting the user to activate their subscription.
-7) **Cancel or change my subscription type as I wish.**
-    - When a user has an active subscription, they are given two options to change or cancel their subscription. 
-    - If a user clicks on the cancel subscription link, a modal will pop up asking the user if they are sure they would like to cancel.  Once confirmed, the page will redirect & a message will display notifying a user of their cancellation. 
-    - If a user chooses to change their subscription to another, they click on the change subscription link, which will direct them to the subscription types list, when chosen, then users will be redirected to the payment page. Once confirmed then users will be redirected to the subscription overview page with a message notifying the of a sucessful subscription update. 
-8) **Visit an online shop that contains any items from the previous months box.**
-    - If a user has an active subscription they are able to view the shop, which contains items from the previous months subscription box. 
-9) **Be able to purchase these items for delivery**
-    - Users are able to purchase items in the online shop.  This can be done by accessing the shop via the link in the navbar, clicking into the item they would like to purchase, and clicking the add to cart option. 
-    - This then redirects the user to the shopping cart.  The user is then given the option to process their payment or return to purcahse more items.
-    - If the user chooses to proceed to pay for their item, then they can proceed to the checkout page where they enter their information to pay for the item and their delivery information also.
-10) **Read information on any items from the previous months subscription service**
-    - This can be achieved by navigating into the shop page and clicking on the item they would lke to purchase. 
-    - At the bottom of the page, users can then review the items description where they get a more in depth idea of the product. 
-11) **Find out more about the Waggy Box company as a whole**
-    - The site contains a short section and a further compelling About page is included in the site. Providing the user with sufficient information to satisfy a users curiosity without overloading them with more than they need.
-12) **Be able to submit a contact form to get in touch with the site owner**
-    - The site contains a contact form accessible through the main dashboard page and also through the site footer.
+2.  **To be  able to find any information on the website in a clear & concise way so I can find what I need quickly and efficiently.**
+    - Both the Navbar & Footer contains information enabling users to access more information about the application.
+    - Shop items contain a brief overview of the product, including the item name, image and price, and upon clicking into the item more infromation is presented in a digestable way that doesn't overwhelm users either.
+    - Items on the subscription service are supplied in both a visually and informationally appealing way via bullet points on cards.  Allowing users to get a deep understanding of the type of servive they are paying for. 
+3. **To be able to find out more information about the company so I know I'm getting a good service.** 
+    - The about page contains a deep review of what the application is about.
+    - There is also a personal addition of the site owners own pets, which shows to users that Waggy Box is made by passionate pet owners rather than a large company. 
+4. **To be able to read reviews from customers with active subscriptions so I know am getting a good service.** 
+    - The index pages contains three sample testimonials.
+    - Written in a quirky perspective of the dogs themselves rather than the dogs owners.
+    - Testimonials also include images of these dogs, giving the users a feeling of each testimonial is personal. 
+5. **To be able to get in contact with the site owner for any reason.** 
+    - The site contains a contact form accessible through the main dashboard page and also through the site footer. 
     - The contact form provides an easy way for the user to send an email to the site owner. 
-    - The email that is sent to the shop owner includes all the needed info to reply directly to the sender.
+    - The email that is sent to the shop owner includes all the needed info to reply directly to the sender, and the sender is also CC'd in this email so they are able to review & add any additional information to this by replying to the email. 
+6. **To be able to create an account that stores my information so I don't need to re-enter it multiple time across the application.** 
+    - This User Story is partially complete due to my limited understand of Django AllAuth.
+    - Users are asked to enter their information upoon purchasing an item in the shop and purchasing a subscription.
+    - They will need to re-enter this information upon cancelling their subscription or ordering more items. 
+7. **To be able to view information about the subscription I am paying for & have an option to change or cancel this to ensure I'm paying for the best one suited to my requirements.**
+    - Users can review their subscription, change or cancel it by accessing the subscriptoion overview page.
+    - If a user would like to cancel their subscription, they will need to aceept a modal pop up confirming their desire to cancel.
+    - Users can also review the benefits of their subscritpion type by navigating to the 'Review Subscription' link in the Subscription Overview page.  They can easily see what their current subscription is & change it also if they wish. 
+8. **To be able to review items within the shop and when clicked gain additional information on this product.** 
+    - Once the user moves to a item specific page from the main shop the user can access more detailed information on that product and also have the option to purchase this item easily.
+9. **To be able to review what I'm paying for all stages in the checkout & payment process.** 
+    - The order summary is available at the bottom of all pages through the payment process in the shop.
+    - In the subscription page, a review of the selected subscription type is displayed on the top right hand side of the payment page also.
+10. **Get feedback from the website I am using when I interact with it, expecting messages & pop-up feedback to my actions, successful or unsuccessful.**
+    - Messages pop up when information is submitted incorrectly.
+    - Modals enabling to users to complete various requests to ensure they are sure of their actions. 
+
 
 <a href=#testing-top><h4 align=right><strong>Back To Top</strong></h4></a>
 

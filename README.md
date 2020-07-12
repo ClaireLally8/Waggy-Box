@@ -76,21 +76,17 @@ Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in 
 
 #### **User Stories**
 
-- As a customer I want to: 
-    - View the site from any device
-    - Create an account.
-    - Be able to login/out without purchasing a subscription. 
-    - Gain additional features once I subscribe to a box.
-    - Choose the box type I would like to subscribe to & enter my own details for delivery
-    - Access my subscription overview where I can review my own information and subscription type. 
-    - Cancel or change my subscription type as I wish.
-    - Visit an online shop that contains any items from the previous months box.
-    - Be able to purchase these items for delivery
-    - Read information on any items from the previous months subscription service
-    - Find out more about the Waggy Box company as a whole
-    - Be able to submit a contact form to get in touch with the site owner
-<br>
-
+- As a visitor to the site, I would like:
+    1. To be able to access the website from any device to ensure I can review my information across all devices & platforms. 
+    2.  To be  able to find any information on the website in a clear & concise way so I can find what I need quickly and efficiently.
+    3. To be able to find out more information about the company so I know I'm getting a good service. 
+    4. To be able to read reviews from customers with active subscriptions so I know am getting a good service. 
+    5. To be able to get in contact with the site owner for any reason. 
+    6. To be able to create an account that stores my information so I don't need to re-enter it multiple time across the application. 
+    7. To be able to view information about the subscription I am paying for & have an option to change or cancel this to ensure I'm paying for the best one suited to my requirements.
+    8. To be able to review items within the shop and when clicked gain additional information on this product. 
+    9. To be able to review what I'm paying for all stages in the checkout & payment process. 
+    10. Get feedback from the website I am using when I interact with it, expecting messages & pop-up feedback to my actions, successful or unsuccessful.
 <a href='#top'><h4 align=right><strong>Back To Top</strong></h4></a>
 
 ---
