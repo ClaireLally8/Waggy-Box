@@ -196,3 +196,48 @@ An audit was completed using Lighthouse on the Waggy Box page.  Quite a low `per
     Cart | Y | Rendering well.  Not optimised for small phone screen, due to cramped information.  Some styling customised for small mobile, but product image still rendering small despite attempts to resolve. 
     Checkout | Y | This page followed a similar structure to the Membership Payment page.  See notes for this. 
     Checkout Success | Y | Rendering well.  Dark text visible against the light background. Dark text not fully visible.  Looking into making this better - `text-shadow: 0.8px 0.8px gray;` was added on screens less than 1000px to the sub text.
+
+### **Bugs Discovered** 
+
+#### Resolved Bugs.
+
+1) A significant issue with Stripe working in the subscription during creation was discovered in getting the Stripe Token to correctly populate.  Thanks to the help from Simen Daehlin, this was resolved by manually adding the public key for Stripe in the membership_payment.html page. 
+2) When the Database is empty, an error occurs with the subscription. 
+    - This was discovered to be down to the lack of memberships.
+    - Resolved by commenting out two lines during development & re-filling these lines once deployment was ready.
+    - Further developement would be required to resolve fully without lines needing to be commented during development.
+3) A large issue came up when attempting to move from SQLite to PostgreSQL databases. 
+    - Upon inspection, the error seemed to be coming from the CountryField in the forms.
+    - To resolve, I removed this form & undone any migrations relating to this.
+    - A future feature I would like to re-incorporate into the application would be country selections. 
+4) Gitpod was unable to access postgreSQL database for testing
+    - Due to the free Hobby-dev postgres package selected when setting up the heroku database, I was not able to set the permissions necessary to alow Django to create a test database when running manage.py test.
+    - To fix this I reverted to accessing my sqlite3 database for testing.
+
+#### Unsolved Bugs.
+1) Cart page images not hiding on small screen.
+    - This seems to be an issue with the MDB framework, however when relevant classess were applied to product items, instead of hiding one image on a small screen & displaying another, both images were rendering to display.
+2) Allauth form fields rending significantly smaller than desired.  Due to a limited understanding of Django Allauth, I was unable to resolve this, however would like to look into this in the near future. 
+
+
+### User Testing
+
+- A site wide User test was conducted.  The user was presented with the following aims:
+    - You are hte owner of a large dog breed.  After tirelessly seeking good quality dog toys, you have given up. Until you come across the Waggy Box application.
+    - Navigate to the `About Us` page to learn more about the Waggy Box company.
+    - After reading the about page, you would love to sign up and try out the service. Navigate to the sign up page & create an account. 
+    - Review the subscriptions available to you and purchase the `Premium` subscription type.
+    - Enter your delivery and payment information and purchase the subscription.
+    - Now you would like to review some of the items in last months box, to get a good idea of the type of products you are sent each month.
+    - You spotted an item you would like to purchase.  You would like to find out more about the item, and purchase two of these products.
+    - Enter your details & checkout.
+    - Now your item has arrived, but there seems to be an issue with the payments and you were charged for three items instead of 2.  You need to get in touch with the site owner to resolve this.
+
+- User Testing Feedback 
+    - The option to allow users to subscribe straight from signing up. (Added to future implementations)
+    - Adjusting the width of buttons to allow for more mobile friendly user - this was done & has greatly improved the UX. 
+
+
+### **Manual Testing Navigation.** 
+
+#### 
