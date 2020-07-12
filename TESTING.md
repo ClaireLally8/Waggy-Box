@@ -5,11 +5,10 @@
 [Deployed Site](https://waggy-box.herokuapp.com/)
 
 <a href="https://trello.com/b/egLXahHC/testing" target=_blank>All Testing fixes can be reviewed here in this Trello Board</a>
+
 ### **Code Testing**
-<a href="https://trello.com/b/egLXahHC/testing" target=_blank>All Testing fixes can be reviewed here in this Trello Board</a>
 
-
-**Validator Testing** 
+#### **Validator Testing** 
 
 [W3C Markup Validation](https://validator.w3.org/)
  - W3C was used in the validation of both the HTML and CSS for the application.
@@ -104,3 +103,96 @@ Unit testing was written up to test the core functionality of the site, includin
     - The contact form provides an easy way for the user to send an email to the site owner. 
     - The email that is sent to the shop owner includes all the needed info to reply directly to the sender.
 
+
+### **Manual Testing** 
+Extensive manual testing was taken to ensure the application was responsive across all devices and achieved best practices in sofware developement. 
+
+#### **Lighthouse**
+An audit was completed using Lighthouse on the Waggy Box page.  Quite a low `performance` mark was retuned, and so in an attempt to increase this value, image files were converted from .png to .jpg. 
+<img src="design/audit.png">
+- After converting the images from .png to .jpg, the following audit was complete:
+<img src="design/audit-new.png">
+- Whist the best performance dropped by some, the best practices increased significantly. 
+- Upon completing audits of several other websites, such as: 
+    - [Code Like a Girl](https://code.likeagirl.io/)
+    - [Medium](https://medium.com/)
+- I learned that higher markings in Accessibility, Best Practices & SEO were more frequent than having a high performance rating. 
+
+#### **Responsive Testing**
+
+##### Large Desktop Testing
+- 
+    | Page | Responsive| Notes| 
+    --- | --- | ---
+    Index | Y | Fully Responsive. No horizontal scrollbar. 
+    About | Y | Fully Responsive.  No horizontal scrollbar. 
+    Contact | Y | Fully Responsive.  No horizontal scrollbar. Large button to send email, makes it easy to use. 
+    Login | Y | Fully Responsive.  No horizontal scrollbar. Large button to login, makes it easy to use for all users. Form fields rendering quite small. Adjusted to make larger. 
+    Sign-Up | Y | Fully Responsive.  No horizontal scrollbar. Large button to login, makes it easy to use for all users. Form fields rendering quite small. Adjusted to make larger. 
+    Dashboard | Y | Page is fully responsive, no horizontal scrollbar or mis-sized images. 
+    Subscription Overview | Y | Page is rendering correctly on large desktop screen. No mis-sized containers or content. 
+    Membership List | Y |  Fully responsive, rendering correctly on large screen. 
+    Membership Payment  | Y | Forms are significant in size, large buttons rendering correctly on large screensizes.
+    Shop | Y | Four lines rendering per row.  No cramped spacing & stext sizes look well. 
+    Shop Item | Y |  No incorreclty sizes content.  Font rendering an appropriate sizes. 
+    Cart | Y | Rendering well.  Large buttons making accessible for all users.  Large spacing between the primary & secondary button. 
+    Checkout | Y | This page followed a similar structure to the Membership Payment page.  See notes for this. 
+    Checkout Success | Y | Page rendering as intended.  No incorrect shaped content & fonts sizes are appropriate. 
+
+
+##### Laptop Screen Testing (Same results as large monitor)
+- 
+    | Page | Responsive| Notes| 
+    --- | --- | ---
+    Index | Y | Fully Responsive. No horizontal scrollbar. 
+    About | Y | Fully Responsive.  No horizontal scrollbar. 
+    Contact | Y | Fully Responsive.  No horizontal scrollbar. Large button to send email, makes it easy to use. 
+    Login | Y | Fully Responsive.  No horizontal scrollbar. Large button to login, makes it easy to use for all users. Form fields rendering quite small. Adjusted to make larger. 
+    Sign-Up | Y | Fully Responsive.  No horizontal scrollbar. Large button to login, makes it easy to use for all users. Form fields rendering quite small. Adjusted to make larger. 
+    Dashboard | Y | Page is fully responsive, no horizontal scrollbar or mis-sized images. 
+    Subscription Overview | Y | Page is rendering correctly on large desktop screen. No mis-sized containers or content. 
+    Membership List | Y |  Fully responsive, rendering correctly on large screen. 
+    Membership Payment  | Y | Forms are significant in size, large buttons rendering correctly on large screensizes.
+    Shop | Y | Four lines rendering per row.  No cramped spacing & stext sizes look well. 
+    Shop Item | Y |  No incorreclty sizes content.  Font rendering an appropriate sizes. 
+    Cart | Y | Rendering well.  Large buttons making accessible for all users.  Large spacing between the primary & secondary button. 
+    Checkout | Y | This page followed a similar structure to the Membership Payment page.  See notes for this. 
+    Checkout Success | Y | Page rendering as intended.  No incorrect shaped content & fonts sizes are appropriate. 
+
+##### Tablet Testing
+- 
+    | Page | Responsive| Notes| 
+    --- | --- | ---
+    Index | Y | Fully Responsive. No horizontal scrollbar visible and all sections rendering correctly. 
+    About | Y | Fully Responsive.  No horizontal scrollbar. Images rendering slightly off - plan to adjust sizing on these. (Adjusted to fit full screen & changed height of images)
+    Contact | Y | Fully Responsive.  No horizontal scrollbar. Large button to send email, makes it easy to use on all screen sizes. 
+    Login | Y | Rendering correctly.  Form fields are slightly smaller than hoped, however due to limited knowledge with allauth, unsure on how to adjust this. Large button making is increasingly user friendly.
+    Sign-Up | Y | Rendering correctly.  Form fields are slightly smaller than hoped, however due to limited knowledge with allauth, unsure on how to adjust this.  Use of a large button to make it increasingly user friendly.
+    Dashboard | Y | Page is fully responsive, no horizontal scrollbar or mis-sized images or unintended white space.  
+    Subscription Overview | Y | Page is rendering correctly on table. No mis-sized containers or content. 
+    Membership List | Y |  Fully responsive, rendering correctly on tablet screen.  Subscriptoin types rendered on fully screen width, makes it friendly for all users of all abilities. 
+    Membership Payment  | Y | Forms are acceptably sized, large buttons rendering correctly on tablet screens.
+    Shop | Y | Three items rendering per row.  No cramped spacing & stext sizes look well. 
+    Shop Item | Y |  No incorreclty sizes content.  Font rendering an appropriate sizes. 
+    Cart | Y | Rendering well.  Large buttons making accessible for all users.  Large spacing between the primary & secondary button.  Items content is slightly cramped, however limitations on content due to being a table. 
+    Checkout | Y | This page followed a similar structure to the Membership Payment page.  See notes for this. 
+    Checkout Success | Y | White space rendering on main image.  Adjusted correctly & resolved by decreasing the padding on tablet screens & smaller. 
+
+##### Tablet Testing
+- 
+    | Page | Responsive| Notes| 
+    --- | --- | ---
+    Index | Y | Fully Responsive. No horizontal scrollbar visible and all sections rendering correctly. 
+    About | Y | Fully Responsive.  No horizontal scrollbar. Image rendering correctly & with shadow on main text, it's clear to see.  Removed padding-top on dog images to appear correctly.
+    Contact | Y | Fully Responsive.  No horizontal scrollbar. Large button to send email, makes it easy to use on all screen sizes. 
+    Login | Y | Rendering correctly.  Form fields are slightly smaller than hoped, however due to limited knowledge with allauth, unsure on how to adjust this. Large button making is increasingly user friendly.
+    Sign-Up | Y | Rendering correctly.  Form fields are slightly smaller than hoped, however due to limited knowledge with allauth, unsure on how to adjust this.  Use of a large button to make it increasingly user friendly.
+    Dashboard | Y | Page is fully responsive, no horizontal scrollbar or mis-sized images or unintended white space.  
+    Subscription Overview | Y | Page is rendering correctly on table. No mis-sized containers or content. 
+    Membership List | Y |  Fully responsive, rendering correctly on mobile screen.  Subscriptoin types rendered on fully screen width, makes it friendly for all users of all abilities. 
+    Membership Payment  | Y | Forms are accurately sized being full width of screen, large buttons rendering correctly on mobile screens.
+    Shop | Y | Three items rendering per row.  No cramped spacing & stext sizes look well. 
+    Shop Item | Y |  No incorreclty sizes content.  Font rendering an appropriate sizes. 
+    Cart | Y | Rendering well.  Not optimised for small phone screen, due to cramped information.  Some styling customised for small mobile, but product image still rendering small despite attempts to resolve. 
+    Checkout | Y | This page followed a similar structure to the Membership Payment page.  See notes for this. 
+    Checkout Success | Y | Rendering well.  Dark text visible against the light background. Dark text not fully visible.  Looking into making this better - `text-shadow: 0.8px 0.8px gray;` was added on screens less than 1000px to the sub text.
