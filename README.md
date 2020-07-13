@@ -113,7 +113,7 @@ The paid tier users have full access to the website.  They can review items in n
 
 
 #### **Colour Scheme**
-<img src="design/colour-scheme.png">
+<img src="wireframes/colour-scheme.png">
 
 #### **Typography**
  
@@ -121,7 +121,7 @@ The paid tier users have full access to the website.  They can review items in n
     - The primary font across the website, using four different weights: 200, 300, 400, 500
     - Montserrat is a clean font used regularly, so it is both an attractive and appropriate choice to be the primary font across the site.
 
-- [**Rubik**](https://fonts.google.com/specimen/Rubik?query=Rubik)
+- [**Rubik**]()
     - Rubik was used for the main page headings, of a weight 500 for the page headings and 300 for the sub-heading sections.
     - Rubik added the element of playfulness to the application, without making it appear childish. 
 
@@ -146,37 +146,37 @@ The paid tier users have full access to the website.  They can review items in n
 ### **Wireframes**
 
 - #### **Desktop**
-    - [Landing page](design/wireframes/desktop/landing-desktop.png)
-    - [About page](design/wireframes/desktop/about-desktop.png)
-    - [Contact](design/wireframes/desktop/contact-desktop.png)
-    - [Login](design/wireframes/desktop/login-desktop.png)
-    - [Signup](design/wireframes/desktop/signup-desktop.png)
-    - [Dashboard](design/wireframes/desktop/dashboard-desktop.png)
-    - [Subscription-Overview](design/wireframes/desktop/subscription-desktop.png)
-    - [Shop](design/wireframes/desktop/shop-desktop.png)
-    - [Checkout](design/wireframes/desktop/checkout-desktop.png)
+    - [**Landing pag**e](wireframes/desktop/landing-desktop.png)
+    - [**About page**](wireframes/desktop/about-desktop.png)
+    - [**Contact**](wireframes/desktop/contact-desktop.png)
+    - [**Login**](wireframes/desktop/login-desktop.png)
+    - [**Signup**](wireframes/desktop/signup-desktop.png)
+    - [**Dashboard**](wireframes/desktop/dashboard-desktop.png)
+    - [**Subscription-Overview**](wireframes/desktop/subscription-desktop.png)
+    - [**Shop**](wireframes/desktop/shop-desktop.png)
+    - [**Checkout**](wireframes/desktop/checkout-desktop.png)
 
 - #### **Tablet**
-    - [Landing page](design/wireframes/tablet/landing-tablet.png)
-    - [About page](design/wireframes/tablet/about-tablet.png)
-    - [Contact](design/wireframes/tablet/contact-tablet.png)
-    - [Login](design/wireframes/tablet/login-tablet.png)
-    - [Signup](design/wireframes/tablet/signup-tablet.png)
-    - [Dashboard](design/wireframes/tablet/dashboard-tablet.png)
-    - [Subscription-Overview](design/wireframes/tablet/subscription-tablet.png)
-    - [Shop](design/wireframes/tablet/shop-tablet.png)
-    - [Checkout](design/wireframes/tablet/checkout-tablet.png)
+    - [**Landing pag**e](wireframes/tablet/landing-tablet.png)
+    - [**About page**](wireframes/tablet/about-tablet.png)
+    - [**Contact**](wireframes/tablet/contact-tablet.png)
+    - [**Login**](wireframes/tablet/login-tablet.png)
+    - [**Signup**](wireframes/tablet/signup-tablet.png)
+    - [**Dashboard**](wireframes/tablet/dashboard-tablet.png)
+    - [**Subscription-Overview**](wireframes/tablet/subscription-tablet.png)
+    - [**Shop**](wireframes/tablet/shop-tablet.png)
+    - [**Checkout**](wireframes/tablet/checkout-tablet.png)
 
 - #### **Mobile**
-    - [Landing page](design/wireframes/mobile/landing-mobile.png)
-    - [About page](design/wireframes/mobile/about-mobile.png)
-    - [Contact](design/wireframes/mobile/contact-mobile.png)
-    - [Login](design/wireframes/mobile/login-mobile.png)
-    - [Signup](design/wireframes/mobile/signup-mobile.png)
-    - [Dashboard](design/wireframes/mobile/dashboard-mobile.png)
-    - [Subscription-Overview](design/wireframes/mobile/subscription-mobile.png)
-    - [Shop](design/wireframes/mobile/shop-mobile.png)
-    - [Checkout](design/wireframes/mobile/checkout-mobile.png)    
+    - [**Landing page**](wireframes/mobile/landing-mobile.png)
+    - [**About page**](wireframes/mobile/about-mobile.png)
+    - [**Contact**](wireframes/mobile/contact-mobile.png)
+    - [**Login**](wireframes/mobile/login-mobile.png)
+    - [**Signup**](wireframes/mobile/signup-mobile.png)
+    - [**Dashboard**](wireframes/mobile/dashboard-mobile.png)
+    - [**Subscription-Overview**](wireframes/mobile/subscription-mobile.png)
+    - [**Shop**](wireframes/mobile/shop-mobile.png)
+    - [**Checkout**](wireframes/mobile/checkout-mobile.png)    
 
 <br>
 
@@ -191,8 +191,8 @@ The paid tier users have full access to the website.  They can review items in n
 
 - **Navbar**
     - **Waggy Box** makes use of a single navbar with varying elements depending on whether a user is logged in. 
-        - Not logged in: <img src="https://i.ibb.co/DDSFqtW/Screenshot-2020-07-09-at-21-01-32.png">
-        - Logged in: <img src="https://i.ibb.co/n3qXrC4/Screenshot-2020-07-09-at-20-59-18.png">
+        - Not logged in: <img align=center src="https://i.ibb.co/DDSFqtW/Screenshot-2020-07-09-at-21-01-32.png">
+        - Logged in: <img align=center  src="https://i.ibb.co/n3qXrC4/Screenshot-2020-07-09-at-20-59-18.png">
         - On mobile the navbar turns into a burger menu as such where users click on the hamburger icon and open a drop-down for the menu: 
          <img src="https://i.ibb.co/pQ4Y5VZ/Screenshot-2020-07-09-at-21-02-47.png">
 
@@ -203,7 +203,7 @@ The paid tier users have full access to the website.  They can review items in n
 
 - **Footer**
     - There is one footer throughout the entire application.
-        - On Desktop: <img src="https://i.ibb.co/SVdXy31/Screenshot-2020-07-09-at-20-57-02.png">
+        - On Desktop: <img align=center src="https://i.ibb.co/SVdXy31/Screenshot-2020-07-09-at-20-57-02.png">
         - On Mobile: 
         <div align=center>
         <img src="https://i.ibb.co/b3wKJ5P/Screenshot-2020-07-09-at-21-06-39.png" height=200>
@@ -313,7 +313,7 @@ This page contains two core features:
     - Once deployed, the database was moved over to PostgreSQL which was provided by Heroku. 
 
 #### Database Models
-In order to fully visualize the structure of the database, I created an initial [ER Diagram](desgin/ER-diagram.pdf)
+In order to fully visualize the structure of the database, I created an initial [ER Diagram](wireframes/ER-diagram.pdf)
 
 As the website progressed, the structure of the models adjusted slightly, and the end result is structured with 7 different models.
 

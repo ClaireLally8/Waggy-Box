@@ -161,9 +161,9 @@ Extensive manual testing was taken to ensure the application was responsive acro
 
 #### **Lighthouse**
 An audit was completed using Lighthouse on the Waggy Box page.  Quite a low `performance` mark was returned, and so in an attempt to increase this value, image files were converted from .png to .jpg. 
-<img src="design/audit.png">
+<img src="wireframes/audit.png">
 - After converting the images from .png to .jpg, the following audit was complete:
-<img src="design/audit-new.png">
+<img src="wireframes/audit-new.png">
 - Whist the best performance dropped by some, the best practices increased significantly. 
 - Upon completing audits of several other websites, such as: 
     - [Code Like a Girl](https://code.likeagirl.io/)
