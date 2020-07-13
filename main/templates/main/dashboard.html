@@ -20,6 +20,7 @@
 <div class="section">
   <h3 class="section-head text-center my-5">Navigation</h3>
   <div class="container">
+  {% if subscription.active %}
     <div class="row nav-section">
       <div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
         <a href="{% url 'sub_overview' %}" class="heartbeat">
@@ -40,8 +41,19 @@
         </a>
       </div>
     </div>
+{% else %}
+<div class="row">
+      <div class="col-12 d-flex justify-content-center">
+      <a href="{% url 'membership_list' %}" class="heartbeat">
+          <img src="{% static 'images/dash-nav.jpg' %}" class="img-fluid dash-icon" alt="nav image">
+          <p class="page-nav text-center mt-5">Activate <br>Subscription</p>
+        </a>
+      </div>
+</div>
+{% endif %}
   </div>
 </div>
+
 {% if subscription.active %}
 <div class="d-flex justify-content-center py-5" style="position:relative">
   <div class="divider" style="position:absolute"></div>
