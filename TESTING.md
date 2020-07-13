@@ -130,9 +130,6 @@ Unit testing was written up to test the core functionality of the site, includin
     - The email that is sent to the shop owner includes all the needed info to reply directly to the sender, and the sender is also CC'd in this email so they can review & add any additional information to this by replying to the email. 
 7. **To be able to create an account**
     - By using Django AllAuth, users can create accounts.
-8. **As a user I expect my information to be stored on the backend so I don't have to re-enter the same information multiple times.**
-    - Users are asked to enter their information upon purchasing an item in the shop and purchasing a subscription.
-    - They will need to re-enter this information upon canceling their subscription or ordering more items. 
 9. **To be able to view information about the subscription I am paying for**
     - Users can review their subscription by accessing the subscription overview page.
 10. **As a user I would like to be able to have an option to change my subscription.**

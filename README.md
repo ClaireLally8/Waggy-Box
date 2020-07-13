@@ -2,11 +2,11 @@
 
 <div align=center>
 
-# [Waggy Box](https://waggy-box.herokuapp.com/)
+# [**Waggy Box**](https://waggy-box.herokuapp.com/)
 
 </div>
 
-Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in Ireland. Finding durable toys and tasty treats has been the most difficult task I've encountered as a pet owner.  So, the idea of Waggy Box was created, to alleviate this difficulty.  All toys are tried and tested by my own three dogs, and only the toys approved by these guys will be featured in the monthly box. 
+**Waggy Box** (fictional) is a dog treat and toy subscription box for pet owners in Ireland. Finding durable toys and tasty treats has been the most difficult task I've encountered as a pet owner.  So, the idea of **Waggy Box** was created, to alleviate this difficulty.  All toys are tried and tested by my own three dogs, and only the toys approved by these guys will be featured in the monthly box. 
 
 ---
 
@@ -50,7 +50,7 @@ Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in 
         - [**Order**](#order)
         - [**Order Line Item**](#order-line-item)
 
-- <a href=#techologies><h3><strong>Technologies Used</strong></h3></a>
+- <a href=#TU><h3><strong>Technologies Used</strong></h3></a>
     - [**Front End Technologies**](#front-end-technologies)
     - [**Backend Technologies**](#back-end-technologies)
     - [**Other Tools Used**](#other-tools-used)
@@ -75,22 +75,21 @@ Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in 
 <h2 align=center id="UX"><strong>User Experience</strong></h2>
 
 - #### **User Stories**
-    1. As a user, I expect to be able to access the website from any device. 
-    2. As a user I expect any information on the website to be displayed in a clear & concise way
-    3. As a user, I expect to find information on the website quickly and effectively. 
-    4. As a user, I expect to be able to find out more information about the company. 
-    5. As a user, I expect to be able to read reviews from customers. 
-    6. As a user, I expect to be able to get in contact with the site owner for any reason. 
-    7. As a user, I expect to be able to create an account. 
-    8. As a user I expect my information to be stored on the backend so I don't have to re-enter the same information multiple times. 
-    9. As a user, I expect to be able to view information about the subscription I am paying for.
-    10. As a user, I would like to be able to have an option to change my subscription.
-    11. As a user, I expect to be able to cancel my membership easily.
-    12. As a user, I expect to be able to review items within the shop. 
-    13. As I user, I expect to be able to gain additional information on this product
-    14. As a user, I want to make an informed decision on whether to purchase an item in the shop
-    15. As a user, I expect to be able to review what I'm paying for all stages in the checkout & payment process. 
-    16. As a user, I expect to be able to get feedback from the website I am using when I interact with aspects.
+    1. **As a user**, I expect to be able to access the website from any device. 
+    2. **As a user** I expect any information on the website to be displayed in a clear & concise way
+    3. **As a user**, I expect to find information on the website quickly and effectively. 
+    4. **As a user**, I expect to be able to find out more information about the company. 
+    5. **As a user**, I expect to be able to read reviews from customers. 
+    6. **As a user**, I expect to be able to get in contact with the site owner for any reason. 
+    7. **As a user**, I expect to be able to create an account. 
+    9. **As a user**, I expect to be able to view information about the subscription I am paying for.
+    10. **As a user**, I would like to be able to have an option to change my subscription.
+    11. **As a user**, I expect to be able to cancel my membership easily.
+    12. **As a user**, I expect to be able to review items within the shop. 
+    13. **As a user**, I expect to be able to gain additional information on this product
+    14. **As a user**, I want to make an informed decision on whether to purchase an item in the shop
+    15. **As a user**, I expect to be able to review what I'm paying for all stages in the checkout & payment process. 
+    16. **As a user**, I expect to be able to get feedback from the website I am using when I interact with aspects.
 
 <a href='#top'><h4 align=right><strong>Back To Top</strong></h4></a>
 
@@ -98,11 +97,11 @@ Waggy Box (fictional) is a dog treat and toy subscription box for pet owners in 
 
 #### **Design**
 
-Waggy Box was designed with ease and playfulness in mind. Making use of bright colors and two sans-serif fonts with varying weights to ensure accurate emphasis is given to the sections. 
+**Waggy Box** was designed with ease and playfulness in mind. Making use of bright colors and two sans-serif fonts with varying weights to ensure accurate emphasis is given to the sections. 
 
 This project was aimed at dog owners and dog lovers, who regularly struggle to find great toys and treats tasty enough to train and play with their furry friends. 
 
-Waggy-Box' site is split into two parts :
+**Waggy-Box**' site is split into two parts :
 
 **Free Tier:**
 
@@ -118,11 +117,11 @@ The paid tier users have full access to the website.  They can review items in n
 
 #### **Typography**
  
- - **Montserrat:**
+ - [**Montserrat:**](https://fonts.google.com/specimen/Montserrat?query=mont)
     - The primary font across the website, using four different weights: 200, 300, 400, 500
     - Montserrat is a clean font used regularly, so it is both an attractive and appropriate choice to be the primary font across the site.
 
-- **Rubik**
+- [**Rubik**](https://fonts.google.com/specimen/Rubik?query=Rubik)
     - Rubik was used for the main page headings, of a weight 500 for the page headings and 300 for the sub-heading sections.
     - Rubik added the element of playfulness to the application, without making it appear childish. 
 
@@ -142,7 +141,7 @@ The paid tier users have full access to the website.  They can review items in n
     - A majority of icons used across the website were taken from MDBoostrap documentation. These icons are adapted from both Font Awesome and Materialize icons due to their clean appearance. 
 - [Canva](https://www.canva.com/) 
     - Canva was the source of other Icons.  I purchased a pro subscription to canva for the duration of the project.  Canva has an extensive library of images and icons for use by designers and developers alike.
-    - The Waggy Box logo was also created using a canva logo template and customized to fit the feel and appearance of Waggy Box.
+    - The **Waggy Box** logo was also created using a canva logo template and customized to fit the feel and appearance of **Waggy Box**.
 
 ### **Wireframes**
 
@@ -191,7 +190,7 @@ The paid tier users have full access to the website.  They can review items in n
 #### **Features on every page**
 
 - **Navbar**
-    - Waggy Box makes use of a single navbar with varying elements depending on whether a user is logged in. 
+    - **Waggy Box** makes use of a single navbar with varying elements depending on whether a user is logged in. 
         - Not logged in: <img src="https://i.ibb.co/DDSFqtW/Screenshot-2020-07-09-at-21-01-32.png">
         - Logged in: <img src="https://i.ibb.co/n3qXrC4/Screenshot-2020-07-09-at-20-59-18.png">
         - On mobile the navbar turns into a burger menu as such where users click on the hamburger icon and open a drop-down for the menu: 
@@ -210,9 +209,9 @@ The paid tier users have full access to the website.  They can review items in n
         <img src="https://i.ibb.co/b3wKJ5P/Screenshot-2020-07-09-at-21-06-39.png" height=200>
         </div>
     - The footer is split into three core sections: Social Media, Navigation & Contact aspects.
-        - Social Media section contains three icons, where when clicked bring users to Facebook, Twitter, and Instagram, with the intention of bringing users to the relevant pages associated with Waggy Box. 
+        - Social Media section contains three icons, where when clicked bring users to Facebook, Twitter, and Instagram, with the intention of bringing users to the relevant pages associated with **Waggy Box**. 
         - Navigation section has three links, About Us which when clicked redirects the user to the about page, Contact us which brings the user to the contact page and then gets started which brings the user to the registration page.
-        - Contact Us section contains all the (fictional) contact information for the Waggy Box company, including the address and a contact number for the site owners. 
+        - Contact Us section contains all the (fictional) contact information for the **Waggy Box** company, including the address and a contact number for the site owners. 
 
 - Blue was chosen for both of these features due to the appealing contrast it has against the white background and matches well with both Black and white font colors. The blue also incorporates the playful element that was achieved throughout the website. 
 
@@ -221,8 +220,8 @@ The landing page is split into three core components:
 
 - **Main Landing Section**
     - This area contains the main landing image, which is of a pug lying with his belly up, looking straight up at the camera.  This image was chosen due to the cheeky, fun element involved & of course, the cute aspect of it too. 
-    - On the right side of this image, there's the Waggy Box title, alongside a short biopic on the site and what it has to offer users. 
-    - Incorporated in this section is also a short about, how Waggy Box was founded and why it came to be.  This allows users to get a deeper understanding of what the purpose of the site is. 
+    - On the right side of this image, there's the **Waggy Box** title, alongside a short biopic on the site and what it has to offer users. 
+    - Incorporated in this section is also a short about, how **Waggy Box** was founded and why it came to be.  This allows users to get a deeper understanding of what the purpose of the site is. 
 - **How it works Section**
     - How it works section contains three card aspects, which is a short snippet of how the box works.  This area was changed multiple times throughout the application due to varying ideas of how I would have liked the page to be presented.  The final settling, was three card elements, with a shadow on each, but a darker shadow on the middle element to make it appear as if it was standing out to the user. 
 - **Testimonials Section**
@@ -231,7 +230,7 @@ The landing page is split into three core components:
         - Dogs Image 
         - Dogs Name
         - Dogs Job
-        - Dogs Comment on Waggy Box
+        - Dogs Comment on **Waggy Box**
         - Dog's star rating. 
 
 
@@ -282,12 +281,12 @@ This page contains two core features:
 - On the left side of the page in desktop & table, users have to entire their personal details alongside their card number which was implemented using [Stripe](https://stripe.com/)
 - On the right-hand side of the page, users will enter their delivery information, which is their full address.   As the product is limited to users in Ireland, there's no option to put Country in. 
 ### **About**
-- The about page features a short write up about how Waggy Box came to be. 
-- Beneath there is also a short description and image about each doggie tester, giving users an insight into Waggy Box and the overall company feel. 
+- The about page features a short write up about how **Waggy Box** came to be. 
+- Beneath there is also a short description and image about each doggie tester, giving users an insight into **Waggy Box** and the overall company feel. 
 ### **Contact**
 - There is a contact form within the website also.  The form is similarly structured to the other leading pages of the site, with the main image and a heading.
-- Beneath, so a form where users can fill out their details alongside an area to add their message to send on to the Waggy Box email. 
-- When the user sends the email, a copy will send to the user themselves and the Waggy Box email address also. 
+- Beneath, so a form where users can fill out their details alongside an area to add their message to send on to the **Waggy Box** email. 
+- When the user sends the email, a copy will send to the user themselves and the **Waggy Box** email address also. 
 - Similar to the other pages, a wide send button was used to ensure accessibility for all users across all devices. 
 
 --- 
@@ -420,39 +419,39 @@ As the website progressed, the structure of the models adjusted slightly, and th
 
 ---
 
-<h2 align=center id="technologies"><strong>Technologies Used</strong></h2>
+<h2 align=center id="TU"><strong>Technologies Used</strong></h2>
 
 - ### **Front End Technologies**
-    - HTML5
-    - CSS
-    - [JQuery](https://jquery.com/) to simplify DOM manipulation.
-    - [Stripe](https://stripe.com/) as a payment platform to validate and accept credit card payments securely.
-    - [AWS S3](http://aws.amazon.com/) to store images held in the database
-    - [MDBoostrap](https://mdbootstrap.com/) a front end framework used to create responsive aspects across the site. 
+    - **HTML**
+    - **CSS**
+    - [**JQuery**](https://jquery.com/) to simplify DOM manipulation.
+    - [**Stripe**](https://stripe.com/) as a payment platform to validate and accept credit card payments securely.
+    - [**AWS S3**](http://aws.amazon.com/) to store images held in the database
+    - [**MDBoostrap**](https://mdbootstrap.com/) a front end framework used to create responsive aspects across the site. 
 
 - ### **Backend Technologies**
-    - [Python](https://www.python.org/) The backend programming language
-    - [Django 3.0](https://docs.djangoproject.com/en/3.0/releases/3.0/) the backend framework for rapid development & clean designs
-    - [Heroku](http://heroku.com/) the hosting platform used for deployment
-    - [PostgreSQL](https://www.postgresql.org/) for production database, provided by heroku.
-    - [SQLite](https://www.sqlite.org/index.html) for development database, provided by django.
+    - [**Python**](https://www.python.org/) The backend programming language
+    - [**Django 3.0**](https://docs.djangoproject.com/en/3.0/releases/3.0/) the backend framework for rapid development & clean designs
+    - [**Heroku**](http://heroku.com/) the hosting platform used for deployment
+    - [**PostgreSQL**](https://www.postgresql.org/) for production database, provided by heroku.
+    - [**SQLite**](https://www.sqlite.org/index.html) for development database, provided by django.
 
 - ### **Other Tools Used** 
-    - [Gitpod](http://gitpod.io/) the cloud based IDE used for development 
-    - [Github](https://github.com/) to store and share all project code remotely.
-    - [InVision Studio](https://www.invisionapp.com/) used during the creation of wireframes. 
-    - [Balsamiq](https://balsamiq.com/?gclid=Cj0KCQjwo6D4BRDgARIsAA6uN1-NxDOthq9pGqYzB_1iRxlBvHVwi_4_LaZuGqQT46csctF0xCiTXUMaAqmuEALw_wcB) used to create low fidelty wireframes 
-    - [Lucid Chart](https://www.lucidchart.com/) Used to create the ER diagram
-    - [Adobe Illustrator](https://www.adobe.com/ie/products/illustrator.html?sdid=88X75SKS&mv=search&ef_id=Cj0KCQjwo6D4BRDgARIsAA6uN18-lPYcwgDF07hy3N3A4POfJ--Z2wr48oa5TmcFHhKaTyLtPNMCGcUaAkAYEALw_wcB:G:s&s_kwcid=AL!3085!3!441704131393!e!!&gclid=Cj0KCQjwo6D4BRDgARIsAA6uN18-lPYcwgDF07hy3N3A4POfJ--Z2wr48oa5TmcFHhKaTyLtPNMCGcUaAkAYEALw_wcB) to adjust minor aspects & create the logo. 
-    - [Canva](https://www.canva.com/) obtained all images from the Canva site. 
-    - [AutoPep8](https://pypi.org/project/autopep8/) - a python add on, to format code into PEP8 formatting. 
-    - [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to enable the creation, configuration, and management of AWS S3.
-    - [Django allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) to create the signup/login functionality across the site. 
-    - [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)  to style Django forms.
-    - [Django Storages](https://django-storages.readthedocs.io/en/latest/) a collection of custom storage backends with Django to work with boto3 and AWS S3.
-    - [Gunicorn](https://pypi.org/project/gunicorn/)  WSGI HTTP Server for UNIX to aid in the deployment of the Django project to Heroku.
-    - [Pillow](https://pillow.readthedocs.io/en/stable/) a python imaging library to aid in processing image files to store in the database.
-    - [Psycopg2](https://pypi.org/project/psycopg2/) as PostgreSQL database adapter for Python.
+    - [**Gitpod**](http://gitpod.io/) the cloud based IDE used for development 
+    - [**Github**](https://github.com/) to store and share all project code remotely.
+    - [**InVision Studio**](https://www.invisionapp.com/) used during the creation of wireframes. 
+    - [**Balsamiq**](https://balsamiq.com/?gclid=Cj0KCQjwo6D4BRDgARIsAA6uN1-NxDOthq9pGqYzB_1iRxlBvHVwi_4_LaZuGqQT46csctF0xCiTXUMaAqmuEALw_wcB) used to create low fidelty wireframes 
+    - [**Lucid Chart**](https://www.lucidchart.com/) Used to create the ER diagram
+    - [**Adobe Illustrato**r](https://www.adobe.com/ie/products/illustrator.html?sdid=88X75SKS&mv=search&ef_id=Cj0KCQjwo6D4BRDgARIsAA6uN18-lPYcwgDF07hy3N3A4POfJ--Z2wr48oa5TmcFHhKaTyLtPNMCGcUaAkAYEALw_wcB:G:s&s_kwcid=AL!3085!3!441704131393!e!!&gclid=Cj0KCQjwo6D4BRDgARIsAA6uN18-lPYcwgDF07hy3N3A4POfJ--Z2wr48oa5TmcFHhKaTyLtPNMCGcUaAkAYEALw_wcB) to adjust minor aspects & create the logo. 
+    - [**Canva**](https://www.canva.com/) obtained all images from the Canva site. 
+    - [**AutoPep8**](https://pypi.org/project/autopep8/) - a python add on, to format code into PEP8 formatting. 
+    - [**Boto3**](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to enable the creation, configuration, and management of AWS S3.
+    - [**Django allauth**](https://django-allauth.readthedocs.io/en/latest/installation.html) to create the signup/login functionality across the site. 
+    - [**Django Crispy Forms**](https://django-crispy-forms.readthedocs.io/en/latest/)  to style Django forms.
+    - [**Django Storages**](https://django-storages.readthedocs.io/en/latest/) a collection of custom storage backends with Django to work with boto3 and AWS S3.
+    - [**Gunicorn**](https://pypi.org/project/gunicorn/)  WSGI HTTP Server for UNIX to aid in the deployment of the Django project to Heroku.
+    - [**Pillow**](https://pillow.readthedocs.io/en/stable/) a python imaging library to aid in processing image files to store in the database.
+    - [**Psycopg2**](https://pypi.org/project/psycopg2/) as PostgreSQL database adapter for Python.
 
 <br>
 
@@ -493,14 +492,15 @@ To run this project on your own IDE, you will need to ensure you have the follow
         pip -r requirements.txt
 7) Create an env.py file 
     - In here, you need to have the following env variables: 
-        - `SECRET_KEY`: This key is your Django secret key, that generates when you install Django. 
-        - `STRIPE_PUBLIC_KEY`: This key is obtained when you set up stripe.
-        - `STRIPE_SECRET_KEY`: This key is obtained when you set up stripe.
-        - `EMAIL_HOST_USER`: This is your email address
-        - `EMAIL_HOST_PASS`: Your email password generated from apps. A how-to can be found [here](https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab)
+        - **os.environ["SECRET_KEY"]** = This key is your Django secret key, that generates when you install Django. 
+        - **os.environ["STRIPE_PUBLIC_KEY"]** = his key is obtained when you set up stripe.
+        - **os.environ["STRIPE_SECRET_KEY"]** = his key is obtained when you set up stripe.
+        - **os.environ["EMAIL_HOST_USER"]** = This is your email address
+        - **os.environ["EMAIL_HOST_PASS"]** = Your email password generated from apps. A how-to can be found [here](https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab)
 8) Migrate your models using :
 
         python manage.py migrate
+
 9) You will need to create a superuser using 
 
         python manage.py createsuperuser
@@ -514,7 +514,7 @@ To run this project on your own IDE, you will need to ensure you have the follow
 ### **Heroku Deployment**
 
 <br>
-To deploy Waggy Box on Heroku, the following steps need be taken: 
+To deploy **Waggy Box** on Heroku, the following steps need be taken: 
 
 1) Creating a requirements.txt file, filled with all installed modules.  This can be done by typing the following into the terminal:
 
