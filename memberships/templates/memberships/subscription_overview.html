@@ -2,35 +2,37 @@
 {% load static %}
 
 {% block content %}
-<h2 class="section-head text-center pt-5">Subscription information for:</h2>
-<h5 class="text-center pink-text pb-5 capitalize">{{ user.username }}</h5>
+{% if subscription.active %}
+<h2 class="page-head text-center pt-5">Subscription information for:</h2>
+<h5 class="text-center blue-text pb-5 capitalize">{{ current_membership.full_name }}</h5>
+{% else %}
+<h2 class="page-head text-center pt-5">Uh oh!</h2>
+<h5 class="text-center page-sub blue-text pb-5 capitalize">There is no active subscription for {{user.username }}</h5>
+{% endif %}
 {% if messages %}
 {% for message in messages %}
 <h3 class="text-center message"> {{ message }}</h3>
 {% endfor %}
 {% endif %}
+
+{% if subscription.active %}
 <div class="row pt-5">
 
   <div class="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
     <div class="pl-5">
       <p class="pink-text">Your Details</p>
-      {% if subscription.active %}
       <p>{{ current_membership.full_name }},<br>{{ current_membership.email }},<br>{{ current_membership.phone_number }}</p>
       <p>{{ current_membership.street_address1 }},<br>
         {% if current_membership.street_address2 %}{{ current_membership.street_address2 }},<br>{% endif %}
         {{ current_membership.town_or_city }}<br>
         {% if current_membership.county%}{{ current_membership.county }},<br>{% endif %}
         {% if current_membership.postcode %}{{ current_membership.postcode }}{% endif %},<br>
-        {{ current_membership.country }}.</p>
-      {% else %}
-      <p>Your current memebership is not active.</p>
-      {% endif %}
+      </p>
     </div>
   </div>
   <div class="col-lg-6 col-md-6 col-sm-12">
     <div class="px-5">
       <p class="pink-text">Subscription Details</p>
-      {% if subscription.active %}
       <p>{{ current_membership.membership }}<br>
         {% for member in memberships %}
         {% if member == current_membership.membership %}
@@ -39,17 +41,10 @@
         {% endif %}
         {% endif %}
         {% endfor %}
-        {% else %}
-        <p>Activate your subscription below</p>
-        {% endif %}
 
         <div class="d-flex justify-content-around mt-5">
-          {% if subscription.active %}
           <a class="blue-color" href="{% url 'membership_list' %}">Review Subscription</a>
           <a id="modalActivate" class="pink-color" data-toggle="modal" data-target="#exampleModalPreview">Cancel Subscription</a>
-          {% else %}
-          <a class="blue-color" href="{% url 'membership_list' %}">Activate Subscription</a>
-          {% endif %}
         </div>
         <p class="text-center pt-5"><strong>Please Note</strong> subscription boxes will be sent on the 15<sup>th</sup> of each month</p>
 
@@ -76,4 +71,17 @@
   </div>
 </div>
 
+{% else %}
+<div class="section">
+<div class="text-center">
+<div class="row">
+      <div class="col-12 d-flex justify-content-center">
+      <a href="{% url 'membership_list' %}" class="heartbeat">
+      <h4 class="pink-color">Activate subscription now!</h4>
+        </a>
+      </div>
+</div>
+</div>
+</div>
+{% endif %}
 {% endblock %}
